@@ -125,3 +125,15 @@ button {
 .section-label.light {
   color: var(--color-gray);
 }
+
+/* Page Transition Grid for Crossfade */
+.animated-routes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.animated-routes-container > * {
+  grid-area: 1 / 1 / 2 / 2;
+}

@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const forceScrolled = location.pathname === '/agendar-cita';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${scrolled || forceScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
           Notaría Olaechea

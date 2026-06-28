@@ -1,0 +1,103 @@
+.compact-hero {
+  height: 85vh;
+  min-height: 600px;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 80px; /* offset for fixed header */
+}
+
+.compact-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.compact-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.compact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(11, 11, 15, 0.85) 0%, rgba(11, 11, 15, 0.65) 40%, rgba(10, 26, 51, 0.45) 100%);
+}
+
+.compact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.compact-hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.compact-hero-subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+}
+
+/* Services Page Hero (List) */
+.services-list-hero {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 180px 0 100px; /* offset for header + extra padding */
+  position: relative;
+}
+
+.services-list-content {
+  max-width: 800px;
+  margin-bottom: 4rem;
+}
+
+.services-hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.services-hero-img-box {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.services-hero-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .compact-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .services-hero-images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .services-hero-img-box {
+    height: 300px;
+  }
+}

@@ -1,0 +1,132 @@
+.appointment-page {
+  /* Offset for fixed header */
+  padding-top: 80px; 
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
+
+.appointment-layout {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.appointment-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: none; /* hidden on mobile */
+}
+
+@media (min-width: 992px) {
+  .appointment-image-wrapper {
+    display: block;
+  }
+}
+
+.appointment-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.appointment-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 3rem;
+  background: linear-gradient(to top, rgba(10, 26, 51, 0.9) 0%, rgba(10, 26, 51, 0) 100%);
+  color: var(--color-white);
+}
+
+.appointment-image-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-cream);
+}
+
+.form-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-title {
+  font-size: 3rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.form-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.required {
+  color: #D32F2F;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--color-white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 75, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
