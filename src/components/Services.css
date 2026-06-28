@@ -1,0 +1,126 @@
+.services-section {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-cream);
+  padding: 0 0 var(--spacing-section) 0;
+}
+
+.services-header {
+  margin-bottom: 4rem;
+}
+
+.services-title {
+  font-size: 3.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.services-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 700px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+}
+
+.service-img-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.05);
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.service-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.service-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.service-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-title {
+    font-size: 2.5rem;
+  }
+  .service-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-img-wrapper {
+    width: 100%;
+    height: 160px;
+  }
+  .service-arrow {
+    align-self: flex-end;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
