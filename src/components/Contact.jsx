@@ -83,7 +83,18 @@ export default function Contact() {
             </div>
           </div>
           
-          <button className="btn btn-primary contact-btn">Agendar cita ahora</button>
+          <div className="contact-map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15603.541604928509!2d-77.03703909623886!3d-12.096383617349141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866380c85c5%3A0xc487a55ed99690dc!2sSan%20Isidro%2C%20Lima!5e0!3m2!1sen!2spe!4v1716922241680!5m2!1sen!2spe" 
+              width="100%" 
+              height="250" 
+              style={{ border: 0, borderRadius: '12px' }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación de Notaría Olaechea"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>

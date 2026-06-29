@@ -1,0 +1,193 @@
+.about-page {
+  background-color: var(--color-white);
+}
+
+/* 2. HISTORY SECTION */
+.history-section {
+  background-color: var(--color-cream);
+  position: relative;
+  z-index: 1;
+}
+
+.history-content {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.history-quote {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-navy);
+  margin: 2rem 0;
+  font-family: var(--font-secondary);
+  font-style: italic;
+  border-left: 4px solid var(--color-gold);
+  padding-left: 1.5rem;
+}
+
+.history-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+/* Stats inside History - override top shadow */
+.history-section .stats-section {
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+/* 3. PHILOSOPHY SECTION */
+.philosophy-section {
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.philosophy-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.philosophy-quote {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--color-navy);
+  margin: 1rem 0 2rem;
+  letter-spacing: -0.02em;
+}
+
+.philosophy-subtext {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.philosophy-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* 4. COMMITMENTS SECTION */
+.commitments-section {
+  background-color: var(--color-cream);
+  position: relative;
+  z-index: 1;
+}
+
+.commitments-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.commitments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.commitment-item {
+  position: relative;
+  padding-right: 4rem;
+}
+
+.commitment-number {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-family: var(--font-secondary);
+  font-size: 6rem;
+  color: rgba(201, 162, 75, 0.15); /* Faint gold */
+  line-height: 1;
+  z-index: 0;
+}
+
+.commitment-content {
+  position: relative;
+  z-index: 1;
+}
+
+.commitment-title {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.commitment-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.commitments-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commitments-img {
+  width: 300px;
+  border-radius: 12px;
+  transform: rotate(8deg);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.commitments-img:hover {
+  transform: rotate(0deg);
+}
+
+/* 5. TEAM PREVIEW SECTION */
+.team-preview-section {
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.team-preview-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-preview-title {
+  font-size: 3rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.team-preview-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.team-preview-btn-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 992px) {
+  .philosophy-layout,
+  .commitments-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .philosophy-quote {
+    font-size: 2.5rem;
+  }
+  
+  .commitments-img {
+    margin-top: 3rem;
+    transform: rotate(0);
+  }
+}

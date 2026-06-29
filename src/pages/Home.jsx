@@ -4,6 +4,7 @@ import Services from '../components/Services';
 import Quiz from '../components/Quiz';
 import Team from '../components/Team';
 import News from '../components/News';
+import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Quiz />
       <Team />
       <News />
+      <CTA />
       <Contact />
     </main>
   );

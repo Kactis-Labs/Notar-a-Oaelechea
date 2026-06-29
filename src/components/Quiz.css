@@ -90,6 +90,12 @@
   outline: none;
 }
 
+.quiz-option.selected {
+  border-color: var(--color-navy);
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
 .quiz-footer {
   margin-top: 1rem;
 }

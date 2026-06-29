@@ -91,6 +91,8 @@
 
 /* CTA Section */
 .service-cta {
+  position: relative;
+  z-index: 2;
   background-color: var(--color-navy);
   color: var(--color-white);
   padding: 12rem 0; /* increased padding */

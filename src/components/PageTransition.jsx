@@ -36,9 +36,12 @@ const pageVariants = {
 
 export default function PageTransition({ children }) {
   useEffect(() => {
-    // Al montar la nueva página, el scroll sube. 
-    // La página vieja no salta porque está 'fixed'
-    window.scrollTo(0, 0);
+    // Al montar la nueva página, forzamos el scroll al inicio.
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   return (
