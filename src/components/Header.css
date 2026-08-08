@@ -9,10 +9,10 @@
 }
 
 .header.scrolled {
-  background-color: rgba(26, 26, 26, 0.96);
+  background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(12px);
-  padding: 0.85rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.75rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 290px 1fr auto;
+  grid-template-columns: 310px 1fr auto;
   align-items: center;
   gap: 1.5rem;
 }
@@ -36,11 +36,16 @@
 }
 
 .logo-symbol {
-  height: 44px;
+  height: 58px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+.logo-symbol:hover {
+  transform: scale(1.04);
 }
 
 .logo-text-block {
@@ -58,6 +63,7 @@
   letter-spacing: 0.16em;
   color: var(--color-white);
   white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
 .logo-line2 {
@@ -68,10 +74,12 @@
   letter-spacing: 0.08em;
   color: var(--color-white);
   white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
-.header.scrolled .logo {
-  color: var(--color-white);
+.header.scrolled .logo-line1,
+.header.scrolled .logo-line2 {
+  color: #1A1A1A;
 }
 
 .nav-links {
@@ -89,7 +97,7 @@
 }
 
 .header.scrolled .nav-links a {
-  color: var(--color-white);
+  color: #1A1A1A;
 }
 
 .nav-links a:hover {
@@ -97,26 +105,32 @@
   opacity: 1;
 }
 
+.header.scrolled .nav-links a:hover {
+  color: var(--color-gold) !important;
+}
+
 .header .desktop-btn-nav {
-  border: 1px solid rgba(240, 168, 30, 0.6);
+  border: 1px solid rgba(240, 168, 30, 0.7);
   color: var(--color-white);
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .header.scrolled .desktop-btn-nav {
-  border-color: var(--color-gold);
-  color: var(--color-gold);
+  border-color: #1A1A1A;
+  color: #1A1A1A;
 }
 
 .header .desktop-btn-nav:hover {
   background-color: var(--color-gold);
+  border-color: var(--color-gold);
   color: #1A1A1A;
 }
 
 .header.scrolled .desktop-btn-nav:hover {
-  background-color: var(--color-gold);
-  color: #1A1A1A;
+  background-color: #1A1A1A;
+  border-color: #1A1A1A;
+  color: var(--color-gold);
 }
 
 .mobile-menu-btn {
@@ -126,6 +140,11 @@
   color: var(--color-white);
   cursor: pointer;
   flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.header.scrolled .mobile-menu-btn {
+  color: #1A1A1A;
 }
 
 .mobile-btn-nav {
