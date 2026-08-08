@@ -95,7 +95,7 @@
   z-index: 2;
   background-color: var(--color-navy);
   color: var(--color-white);
-  padding: 12rem 0; /* increased padding */
+  padding: 5rem 0;
 }
 
 .cta-layout {
@@ -154,5 +154,25 @@
   
   .cta-image-wrapper {
     height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cta {
+    padding: 3rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-image-wrapper {
+    height: 220px;
   }
 }
