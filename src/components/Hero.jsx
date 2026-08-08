@@ -28,21 +28,15 @@ export default function Hero() {
               {brandConfig.subtitle}
             </p>
             <div className="hero-actions">
-              <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Solicitar Consulta por WhatsApp
-              </a>
-              <Link to="/servicios" className="btn btn-outline">
-                Especialidades Legal
-              </Link>
+              <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
+              <Link to="/servicios" className="btn btn-outline">Ver servicios</Link>
             </div>
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Firma Legal &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">{brandConfig.shortName} &middot; Fundada en {brandConfig.foundedYear}</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
-            <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="hero-card-btn">
-              Consulta inmediata
-            </a>
+            <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
           </div>
         </div>
       </section>

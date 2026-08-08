@@ -44,18 +44,18 @@ export default function Header() {
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <Link to="/">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
-          <Link to="/servicios">Especialidades</Link>
+          <Link to="/servicios">Servicios</Link>
           <Link to="/equipo">Equipo</Link>
-          <Link to="/recursos">Artículos</Link>
+          <Link to="/recursos">Recursos</Link>
           <Link to="/contacto">Contacto</Link>
-          <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary mobile-btn-nav">
-            Consulta WhatsApp
-          </a>
+          <Link to="/agendar-cita" className="btn btn-outline-dark mobile-btn-nav">
+            Agendar Cita
+          </Link>
         </nav>
         
-        <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary desktop-btn-nav">
-          Consulta WhatsApp
-        </a>
+        <Link to="/agendar-cita" className="btn btn-outline-dark desktop-btn-nav">
+          Agendar Cita
+        </Link>
       </div>
     </header>
   );

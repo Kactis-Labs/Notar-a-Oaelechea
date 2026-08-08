@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { brandConfig } from '../config/brandConfig';
 import './Quiz.css';
 
 const quizQuestions = [
@@ -172,9 +172,9 @@ export default function Quiz() {
                     Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
                   </p>
                   
-                  <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem', display: 'inline-flex', justifyContent: 'center' }}>
-                    Solicitar Consulta por WhatsApp
-                  </a>
+                  <Link to="/agendar-cita" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem', display: 'inline-flex', justifyContent: 'center' }}>
+                    Agendar mi cita ahora
+                  </Link>
                   <button 
                     onClick={handleReset} 
                     style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}

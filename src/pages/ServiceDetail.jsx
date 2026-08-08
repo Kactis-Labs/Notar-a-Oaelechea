@@ -2,7 +2,6 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import { teamMembers } from '../data/teamData';
-import { brandConfig } from '../config/brandConfig';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import '../pages/ServicesPage.css'; // For compact-hero
@@ -31,12 +30,8 @@ export default function ServiceDetail() {
           <h1 className="compact-hero-title">{service.title}</h1>
           <p className="compact-hero-subtitle">{service.shortDesc}</p>
           <div className="hero-actions" style={{ marginTop: '2rem' }}>
-            <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Consultar caso por WhatsApp
-            </a>
-            <Link to="/servicios" className="btn btn-outline">
-              Ver otras especialidades
-            </Link>
+            <Link to="/agendar-cita" className="btn btn-primary">Agendar consulta</Link>
+            <Link to="/servicios" className="btn btn-outline">Ver otros servicios</Link>
           </div>
         </div>
       </section>
