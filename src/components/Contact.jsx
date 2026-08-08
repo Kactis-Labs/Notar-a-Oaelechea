@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { brandConfig } from '../config/brandConfig';
@@ -84,6 +85,12 @@ export default function Contact() {
             </div>
           </div>
           
+          <div className="contact-cta-wrapper">
+            <Link to="/agendar-cita" className="btn btn-primary contact-btn">
+              Completar formulario de contacto
+            </Link>
+          </div>
+
           <div className="contact-map-wrapper">
             <iframe 
               src={brandConfig.contact.googleMapsEmbed} 

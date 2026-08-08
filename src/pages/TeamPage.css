@@ -198,7 +198,33 @@
 }
 
 @media (max-width: 768px) {
+  .titular-name {
+    font-size: 1.8rem;
+  }
+  .titular-bio {
+    font-size: 0.92rem;
+  }
+  .titular-image {
+    height: 380px;
+  }
+  .titular-image-deco {
+    display: none;
+  }
+  .team-grid-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
   .team-grid {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.25rem;
+  }
+  .team-member-img {
+    height: 220px;
+  }
+  .team-member-name {
+    font-size: 1.1rem;
+  }
+  .team-member-info {
+    padding: 1rem;
   }
 }

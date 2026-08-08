@@ -108,7 +108,7 @@
   top: -20px;
   font-family: var(--font-secondary);
   font-size: 6rem;
-  color: rgba(201, 162, 75, 0.15); /* Faint gold */
+  color: rgba(201, 162, 75, 0.15);
   line-height: 1;
   z-index: 0;
 }
@@ -189,5 +189,44 @@
   .commitments-img {
     margin-top: 3rem;
     transform: rotate(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .history-quote {
+    font-size: 1.15rem;
+  }
+  .history-text {
+    font-size: 0.95rem;
+  }
+  .philosophy-quote {
+    font-size: 1.9rem;
+  }
+  .philosophy-subtext {
+    font-size: 0.92rem;
+  }
+  .commitment-item {
+    padding-right: 2rem;
+  }
+  .commitment-number {
+    font-size: 4rem;
+  }
+  .commitment-title {
+    font-size: 1.2rem;
+  }
+  .commitment-desc {
+    font-size: 0.9rem;
+  }
+  .commitments-img {
+    width: 220px;
+  }
+  .team-preview-title {
+    font-size: 2rem;
+  }
+  .team-preview-subtitle {
+    font-size: 0.9rem;
+  }
+  .team-preview-header {
+    margin-bottom: 2rem;
   }
 }

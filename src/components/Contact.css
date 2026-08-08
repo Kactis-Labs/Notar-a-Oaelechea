@@ -76,18 +76,35 @@
   line-height: 1.6;
 }
 
+.contact-cta-wrapper {
+  margin-bottom: 2.5rem;
+}
+
 .contact-btn {
-  font-size: 1.125rem;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
 }
 
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 0;
+  }
   .contact-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .contact-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
   }
   .contact-info {
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .contact-btn {
+    width: 100%;
+    font-size: 0.88rem;
+    padding: 0.75rem 1rem;
   }
 }
