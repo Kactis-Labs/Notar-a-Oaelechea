@@ -2,8 +2,8 @@
 
 export const brandConfig = {
   // Información General
-  name: "Estudio Jurídico Carlos & Asociados",
-  shortName: "Carlos & Asociados",
+  name: "Estudio Jurídico Carlos y Asociados",
+  shortName: "Carlos y Asociados",
   logo: "/logo-carlos.png",
   tagline: "Asesoría Legal Integral & Defensa Jurídica de Confianza en Trujillo",
   subtitle: "Respaldo jurídico con rigor, prestigio y compromiso. Protegemos tus derechos y patrimonio con la máxima solemnidad e integridad profesional.",
