@@ -106,21 +106,35 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .services-header {
+    margin-bottom: 2rem;
+  }
   .services-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .services-subtitle {
+    font-size: 0.88rem;
   }
   .service-card {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px;
   }
   .service-img-wrapper {
-    width: 100%;
-    height: 160px;
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+  }
+  .service-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .service-desc {
+    font-size: 0.8rem;
   }
   .service-arrow {
-    align-self: flex-end;
-    opacity: 1;
-    transform: translateX(0);
+    display: none;
   }
 }

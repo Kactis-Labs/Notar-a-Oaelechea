@@ -102,12 +102,18 @@
   .news-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
   .news-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   .news-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  .news-article-title {
+    font-size: 1.2rem;
   }
 }

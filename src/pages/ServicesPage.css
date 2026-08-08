@@ -1,6 +1,6 @@
 .compact-hero {
   height: 85vh;
-  min-height: 600px;
+  min-height: 500px;
   background-color: var(--color-navy);
   color: var(--color-white);
   display: flex;
@@ -8,7 +8,7 @@
   position: relative;
   overflow: hidden;
   margin-top: 0;
-  padding-top: 80px; /* offset for fixed header */
+  padding-top: 80px;
 }
 
 .compact-hero-bg {
@@ -59,7 +59,7 @@
 .services-list-hero {
   background-color: var(--color-navy);
   color: var(--color-white);
-  padding: 180px 0 100px; /* offset for header + extra padding */
+  padding: 180px 0 100px;
   position: relative;
 }
 
@@ -87,17 +87,60 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* Hero actions on sub-pages */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
   .compact-hero-title {
     font-size: 2.5rem;
   }
-  
+  .compact-hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .compact-hero {
+    height: auto;
+    min-height: 55vh;
+    padding-top: 90px;
+    padding-bottom: 3rem;
+    align-items: flex-end;
+  }
+  .compact-hero-title {
+    font-size: 1.9rem;
+    margin-bottom: 0.75rem;
+  }
+  .compact-hero-subtitle {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 0.65rem 1rem;
+  }
+  .services-list-hero {
+    padding: 110px 0 3rem;
+  }
   .services-hero-images {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
   .services-hero-img-box {
-    height: 300px;
+    height: 220px;
+  }
+  .services-list-content {
+    margin-bottom: 2rem;
   }
 }
