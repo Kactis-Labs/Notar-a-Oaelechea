@@ -33,10 +33,10 @@ export const brandConfig = {
     instagram: "https://instagram.com"
   },
 
-  // Director Legal / Socio Principal
+  // Directora Legal / Socia Principal
   titular: {
-    name: "Dr. Giancarlo Antinori D'Angelo",
-    role: "Socio Fundador & Director Legal",
+    name: "Dra. Joselyn Antinori D'Angelo",
+    role: "Socia Fundadora & Directora Legal",
     registry: "Colegio de Abogados de La Libertad — Reg. CALL 3890"
   },
 

@@ -43,7 +43,7 @@ export default function About() {
             <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asumió la defensa de un complejo caso penal y patrimonial en Trujillo que amenazaba el patrimonio de una destacada familia de la región. Gracias a una investigación probatoria meticulosa y una estrategia procesal inexpugnable, logró la absolución absoluta y la restitución total de sus derechos.
+                En {brandConfig.foundedYear}, nuestra fundadora {brandConfig.titular.name} asumió la defensa de un complejo caso penal y patrimonial en Trujillo que amenazaba el patrimonio de una destacada familia de la región. Gracias a una investigación probatoria meticulosa y una estrategia procesal inexpugnable, logró la absolución absoluta y la restitución total de sus derechos.
               </p>
               
               <blockquote className="history-quote">

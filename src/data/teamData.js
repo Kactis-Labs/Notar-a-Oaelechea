@@ -1,16 +1,16 @@
 export const teamMembers = [
   {
     id: 'carlos-olaechea',
-    name: "Dr. Giancarlo Antinori D'Angelo",
-    role: 'Socio Fundador & Director Legal',
+    name: "Dra. Joselyn Antinori D'Angelo",
+    role: 'Socia Fundadora & Directora Legal',
     exp: '28 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
-    bio: 'Abogado por la Universidad Nacional de Trujillo, con Maestría en Derecho Penal y Procesal Penal. Reconocido en La Libertad por su rigurosidad estratégica, solvencia técnica y destacada tasa de victorias en litigios complejos.',
+    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    bio: 'Abogada por la Universidad Nacional de Trujillo, con Maestría en Derecho Penal y Procesal Penal. Reconocida en La Libertad por su rigurosidad estratégica, solvencia técnica y destacada tasa de victorias en litigios complejos.',
     registry: 'Colegio de Abogados de La Libertad — Reg. CALL 3890',
     recognitions: [
       'Premio a la Excelencia Jurídica — Colegio de Abogados de La Libertad',
       'Miembro de la Sociedad Peruana de Ciencias Penales',
-      'Ex-Presidente de la Comisión de Litigación Oral de La Libertad'
+      'Ex-Presidenta de la Comisión de Litigación Oral de La Libertad'
     ]
   },
   {
