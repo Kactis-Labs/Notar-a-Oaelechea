@@ -40,18 +40,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asumió la defensa de un complejo caso penal y patrimonial en Trujillo que amenazaba el patrimonio de una destacada familia de la región. Gracias a una investigación probatoria meticulosa y una estrategia procesal inexpugnable, logró la absolución absoluta y la restitución total de sus derechos.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Ese caso fundó los pilares de nuestra firma: el ejercicio del derecho exige rigor técnico implacable, reserva absoluta y un compromiso inquebrantable en prevalecer en los tribunales."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Hoy Estudio Jurídico Antinori D'Angelo se ha consolidado como una firma boutique legal de referencia en La Libertad, destacando por su solvencia procesal en materia penal, civil, corporativa y de familia.
               </p>
             </div>
           </div>
@@ -65,10 +65,10 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Creemos que el patrocinio legal de excelencia requiere inteligencia estratégica, probidad absoluta e integridad moral.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Cada asunto confiado a nuestra firma es analizado de forma multidisciplinaria para construir defensas jurídicas invencibles y proteger los intereses más elevados de nuestros patrocinados.
               </p>
             </div>
             <div className="philosophy-img-wrapper">

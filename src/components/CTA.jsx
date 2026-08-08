@@ -7,9 +7,9 @@ export default function CTA() {
     <section className="service-cta">
       <div className="container cta-layout">
         <div className="cta-content">
-          <h2>No tiene por qué resolverlo solo.</h2>
-          <p>Permita que nuestro equipo de especialistas le asesore para llevar a cabo su trámite notarial con total seguridad, rapidez y transparencia.</p>
-          <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
+          <h2>No asuma riesgos legales innecesarios.</h2>
+          <p>Permita que nuestro equipo de letrados evalúe su caso y proteja sus derechos con la máxima solvencia profesional.</p>
+          <Link to="/agendar-cita" className="btn btn-primary">Agendar consulta privada</Link>
         </div>
         <div className="cta-image-wrapper">
           <img src={ctaImage} alt="Asesoría notarial" />

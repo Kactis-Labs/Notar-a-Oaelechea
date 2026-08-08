@@ -35,24 +35,24 @@ export default function Stats() {
       </div>
       
       <div className="container stats-container">
-        <div className="section-label">Números que respaldan</div>
+        <div className="section-label">REPUTACIÓN & RESULTADOS</div>
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="18000" suffix="+" /></h3>
+            <p className="stat-label">Casos litigados & resueltos</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <h3 className="stat-number"><AnimatedCounter value="96" suffix="%" /></h3>
+            <p className="stat-label">Tasa de éxito procesal</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="28" suffix="+" /></h3>
+            <p className="stat-label">Años de trayectoria legal</p>
           </div>
           <div className="stat-item">
             <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <p className="stat-label">Provincias atendidas en La Libertad</p>
           </div>
         </div>
       </div>

@@ -1,16 +1,16 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-black: #0F0F0F;
+  --color-navy: #0F0F0F;
+  --color-gold: #C9A24B;
+  --color-gold-hover: #8A6B2E;
+  --color-cream: #FAF9F5;
   --color-white: #FFFFFF;
   --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
+  --color-dark-gray: #1A1A1A;
+  --color-text-dark: #1A1A1A;
   --color-text-muted: #666666;
 
-  --font-serif: 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', serif;
   --font-sans: 'Montserrat', sans-serif;
   
   --spacing-section: 6rem;
@@ -66,31 +66,36 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.75rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   border-radius: 4px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .btn-primary {
-  background-color: var(--color-gold);
-  color: #1A1A1A;
+  background: linear-gradient(135deg, #C9A24B 0%, #A47E32 100%);
+  color: #FFFFFF;
+  border: 1px solid #C9A24B;
+  box-shadow: 0 4px 15px rgba(201, 162, 75, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-gold-hover);
+  background: linear-gradient(135deg, #A47E32 0%, #785A1E 100%);
+  border-color: #8A6B2E;
   transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(201, 162, 75, 0.35);
 }
 
 .btn-outline {
-  border: 1px solid var(--color-white);
+  border: 1px solid rgba(201, 162, 75, 0.6);
   color: var(--color-white);
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(201, 162, 75, 0.15);
+  border-color: var(--color-gold);
 }
 
 .btn-outline-dark {
@@ -129,11 +134,11 @@ button {
   height: 8px;
   border-radius: 50%;
   background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
+  box-shadow: 0 0 8px rgba(201, 162, 75, 0.6);
 }
 
 .section-label.light {
-  color: #F7F6F4;
+  color: #FAF9F5;
 }
 
 /* Page Transition Grid for Crossfade */
