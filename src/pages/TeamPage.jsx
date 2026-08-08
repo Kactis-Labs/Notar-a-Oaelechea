@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { teamMembers } from '../data/teamData';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';

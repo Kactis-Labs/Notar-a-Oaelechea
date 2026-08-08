@@ -3,6 +3,7 @@ import Stats from '../components/Stats';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { teamMembers } from '../data/teamData';
+import { brandConfig } from '../config/brandConfig';
 import aboutHero from '../assets/about-hero.png';
 import aboutPhilosophy from '../assets/about-philosophy.png';
 import aboutCommitment from '../assets/about-commitment.png';
@@ -28,7 +29,7 @@ export default function About() {
               <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
               <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas de Lima en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
               </p>
             </div>
           </div>
@@ -42,7 +43,7 @@ export default function About() {
             <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En 1994, nuestro fundador Carlos Olaechea asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
               </p>
               
               <blockquote className="history-quote">
@@ -50,7 +51,7 @@ export default function About() {
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que Carlos trató el primero: como el único trámite que importa.
+                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
               </p>
             </div>
           </div>

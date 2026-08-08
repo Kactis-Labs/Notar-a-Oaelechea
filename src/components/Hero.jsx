@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { brandConfig } from '../config/brandConfig';
 import './Hero.css';
 
 export default function Hero() {
@@ -21,9 +22,9 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Tu Patrimonio,<br/>En Regla.</h1>
+            <h1 className="hero-title">{brandConfig.tagline.split(',')[0]},<br/>{brandConfig.tagline.split(',')[1] || ''}</h1>
             <p className="hero-subtitle">
-              Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+              {brandConfig.subtitle}
             </p>
             <div className="hero-actions">
               <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
@@ -32,9 +33,9 @@ export default function Hero() {
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Notariado &middot; Fundada en 1994</p>
-            <p className="hero-card-stat">+12,000 trámites realizados</p>
-            <Link to="/contacto" className="hero-card-btn">Agendar cita</Link>
+            <p className="hero-card-meta">Notariado &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-stat">{brandConfig.statsCount}</p>
+            <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
           </div>
         </div>
       </section>

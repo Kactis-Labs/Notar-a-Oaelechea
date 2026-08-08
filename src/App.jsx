@@ -13,6 +13,7 @@ import Resources from './pages/Resources';
 import ResourceDetail from './pages/ResourceDetail';
 import ContactPage from './pages/ContactPage';
 import BookAppointment from './pages/BookAppointment';
+import NotFound from './pages/NotFound';
 import PageTransition from './components/PageTransition';
 
 function AnimatedRoutes() {
@@ -31,6 +32,7 @@ function AnimatedRoutes() {
           <Route path="/recursos/:slug" element={<PageTransition><ResourceDetail /></PageTransition>} />
           <Route path="/contacto" element={<PageTransition><ContactPage /></PageTransition>} />
           <Route path="/agendar-cita" element={<PageTransition><BookAppointment /></PageTransition>} />
+          <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
         </Routes>
       </AnimatePresence>
     </div>

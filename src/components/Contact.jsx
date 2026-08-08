@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { brandConfig } from '../config/brandConfig';
 import './Contact.css';
 
 export default function Contact() {
@@ -69,30 +70,30 @@ export default function Contact() {
           <div className="contact-info">
             <div className="info-block">
               <h4>Dirección</h4>
-              <p>Av. Javier Prado Este 1234, San Isidro<br/>Lima, Perú</p>
+              <p>{brandConfig.contact.address}</p>
             </div>
             
             <div className="info-block">
               <h4>Horario de Atención</h4>
-              <p>Lunes a Viernes: 8:30 am - 6:00 pm<br/>Sábados: 9:00 am - 1:00 pm</p>
+              <p>{brandConfig.contact.hours.weekdays}<br/>{brandConfig.contact.hours.saturdays}</p>
             </div>
             
             <div className="info-block">
               <h4>Contacto</h4>
-              <p>citas@notariaolaechea.pe<br/>+51 1 234 5678</p>
+              <p>{brandConfig.contact.email}<br/>{brandConfig.contact.phone}</p>
             </div>
           </div>
           
           <div className="contact-map-wrapper">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15603.541604928509!2d-77.03703909623886!3d-12.096383617349141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866380c85c5%3A0xc487a55ed99690dc!2sSan%20Isidro%2C%20Lima!5e0!3m2!1sen!2spe!4v1716922241680!5m2!1sen!2spe" 
+              src={brandConfig.contact.googleMapsEmbed} 
               width="100%" 
               height="250" 
               style={{ border: 0, borderRadius: '12px' }} 
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de Notaría Olaechea"
+              title={`Ubicación de ${brandConfig.name}`}
             ></iframe>
           </div>
         </div>
