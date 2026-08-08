@@ -26,8 +26,15 @@ export default function Header() {
   return (
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo">
-          {brandConfig.name}
+        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          {brandConfig.logo && (
+            <img 
+              src={brandConfig.logo} 
+              alt={brandConfig.name} 
+              style={{ height: '42px', width: 'auto', borderRadius: '50%', background: '#FFF', padding: '2px', objectFit: 'contain' }} 
+            />
+          )}
+          <span>{brandConfig.name}</span>
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -37,18 +44,18 @@ export default function Header() {
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <Link to="/">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
-          <Link to="/servicios">Servicios</Link>
+          <Link to="/servicios">Especialidades</Link>
           <Link to="/equipo">Equipo</Link>
-          <Link to="/recursos">Recursos</Link>
+          <Link to="/recursos">Artículos</Link>
           <Link to="/contacto">Contacto</Link>
-          <Link to="/agendar-cita" className="btn btn-outline-dark mobile-btn-nav">
-            Agendar Cita
-          </Link>
+          <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary mobile-btn-nav">
+            Consulta WhatsApp
+          </a>
         </nav>
         
-        <Link to="/agendar-cita" className="btn btn-outline-dark desktop-btn-nav">
-          Agendar Cita
-        </Link>
+        <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary desktop-btn-nav">
+          Consulta WhatsApp
+        </a>
       </div>
     </header>
   );

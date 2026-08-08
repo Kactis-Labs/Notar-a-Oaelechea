@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import { teamMembers } from '../data/teamData';
+import { brandConfig } from '../config/brandConfig';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import '../pages/ServicesPage.css'; // For compact-hero
@@ -26,12 +27,16 @@ export default function ServiceDetail() {
           <div className="compact-hero-overlay"></div>
         </div>
         <div className="container compact-hero-content">
-          <div className="section-label">TRÁMITE</div>
+          <div className="section-label">ÁREA DE PRÁCTICA</div>
           <h1 className="compact-hero-title">{service.title}</h1>
           <p className="compact-hero-subtitle">{service.shortDesc}</p>
           <div className="hero-actions" style={{ marginTop: '2rem' }}>
-            <Link to="/agendar-cita" className="btn btn-primary">Agendar consulta</Link>
-            <Link to="/servicios" className="btn btn-outline">Ver otros servicios</Link>
+            <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Consultar caso por WhatsApp
+            </a>
+            <Link to="/servicios" className="btn btn-outline">
+              Ver otras especialidades
+            </Link>
           </div>
         </div>
       </section>
@@ -40,7 +45,7 @@ export default function ServiceDetail() {
       <section className="service-detail-content section-padding">
         <div className="container service-layout">
           <div className="service-main">
-            <h2>Sobre este trámite</h2>
+            <h2>Sobre esta especialidad legal</h2>
             {service.detailedDesc.map((p, idx) => (
               <p key={idx} className="service-paragraph">{p}</p>
             ))}
@@ -51,16 +56,16 @@ export default function ServiceDetail() {
             </div>
 
             <div className="service-block">
-              <h3>¿Qué problema resuelve?</h3>
+              <h3>¿Qué problema previene o resuelve?</h3>
               <p>{service.whatProblemItSolves}</p>
             </div>
 
             <div className="service-block requirements-block">
-              <h3>Requisitos</h3>
+              <h3>Documentos & Requisitos Iniciales</h3>
               <ul className="requirements-list">
                 {service.requirements.map((req, idx) => (
                   <li key={idx}>
-                    <CheckCircle className="req-icon" size={20} />
+                    <CheckCircle className="req-icon" size={20} style={{ color: 'var(--color-gold)' }} />
                     <span>{req}</span>
                   </li>
                 ))}
@@ -69,15 +74,15 @@ export default function ServiceDetail() {
             
             {service.tiempoEstimado && (
               <div className="service-block time-block">
-                <h3>Tiempo Estimado</h3>
-                <p><strong>{service.tiempoEstimado}</strong> (Sujeto a validación de documentos)</p>
+                <h3>Tiempo Estimado de Respuesta</h3>
+                <p><strong>{service.tiempoEstimado}</strong> (Sujeto a evaluación inicial de expediente)</p>
               </div>
             )}
           </div>
 
           <aside className="service-sidebar">
             <div className="sticky-sidebar">
-              <h4 className="sidebar-title">Responsable del trámite</h4>
+              <h4 className="sidebar-title">Especialista a cargo</h4>
               <div className="team-card sidebar-team-card">
                 <div className="team-img-wrapper">
                   <img src={teamMember.img} alt={teamMember.name} className="team-img" />

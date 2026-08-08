@@ -1,24 +1,24 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { brandConfig } from '../config/brandConfig';
 import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿Qué tipo de caso o asunto necesitas resolver?',
+    options: ['Conflicto de propiedades / contratos (Civil)', 'Protección / constitución de empresa (Corporativo)', 'Defensa penal / carpeta fiscal (Penal)', 'Reclamo / auditoría laboral (Laboral)']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿En qué etapa se encuentra tu situación legal?',
+    options: ['Fase preventiva / consultoría inicial', 'Recibí una notificación / citación formal', 'Ya existe un proceso judicial o fiscal abierto', 'Busco una segunda opinión experta']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Qué tan urgente requiere atención su expediente?',
+    options: ['Urgente (hoy mismo o en 24 horas)', 'Esta semana', 'En las próximas dos semanas', 'Solo estoy evaluando opciones']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Cuenta con la documentación del caso sustentada?',
+    options: ['Sí, expedientes y contratos completos', 'Cuento con parte de la documentación', 'Necesito que evalúen qué requiero']
   }
 ];
 
@@ -172,9 +172,9 @@ export default function Quiz() {
                     Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
                   </p>
                   
-                  <Link to="/agendar-cita" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem' }}>
-                    Agendar mi cita ahora
-                  </Link>
+                  <a href={brandConfig.contact.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem', display: 'inline-flex', justifyContent: 'center' }}>
+                    Solicitar Consulta por WhatsApp
+                  </a>
                   <button 
                     onClick={handleReset} 
                     style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}
