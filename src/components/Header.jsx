@@ -34,7 +34,10 @@ export default function Header() {
               className="logo-symbol"
             />
           )}
-          <span className="logo-wordmark">{brandConfig.name}</span>
+          <div className="logo-text-block">
+            <span className="logo-line1">ESTUDIO JURÍDICO</span>
+            <span className="logo-line2">CARLOS Y ASOCIADOS</span>
+          </div>
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
