@@ -51,8 +51,8 @@ export default function Stats() {
             <p className="stat-label">Años de experiencia</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="15" /></h3>
-            <p className="stat-label">Distritos atendidos en Lima</p>
+            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
+            <p className="stat-label">Distritos atendidos en La Libertad</p>
           </div>
         </div>
       </div>
