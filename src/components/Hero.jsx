@@ -14,7 +14,7 @@ export default function Hero() {
         <motion.div className="hero-bg" style={{ filter, opacity }}>
           <img 
             src="/hero-bg.png" 
-            alt="Estudio Jurídico Carlos & Asociados" 
+            alt="Estudio Jurídico Carlos y Asociados" 
           />
           <div className="hero-overlay"></div>
         </motion.div>
@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="container hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Asesoría Legal Integral &<br/>Defensa Jurídica de Confianza
+              Asesoría Legal Integral y<br/>Defensa Jurídica de Confianza
             </h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}

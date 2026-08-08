@@ -26,15 +26,15 @@ export default function Header() {
   return (
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <Link to="/" className="logo">
           {brandConfig.logo && (
             <img 
               src={brandConfig.logo} 
               alt={brandConfig.name} 
-              style={{ height: '42px', width: 'auto', borderRadius: '50%', background: '#FFF', padding: '2px', objectFit: 'contain' }} 
+              className="logo-symbol"
             />
           )}
-          <span>{brandConfig.name}</span>
+          <span className="logo-wordmark">{brandConfig.name}</span>
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

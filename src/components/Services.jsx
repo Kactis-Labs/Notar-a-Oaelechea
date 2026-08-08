@@ -10,7 +10,7 @@ export default function Services() {
       <div className="container">
         <div className="services-header">
           <div className="section-label">ÁREAS DE PRÁCTICA</div>
-          <h2 className="services-title">Especialidades Legales & Patrocinio</h2>
+          <h2 className="services-title">Especialidades Legales y Patrocinio</h2>
           <p className="services-subtitle">
             Brindamos asesoría letrada rigurosa y defensa legal de alto nivel en las áreas más estratégicas del derecho.
           </p>

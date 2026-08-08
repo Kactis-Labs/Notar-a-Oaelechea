@@ -7,14 +7,14 @@ import imgVehiculos from '../assets/vehiculos.jpg';
 export const servicesData = [
   {
     slug: 'derecho-civil',
-    title: 'Derecho Civil & Patrimonial',
+    title: 'Derecho Civil y Patrimonial',
     shortDesc: 'Resolución estratégica de conflictos patrimoniales, contratos, saneamiento inmobiliario y responsabilidad civil.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop',
     heroImg: imgEscrituras,
     tiempoEstimado: 'Atención prioritaria e inmediata',
     teamMemberId: 'carlos-olaechea',
     detailedDesc: [
-      'El Derecho Civil constituye la columna vertebral de la protección del patrimonio familiar y empresarial. En Estudio Jurídico Carlos & Asociados brindamos patrocinio legal de alta precisión en materia contractual, derechos reales y saneamiento de propiedades.',
+      'El Derecho Civil constituye la columna vertebral de la protección del patrimonio familiar y empresarial. En Estudio Jurídico Carlos y Asociados brindamos patrocinio legal de alta precisión en materia contractual, derechos reales y saneamiento de propiedades.',
       'Representamos a nuestros clientes en litigios civiles complejos, prescripciones adquisitivas, reivindicaciones de inmuebles y procesos de indemnización por daños y perjuicios ante los tribunales de justicia.',
       'Analizamos minuciosamente cada documento para blindar sus transacciones contractuales y evitar contingencias judiciales futuras.'
     ],
@@ -29,11 +29,11 @@ export const servicesData = [
   },
   {
     slug: 'derecho-corporativo',
-    title: 'Derecho Corporativo & Empresarial',
+    title: 'Derecho Corporativo y Empresarial',
     shortDesc: 'Asesoramiento legal integral a empresas, reorganizaciones corporativas, contratos mercantiles y gobierno de sociedad.',
     img: imgEmpresas,
     heroImg: imgEmpresas,
-    tiempoEstimado: 'Consultoría continua & Proyectos a medida',
+    tiempoEstimado: 'Consultoría continua y proyectos a medida',
     teamMemberId: 'carlos-olaechea',
     detailedDesc: [
       'Acompañamos a las empresas desde su constitución hasta operaciones corporativas complejas como fusiones, adquisiciones y reorganizaciones societarias.',
@@ -50,7 +50,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-penal',
-    title: 'Derecho Penal & Defensa Técnica',
+    title: 'Derecho Penal y Defensa Técnica',
     shortDesc: 'Defensa penal estratégica de alta rigurosidad ante el Ministerio Público y el Poder Judicial.',
     img: imgSucesion,
     heroImg: imgSucesion,
@@ -71,7 +71,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-laboral',
-    title: 'Derecho Laboral & Relaciones de Trabajo',
+    title: 'Derecho Laboral y Relaciones de Trabajo',
     shortDesc: 'Gestión estratégica de relaciones laborales, prevención de contingencias, despidos e inspecciones SUNAFIL.',
     img: imgLegalizacion,
     heroImg: imgLegalizacion,
@@ -92,7 +92,7 @@ export const servicesData = [
   },
   {
     slug: 'asesoria-legal-integral',
-    title: 'Asesoría Legal Integral & Consultoría',
+    title: 'Asesoría Legal Integral y Consultoría',
     shortDesc: 'Patrocinio jurídico permanente para familias, inversionistas y empresas con atención preferencial.',
     img: imgVehiculos,
     heroImg: imgVehiculos,

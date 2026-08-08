@@ -2,7 +2,7 @@ export const teamMembers = [
   {
     id: 'carlos-olaechea',
     name: 'Dr. Carlos Fernández',
-    role: 'Socio Fundador & Director Legal',
+    role: 'Socio Fundador y Director Legal',
     exp: '25 Años de Trayectoria',
     img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
     bio: 'Abogado por la Universidad Nacional de Trujillo, Máster en Derecho Civil y procesal. Reconocido por su rigurosidad técnica, liderazgo en patrocinio procesal y compromiso inquebrantable en la defensa de causas complejas en La Libertad.',
@@ -37,7 +37,7 @@ export const teamMembers = [
   {
     id: 'luis-mendoza',
     name: 'Dr. Luis Mendoza',
-    role: 'Asistente Legal & Litigación',
+    role: 'Asistente Legal y Litigación',
     exp: '5 Años de Experiencia',
     img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
   },

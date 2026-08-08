@@ -1,11 +1,11 @@
-// Configuración centralizada de branding para la propuesta de Estudio Jurídico Carlos & Asociados.
+// Configuración centralizada de branding para la propuesta de Estudio Jurídico Carlos y Asociados.
 
 export const brandConfig = {
   // Información General
   name: "Estudio Jurídico Carlos y Asociados",
   shortName: "Carlos y Asociados",
   logo: "/logo-carlos.png",
-  tagline: "Asesoría Legal Integral & Defensa Jurídica de Confianza en Trujillo",
+  tagline: "Asesoría Legal Integral y Defensa Jurídica de Confianza en Trujillo",
   subtitle: "Respaldo jurídico con rigor, prestigio y compromiso. Protegemos tus derechos y patrimonio con la máxima solemnidad e integridad profesional.",
   foundedYear: 1998,
   statsCount: "+15,000 casos litigados y resueltos",
@@ -17,7 +17,7 @@ export const brandConfig = {
     phoneRaw: "044200100",
     whatsapp: "+51 987 654 321",
     whatsappRaw: "51987654321",
-    whatsappLink: "https://wa.me/51987654321?text=Hola,%20deseo%20solicitar%20una%20consulta%20jur%C3%ADdica%20con%20Estudio%20Jur%C3%ADdico%20Carlos%20%26%20Asociados",
+    whatsappLink: "https://wa.me/51987654321?text=Hola,%20deseo%20solicitar%20una%20consulta%20jur%C3%ADdica%20con%20Estudio%20Jur%C3%ADdico%20Carlos%20y%20Asociados",
     email: "contacto@carlosasociados.pe",
     hours: {
       weekdays: "Lunes a Viernes: 8:00 am - 7:00 pm",
@@ -36,7 +36,7 @@ export const brandConfig = {
   // Director Legal / Socio Principal
   titular: {
     name: "Dr. Carlos Fernández",
-    role: "Socio Fundador & Director Legal",
+    role: "Socio Fundador y Director Legal",
     registry: "Colegio de Abogados de La Libertad — Reg. CALL 4521"
   },
 
