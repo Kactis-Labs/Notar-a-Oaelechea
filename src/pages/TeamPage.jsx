@@ -3,87 +3,71 @@ import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
 import equipoHero from '../assets/equipo-hero.png';
-import '../components/Hero.css'; // Reusing full-screen hero styles
+import '../components/Hero.css';
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
-
   return (
     <div className="team-page">
-      {/* 1. HERO (Full Screen, static scroll) */}
+      {/* 1. HERO */}
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
             <img 
               src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              alt="Socios Ocampos & Sifuentes Abogados" 
             />
             <div className="hero-overlay"></div>
           </div>
           
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <div className="section-label" style={{ marginBottom: '1rem' }}>SOCIOS FUNDADORES</div>
+              <h1 className="hero-title">Tradición Jurídica &<br/>Atención Personalizada.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Conozca la trayectoria de los doctores Carlos Ocampos y Elena Sifuentes, líderes de nuestra firma boutique en Trujillo.
               </p>
             </div>
           </div>
         </section>
       </div>
 
-      <div style={{ backgroundColor: 'var(--color-white)' }}>
-        {/* 2. SECCIÓN DESTACADA DEL NOTARIO TITULAR */}
+      <div style={{ backgroundColor: 'var(--color-cream)' }}>
+        {/* 2. SECCIÓN DESTACADA DE LOS SOCIOS FUNDADORES */}
         <section className="titular-section section-padding">
-          <div className="container titular-layout">
-            <div className="titular-info">
-              <h2 className="titular-name">{titular.name}</h2>
-              <p className="titular-role">{titular.role} &middot; {titular.exp}</p>
-              <p className="titular-bio">{titular.bio}</p>
-              
-              <div className="titular-registry">
-                <CheckCircle size={20} className="icon-gold" />
-                <span>{titular.registry}</span>
-              </div>
-
-              <div className="titular-recognitions">
-                <h3 className="recognitions-title">Reconocimientos y Distinciones</h3>
-                <ul>
-                  {titular.recognitions.map((rec, idx) => (
-                    <li key={idx}>
-                      <Award size={18} className="icon-gold" />
-                      <span>{rec}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="titular-image-wrapper">
-              <img src={titular.img} alt={titular.name} className="titular-image" />
-              <div className="titular-image-deco"></div>
-            </div>
-          </div>
-        </section>
-
-        {/* 3. RESTO DEL EQUIPO */}
-        <section className="team-grid-section section-padding bg-light">
           <div className="container">
-            <div className="section-label">Especialistas y Asesores</div>
-            <h2 className="team-grid-title">Un equipo multidisciplinario a su servicio</h2>
+            <div className="section-label" style={{ marginBottom: '2rem' }}>SOCIOS DE CABECERA</div>
             
-            <div className="team-grid">
-              {restOfTeam.map(member => (
-                <div className="team-member-card" key={member.id}>
-                  <div className="team-member-img">
-                    <img src={member.img} alt={member.name} />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+              {teamMembers.map((founder) => (
+                <div className="titular-layout" key={founder.id}>
+                  <div className="titular-info">
+                    <h2 className="titular-name">{founder.name}</h2>
+                    <p className="titular-role">{founder.role} &middot; {founder.exp}</p>
+                    <p className="titular-bio">{founder.bio}</p>
+                    
+                    <div className="titular-registry">
+                      <CheckCircle size={20} style={{ color: '#8A6A3D' }} />
+                      <span>{founder.registry}</span>
+                    </div>
+
+                    {founder.recognitions && (
+                      <div className="titular-recognitions">
+                        <h3 className="recognitions-title">Distinciones y Trayectoria</h3>
+                        <ul>
+                          {founder.recognitions.map((rec, idx) => (
+                            <li key={idx}>
+                              <Award size={18} style={{ color: '#8A6A3D' }} />
+                              <span>{rec}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
-                  <div className="team-member-info">
-                    <h3 className="team-member-name">{member.name}</h3>
-                    <p className="team-member-role">{member.role}</p>
-                    <p className="team-member-exp">{member.exp}</p>
+                  <div className="titular-image-wrapper">
+                    <img src={founder.img} alt={founder.name} className="titular-image" />
+                    <div className="titular-image-deco"></div>
                   </div>
                 </div>
               ))}
@@ -91,10 +75,10 @@ export default function TeamPage() {
           </div>
         </section>
 
-        {/* 4. CTA DE CIERRE */}
+        {/* 3. CTA DE CIERRE */}
         <CTA />
 
-        {/* 5. CONTACTO / INFO NOTARIA */}
+        {/* 4. CONTACTO */}
         <Contact />
       </div>
     </div>

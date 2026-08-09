@@ -22,20 +22,20 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">{brandConfig.tagline.split(',')[0]},<br/>{brandConfig.tagline.split(',')[1] || ''}</h1>
+            <h1 className="hero-title">Tradición Jurídica & Excelencia<br/>en Asesoría Patrimonial</h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
             </p>
             <div className="hero-actions">
-              <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
-              <Link to="/servicios" className="btn btn-outline">Ver servicios</Link>
+              <Link to="/agendar-cita" className="btn btn-primary">Consulta Personalizada</Link>
+              <Link to="/servicios" className="btn btn-outline">Áreas de Práctica</Link>
             </div>
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Notariado &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">Estudio Boutique &middot; Fundado en {brandConfig.foundedYear}</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
-            <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
+            <Link to="/agendar-cita" className="hero-card-btn">Solicitar evaluación</Link>
           </div>
         </div>
       </section>

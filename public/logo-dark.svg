@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 140" fill="none">
+  <!-- Group Centered -->
+  <g transform="translate(10, 0)">
+    <!-- Word 1: Ocampos (Left) -->
+    <text x="15" y="70" fill="#8A6A3D" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Ocampos</text>
+    
+    <!-- Central Ornate Ampersand "&" -->
+    <text x="275" y="85" fill="#8A6A3D" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="108">&amp;</text>
+    
+    <!-- Word 2: Sifuentes (Right) -->
+    <text x="385" y="70" fill="#8A6A3D" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Sifuentes</text>
+    
+    <!-- Subtitle: ABOGADOS (Bottom Center) -->
+    <text x="340" y="118" text-anchor="middle" fill="#1F1B16" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="20" letter-spacing="6">ABOGADOS</text>
+  </g>
+</svg>

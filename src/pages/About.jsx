@@ -3,17 +3,15 @@ import Stats from '../components/Stats';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { teamMembers } from '../data/teamData';
-import { brandConfig } from '../config/brandConfig';
 import aboutHero from '../assets/about-hero.png';
 import aboutPhilosophy from '../assets/about-philosophy.png';
 import aboutCommitment from '../assets/about-commitment.png';
 import '../components/Hero.css';
-import '../pages/TeamPage.css'; // For the team card styles
+import '../pages/TeamPage.css';
 import './About.css';
 
 export default function About() {
-  // Get first 3 team members safely
-  const previewTeam = teamMembers.slice(0, 3);
+  const previewTeam = teamMembers;
 
   return (
     <div className="about-page">
@@ -21,15 +19,15 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src={aboutHero} alt="Sobre Ocampos & Sifuentes Abogados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO ESTUDIO BOUTIQUE</div>
+              <h1 className="hero-title">Tradición Jurídica,<br/>Trato Cercano & Excelencia.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Desde 1998, Ocampos & Sifuentes Abogados ofrece una asesoría jurídica artesanal y personalizada en derecho patrimonial, sucesiones y derecho familiar en Trujillo.
               </p>
             </div>
           </div>
@@ -43,15 +41,15 @@ export default function About() {
             <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                Fundada en el corazón histórico de Trujillo por los doctores <strong>Carlos Ocampos y Elena Sifuentes</strong>, nuestra firma nació con el propósito deliberado de ser un estudio boutique exclusivo, donde cada cliente recibe la atención directa e ininterrumpida de sus socios principales.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Creemos en el valor de la abogacía hecha a mano: rigurosa, confidencial y orientada a la protección integral de las personas y sus patrimonios."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                A través de más de 25 años de trayectoria, nos hemos consolidado como los abogados de confianza de generaciones de familias y empresarios en la región La Libertad.
               </p>
             </div>
           </div>
@@ -63,16 +61,16 @@ export default function About() {
         <section className="philosophy-section section-padding">
           <div className="container philosophy-layout">
             <div className="philosophy-text-container">
-              <div className="section-label">NUESTRA FILOSOFÍA</div>
+              <div className="section-label">FILOSOFÍA BOUTIQUE</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Abogacía de autor donde la confidencialidad y el rigor ético son el cimiento de cada solución.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Rechazamos los procesos masivos o despersonalizados. Cada contrato, testamento o negociación es analizado con dedicación artesanal por nuestros socios fundadores.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src={aboutPhilosophy} alt="Nuestra filosofía artesanal" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +78,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">VALORES FUNDAMENTALES</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos de Ocampos & Sifuentes.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,24 +87,24 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Atención Senior Directa.</h3>
+                    <p className="commitment-desc">Su asunto es atendido personalmente por nuestros socios principales, sin intermediaciones ni delegaciones.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Confidencialidad y Sigilo Absoluto.</h3>
+                    <p className="commitment-desc">Resguardamos la intimidad y el honor de su patrimonio y entorno familiar con la máxima reserva profesional.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Rigor en la Contratación Civil.</h3>
+                    <p className="commitment-desc">Redacción artesanal impecable para garantizar la validez inexpugnable de sus contratos e instrumentos.</p>
                   </div>
                 </div>
 
@@ -123,8 +121,8 @@ export default function About() {
         <section className="team-preview-section section-padding">
           <div className="container">
             <div className="team-preview-header">
-              <h2 className="team-preview-title">Los profesionales que atenderán su caso.</h2>
-              <p className="team-preview-subtitle">Seis especialistas. Un mismo respaldo legal.</p>
+              <h2 className="team-preview-title">Socios Fundadores.</h2>
+              <p className="team-preview-subtitle">Dres. Carlos Ocampos & Elena Sifuentes</p>
             </div>
             
             <div className="team-grid">
@@ -143,15 +141,15 @@ export default function About() {
             </div>
             
             <div className="team-preview-btn-wrapper">
-              <Link to="/equipo" className="btn btn-outline-dark" style={{ padding: '0.75rem 2rem' }}>Ver equipo completo</Link>
+              <Link to="/equipo" className="btn btn-outline-dark" style={{ padding: '0.75rem 2rem' }}>Ver perfiles completos</Link>
             </div>
           </div>
         </section>
 
-        {/* 6. CTA DE CIERRE (Solo CTA) */}
+        {/* 6. CTA DE CIERRE */}
         <CTA />
         
-        {/* 7. CONTACTO / FIRMA */}
+        {/* 7. CONTACTO */}
         <Contact />
 
       </div>
