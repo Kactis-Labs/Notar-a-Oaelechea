@@ -42,8 +42,8 @@ export default function Contact() {
         <svg viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
           <motion.path 
             d="M-100,100 C150,150 200,350 400,200 C600,50 700,450 900,300 C1100,150 1200,250 1300,100" 
-            stroke="#C9A24B" 
-            strokeWidth="4" 
+            stroke="#B8B4AC" 
+            strokeWidth="3" 
             strokeLinecap="round" 
             variants={drawVariants1}
             initial="hidden"
@@ -51,8 +51,8 @@ export default function Contact() {
           />
           <motion.path 
             d="M-50,400 C150,550 300,150 500,300 C700,450 800,100 1000,200 C1200,300 1250,500 1350,400" 
-            stroke="#C9A24B" 
-            strokeWidth="2" 
+            stroke="#B8B4AC" 
+            strokeWidth="1.5" 
             strokeLinecap="round" 
             variants={drawVariants2}
             initial="hidden"
@@ -63,14 +63,15 @@ export default function Contact() {
 
       <div className="container contact-container">
         <div className="contact-content">
-          <h2 className="contact-title">Estamos para atenderlo</h2>
+          <div className="section-label">Contacto Reservado</div>
+          <h2 className="contact-title">Atención Ejecutiva Privada</h2>
           <p className="contact-subtitle">
-            Programe una cita para asegurar una atención preferencial y sin demoras en nuestras oficinas.
+            Coordine una sesión de consulta directa con nuestros socios principales bajo estricto acuerdo de confidencialidad.
           </p>
           
           <div className="contact-info">
             <div className="info-block">
-              <h4>Dirección</h4>
+              <h4>Sede Principal</h4>
               <p>{brandConfig.contact.address}</p>
             </div>
             
@@ -80,14 +81,14 @@ export default function Contact() {
             </div>
             
             <div className="info-block">
-              <h4>Contacto</h4>
+              <h4>Canales Directos</h4>
               <p>{brandConfig.contact.email}<br/>{brandConfig.contact.phone}</p>
             </div>
           </div>
           
           <div className="contact-cta-wrapper">
             <Link to="/agendar-cita" className="btn btn-primary contact-btn">
-              Completar formulario de contacto
+              Solicitar Consulta Privada
             </Link>
           </div>
 
@@ -96,7 +97,7 @@ export default function Contact() {
               src={brandConfig.contact.googleMapsEmbed} 
               width="100%" 
               height="250" 
-              style={{ border: 0, borderRadius: '12px' }} 
+              style={{ border: '1px solid rgba(184, 180, 172, 0.2)', borderRadius: '0px', filter: 'grayscale(100%) invert(90%) contrast(120%)' }} 
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"

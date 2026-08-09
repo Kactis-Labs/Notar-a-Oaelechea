@@ -1,23 +1,11 @@
 .stats-section {
   position: relative;
-  z-index: 2; /* Sits above sticky hero */
-  background-color: var(--color-cream);
+  z-index: 2;
+  background-color: #0D0D0D;
   padding: var(--spacing-section) 0;
   overflow: hidden;
-  border-radius: 24px 24px 0 0;
-  box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.stats-bg-shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  min-width: 1200px;
-  z-index: 0;
-  pointer-events: none;
+  border-top: 1px solid rgba(184, 180, 172, 0.15);
+  border-bottom: 1px solid rgba(184, 180, 172, 0.15);
 }
 
 .stats-container {
@@ -32,9 +20,9 @@
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 
 .stat-item {
@@ -47,33 +35,36 @@
 .stat-item:not(:last-child)::after {
   content: '';
   position: absolute;
-  right: -1rem;
+  right: -1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  height: 40px;
+  height: 50px;
   width: 1px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(184, 180, 172, 0.2);
 }
 
 .stat-number {
-  font-size: 4.5rem;
-  color: var(--color-navy);
-  margin-bottom: 1rem;
-  letter-spacing: -0.03em;
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
 }
 
 .stat-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #B8B4AC;
+  line-height: 1.5;
+  max-width: 220px;
 }
 
 @media (max-width: 992px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 2rem;
+    gap: 3.5rem 2rem;
   }
   .stat-item:nth-child(2)::after {
     display: none;
@@ -81,11 +72,8 @@
 }
 
 @media (max-width: 768px) {
-  .stats-section {
-    border-radius: 16px 16px 0 0;
-  }
   .stats-grid {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem 1.5rem;
   }
@@ -94,7 +82,7 @@
     margin-bottom: 0.5rem;
   }
   .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
   }
   .stat-item::after {
     display: none;

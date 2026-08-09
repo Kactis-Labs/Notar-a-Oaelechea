@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿Cuál es el objetivo principal de su consulta?',
+    options: ['Estructuración de Fusiones y Adquisiciones', 'Gobierno de Empresa Familiar y Sucesión', 'Arbitraje o Litigio Comercial Complejo', 'Protección Patrimonial y Private Wealth']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿En qué etapa se encuentra la operación?',
+    options: ['Negociación preliminar o diagnóstico', 'Conflicto u operación en curso', 'Planificación estratégica preventiva', 'Revisión y auditoría legal (Due Diligence)']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Requiere asesoría transfronteriza o internacional?',
+    options: ['Sí, involucra múltiples jurisdicciones', 'No, es de ámbito puramente nacional', 'Por determinar durante la consulta']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Con qué nivel de urgencia requiere la atención?',
+    options: ['Inmediata / Requerimiento urgente', 'En los próximos 15 días', 'Planificación periódica anual']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Diagnóstico Legal Estratégico</div>
+          <h2 className="quiz-title">¿Qué solución jurídica requiere su organización?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Complete este breve diagnóstico en 4 pasos para canalizar su requerimiento directamente con el socio especialista del área correspondiente.
           </p>
         </div>
         
@@ -110,7 +110,7 @@ export default function Quiz() {
                       onClick={handleNext}
                       disabled={selectedOption === null}
                     >
-                      Siguiente
+                      Continuar
                     </button>
                   </div>
                 </motion.div>
@@ -124,15 +124,15 @@ export default function Quiz() {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>Casi terminamos</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Déjanos tus datos para mostrarte el resultado y enviarte la información a tu celular.
+                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>Datos de contacto confidenciales</h3>
+                  <p style={{ fontSize: '0.95rem', color: '#B8B4AC', marginBottom: '2rem' }}>
+                    Ingrese su nombre y teléfono corporativo para visualizar el diagnóstico y agendar la sesión ejecutiva.
                   </p>
                   
                   <form onSubmit={handleSubmitContact} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <input 
                       type="text" 
-                      placeholder="Nombre completo" 
+                      placeholder="Nombre y Apellidos" 
                       className="quiz-option" 
                       style={{ padding: '1rem', cursor: 'text' }}
                       required 
@@ -141,7 +141,7 @@ export default function Quiz() {
                     />
                     <input 
                       type="tel" 
-                      placeholder="Número de celular" 
+                      placeholder="Teléfono corporativo o WhatsApp" 
                       className="quiz-option" 
                       style={{ padding: '1rem', cursor: 'text' }}
                       required 
@@ -153,7 +153,7 @@ export default function Quiz() {
                       className="btn btn-primary" 
                       style={{ width: '100%', marginTop: '1rem' }}
                     >
-                      Ver mi resultado
+                      Ver Diagnóstico
                     </button>
                   </form>
                 </motion.div>
@@ -167,19 +167,19 @@ export default function Quiz() {
                   transition={{ duration: 0.4 }}
                   style={{ textAlign: 'center', padding: '2rem 0' }}
                 >
-                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>¡Lo tenemos claro, {contactData.name.split(' ')[0]}!</h3>
-                  <p style={{ fontSize: '1.1rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
+                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>Diagnóstico listo, {contactData.name.split(' ')[0]}</h3>
+                  <p style={{ fontSize: '1.05rem', color: '#B8B4AC', marginBottom: '2rem', lineHeight: '1.6' }}>
+                    Un socio de Paranti Asociados evaluará su caso reservadamente y tomará contacto al {contactData.phone}.
                   </p>
                   
                   <Link to="/agendar-cita" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem' }}>
-                    Agendar mi cita ahora
+                    Agendar consulta privada
                   </Link>
                   <button 
                     onClick={handleReset} 
-                    style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}
+                    style={{ color: '#B8B4AC', textDecoration: 'underline', fontSize: '0.85rem', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'var(--font-heading)', letterSpacing: '0.15em', textTransform: 'uppercase' }}
                   >
-                    Volver a empezar
+                    Reiniciar diagnóstico
                   </button>
                 </motion.div>
               )}

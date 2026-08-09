@@ -10,6 +10,7 @@ export default function Header() {
   const location = useLocation();
 
   const forceScrolled = location.pathname === '/agendar-cita' || location.pathname.startsWith('/recursos') || location.pathname === '/contacto';
+  const isScrolledState = scrolled || forceScrolled || menuOpen;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +25,14 @@ export default function Header() {
   }, [location]);
 
   return (
-    <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolledState ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          {brandConfig.name}
+          <img className="logo-img" src={isScrolledState ? "/logo-dark.svg" : "/logo.svg"} alt={brandConfig.name} />
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
 
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>

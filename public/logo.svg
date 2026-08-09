@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <style>
+    .brand-title {
+      font-family: 'Cormorant Garamond', 'Cinzel', 'EB Garamond', Georgia, serif;
+      font-size: 52px;
+      font-weight: 300;
+      letter-spacing: 0.38em;
+      fill: #FFFFFF;
+      text-anchor: middle;
+      text-transform: uppercase;
+    }
+    .brand-subtitle {
+      font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.65em;
+      fill: #B8B4AC;
+      text-anchor: middle;
+      text-transform: uppercase;
+    }
+  </style>
+  <text x="250" y="58" class="brand-title">PARANTI</text>
+  <text x="250" y="98" class="brand-subtitle">ASOCIADOS</text>
+</svg>

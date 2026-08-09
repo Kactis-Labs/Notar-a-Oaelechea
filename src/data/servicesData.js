@@ -7,140 +7,129 @@ import imgEmpresas from '../assets/empresas.jpg';
 
 export const servicesData = [
   {
-    slug: 'escrituras-publicas',
-    title: 'Escrituras Públicas',
-    shortDesc: 'Formalización de compraventas, anticipos de legítima y donaciones con total seguridad jurídica.',
+    slug: 'fusiones-y-adquisiciones',
+    title: 'Fusiones y Adquisiciones (M y A)',
+    shortDesc: 'Asesoría estratégica en transacciones corporativas complejas, due diligence rigoroso y estructuración de negocios.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop',
     heroImg: imgEscrituras,
-    tiempoEstimado: '3-5 días hábiles',
-    teamMemberId: 'carlos-olaechea',
+    tiempoEstimado: 'Atención Personalizada de Alto Nivel',
+    teamMemberId: 'alejandro-paranti',
     detailedDesc: [
-      'Una Escritura Pública es un instrumento público protocolar redactado por el notario, que contiene uno o más actos jurídicos, brindando la máxima seguridad jurídica, fecha cierta y valor probatorio pleno ante cualquier institución.',
-      'A través de este documento formal, garantizamos que las partes expresen su voluntad de manera libre y consciente, verificando la legalidad del acto y la identidad de los otorgantes. Es el paso fundamental para inscribir derechos en los Registros Públicos (SUNARP).',
-      'Nuestro equipo se encarga de todo el proceso, desde la redacción de la minuta (si no cuenta con una) hasta la emisión de los partes notariales correspondientes.'
+      'Asesoramos a corporaciones nacionales y multinacionales en el diseño, negociación y ejecución de operaciones de compraventa de empresas, reorganizaciones societarias, joint ventures y alianzas estratégicas.',
+      'Nuestro enfoque combina el rigor analítico con una perspectiva de negocio integral, evaluando riesgos legales, regulatorios y fiscales para maximizar el valor comercial de cada transacción.',
+      'Acompañamos desde la fase preliminar de auditoría de compra (due diligence) hasta la redacción y cierre de los contratos definitivos de adquisición y pactos de accionistas.'
     ],
-    whoItAppliesTo: 'Personas naturales o jurídicas que deseen formalizar actos como compraventa de inmuebles, donaciones, anticipos de legítima, hipotecas, entre otros.',
-    whatProblemItSolves: 'Evita futuros conflictos legales o nulidades al otorgar validez absoluta e incuestionable a los acuerdos voluntarios, garantizando su posterior inscripción registral.',
+    whoItAppliesTo: 'Empresas consolidadas, fondos de inversión y grupos corporativos en procesos de expansión, reestructuración o desinversión.',
+    whatProblemItSolves: 'Mitiga contingencias financieras o contractuales ocultas, garantizando el cumplimiento normativo y blindando la transacción comercial.',
     requirements: [
-      'Documento de Identidad (DNI, CE o Pasaporte) vigente de los otorgantes.',
-      'Minuta autorizada por abogado colegiado.',
-      'En caso de inmuebles: HR (Hoja Resumen), PU (Predio Urbano) y recibo de pago del Impuesto Predial del año en curso.',
-      'Copia literal o partida electrónica del bien (antigüedad no mayor a 30 días).',
-      'Comprobantes de pago (bancarización) e impuesto de alcabala (si aplica).'
+      'Información financiera y societaria básica de las entidades involucradas.',
+      'Acuerdos de confidencialidad (NDA) suscritos.',
+      'Pactos preliminares o cartas de intención (LOI).'
     ]
   },
   {
-    slug: 'testamentos',
-    title: 'Testamentos',
-    shortDesc: 'Asesoría especializada para dejar su voluntad plasmada y proteger el futuro de su familia.',
+    slug: 'gobierno-corporativo-y-empresa-familiar',
+    title: 'Gobierno Corporativo y Empresa Familiar',
+    shortDesc: 'Estructuración patrimonial, protocolos de familia y gobernanza para asegurar la continuidad intergeneracional.',
     img: imgTestamentosNuevo,
     heroImg: imgTestamentosNuevo,
-    tiempoEstimado: '1-2 días hábiles',
-    teamMemberId: 'carlos-olaechea',
+    tiempoEstimado: 'Estrategia Continua',
+    teamMemberId: 'valeria-paranti',
     detailedDesc: [
-      'El testamento por escritura pública es el acto mediante el cual una persona dispone de sus bienes para después de su muerte, de forma ordenada y conforme a ley, ante notario y en presencia de dos testigos.',
-      'La ventaja principal del testamento notarial es su inmediatez y seguridad. A diferencia del testamento ológrafo o cerrado, este no requiere de complejos procesos judiciales de apertura y comprobación post-mortem; tiene validez inmediata tras el fallecimiento.',
-      'Nuestra notaría le brinda asesoría personalizada para asegurar que sus disposiciones respeten las cuotas de legítima correspondientes a sus herederos forzosos, evitando que el testamento sea impugnado en el futuro.'
+      'Diseñamos e implementamos arquitecturas de gobernanza diseñadas a la medida de cada familia empresaria y grupo corporativo, equilibrando la dinamica familiar con la eficiencia de negocio.',
+      'Elaboramos protocolos de familia, convenios de accionistas y esquemas de sucesión ejecutiva que garantizan la permanencia del legado y previenen conflictos de control.',
+      'Asesoramos a directorios y comités ejecutivos en buenas prácticas de gobierno corporativo, responsabilidad de directores y cumplimiento regulatorio.'
     ],
-    whoItAppliesTo: 'Toda persona mayor de edad y en pleno uso de sus facultades que desee planificar la distribución de su patrimonio.',
-    whatProblemItSolves: 'Previene disputas familiares, procesos judiciales largos y costosos (sucesión intestada) y asegura que su patrimonio se asigne según sus deseos, dentro del marco legal.',
+    whoItAppliesTo: 'Familias empresarias, holdings corporativos y directores de empresas con visión de trascendencia a largo plazo.',
+    whatProblemItSolves: 'Evita disputas de control y bloqueos de gestión entre accionistas o familiares, asegurando una transición patrimonial ordenada y sostenible.',
     requirements: [
-      'DNI vigente del testador.',
-      'DNI vigente de 2 testigos (no pueden ser familiares ni herederos o legatarios).',
-      'Certificado Médico de salud mental (obligatorio si el testador es mayor de 70 años).',
-      'Relación detallada de los bienes (opcional, pero recomendada) y de los herederos.'
+      'Organigrama societario y cuadro de participación accionaria.',
+      'Entrevistas de diagnóstico con los miembros clave de la junta y la familia.',
+      'Estatutos sociales vigentes.'
     ]
   },
   {
-    slug: 'transferencia-vehicular',
-    title: 'Transferencia Vehicular',
-    shortDesc: 'Legalización y formalización rápida y segura para la compra y venta de vehículos.',
-    img: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=600&auto=format&fit=crop',
+    slug: 'arbitraje-y-litigios-complejos',
+    title: 'Arbitraje y Litigios Complejos',
+    shortDesc: 'Representación técnica en controversias comerciales de alta relevancia ante tribunales arbitrales y judiciales.',
+    img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop',
     heroImg: imgVehiculos,
-    tiempoEstimado: '1 día hábil',
-    teamMemberId: 'elena-torres',
+    tiempoEstimado: 'Defensa de Alto Impacto',
+    teamMemberId: 'valeria-paranti',
     detailedDesc: [
-      'El Acta Notarial de Transferencia Vehicular es el documento legal mediante el cual se formaliza el cambio de propietario de un vehículo automotor usado (autos, motos, camiones, etc.).',
-      'Al realizar este trámite notarial, se verifica en tiempo real la identidad de los contratantes mediante biometría dactilar (RENIEC), así como el estado actual del vehículo en SUNARP, descartando bloqueos, embargos o robos.',
-      'El proceso concluye con el bloqueo registral electrónico a favor del comprador y la presentación de los partes notariales a Registros Públicos, asegurando que la compra sea 100% segura.'
+      'Contamos con amplia trayectoria en la prevención y resolución de disputas comerciales, civiles y contencioso-administrativas de elevada complejidad procesal o cuantía.',
+      'Diseñamos estrategias probatorias sólidas para procesos arbitrales nacionales e internacionales bajo reglamentos institucionales de primer nivel (CCL, AmCham, CCI).',
+      'Privilegiamos la negociación inteligente para alcanzar soluciones eficientes que preserven la reputación y los activos de nuestros clientes.'
     ],
-    whoItAppliesTo: 'Compradores y vendedores de vehículos automotores usados que requieran seguridad jurídica y celeridad en el trámite.',
-    whatProblemItSolves: 'Protege al vendedor de responsabilidad civil o penal por infracciones futuras y protege al comprador de estafas, cargas o gravámenes ocultos del vehículo.',
+    whoItAppliesTo: 'Compañías e inversionistas involucrados en discrepancias contractuales, conflictos societarios o reclamaciones complejas.',
+    whatProblemItSolves: 'Protege los activos e intereses patrimoniales de la firma frente a reclamos adversos mediante una defensa jurídica incisiva y rigurosa.',
     requirements: [
-      'DNI vigente de comprador y vendedor (y cónyuges, si aplica).',
-      'Tarjeta de Identificación Vehicular (TIV) original.',
-      'SOAT vigente.',
-      'Comprobante de pago del Impuesto al Patrimonio Vehicular (si el vehículo tiene antigüedad de hasta 3 años).',
-      'Medio de pago bancarizado por el valor del vehículo.'
+      'Copia de los contratos y convenios arbitrales o cláusulas de litigio.',
+      'Acopio documental de la controversia y antecedentes de comunicación.',
+      'Evaluación técnica de contingencias.'
     ]
   },
   {
-    slug: 'sucesion-intestada',
-    title: 'Sucesión Intestada',
-    shortDesc: 'Declaratoria de herederos rápida y eficiente cuando no existe un testamento previo.',
+    slug: 'proteccion-patrimonial-y-private-wealth',
+    title: 'Protección Patrimonial y Private Wealth',
+    shortDesc: 'Planificación fiscal, estructuración de vehículos patrimoniales y custodia de activos para personas de alto patrimonio.',
     img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600&auto=format&fit=crop',
     heroImg: imgSucesion,
-    tiempoEstimado: '25-30 días hábiles',
-    teamMemberId: 'fernando-vargas',
+    tiempoEstimado: 'Estructuración Personalizada',
+    teamMemberId: 'alejandro-paranti',
     detailedDesc: [
-      'La Sucesión Intestada o Declaratoria de Herederos es el procedimiento notarial que se realiza cuando una persona fallece sin dejar testamento, o si el testamento otorgado ha sido declarado nulo o caduco.',
-      'El objetivo principal de este trámite es determinar legalmente quiénes son los herederos forzosos (cónyuge, hijos, o padres en su defecto) que tienen derecho a heredar el patrimonio del causante.',
-      'A diferencia del proceso judicial, la vía notarial es significativamente más rápida. Nosotros nos encargamos de todo el procedimiento, incluyendo las anotaciones preventivas en SUNARP y las publicaciones requeridas en el Diario Oficial El Peruano.'
+      'Brindamos asesoría discreta e individualizada a familias e individuos de alto patrimonio en la organización y preservación de su riqueza global.',
+      'Estructuramos fideicomisos, fundaciones de interés privado, sociedades holding y vehículos de inversión en múltiples jurisdicciones con estricto apego al marco legal.',
+      'Diseñamos esquemas de planificación sucesoria e inmobiliaria que minimizan riesgos fiscales y garantizan la protección de los beneficiarios.'
     ],
-    whoItAppliesTo: 'Familiares directos (cónyuge, hijos, padres, hermanos) de una persona fallecida que no dejó testamento.',
-    whatProblemItSolves: 'Permite el desbloqueo de cuentas bancarias y el traslado formal del dominio de inmuebles y vehículos a nombre de los herederos legítimos.',
+    whoItAppliesTo: 'Inversionistas, ejecutivos senior y grupos familiares que buscan consolidar y resguardar sus activos globales.',
+    whatProblemItSolves: 'Mitiga la exposición innecesaria a riesgos legales o cargas impositivas ineficientes, otorgando absoluta tranquilidad patrimonial.',
     requirements: [
-      'DNI vigente del solicitante.',
-      'Partida de Defunción del causante.',
-      'Partida de Matrimonio (si aplica).',
-      'Partidas de Nacimiento de todos los presuntos herederos.',
-      'Certificado Negativo de Sucesión Intestada (SUNARP).',
-      'Certificado Negativo de Testamento (SUNARP).'
+      'Inventario general de activos inmobiliarios y financieros.',
+      'Identificación de objetivos sucesorios y beneficiarios.',
+      'Análisis preliminar de residencia fiscal.'
     ]
   },
   {
-    slug: 'legalizacion-documentos',
-    title: 'Legalización de Documentos',
-    shortDesc: 'Certificación de firmas y reproducciones documentales para dar fe de su autenticidad.',
+    slug: 'contratacion-internacional-y-negocios',
+    title: 'Contratación Internacional y Negocios',
+    shortDesc: 'Negociación y diseño de instrumentos contractuales para operaciones cross-border y comercio global.',
     img: 'https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=600&auto=format&fit=crop',
     heroImg: imgLegalizacion,
-    tiempoEstimado: 'Inmediato (Mismo día)',
-    teamMemberId: 'mariana-rios',
+    tiempoEstimado: 'Cierre Estratégico',
+    teamMemberId: 'alejandro-paranti',
     detailedDesc: [
-      'La legalización notarial es un acto a través del cual el notario da fe de que la firma o huella digital que aparece en un documento privado pertenece efectivamente a la persona que la ha puesto en su presencia.',
-      'Asimismo, la legalización de copias certifica que la reproducción es idéntica al documento original presentado. Esto aplica para diplomas, certificados, DNI, pasaportes, libros contables, actas societarias, entre otros.',
-      'Contamos con un equipo de atención rápida que verifica la identidad biométrica y procesa sus documentos en cuestión de minutos, garantizando que tengan pleno valor frente a cualquier entidad pública o privada.'
+      'Elaboramos y negociamos contratos comerciales internacionales (distribución, franquicias, licenciamiento de tecnología, financiamientos estructurados).',
+      'Aseguramos la alineación de las transacciones con los estándares normativos aplicables en diferentes jurisdicciones y tratados de libre comercio.',
+      'Proporcionamos acompañamiento continuo a empresas que expanden sus operaciones hacia mercados extranjeros o reciben inversión internacional.'
     ],
-    whoItAppliesTo: 'Personas o empresas que requieran presentar contratos privados, autorizaciones, poderes simples o copias fieles ante instituciones gubernamentales, bancos o terceros.',
-    whatProblemItSolves: 'Otorga presunción legal de veracidad a un documento privado o a una copia, evitando que su contenido o las firmas sean rechazadas por falta de formalidad.',
+    whoItAppliesTo: 'Empresas en proceso de internacionalización, exportadores, importadores y socios de negocios transfronterizos.',
+    whatProblemItSolves: 'Reduce el riesgo de vacíos normativos o vacíos de interpretación en contratos transfronterizos con contrapartes extranjeras.',
     requirements: [
-      'Para legalización de firmas: Presencia física del firmante con DNI vigente.',
-      'Para legalización de copias: Presentación del documento ORIGINAL y de la copia a certificar.',
-      'En caso de libros societarios o contables: El libro anterior (si es a partir del N° 2) y el documento de constitución de la empresa.',
-      'Autorizaciones de viaje para menores: Presencia de uno o ambos padres (según destino) con DNI y partida de nacimiento original del menor.'
+      'Términos comerciales clave acordados (Term Sheet).',
+      'Identificación de las normas y jurisdicciones involucradas.',
+      'Documentación constitutiva de las partes contratantes.'
     ]
   },
   {
-    slug: 'constitucion-empresas',
-    title: 'Constitución de Empresas',
-    shortDesc: 'Creación de sociedades, EIRL y otras formas societarias para iniciar su negocio con el pie derecho.',
+    slug: 'derecho-tributario-y-compliance',
+    title: 'Derecho Tributario y Compliance',
+    shortDesc: 'Estrategia fiscal preventiva, auditorías impositivas y programas de cumplimiento normativo empresarial.',
     img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=600&auto=format&fit=crop',
     heroImg: imgEmpresas,
-    tiempoEstimado: '5-7 días hábiles',
-    teamMemberId: 'elena-torres',
+    tiempoEstimado: 'Acompañamiento Permanente',
+    teamMemberId: 'valeria-paranti',
     detailedDesc: [
-      'La constitución de una empresa es el acto formal por el cual una o varias personas deciden formar una persona jurídica (E.I.R.L., S.A.C., S.R.L., entre otras) para desarrollar una actividad económica.',
-      'Nuestro servicio integral abarca desde la reserva de nombre, la elaboración del pacto social y los estatutos (minuta), hasta la elevación a Escritura Pública y su posterior inscripción en los Registros Públicos.',
-      'Le brindamos asesoramiento societario para definir qué tipo de sociedad se ajusta mejor a su modelo de negocio, régimen de capital y responsabilidades, garantizando un inicio corporativo sólido y sin contratiempos.'
+      'Asesoramos a corporaciones en el diseño de planeamientos tributarios eficientes y en la gestión de fiscalizaciones de la administración tributaria (SUNAT).',
+      'Desarrollamos e implementamos programas integrales de cumplimiento normativo (Compliance penal, libre competencia y prevención de lavado de activos).',
+      'Realizamos diagnósticos de riesgo operacional para proteger a los administradores y directores de contingencias administrativas o penales.'
     ],
-    whoItAppliesTo: 'Emprendedores, empresarios, startups y grupos de inversionistas que desean formalizar sus negocios y separar su patrimonio personal del patrimonio del negocio.',
-    whatProblemItSolves: 'Proporciona responsabilidad limitada (el patrimonio personal no se ve afectado por las deudas del negocio), permite acceder a créditos financieros formales y facturar formalmente.',
+    whoItAppliesTo: 'Organizaciones que requieren mantener estándares elevados de integridad corporativa y eficiencia impositiva.',
+    whatProblemItSolves: 'Previene sanciones administrativas, contingencias tributarias onerosas y daños reputacionales irreversibles.',
     requirements: [
-      'DNI vigente de los socios (y cónyuges, si corresponde).',
-      'Reserva de Nombre expedida por SUNARP (podemos tramitarla por usted).',
-      'Descripción detallada del objeto social (actividades del negocio).',
-      'Acreditación del capital social (depósito en cuenta bancaria o declaración jurada de bienes si son aportes no dinerarios).',
-      'Declaración de nombramiento del Gerente General y Directorio (si aplica).'
+      'Estructura operativa y estados de situación fiscal.',
+      'Matriz de riesgos actual de la organización.',
+      'Manuales o políticas corporativas vigentes.'
     ]
   }
 ];
