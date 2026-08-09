@@ -14,7 +14,7 @@
 
 .news-title {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
   color: #000000;
@@ -24,53 +24,45 @@
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .news-card {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  background-color: #F9F9F8;
-  padding: 1.75rem;
-  border: 1px solid #E5E5E5;
-  transition: all 0.4s ease;
 }
 
-.news-card:hover {
-  border-color: #000000;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-}
-
+/* Conservar estructura redondeada original de la plantilla (border-radius: 12px) */
 .news-img-wrapper {
   width: 100%;
   aspect-ratio: 16/10;
-  border-radius: 0px;
+  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .news-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.5s ease;
 }
 
 .news-card:hover .news-img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .news-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.05em;
   margin-bottom: 1rem;
 }
 
@@ -84,11 +76,11 @@
 
 .news-article-title {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.05em;
   color: #000000;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   line-height: 1.4;
   transition: color 0.3s ease;
 }
@@ -98,10 +90,9 @@
 }
 
 .news-link {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
   color: #000000;
   display: flex;
   align-items: center;
@@ -124,7 +115,7 @@
   }
   .news-grid {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
   .news-title {
     font-size: 2rem;

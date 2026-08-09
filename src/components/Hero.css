@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 0;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .hero {
@@ -32,16 +32,17 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(100%) brightness(0.4);
+  filter: brightness(0.9);
 }
 
+/* Capa de overlay suave - Regla 6 AGENTS.md */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(13, 13, 13, 0.75) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-content {
@@ -50,19 +51,19 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 640px;
 }
 
 .hero-title {
   font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 300;
-  margin-bottom: 1.75rem;
-  letter-spacing: 0.12em;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.08em;
   line-height: 1.2;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -71,69 +72,70 @@
 .hero-subtitle {
   font-family: var(--font-sans);
   font-size: 1.15rem;
-  margin-bottom: 2.5rem;
-  color: #B8B4AC;
-  max-width: 580px;
+  margin-bottom: 2.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 540px;
   line-height: 1.7;
 }
 
 .hero-actions {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
+/* Conservar la estructura de tarjeta original de la plantilla (border-radius: 12px) */
 .hero-card {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 2rem;
-  background-color: rgba(18, 18, 18, 0.85);
-  backdrop-filter: blur(12px);
-  color: #FFFFFF;
-  padding: 2.25rem;
-  border-radius: 0px;
-  width: 340px;
-  border: 1px solid rgba(184, 180, 172, 0.2);
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  border: 1px solid #E5E5E5;
 }
 
 .hero-card-meta {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  color: #B8B4AC;
-  margin-bottom: 1rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 .hero-card-stat {
-  font-family: var(--font-sans);
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  line-height: 1.5;
-  color: #FFFFFF;
+  line-height: 1.4;
+  color: #000000;
 }
 
 .hero-card-btn {
   display: inline-block;
   padding: 0.65rem 1.25rem;
-  border: 1px solid #B8B4AC;
+  border: 1px solid #000000;
+  border-radius: 4px;
   font-family: var(--font-heading);
   font-size: 0.8rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
 .hero-card-btn:hover {
-  border-color: #FFFFFF;
-  background-color: #FFFFFF;
-  color: #000000;
+  border-color: #000000;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 @media (max-width: 992px) {
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.75rem;
   }
 }
 
@@ -152,7 +154,7 @@
   }
 
   .hero-content {
-    padding-top: 75px;
+    padding-top: 65px;
     padding-bottom: 2.5rem;
     align-items: center;
     height: 100%;
@@ -161,27 +163,26 @@
   }
 
   .hero-title {
-    font-size: 1.85rem;
-    line-height: 1.25;
-    margin-bottom: 1.1rem;
-    letter-spacing: 0.1em;
+    font-size: 1.9rem;
+    line-height: 1.22;
+    margin-bottom: 0.9rem;
   }
 
   .hero-subtitle {
     font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.4rem;
   }
 
   .hero-actions {
     flex-direction: column;
     width: 100%;
-    gap: 0.75rem;
+    gap: 0.6rem;
   }
 
   .hero-actions .btn {
     width: 100%;
-    padding: 0.85rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 0.8rem;
     text-align: center;
     justify-content: center;
