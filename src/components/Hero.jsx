@@ -23,10 +23,9 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <div className="section-label">Firma Legal Tech & Prevención de Riesgos</div>
             <h1 className="hero-title">
-              {titleParts[0]}<br/>
-              <span style={{ color: 'var(--color-orange)' }}>{titleParts[1] || ''}</span>
+              {titleParts[0]},<br/>
+              {titleParts[1] || ''}
             </h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}

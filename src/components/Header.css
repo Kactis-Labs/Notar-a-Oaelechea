@@ -9,10 +9,10 @@
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background-color: rgba(15, 30, 61, 0.96);
+  backdrop-filter: blur(12px);
   padding: 1rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header-container {
@@ -34,11 +34,7 @@
 .logo-img {
   height: 48px;
   width: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.header.scrolled .logo-img {
-  filter: brightness(0.1) invert(0.2) sepia(1) hue-rotate(185deg) saturate(3);
+  transition: transform 0.3s ease;
 }
 
 .logo-link:hover .logo-img {

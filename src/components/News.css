@@ -62,7 +62,7 @@
 }
 
 .news-category {
-  color: var(--color-gold);
+  color: var(--color-orange);
 }
 
 .news-date {
@@ -79,7 +79,7 @@
 }
 
 .news-card:hover .news-article-title {
-  color: var(--color-gold);
+  color: var(--color-orange);
 }
 
 .news-link {
