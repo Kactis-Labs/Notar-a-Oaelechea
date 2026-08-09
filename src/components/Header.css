@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   z-index: 100;
   transition: all 0.3s ease;
 }
@@ -11,7 +11,7 @@
 .header.scrolled {
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 0.85rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -27,63 +27,75 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  margin-right: auto;
+  flex-shrink: 0;
 }
 
-/* Regla 2 AGENTS.md: Integración del Logo en Navbar */
+/* Regla 2 AGENTS.md: Integración del Logo en Navbar (Ajustado proporcionalmente para evitar colisión) */
 .logo-img {
-  height: 72px;
+  height: 38px;
+  max-height: 38px;
+  max-width: 240px;
   width: auto;
   object-fit: contain;
-  transition: height 0.3s ease;
+  object-position: left center;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled .logo-img {
+  height: 32px;
+  max-height: 32px;
+  max-width: 220px;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links a {
   color: var(--color-white);
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .header.scrolled .nav-links a {
-  color: #333333;
+  color: var(--color-text-dark);
 }
 
 .nav-links a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .header.scrolled .nav-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-gold);
   opacity: 1;
 }
 
 .header .desktop-btn-nav {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
   color: var(--color-white);
   transition: all 0.3s ease;
+  margin-left: 2rem;
+  flex-shrink: 0;
 }
 
 .header.scrolled .desktop-btn-nav {
-  border-color: #333333;
-  color: #333333;
+  border-color: var(--color-black);
+  color: var(--color-black);
 }
 
 .header .desktop-btn-nav:hover {
   background-color: var(--color-white);
-  color: #333333;
+  color: var(--color-black);
 }
 
 .header.scrolled .desktop-btn-nav:hover {
-  background-color: #333333;
-  color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-gold);
 }
 
 .mobile-menu-btn {
@@ -95,7 +107,7 @@
 }
 
 .header.scrolled .mobile-menu-btn {
-  color: #333333;
+  color: var(--color-black);
 }
 
 .mobile-btn-nav {
@@ -109,7 +121,15 @@
   }
 
   .logo-img {
-    height: 46px;
+    height: 30px;
+    max-height: 30px;
+    max-width: 180px;
+  }
+
+  .header.scrolled .logo-img {
+    height: 28px;
+    max-height: 28px;
+    max-width: 170px;
   }
 
   .mobile-menu-btn {
@@ -123,7 +143,7 @@
   }
 
   .header.scrolled .mobile-menu-btn {
-    color: #333333;
+    color: var(--color-black);
   }
 
   .desktop-btn-nav {
@@ -132,10 +152,10 @@
 
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     background-color: var(--color-white);
     flex-direction: column;
     align-items: center;
@@ -155,7 +175,7 @@
   }
 
   .nav-links a {
-    color: #333333 !important;
+    color: var(--color-black) !important;
     font-size: 1.15rem;
   }
 
@@ -163,7 +183,7 @@
     display: inline-flex;
     margin-top: 1rem;
     width: auto;
-    border-color: #333333 !important;
-    color: #333333 !important;
+    border-color: var(--color-black) !important;
+    color: var(--color-black) !important;
   }
 }

@@ -15,9 +15,9 @@
 
 /* Regla 3 AGENTS.md: Contraste automático en títulos de componentes con fondo oscuro */
 .quiz-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-serif);
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #FFFFFF !important;
   margin-bottom: 1.5rem;
 }
@@ -45,6 +45,7 @@
 }
 
 .quiz-step {
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   color: var(--color-text-muted);
   font-weight: 500;
@@ -68,9 +69,9 @@
 
 /* Regla 3 AGENTS.md: Contraste en título de pregunta */
 .quiz-question {
-  font-family: var(--font-heading);
+  font-family: var(--font-serif);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary) !important;
   margin-bottom: 2rem;
 }
@@ -90,6 +91,7 @@
   background-color: var(--color-white);
   border: 1px solid var(--color-gray);
   border-radius: 8px;
+  font-family: var(--font-sans);
   font-size: 1rem;
   color: var(--color-primary);
   transition: all 0.2s ease;

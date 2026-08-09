@@ -35,18 +35,23 @@
 }
 
 .contact-content {
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .contact-title {
+  font-family: var(--font-serif);
   font-size: 3.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
 
 .contact-subtitle {
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 3rem;
+  line-height: 1.7;
 }
 
 .contact-info {
@@ -64,15 +69,17 @@
 .info-block h4 {
   font-family: var(--font-sans);
   font-size: 0.875rem;
-  color: var(--color-gold);
+  color: var(--color-accent);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 .info-block p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -81,8 +88,13 @@
 }
 
 .contact-btn {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.9rem 2rem;
+  letter-spacing: 0.15em;
+}
+
+.contact-map-wrapper iframe {
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
@@ -93,7 +105,7 @@
     font-size: 2rem;
   }
   .contact-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-bottom: 2rem;
   }
   .contact-info {
@@ -104,7 +116,7 @@
   }
   .contact-btn {
     width: 100%;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     padding: 0.75rem 1rem;
   }
 }

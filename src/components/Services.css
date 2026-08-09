@@ -10,9 +10,9 @@
 }
 
 .services-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-serif);
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 1rem;
 }
@@ -74,9 +74,9 @@
 }
 
 .service-name {
-  font-family: var(--font-heading);
+  font-family: var(--font-serif);
   font-size: 1.45rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
