@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src="/logo.png" alt={brandConfig.name} className="footer-logo" />
+            <img src="/logo.svg" alt={brandConfig.name} className="footer-logo" />
             <p className="footer-subtitle">
               {brandConfig.subtitle}
             </p>

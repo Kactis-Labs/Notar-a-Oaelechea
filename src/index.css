@@ -4,10 +4,10 @@
   --color-black: #0A0D12;
   --color-navy: #0A0D12;
   
-  --color-gold: #D1D5DB; /* Plata / Platino Medina de la Paz */
-  --color-gold-hover: #9CA3AF;
-  --color-accent: #D1D5DB;
-  --color-accent-hover: #9CA3AF;
+  --color-gold: #EA580C; /* Naranja Sutil Medina de la Paz */
+  --color-gold-hover: #C2410C;
+  --color-accent: #EA580C;
+  --color-accent-hover: #C2410C;
   
   --color-white: #FFFFFF;
   --color-cream: #F8FAFC; /* Gris Fino */
@@ -87,15 +87,17 @@ button {
 }
 
 .btn-primary {
-  background-color: #FFFFFF;
-  color: #0A0D12;
-  border: 1px solid #D1D5DB;
+  background-color: #0A0D12;
+  color: #FFFFFF;
+  border: 1px solid #EA580C;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: #D1D5DB;
-  color: #0A0D12;
+  background-color: #EA580C;
+  color: #FFFFFF;
   transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
 }
 
 .btn-outline {
@@ -104,7 +106,7 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(234, 88, 12, 0.15);
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
@@ -124,7 +126,7 @@ button {
   padding: var(--spacing-section) 0;
 }
 
-/* Subtítulos Unboxed Limpios - Regla 9 AGENTS.md */
+/* Subtítulos Unboxed Limpios con Acento Naranja Sutil - Regla 9 AGENTS.md */
 .section-label {
   font-family: var(--font-sans);
   font-size: 0.8rem;
@@ -143,7 +145,7 @@ button {
 }
 
 .section-label.light {
-  color: #D1D5DB;
+  color: #EA580C;
 }
 
 /* Page Transition Grid for Crossfade */

@@ -28,7 +28,7 @@ export default function Header() {
     <header className={`header ${isScrolledState ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          <img className="logo-img" src={isScrolledState ? "/logo-dark.png" : "/logo.png"} alt={brandConfig.name} />
+          <img className="logo-img" src={isScrolledState ? "/logo-dark.svg" : "/logo.svg"} alt={brandConfig.name} />
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
