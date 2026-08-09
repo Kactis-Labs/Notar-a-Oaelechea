@@ -110,10 +110,16 @@
     display: none;
   }
   
+  .header-container {
+    padding: 0 1.5rem;
+  }
+
   .mobile-menu-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
   }
   
   .nav-links {
