@@ -3,7 +3,7 @@ import { brandConfig } from '../config/brandConfig';
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#000000', color: '#B8B4AC', padding: '4rem 0 3rem 0', borderTop: '1px solid rgba(184,180,172,0.15)' }}>
+    <footer style={{ backgroundColor: '#000000', color: '#B8B4AC', padding: '4rem 0 3rem 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
       <div className="container">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem', marginBottom: '2.5rem' }}>
           <div>
@@ -20,9 +20,11 @@ export default function Footer() {
             <Link to="/contacto" style={{ fontFamily: 'var(--font-heading)', fontSize: '0.8rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#FFFFFF' }}>Contacto</Link>
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', borderTop: '1px solid rgba(184,180,172,0.1)', paddingTop: '2rem', fontSize: '0.8rem', fontFamily: 'var(--font-heading)', letterSpacing: '0.1em' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', fontSize: '0.8rem', fontFamily: 'var(--font-heading)', letterSpacing: '0.1em' }}>
           <p style={{ margin: 0 }}>© {new Date().getFullYear()} {brandConfig.name}. Todos los derechos reservados.</p>
-          <p style={{ margin: 0, color: 'rgba(255,255,255,0.4)' }}>Lima, Perú · Firma Legal de Élite</p>
+          <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)' }}>
+            Diseñado y desarrollado por <a href="https://kactilabs.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>Kacti Labs</a>
+          </p>
         </div>
       </div>
     </footer>

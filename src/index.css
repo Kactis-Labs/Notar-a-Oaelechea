@@ -1,28 +1,28 @@
 :root {
   --color-black: #000000;
   --color-bg-dark: #000000;
-  --color-bg-main: #0D0D0D;
-  --color-bg-card: #141414;
+  --color-bg-main: #FFFFFF;
+  --color-bg-card: #F9F9F8;
   --color-navy: #0D0D0D;
   
-  --color-accent: #B8B4AC; /* Gris cálido de acento */
-  --color-accent-hover: #D4D0C8;
-  --color-gold: #B8B4AC;
-  --color-gold-hover: #D4D0C8;
+  --color-accent: #666666;
+  --color-accent-hover: #000000;
+  --color-gold: #666666;
+  --color-gold-hover: #000000;
   
   --color-white: #FFFFFF;
-  --color-cream: #141414;
-  --color-light-bg: #141414;
-  --color-gray: #222222;
+  --color-cream: #F5F6F8;
+  --color-light-bg: #F5F6F8;
+  --color-gray: #E0E0E0;
   --color-dark-gray: #0D0D0D;
-  --color-text-dark: #FFFFFF;
-  --color-text-muted: #B8B4AC;
+  --color-text-dark: #0D0D0D;
+  --color-text-muted: #555555;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'EB Garamond', Georgia, serif;
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   
-  --spacing-section: 7rem;
+  --spacing-section: 6.5rem;
   --max-width: 1240px;
 }
 
@@ -34,8 +34,8 @@
 
 body {
   font-family: var(--font-sans);
-  color: var(--color-white);
-  background-color: var(--color-bg-main);
+  color: #0D0D0D;
+  background-color: #FFFFFF;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -91,37 +91,37 @@ button {
 }
 
 .btn-primary {
-  background-color: transparent;
+  background-color: #000000;
   color: #FFFFFF;
-  border: 1px solid #B8B4AC;
+  border: 1px solid #000000;
 }
 
 .btn-primary:hover {
-  background-color: #FFFFFF;
-  color: #000000;
-  border-color: #FFFFFF;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-color: #333333;
   transform: translateY(-2px);
 }
 
 .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
 }
 
 .btn-outline:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-  background-color: rgba(184, 180, 172, 0.05);
+  border-color: #FFFFFF;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .btn-outline-dark {
-  border: 1px solid var(--color-accent);
-  color: var(--color-white);
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--color-accent);
-  color: #000000;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 /* Sections */
@@ -136,9 +136,9 @@ button {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.35em;
-  color: var(--color-accent);
+  color: #666666;
   display: inline-block;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-label::before {
@@ -146,7 +146,7 @@ button {
 }
 
 .section-label.light {
-  color: var(--color-accent);
+  color: #B8B4AC;
 }
 
 /* Page Transition Grid for Crossfade */

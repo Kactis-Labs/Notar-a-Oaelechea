@@ -5,7 +5,7 @@
       font-size: 52px;
       font-weight: 300;
       letter-spacing: 0.38em;
-      fill: #FFFFFF;
+      fill: #000000;
       text-anchor: middle;
       text-transform: uppercase;
     }
@@ -14,7 +14,7 @@
       font-size: 18px;
       font-weight: 400;
       letter-spacing: 0.65em;
-      fill: #B8B4AC;
+      fill: #555555;
       text-anchor: middle;
       text-transform: uppercase;
     }
