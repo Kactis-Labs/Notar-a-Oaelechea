@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   background-color: var(--color-cream);
-  padding: 0 0 var(--spacing-section) 0;
+  padding: var(--spacing-section) 0;
 }
 
 .services-header {
@@ -10,12 +10,15 @@
 }
 
 .services-title {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
-  color: var(--color-navy);
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .services-subtitle {
+  font-family: var(--font-sans);
   font-size: 1.125rem;
   color: var(--color-text-muted);
   max-width: 700px;
@@ -27,6 +30,7 @@
   gap: 1.5rem;
 }
 
+/* Conservar la estructura original de tarjetas de la plantilla (border-radius: 12px) */
 .service-card {
   background-color: var(--color-white);
   border-radius: 12px;
@@ -37,11 +41,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  border-color: var(--color-accent);
 }
 
 .service-img-wrapper {
@@ -68,14 +74,21 @@
 }
 
 .service-name {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-name {
+  color: var(--color-accent);
 }
 
 .service-desc {
-  font-size: 0.875rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
 }
@@ -84,7 +97,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--color-navy);
+  background-color: var(--color-primary);
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -98,6 +111,7 @@
 .service-card:hover .service-arrow {
   opacity: 1;
   transform: translateX(0);
+  background-color: var(--color-accent);
 }
 
 @media (max-width: 992px) {

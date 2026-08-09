@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿Qué especialidad requiere su caso o empresa?',
+    options: ['Asesoría Corporativa / Contratos', 'Patrimonio Civil / Inmuebles', 'Defensa Penal Empresarial', 'Gestión Laboral / SUNAFIL']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿Requiere patrocinio en un proceso judicial o arbitral?',
+    options: ['Sí, litigio judicial activo', 'Proceso arbitral o licitación', 'Sólo consultoría legal preventiva', 'Evaluación de contingencias']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Con qué grado de urgencia necesita la asesoría?',
+    options: ['Atención inmediata / Urgencia', 'En los próximos días', 'Planificación corporativa continua']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Ya ha recibido asesoría previa sobre este asunto?',
+    options: ['Sí, contamos con antecedentes', 'Es la primera consulta formal']
   }
 ];
 
@@ -62,9 +62,9 @@ export default function Quiz() {
         
         <div className="quiz-text-col">
           <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <h2 className="quiz-title">¿No sabes qué servicio necesitas?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responde 4 preguntas rápidas y te orientaremos sobre la especialidad legal idónea para tu caso. Sin compromiso.
           </p>
         </div>
         
@@ -125,8 +125,8 @@ export default function Quiz() {
                   transition={{ duration: 0.3 }}
                 >
                   <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>Casi terminamos</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Déjanos tus datos para mostrarte el resultado y enviarte la información a tu celular.
+                  <p style={{ fontSize: '0.95rem', color: '#333333', marginBottom: '2rem' }}>
+                    Déjanos tus datos para mostrarte la sugerencia de atención y contactarte a la brevedad.
                   </p>
                   
                   <form onSubmit={handleSubmitContact} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -134,16 +134,16 @@ export default function Quiz() {
                       type="text" 
                       placeholder="Nombre completo" 
                       className="quiz-option" 
-                      style={{ padding: '1rem', cursor: 'text' }}
+                      style={{ padding: '1rem', cursor: 'text', color: '#333333' }}
                       required 
                       value={contactData.name}
                       onChange={(e) => setContactData({...contactData, name: e.target.value})}
                     />
                     <input 
                       type="tel" 
-                      placeholder="Número de celular" 
+                      placeholder="Número de celular o WhatsApp" 
                       className="quiz-option" 
-                      style={{ padding: '1rem', cursor: 'text' }}
+                      style={{ padding: '1rem', cursor: 'text', color: '#333333' }}
                       required 
                       value={contactData.phone}
                       onChange={(e) => setContactData({...contactData, phone: e.target.value})}
@@ -153,7 +153,7 @@ export default function Quiz() {
                       className="btn btn-primary" 
                       style={{ width: '100%', marginTop: '1rem' }}
                     >
-                      Ver mi resultado
+                      Ver mi orientación
                     </button>
                   </form>
                 </motion.div>
@@ -167,9 +167,9 @@ export default function Quiz() {
                   transition={{ duration: 0.4 }}
                   style={{ textAlign: 'center', padding: '2rem 0' }}
                 >
-                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>¡Lo tenemos claro, {contactData.name.split(' ')[0]}!</h3>
-                  <p style={{ fontSize: '1.1rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
+                  <h3 className="quiz-question" style={{ marginBottom: '1rem', color: '#333333 !important' }}>¡Orientación lista, {contactData.name.split(' ')[0]}!</h3>
+                  <p style={{ fontSize: '1.05rem', color: '#333333', marginBottom: '2rem' }}>
+                    Un abogado especialista de nuestro bufete revisará tu caso y se comunicará contigo al {contactData.phone}.
                   </p>
                   
                   <Link to="/agendar-cita" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem' }}>
@@ -177,7 +177,7 @@ export default function Quiz() {
                   </Link>
                   <button 
                     onClick={handleReset} 
-                    style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}
+                    style={{ color: '#555555', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}
                   >
                     Volver a empezar
                   </button>

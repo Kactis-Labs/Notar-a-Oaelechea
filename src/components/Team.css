@@ -10,12 +10,15 @@
 }
 
 .team-title {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
-  color: var(--color-navy);
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .team-subtitle {
+  font-family: var(--font-sans);
   font-size: 1.125rem;
   color: var(--color-text-muted);
   max-width: 650px;
@@ -23,7 +26,7 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -32,12 +35,14 @@
   flex-direction: column;
 }
 
+/* Conservar la estructura de imagen redondeada original de la plantilla (border-radius: 12px) */
 .team-img-wrapper {
   width: 100%;
   aspect-ratio: 3/4;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .team-img {
@@ -52,20 +57,23 @@
 }
 
 .team-name {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 0.25rem;
 }
 
 .team-role {
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   color: var(--color-text-dark);
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
 .team-exp {
+  font-family: var(--font-sans);
   font-size: 0.75rem;
   color: var(--color-text-muted);
   font-weight: 600;
@@ -98,7 +106,7 @@
 
 @media (max-width: 576px) {
   .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

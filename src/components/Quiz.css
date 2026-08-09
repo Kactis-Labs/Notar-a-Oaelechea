@@ -13,17 +13,23 @@
   align-items: center;
 }
 
+/* Regla 3 AGENTS.md: Contraste automático en títulos de componentes con fondo oscuro */
 .quiz-title {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
   margin-bottom: 1.5rem;
 }
 
 .quiz-subtitle {
+  font-family: var(--font-sans);
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   max-width: 450px;
 }
 
+/* Conservar la tarjeta redondeada de la plantilla original (border-radius: 16px) */
 .quiz-card {
   background-color: var(--color-cream);
   border-radius: 16px;
@@ -51,18 +57,21 @@
 
 .quiz-progress-bar {
   width: 24px;
-  height: 2px;
-  background-color: var(--color-gray);
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 
 .quiz-progress-bar.active {
-  background-color: var(--color-navy);
+  background-color: var(--color-accent);
 }
 
+/* Regla 3 AGENTS.md: Contraste en título de pregunta */
 .quiz-question {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 2rem;
-  color: var(--color-navy);
+  font-weight: 700;
+  color: var(--color-primary) !important;
   margin-bottom: 2rem;
 }
 
@@ -73,6 +82,7 @@
   margin-bottom: 2rem;
 }
 
+/* Conservar opciones de la plantilla original (border-radius: 8px) */
 .quiz-option {
   width: 100%;
   text-align: left;
@@ -81,18 +91,18 @@
   border: 1px solid var(--color-gray);
   border-radius: 8px;
   font-size: 1rem;
-  color: var(--color-navy);
+  color: var(--color-primary);
   transition: all 0.2s ease;
 }
 
 .quiz-option:hover, .quiz-option:focus {
-  border-color: var(--color-navy);
+  border-color: var(--color-accent);
   outline: none;
 }
 
 .quiz-option.selected {
-  border-color: var(--color-navy);
-  background-color: var(--color-navy);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
   color: var(--color-white);
 }
 

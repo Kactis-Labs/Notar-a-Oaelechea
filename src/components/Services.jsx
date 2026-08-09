@@ -9,10 +9,10 @@ export default function Services() {
     <section className="services-section">
       <div className="container">
         <div className="services-header">
-          <div className="section-label">Nuestros Servicios</div>
-          <h2 className="services-title">Seis trámites. Un mismo respaldo.</h2>
+          <div className="section-label">Áreas de Práctica</div>
+          <h2 className="services-title">Respaldo Legal Multidisciplinario</h2>
           <p className="services-subtitle">
-            Cada trámite notarial es distinto. Llevamos tres décadas resolviendo los seis tipos de gestión más solicitados en Lima.
+            Soluciones jurídicas integrales y especializadas para proteger los intereses de empresas y personas en Trujillo.
           </p>
         </div>
         

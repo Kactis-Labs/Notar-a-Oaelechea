@@ -3,12 +3,12 @@ import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
 import equipoHero from '../assets/equipo-hero.png';
-import '../components/Hero.css'; // Reusing full-screen hero styles
+import '../components/Hero.css';
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
+  const titular = teamMembers.find(m => m.id === 'carlos-perez') || teamMembers[0];
+  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-perez');
 
   return (
     <div className="team-page">
@@ -18,7 +18,7 @@ export default function TeamPage() {
           <div className="hero-bg">
             <img 
               src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              alt="Equipo de abogados Pérez Capurro Vásquez y Alvarado" 
             />
             <div className="hero-overlay"></div>
           </div>
@@ -26,9 +26,9 @@ export default function TeamPage() {
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <h1 className="hero-title">Profesionales de amplia<br/>solvencia y trayectoria.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Por más de 15 años, hemos acompañado a empresas y personas en Trujillo protegiendo sus intereses corporativos y patrimoniales.
               </p>
             </div>
           </div>
@@ -36,12 +36,12 @@ export default function TeamPage() {
       </div>
 
       <div style={{ backgroundColor: 'var(--color-white)' }}>
-        {/* 2. SECCIÓN DESTACADA DEL NOTARIO TITULAR */}
+        {/* 2. SECCIÓN DESTACADA DEL SOCIO TITULAR */}
         <section className="titular-section section-padding">
           <div className="container titular-layout">
             <div className="titular-info">
               <h2 className="titular-name">{titular.name}</h2>
-              <p className="titular-role">{titular.role} &middot; {titular.exp}</p>
+              <p className="titular-role">{titular.role} · {titular.exp}</p>
               <p className="titular-bio">{titular.bio}</p>
               
               <div className="titular-registry">
@@ -49,17 +49,19 @@ export default function TeamPage() {
                 <span>{titular.registry}</span>
               </div>
 
-              <div className="titular-recognitions">
-                <h3 className="recognitions-title">Reconocimientos y Distinciones</h3>
-                <ul>
-                  {titular.recognitions.map((rec, idx) => (
-                    <li key={idx}>
-                      <Award size={18} className="icon-gold" />
-                      <span>{rec}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {titular.recognitions && (
+                <div className="titular-recognitions">
+                  <h3 className="recognitions-title">Reconocimientos y Distinciones</h3>
+                  <ul>
+                    {titular.recognitions.map((rec, idx) => (
+                      <li key={idx}>
+                        <Award size={18} className="icon-gold" />
+                        <span>{rec}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
             <div className="titular-image-wrapper">
               <img src={titular.img} alt={titular.name} className="titular-image" />
@@ -94,7 +96,7 @@ export default function TeamPage() {
         {/* 4. CTA DE CIERRE */}
         <CTA />
 
-        {/* 5. CONTACTO / INFO NOTARIA */}
+        {/* 5. CONTACTO */}
         <Contact />
       </div>
     </div>

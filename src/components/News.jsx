@@ -4,7 +4,6 @@ import { articlesData } from '../data/articlesData';
 import './News.css';
 
 export default function News() {
-  // Tomar solo los primeros 3 artículos para la página de inicio
   const latestNews = articlesData.slice(0, 3);
 
   return (
@@ -12,7 +11,7 @@ export default function News() {
       <div className="container">
         <div className="news-header">
           <div>
-            <div className="section-label">Recursos & Noticias</div>
+            <div className="section-label">Recursos y Publicaciones</div>
             <h2 className="news-title">Manténgase Informado.</h2>
           </div>
         </div>
@@ -37,7 +36,7 @@ export default function News() {
         
         <div className="news-footer" style={{ marginTop: '3rem', textAlign: 'center' }}>
           <Link to="/recursos" className="btn btn-outline-dark" style={{ padding: '1rem 3rem' }}>
-            Ver más artículos
+            Ver todos los artículos
           </Link>
         </div>
       </div>
