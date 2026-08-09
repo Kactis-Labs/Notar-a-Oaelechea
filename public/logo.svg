@@ -1,26 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" fill="none">
-  <!-- Geometric Pillar & "B" Emblem -->
-  <g transform="translate(15, 12)">
-    <!-- Top Capital Line -->
-    <path d="M 22 24 L 92 24" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 130" fill="none">
+  <!-- Isotipo Barba & Asociados -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(10, 10)">
+    <!-- Top Horizontal Beam -->
+    <path d="M 18 20 L 82 20" />
     
-    <!-- Volute Scroll & B Loops -->
-    <!-- Left Volute & Pillar Line 1 -->
-    <path d="M 38 24 C 20 24 16 36 28 44 C 38 48 48 48 48 60 L 48 108" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-    <!-- Pillar Line 2 -->
-    <line x1="33" y1="52" x2="33" y2="108" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+    <!-- Outer Volute Capital & Stem -->
+    <path d="M 32 20 C 14 20 12 34 24 42 C 32 47 42 47 42 58 L 42 104" />
     
-    <!-- Letter B Loops -->
-    <!-- Top Loop -->
-    <path d="M 48 24 C 85 24 88 64 48 64" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" />
-    <!-- Bottom Loop -->
-    <path d="M 48 64 C 92 64 95 108 33 108" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" />
+    <!-- Inner Vertical Line -->
+    <line x1="28" y1="48" x2="28" y2="104" />
+    
+    <!-- B Top Loop -->
+    <path d="M 42 20 C 80 20 84 58 42 58" />
+    
+    <!-- B Bottom Loop -->
+    <path d="M 42 58 C 86 58 90 104 28 104" />
   </g>
   
-  <!-- Typography Text Group -->
-  <g transform="translate(130, 0)">
-    <text x="0" y="50" fill="#FFFFFF" font-family="'Montserrat', 'Poppins', sans-serif" font-weight="900" font-size="34" letter-spacing="4">BARBA &amp;</text>
-    <text x="0" y="88" fill="#FFFFFF" font-family="'Montserrat', 'Poppins', sans-serif" font-weight="900" font-size="34" letter-spacing="4">ASOCIADOS</text>
-    <text x="2" y="118" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="600" font-size="16" letter-spacing="5" opacity="0.9">ESTUDIO JURÍDICO</text>
-  </g>
+  <!-- Text Brand -->
+  <text x="125" y="46" fill="#FFFFFF" font-family="'Montserrat', 'Poppins', sans-serif" font-weight="800" font-size="30" letter-spacing="3">BARBA &amp;</text>
+  <text x="125" y="82" fill="#FFFFFF" font-family="'Montserrat', 'Poppins', sans-serif" font-weight="800" font-size="30" letter-spacing="3">ASOCIADOS</text>
+  <text x="126" y="108" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="600" font-size="14" letter-spacing="5" opacity="0.95">ESTUDIO JURÍDICO</text>
 </svg>

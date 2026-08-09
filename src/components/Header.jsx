@@ -23,11 +23,17 @@ export default function Header() {
     setMenuOpen(false);
   }, [location]);
 
+  const isScrolledState = scrolled || forceScrolled || menuOpen;
+
   return (
-    <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolledState ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo">
-          {brandConfig.name}
+        <Link to="/" className="logo-link">
+          <img 
+            src={isScrolledState ? "/logo-dark.svg" : "/logo.svg"} 
+            alt={brandConfig.name} 
+            className="logo-img" 
+          />
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
