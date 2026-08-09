@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
-  <!-- Rotated Diamonds Mosaic Emblem -->
-  <g transform="translate(25, 25)">
-    <!-- Top-Left Diamond (Sky Blue) -->
-    <polygon points="30,0 52,22 30,44 8,22" fill="#28B6EA" />
+  <!-- Rotated 2x2 Diamonds Mosaic Emblem -->
+  <g transform="translate(15, 5)">
+    <!-- Square 1 (Top-Left: Sky Blue) -->
+    <polygon points="35,10 55,30 35,50 15,30" fill="#28B6EA" />
     
-    <!-- Top-Right Diamond (Corporate Blue) -->
-    <polygon points="58,28 80,50 58,72 36,50" fill="#0072CE" />
+    <!-- Square 2 (Top-Right: Corporate Blue) -->
+    <polygon points="60,35 80,55 60,75 40,55" fill="#0072CE" />
     
-    <!-- Bottom-Left Diamond (Dark Navy) -->
-    <polygon points="30,56 52,78 30,100 8,78" fill="#1B3A6B" />
+    <!-- Square 3 (Bottom-Left: Dark Navy) -->
+    <polygon points="35,60 55,80 35,100 15,80" fill="#1B3A6B" />
     
-    <!-- Bottom-Right Diamond (Deep Navy) -->
-    <polygon points="58,84 80,106 58,128 36,106" fill="#0D1E3A" />
+    <!-- Square 4 (Bottom-Right: Deep Navy) -->
+    <polygon points="60,85 80,105 60,125 40,105" fill="#0D1E3A" />
   </g>
 
-  <!-- Typography Text Group (Dark Navy Text for Light Header / Scrolled) -->
-  <g transform="translate(130, 0)">
-    <text x="0" y="46" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="30" letter-spacing="0.5">CHAVEZ, PRADO,</text>
-    <text x="0" y="82" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="30" letter-spacing="0.5">MENDOZA &amp; SALDAÑA</text>
-    <text x="2" y="112" fill="#E8A33D" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="600" font-size="16" letter-spacing="6">ABOGADOS</text>
+  <!-- Typography Text Group (Dark Navy Text for Scrolled Light Header) -->
+  <g transform="translate(125, 0)">
+    <text x="0" y="44" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="29" letter-spacing="0.5">CHAVEZ, PRADO,</text>
+    <text x="0" y="80" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="29" letter-spacing="0.5">MENDOZA &amp; SALDAÑA</text>
+    <text x="2" y="110" fill="#E8A33D" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="700" font-size="16" letter-spacing="6">ABOGADOS</text>
   </g>
 </svg>

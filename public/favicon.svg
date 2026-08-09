@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
   <rect width="120" height="120" rx="20" fill="#FFFFFF"/>
-  <g transform="translate(15, -4)">
-    <polygon points="30,0 52,22 30,44 8,22" fill="#28B6EA" />
-    <polygon points="58,28 80,50 58,72 36,50" fill="#0072CE" />
-    <polygon points="30,56 52,78 30,100 8,78" fill="#1B3A6B" />
-    <polygon points="58,84 80,106 58,128 36,106" fill="#0D1E3A" />
+  <g transform="translate(12, -4)">
+    <polygon points="35,10 55,30 35,50 15,30" fill="#28B6EA" />
+    <polygon points="60,35 80,55 60,75 40,55" fill="#0072CE" />
+    <polygon points="35,60 55,80 35,100 15,80" fill="#1B3A6B" />
+    <polygon points="60,85 80,105 60,125 40,105" fill="#0D1E3A" />
   </g>
 </svg>
