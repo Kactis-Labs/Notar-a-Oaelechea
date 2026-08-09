@@ -1,51 +1,30 @@
 export const teamMembers = [
   {
-    id: 'carlos-olaechea',
-    name: 'Carlos Olaechea',
-    role: 'Notario Titular',
-    exp: '30 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
-    bio: 'Abogado por la Pontificia Universidad Católica del Perú, con más de tres décadas dedicadas a brindar seguridad jurídica y fe pública. Su vasta trayectoria garantiza la excelencia y el rigor legal en cada trámite confiado a nuestra notaría.',
-    registry: 'Notario Público — Registro N° 1234, Colegio de Notarios de Lima',
+    id: 'roberto-bobadilla',
+    name: 'Dr. Roberto Bobadilla',
+    role: 'Socio Fundador',
+    exp: 'Más de 20 Años de Experiencia Legal',
+    img: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop',
+    bio: 'Abogado especializado en Derecho Corporativo y Estrategia Procesal por la Universidad Nacional de Trujillo. Posee amplia trayectoria en el patrocinio de juicios complejos, litigios comerciales y asesoría de empresas.',
+    registry: 'Colegio de Abogados de La Libertad — Reg. N° 1890',
     recognitions: [
-      'Reconocimiento al Mérito Notarial — Colegio de Notarios de Lima, 2018',
-      'Ponente en el Congreso Notarial Latinoamericano, 2021',
-      'Miembro del Comité de Ética Notarial, 2015-2020'
+      'Miembro de la Orden del Colegio de Abogados de La Libertad',
+      'Asesor legal de destacadas empresas comerciales del norte del país',
+      'Especialista en Litigación Oral y Estrategia Probatoria'
     ]
   },
   {
-    id: 'mariana-rios',
-    name: 'Mariana Ríos',
-    role: 'Abogada Senior',
-    exp: '15 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'fernando-vargas',
-    name: 'Fernando Vargas',
-    role: 'Especialista Registral',
-    exp: '12 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'elena-torres',
-    name: 'Elena Torres',
-    role: 'Asesora Corporativa',
-    exp: '8 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'luis-mendoza',
-    name: 'Luis Mendoza',
-    role: 'Asesor Legal Junior',
-    exp: '4 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'patricia-castro',
-    name: 'Patricia Castro',
-    role: 'Coordinadora de Atención',
-    exp: '6 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=600&auto=format&fit=crop'
+    id: 'carmen-bobadilla',
+    name: 'Dra. Carmen Bobadilla',
+    role: 'Socia Principal',
+    exp: 'Más de 16 Años de Experiencia en Derecho Laboral y Civil',
+    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    bio: 'Especialista en Derecho Laboral Empresarial y Protección Patrimonial. Cuenta con estudios de posgrado en Relaciones Laborales y Gestión Contractual, destacando por su enfoque preventivo y humano.',
+    registry: 'Colegio de Abogados de La Libertad — Reg. N° 2310',
+    recognitions: [
+      'Consultora externa en prevención de riesgos laborales SUNAFIL',
+      'Especialista en Sucesiones Patrimoniales e Inmobiliario',
+      'Ponente en eventos de Actualización Laboral Empresarial'
+    ]
   }
 ];
