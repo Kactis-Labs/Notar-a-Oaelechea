@@ -14,28 +14,28 @@
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.38em;
-        fill: #EA580C;
+        fill: #E5E7EB;
         text-transform: uppercase;
       }
     </style>
   </defs>
 
-  <!-- MP Block Emblem Faithful Recreation -->
+  <!-- MP Block Emblem - Monochrome Black & White -->
   <g transform="translate(195, 10)">
-    <!-- Main Black Background Block -->
-    <rect x="0" y="0" width="110" height="110" fill="#0A0D12" rx="4" />
+    <!-- Main Black Square -->
+    <rect x="0" y="0" width="110" height="110" fill="#000000" rx="3" />
     
-    <!-- Vertical Split Line in Orange Accent -->
-    <line x1="55" y1="0" x2="55" y2="110" stroke="#EA580C" stroke-width="2.5" />
+    <!-- Vertical White Gap Line -->
+    <line x1="55" y1="0" x2="55" y2="110" stroke="#FFFFFF" stroke-width="2.5" />
     
-    <!-- M on Left Side -->
+    <!-- White Letter M on Left -->
     <text x="28" y="76" font-family="'Playfair Display', serif" font-size="64" font-weight="700" fill="#FFFFFF" text-anchor="middle">M</text>
 
-    <!-- P on Right Side -->
+    <!-- White Letter P on Right -->
     <text x="82" y="76" font-family="'Playfair Display', serif" font-size="64" font-weight="700" fill="#FFFFFF" text-anchor="middle">P</text>
   </g>
 
-  <!-- Typography Below -->
+  <!-- Typography Below (Pure White & Light Gray) -->
   <text x="250" y="165" text-anchor="middle" class="mp-text-top">MEDINA DE LA PAZ</text>
   <text x="250" y="198" text-anchor="middle" class="mp-text-bot">CONSULTORES</text>
 </svg>
