@@ -8,11 +8,10 @@ import aboutHero from '../assets/about-hero.png';
 import aboutPhilosophy from '../assets/about-philosophy.png';
 import aboutCommitment from '../assets/about-commitment.png';
 import '../components/Hero.css';
-import '../pages/TeamPage.css'; // For the team card styles
+import '../pages/TeamPage.css';
 import './About.css';
 
 export default function About() {
-  // Get first 3 team members safely
   const previewTeam = teamMembers.slice(0, 3);
 
   return (
@@ -21,37 +20,37 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src={aboutHero} alt="Sobre Solutia Legal Partners" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Soluciones Prácticas,<br/>Estrategia y Prevención.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Fundada en 2024 en Trujillo y Lima, Solutia Legal Partners nació para transformar la asesoría jurídica corporativa y personal con agilidad, transparencia y prevención de riesgos.
               </p>
             </div>
           </div>
         </section>
       </div>
 
-      <div style={{ backgroundColor: 'var(--color-cream)' }}>
+      <div style={{ backgroundColor: 'var(--color-light-bg)' }}>
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA FIRMA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                En {brandConfig.foundedYear}, los abogados <strong>Alonso Solano</strong> y <strong>Sebastián Alvarado</strong> unieron su experiencia estratégica para fundar <strong>Solutia Legal Partners</strong>. Identificaron que tanto las empresas en crecimiento como las familias de la región norte del Perú necesitaban representación legal moderna, directa y orientada a la prevención de conflictos.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "La mejor estrategia legal no es la que resuelve un pleito de años, sino la que evita que el problema exista desde el primer día."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Desde nuestras oficinas en <strong>Torre Natasha (Av. América Oeste, Trujillo)</strong> y nuestra sede en Lima, lideramos un equipo interdisciplinario enfocado en brindar respuestas claras en derecho mercantil, civil, penal, laboral y una práctica especializada en recuperar patrimonios afectados por fraudes bancarios.
               </p>
             </div>
           </div>
@@ -65,10 +64,10 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Creemos en un servicio legal transparente, rápido y sin rodeos innecesarios.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Entendemos el valor del tiempo de nuestros clientes. Por ello, combinamos rigor técnico con herramientas de gestión ágil para brindar soluciones jurídicas eficientes a la medida de cada caso.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
@@ -80,8 +79,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">NUESTROS PILARES</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos fundamentales de Solutia Legal Partners.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,24 +88,24 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Diagnóstico Preventivo y Honesto.</h3>
+                    <p className="commitment-desc">Evaluamos la viabilidad real de su caso desde la primera reunión. No prometemos metas inalcanzables, trazamos rutas estratégicas transparentes.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Lenguaje Claro y Directo.</h3>
+                    <p className="commitment-desc">Traducimos la complejidad jurídica en conclusiones accionables. Explicamos cada etapa procesal o comercial de manera accesible.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Respuesta de Emergencia y Cobertura Regional.</h3>
+                    <p className="commitment-desc">Atención rápida ante contingencias de fraudes bancarios y denuncias corporativas en Trujillo, La Libertad y Lima.</p>
                   </div>
                 </div>
 
@@ -123,8 +122,8 @@ export default function About() {
         <section className="team-preview-section section-padding">
           <div className="container">
             <div className="team-preview-header">
-              <h2 className="team-preview-title">Los profesionales que atenderán su caso.</h2>
-              <p className="team-preview-subtitle">Seis especialistas. Un mismo respaldo legal.</p>
+              <h2 className="team-preview-title">Liderado por Socios Fundadores.</h2>
+              <p className="team-preview-subtitle">Alonso Solano & Sebastián Alvarado</p>
             </div>
             
             <div className="team-grid">
@@ -148,13 +147,14 @@ export default function About() {
           </div>
         </section>
 
-        {/* 6. CTA DE CIERRE (Solo CTA) */}
+        {/* 6. CTA DE CIERRE */}
         <CTA />
         
-        {/* 7. CONTACTO / FIRMA */}
+        {/* 7. CONTACTO */}
         <Contact />
 
       </div>
     </div>
   );
 }
+

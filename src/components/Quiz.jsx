@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿Qué tipo de necesidad o contingencia legal requiere atender?',
+    options: ['Estructuración de empresa o acuerdo de socios', 'Recuperación de dinero por fraude bancario', 'Contratos civiles o saneamiento de inmuebles', 'Defensa penal corporativa o laboral']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿Cuenta con documentación sustentatoria o notificaciones previas?',
+    options: ['Sí, tengo la documentación completa', 'Tengo documentación parcial', 'No cuento con documentos aún', 'Necesito un peritaje o evaluación inicial']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿En qué ciudad requiere la representación o asesoría principal?',
+    options: ['Trujillo / La Libertad', 'Lima Metropolitana', 'Otras regiones del Perú']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Qué nivel de urgencia tiene la gestión legal?',
+    options: ['Emergencia inmediata (24h)', 'Próximos días', 'Evaluación preventiva continua']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Diagnóstico Legal Rápido</div>
+          <h2 className="quiz-title">¿Necesita evaluar su situación legal?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responde 4 preguntas breves y nuestro equipo de Solutia Legal Partners analizará la ruta más efectiva para su caso.
           </p>
         </div>
         

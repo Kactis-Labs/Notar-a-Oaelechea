@@ -7,12 +7,12 @@ export default function CTA() {
     <section className="service-cta">
       <div className="container cta-layout">
         <div className="cta-content">
-          <h2>No tiene por qué resolverlo solo.</h2>
-          <p>Permita que nuestro equipo de especialistas le asesore para llevar a cabo su trámite notarial con total seguridad, rapidez y transparencia.</p>
-          <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
+          <h2>Proteja su patrimonio con estrategia y certeza legal.</h2>
+          <p>Permita que Alonso Solano, Sebastián Alvarado y nuestro equipo le asesoren para prevenir contingencias y resolver asuntos legales de manera ágil.</p>
+          <Link to="/agendar-cita" className="btn btn-primary">Agendar una consulta</Link>
         </div>
         <div className="cta-image-wrapper">
-          <img src={ctaImage} alt="Asesoría notarial" />
+          <img src={ctaImage} alt="Asesoría legal estratégica - Solutia Legal Partners" />
         </div>
       </div>
     </section>

@@ -26,8 +26,8 @@ export default function Header() {
   return (
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo">
-          {brandConfig.name}
+        <Link to="/" className="logo-link">
+          <img src="/logo.svg" alt={brandConfig.name} className="logo-img" />
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

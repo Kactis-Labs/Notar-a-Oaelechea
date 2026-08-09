@@ -35,24 +35,24 @@ export default function Stats() {
       </div>
       
       <div className="container stats-container">
-        <div className="section-label">Números que respaldan</div>
+        <div className="section-label">Indicadores de Impacto</div>
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="500" suffix="+" /></h3>
+            <p className="stat-label">Casos y asesorías estratégicas</p>
           </div>
           <div className="stat-item">
             <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <p className="stat-label">Efectividad y prevención de contingencias</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="2024" /></h3>
+            <p className="stat-label">Año de fundación</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <h3 className="stat-number"><AnimatedCounter value="2" /></h3>
+            <p className="stat-label">Sedes (Trujillo y Lima)</p>
           </div>
         </div>
       </div>

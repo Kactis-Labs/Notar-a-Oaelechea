@@ -5,9 +5,10 @@ import './Hero.css';
 
 export default function Hero() {
   const { scrollY } = useScroll();
-  // Hacer el desenfoque muchísimo más lento y sutil, aplicado solo al fondo
   const filter = useTransform(scrollY, [0, 1500], ['blur(0px)', 'blur(8px)']);
   const opacity = useTransform(scrollY, [0, 1500], [1, 0.6]);
+
+  const titleParts = brandConfig.tagline.split(',');
 
   return (
     <div className="hero-wrapper">
@@ -15,30 +16,38 @@ export default function Hero() {
         <motion.div className="hero-bg" style={{ filter, opacity }}>
           <img 
             src="/hero-bg.png" 
-            alt="Consulta notarial" 
+            alt="Solutia Legal Partners - Asesoría Legal" 
           />
           <div className="hero-overlay"></div>
         </motion.div>
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">{brandConfig.tagline.split(',')[0]},<br/>{brandConfig.tagline.split(',')[1] || ''}</h1>
+            <div className="section-label">Firma Legal Tech & Prevención de Riesgos</div>
+            <h1 className="hero-title">
+              {titleParts[0]}<br/>
+              <span style={{ color: 'var(--color-orange)' }}>{titleParts[1] || ''}</span>
+            </h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
             </p>
             <div className="hero-actions">
-              <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
-              <Link to="/servicios" className="btn btn-outline">Ver servicios</Link>
+              <Link to="/agendar-cita" className="btn btn-primary">Agendar una consulta</Link>
+              <Link to="/servicios" className="btn btn-outline">Áreas de práctica</Link>
             </div>
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Notariado &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">Fundada en {brandConfig.foundedYear} &middot; Trujillo & Lima</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
-            <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
+            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1.2rem' }}>
+              Liderados por <strong>Alonso Solano</strong> y <strong>Sebastián Alvarado</strong>
+            </p>
+            <Link to="/agendar-cita" className="hero-card-btn">Solicitar evaluación</Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
