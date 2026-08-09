@@ -7,12 +7,12 @@ export default function CTA() {
     <section className="service-cta">
       <div className="container cta-layout">
         <div className="cta-content">
-          <h2>No tiene por qué resolverlo solo.</h2>
-          <p>Permita que nuestro equipo de especialistas le asesore para llevar a cabo su trámite notarial con total seguridad, rapidez y transparencia.</p>
-          <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
+          <h2>Respaldo procesal y estrategia legal de primer nivel.</h2>
+          <p>Confíe su patrimonio e intereses corporativos al patrocinio técnico del Dr. Carlos Escalante, Dr. Miguel Ulloa y nuestro equipo legal.</p>
+          <Link to="/agendar-cita" className="btn btn-primary">Agendar una consulta</Link>
         </div>
         <div className="cta-image-wrapper">
-          <img src={ctaImage} alt="Asesoría notarial" />
+          <img src={ctaImage} alt="Defensa legal estratégica - Escalante, Ulloa & Asociados" />
         </div>
       </div>
     </section>

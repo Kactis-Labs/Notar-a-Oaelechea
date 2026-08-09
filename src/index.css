@@ -1,17 +1,25 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-navy: #1B3A57;
+  --color-navy-dark: #12283D;
+  --color-navy-light: #244B6E;
+  --color-black: #1B3A57;
+  
+  --color-gold: #B8934F;
+  --color-gold-hover: #9E7B3B;
+  --color-silver: #C9CDD3;
+  --color-orange: #B8934F; /* compatibilidad de tono acento */
+  
+  --color-cream: #F2F5F8;
+  --color-light-bg: #F2F5F8;
   --color-white: #FFFFFF;
-  --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
-  --color-text-muted: #666666;
+  --color-gray: #E2E7EC;
+  --color-dark-gray: #1E293B;
+  --color-text-dark: #1B3A57;
+  --color-text-muted: #5C6B73;
 
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Montserrat', 'Oswald', sans-serif;
+  --font-sans: 'Lato', 'Source Sans Pro', sans-serif;
   
   --spacing-section: 6rem;
   --max-width: 1200px;
@@ -32,8 +40,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -66,41 +74,45 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.75rem;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   border-radius: 4px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .btn-primary {
   background-color: var(--color-gold);
-  color: #1A1A1A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(184, 147, 79, 0.25);
 }
 
 .btn-primary:hover {
   background-color: var(--color-gold-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 147, 79, 0.4);
 }
 
 .btn-outline {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-silver);
   color: var(--color-white);
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
 }
 
 .btn-outline-dark {
-  border: 1px solid var(--color-black);
-  color: var(--color-black);
+  border: 1px solid var(--color-navy);
+  color: var(--color-navy);
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--color-black);
-  color: var(--color-gold);
+  background-color: var(--color-navy);
+  color: var(--color-white);
 }
 
 /* Sections */
@@ -108,13 +120,13 @@ button {
   padding: var(--spacing-section) 0;
 }
 
-/* Subtítulos Unboxed */
+/* Subtítulos Unboxed Estrictos (Dorado Sobrio #B8934F) */
 .section-label {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.825rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: var(--color-gold);
   display: inline-flex;
   align-items: center;
@@ -129,11 +141,11 @@ button {
   height: 8px;
   border-radius: 50%;
   background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
+  box-shadow: 0 0 8px rgba(184, 147, 79, 0.7);
 }
 
 .section-label.light {
-  color: #F7F6F4;
+  color: var(--color-gold);
 }
 
 /* Page Transition Grid for Crossfade */
@@ -162,3 +174,4 @@ button {
     font-size: 0.85rem;
   }
 }
+

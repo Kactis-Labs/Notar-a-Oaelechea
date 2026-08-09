@@ -1,51 +1,52 @@
 export const teamMembers = [
   {
-    id: 'carlos-olaechea',
-    name: 'Carlos Olaechea',
-    role: 'Notario Titular',
-    exp: '30 Años de Experiencia',
+    id: 'carlos-escalante',
+    name: 'Dr. Carlos Escalante',
+    role: 'Socio Principal',
+    exp: '22 Años de Experiencia Corporativa & Arbitraje',
     img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
-    bio: 'Abogado por la Pontificia Universidad Católica del Perú, con más de tres décadas dedicadas a brindar seguridad jurídica y fe pública. Su vasta trayectoria garantiza la excelencia y el rigor legal en cada trámite confiado a nuestra notaría.',
-    registry: 'Notario Público — Registro N° 1234, Colegio de Notarios de Lima',
+    bio: 'Abogado egresado con honores de la Universidad Nacional de Trujillo, con estudios de postgrado en Derecho Mercantil y Arbitraje Comercial. Socio fundador de la firma, reconocido por su liderazgo en estructuración societaria, fusiones y litigación de alto impacto en el norte del país.',
+    registry: 'Colegio de Abogados de La Libertad — Reg. N° 2410',
     recognitions: [
-      'Reconocimiento al Mérito Notarial — Colegio de Notarios de Lima, 2018',
-      'Ponente en el Congreso Notarial Latinoamericano, 2021',
-      'Miembro del Comité de Ética Notarial, 2015-2020'
+      'Árbitro incorporado a la Nómina del Centro de Arbitraje de la Cámara de Comercio de La Libertad',
+      'Ex-miembro de la Comisión de Derecho Comercial y Corporativo del CALL',
+      'Expositor principal en seminarios regionales de Gobierno Corporativo'
+    ]
+  },
+  {
+    id: 'miguel-ulloa',
+    name: 'Dr. Miguel Ulloa',
+    role: 'Socio Principal',
+    exp: '18 Años de Experiencia en Litigación Penal & Compliance',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
+    bio: 'Magíster en Derecho Penal y Procesal Penal por la Universidad de Piura. Lidera el área de Litigación Penal Corporativa y Compliance del estudio. Cuenta con amplia trayectoria en la defensa de ejecutivos y empresas frente a investigaciones fiscales complejas.',
+    registry: 'Colegio de Abogados de La Libertad — Reg. N° 2855',
+    recognitions: [
+      'Miembro de la Sociedad Peruana de Ciencias Penales',
+      'Consultor en Programas de Prevención Penal Corporativa (Compliance)',
+      'Catedrático universitario en Derecho Procesal Penal'
     ]
   },
   {
     id: 'mariana-rios',
-    name: 'Mariana Ríos',
-    role: 'Abogada Senior',
-    exp: '15 Años de Experiencia',
+    name: 'Dra. Mariana Ríos',
+    role: 'Asociada Senior - Área Tributaria',
+    exp: '14 Años de Experiencia',
     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'
   },
   {
     id: 'fernando-vargas',
-    name: 'Fernando Vargas',
-    role: 'Especialista Registral',
+    name: 'Dr. Fernando Vargas',
+    role: 'Asociado Senior - Derecho Civil Patrimonial',
     exp: '12 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'elena-torres',
-    name: 'Elena Torres',
-    role: 'Asesora Corporativa',
-    exp: '8 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'luis-mendoza',
-    name: 'Luis Mendoza',
-    role: 'Asesor Legal Junior',
-    exp: '4 Años de Experiencia',
     img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
   },
   {
-    id: 'patricia-castro',
-    name: 'Patricia Castro',
-    role: 'Coordinadora de Atención',
-    exp: '6 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=600&auto=format&fit=crop'
+    id: 'elena-torres',
+    name: 'Dra. Elena Torres',
+    role: 'Especialista en Contratación Pública & OSCE',
+    exp: '9 Años de Experiencia',
+    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
   }
 ];
+

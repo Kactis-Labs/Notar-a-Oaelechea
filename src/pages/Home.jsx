@@ -11,13 +11,15 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Stats />
-      <Services />
-      <Quiz />
-      <Team />
-      <News />
-      <CTA />
-      <Contact />
+      <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'var(--color-white)' }}>
+        <Stats />
+        <Services />
+        <Quiz />
+        <Team />
+        <News />
+        <CTA />
+        <Contact />
+      </div>
     </main>
   );
 }

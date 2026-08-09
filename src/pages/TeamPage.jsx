@@ -3,22 +3,22 @@ import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
 import equipoHero from '../assets/equipo-hero.png';
-import '../components/Hero.css'; // Reusing full-screen hero styles
+import '../components/Hero.css';
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
+  const founders = teamMembers.filter(m => m.role === 'Socio Principal');
+  const restOfTeam = teamMembers.filter(m => m.role !== 'Socio Principal');
 
   return (
     <div className="team-page">
-      {/* 1. HERO (Full Screen, static scroll) */}
+      {/* 1. HERO */}
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
             <img 
               src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              alt="Equipo de abogados Escalante, Ulloa & Asociados" 
             />
             <div className="hero-overlay"></div>
           </div>
@@ -26,9 +26,9 @@ export default function TeamPage() {
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <h1 className="hero-title">Solvencia Técnica<br/>y Compromiso Institucional.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Socios y asociados con sólida trayectoria en litigios de alta complejidad, derecho corporativo y protección de activos en Trujillo.
               </p>
             </div>
           </div>
@@ -36,34 +36,44 @@ export default function TeamPage() {
       </div>
 
       <div style={{ backgroundColor: 'var(--color-white)' }}>
-        {/* 2. SECCIÓN DESTACADA DEL NOTARIO TITULAR */}
+        {/* 2. SECCIÓN DESTACADA DE LOS SOCIOS PRINCIPALES */}
         <section className="titular-section section-padding">
-          <div className="container titular-layout">
-            <div className="titular-info">
-              <h2 className="titular-name">{titular.name}</h2>
-              <p className="titular-role">{titular.role} &middot; {titular.exp}</p>
-              <p className="titular-bio">{titular.bio}</p>
-              
-              <div className="titular-registry">
-                <CheckCircle size={20} className="icon-gold" />
-                <span>{titular.registry}</span>
-              </div>
+          <div className="container">
+            <div className="section-label" style={{ marginBottom: '2rem' }}>SOCIOS PRINCIPALES</div>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+              {founders.map((founder) => (
+                <div className="titular-layout" key={founder.id}>
+                  <div className="titular-info">
+                    <h2 className="titular-name">{founder.name}</h2>
+                    <p className="titular-role">{founder.role} &middot; {founder.exp}</p>
+                    <p className="titular-bio">{founder.bio}</p>
+                    
+                    <div className="titular-registry">
+                      <CheckCircle size={20} style={{ color: 'var(--color-gold)' }} />
+                      <span>{founder.registry}</span>
+                    </div>
 
-              <div className="titular-recognitions">
-                <h3 className="recognitions-title">Reconocimientos y Distinciones</h3>
-                <ul>
-                  {titular.recognitions.map((rec, idx) => (
-                    <li key={idx}>
-                      <Award size={18} className="icon-gold" />
-                      <span>{rec}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="titular-image-wrapper">
-              <img src={titular.img} alt={titular.name} className="titular-image" />
-              <div className="titular-image-deco"></div>
+                    {founder.recognitions && (
+                      <div className="titular-recognitions">
+                        <h3 className="recognitions-title">Distinciones y Trayectoria</h3>
+                        <ul>
+                          {founder.recognitions.map((rec, idx) => (
+                            <li key={idx}>
+                              <Award size={18} style={{ color: 'var(--color-gold)' }} />
+                              <span>{rec}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                  <div className="titular-image-wrapper">
+                    <img src={founder.img} alt={founder.name} className="titular-image" />
+                    <div className="titular-image-deco"></div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -71,8 +81,8 @@ export default function TeamPage() {
         {/* 3. RESTO DEL EQUIPO */}
         <section className="team-grid-section section-padding bg-light">
           <div className="container">
-            <div className="section-label">Especialistas y Asesores</div>
-            <h2 className="team-grid-title">Un equipo multidisciplinario a su servicio</h2>
+            <div className="section-label">Abogados Asociados</div>
+            <h2 className="team-grid-title">Especialistas al servicio de nuestros representados</h2>
             
             <div className="team-grid">
               {restOfTeam.map(member => (
@@ -94,9 +104,10 @@ export default function TeamPage() {
         {/* 4. CTA DE CIERRE */}
         <CTA />
 
-        {/* 5. CONTACTO / INFO NOTARIA */}
+        {/* 5. CONTACTO */}
         <Contact />
       </div>
     </div>
   );
 }
+

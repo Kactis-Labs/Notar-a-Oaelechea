@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿Qué tipo de materia o asesoría legal requiere consultar?',
+    options: ['Litigio judicial o arbitraje comercial', 'Consultoría corporativa y societaria', 'Derecho civil patrimonial y propiedades', 'Defensa penal de la empresa & compliance']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿Cuenta con antecedentes o notificaciones procesales activas?',
+    options: ['Sí, cuento con expediente o notificación previa', 'Tengo documentación de sustento parcial', 'No cuento con documentos aún', 'Requiero una auditoría legal preventiva']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿En qué jurisdicción requiere la representación legal principal?',
+    options: ['Trujillo / La Libertad', 'Lima Metropolitana', 'Otras regiones del Perú']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Qué prioridad tiene la atención de la materia consultada?',
+    options: ['Atención urgente procesal', 'Próximos días', 'Consultoría permanente']
   }
 ];
 

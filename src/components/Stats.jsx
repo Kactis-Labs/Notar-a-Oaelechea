@@ -35,24 +35,24 @@ export default function Stats() {
       </div>
       
       <div className="container stats-container">
-        <div className="section-label">Números que respaldan</div>
+        <div className="section-label">Indicadores Institucionales</div>
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="1500" suffix="+" /></h3>
+            <p className="stat-label">Defensas & consultorías exitosas</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <h3 className="stat-number"><AnimatedCounter value="99" suffix="%" /></h3>
+            <p className="stat-label">Efectividad procesal e integridad</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="2008" /></h3>
+            <p className="stat-label">Año de fundación en Trujillo</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <h3 className="stat-number"><AnimatedCounter value="18" suffix="+" /></h3>
+            <p className="stat-label">Años de solidez institucional</p>
           </div>
         </div>
       </div>
