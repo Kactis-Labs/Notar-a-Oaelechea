@@ -1,14 +1,31 @@
+import { Link } from 'react-router-dom';
 import { brandConfig } from '../config/brandConfig';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: 'var(--color-black)', color: 'var(--color-gray)', padding: '3rem 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontSize: '0.9rem' }}>
-        <p>&copy; {new Date().getFullYear()} {brandConfig.name}. Todos los derechos reservados.</p>
-        <div style={{ display: 'flex', gap: '1.5rem' }}>
-          <a href={brandConfig.social.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gray)' }}>LinkedIn</a>
-          <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gray)' }}>Facebook</a>
-          <a href="/contacto" style={{ color: 'var(--color-gray)' }}>Contacto</a>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <img src="/logo.png" alt={brandConfig.name} className="footer-logo" />
+            <p className="footer-subtitle">
+              {brandConfig.subtitle}
+            </p>
+          </div>
+          <nav className="footer-nav">
+            <Link to="/">Inicio</Link>
+            <Link to="/nosotros">Nosotros</Link>
+            <Link to="/servicios">Servicios</Link>
+            <Link to="/equipo">Equipo</Link>
+            <Link to="/contacto">Contacto</Link>
+          </nav>
+        </div>
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} {brandConfig.name}. Todos los derechos reservados.</p>
+          <p className="footer-credit">
+            Diseñado y desarrollado por <a href="https://kactilabs.vercel.app/" target="_blank" rel="noopener noreferrer">Kacti Labs</a>
+          </p>
         </div>
       </div>
     </footer>

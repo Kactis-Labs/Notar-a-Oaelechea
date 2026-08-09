@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240" width="500" height="240">
+  <defs>
+    <style>
+      .mp-text-top {
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        fill: #0A0D12;
+        text-transform: uppercase;
+      }
+      .mp-text-bot {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.35em;
+        fill: #374151;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- MP Block Emblem -->
+  <g transform="translate(190, 10)">
+    <!-- Left Black Box with M -->
+    <rect x="0" y="0" width="56" height="110" fill="#0A0D12" rx="2" />
+    <path d="M 12 85 L 12 30 L 28 70 L 44 30 L 44 85" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Right White Box with P -->
+    <rect x="60" y="0" width="56" height="110" fill="#FFFFFF" stroke="#0A0D12" stroke-width="2" rx="2" />
+    <path d="M 76 85 L 76 30 H 96 C 108 30 108 58 96 58 H 76" stroke="#0A0D12" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Typography Below -->
+  <text x="250" y="165" text-anchor="middle" class="mp-text-top">MEDINA DE LA PAZ</text>
+  <text x="250" y="200" text-anchor="middle" class="mp-text-bot">CONSULTORES</text>
+</svg>

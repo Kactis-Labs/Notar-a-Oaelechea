@@ -5,7 +5,6 @@ import './Hero.css';
 
 export default function Hero() {
   const { scrollY } = useScroll();
-  // Hacer el desenfoque muchísimo más lento y sutil, aplicado solo al fondo
   const filter = useTransform(scrollY, [0, 1500], ['blur(0px)', 'blur(8px)']);
   const opacity = useTransform(scrollY, [0, 1500], [1, 0.6]);
 
@@ -15,14 +14,14 @@ export default function Hero() {
         <motion.div className="hero-bg" style={{ filter, opacity }}>
           <img 
             src="/hero-bg.png" 
-            alt="Consulta notarial" 
+            alt="Medina de la Paz Consultores S.A.C." 
           />
           <div className="hero-overlay"></div>
         </motion.div>
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">{brandConfig.tagline.split(',')[0]},<br/>{brandConfig.tagline.split(',')[1] || ''}</h1>
+            <h1 className="hero-title">{brandConfig.tagline}</h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
             </p>
@@ -33,7 +32,7 @@ export default function Hero() {
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Notariado &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">Consultoría Jurídica · Fundada en {brandConfig.foundedYear}</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
             <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
           </div>

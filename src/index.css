@@ -1,17 +1,25 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-primary: #0A0D12; /* Negro Azabache / Grafito Premium */
+  --color-secondary: #111827;
+  --color-black: #0A0D12;
+  --color-navy: #0A0D12;
+  
+  --color-gold: #D1D5DB; /* Plata / Platino Medina de la Paz */
+  --color-gold-hover: #9CA3AF;
+  --color-accent: #D1D5DB;
+  --color-accent-hover: #9CA3AF;
+  
   --color-white: #FFFFFF;
-  --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
-  --color-text-muted: #666666;
+  --color-cream: #F8FAFC; /* Gris Fino */
+  --color-light-bg: #F8FAFC;
+  --color-gray: #E2E8F0;
+  --color-dark-gray: #1F2937;
+  --color-text-dark: #111827;
+  --color-text-muted: #4B5563;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Montserrat', sans-serif;
+  --font-heading: 'Playfair Display', serif;
   
   --spacing-section: 6rem;
   --max-width: 1200px;
@@ -25,16 +33,19 @@
 
 body {
   font-family: var(--font-sans);
-  color: var(--color-black);
+  font-size: 1rem;
+  color: var(--color-text-dark);
   background-color: var(--color-white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
+/* Garantía de Contraste Automático en Títulos (Regla 8 AGENTS.md) */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 600;
   line-height: 1.2;
+  color: inherit;
 }
 
 a {
@@ -59,7 +70,7 @@ button {
   padding: 0 2rem;
 }
 
-/* Base button styles */
+/* Base button styles - Estructura 100% congelada de main (border-radius: 4px) */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -72,15 +83,18 @@ button {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-family: var(--font-sans);
 }
 
 .btn-primary {
-  background-color: var(--color-gold);
-  color: #1A1A1A;
+  background-color: #FFFFFF;
+  color: #0A0D12;
+  border: 1px solid #D1D5DB;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-gold-hover);
+  background-color: #D1D5DB;
+  color: #0A0D12;
   transform: translateY(-1px);
 }
 
@@ -90,7 +104,9 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .btn-outline-dark {
@@ -100,7 +116,7 @@ button {
 
 .btn-outline-dark:hover {
   background-color: var(--color-black);
-  color: var(--color-gold);
+  color: var(--color-white);
 }
 
 /* Sections */
@@ -108,14 +124,14 @@ button {
   padding: var(--spacing-section) 0;
 }
 
-/* Subtítulos Unboxed */
+/* Subtítulos Unboxed Limpios - Regla 9 AGENTS.md */
 .section-label {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--color-gold);
+  letter-spacing: 0.25em;
+  color: var(--color-accent);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -123,17 +139,11 @@ button {
 }
 
 .section-label::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
+  display: none !important;
 }
 
 .section-label.light {
-  color: #F7F6F4;
+  color: #D1D5DB;
 }
 
 /* Page Transition Grid for Crossfade */
