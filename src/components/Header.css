@@ -27,11 +27,10 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: auto;
   flex-shrink: 0;
 }
 
-/* Regla 2 AGENTS.md: Integración del Logo en Navbar (Ajustado proporcionalmente para evitar colisión) */
+/* Regla 2 AGENTS.md: Integración del Logo en Navbar */
 .logo-img {
   height: 38px;
   max-height: 38px;
@@ -79,7 +78,7 @@
   border-color: rgba(255, 255, 255, 0.3);
   color: var(--color-white);
   transition: all 0.3s ease;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -114,16 +113,16 @@
   display: none;
 }
 
-/* Regla 1 AGENTS.md: Botón Menú Hamburguesa Móvil */
+/* Regla 1 AGENTS.md: Ajustes Móviles */
 @media (max-width: 992px) {
   .header-container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .logo-img {
-    height: 30px;
-    max-height: 30px;
-    max-width: 180px;
+    height: 32px;
+    max-height: 32px;
+    max-width: 190px;
   }
 
   .header.scrolled .logo-img {
@@ -136,8 +135,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.25rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
+    margin-right: 0;
     flex-shrink: 0;
     color: var(--color-white);
   }
