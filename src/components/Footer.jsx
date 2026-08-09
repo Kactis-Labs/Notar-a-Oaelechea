@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
           <div>
-            <img src="/logo.svg" alt={brandConfig.name} style={{ height: '48px', marginBottom: '0.75rem' }} />
+            <img src="/logo.svg" alt={brandConfig.name} style={{ height: '76px', marginBottom: '0.75rem' }} />
             <p style={{ fontSize: '0.9rem', color: '#C9CDD3', maxWidth: '420px' }}>
               Estudio jurídico especializado en defensa legal estratégica y consultoría corporativa en Trujillo - La Libertad.
             </p>
