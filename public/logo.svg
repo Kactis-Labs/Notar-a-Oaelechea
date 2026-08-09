@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
+  <!-- Isotipo Fournier Abogados (Rotated Diamond Emblem) -->
+  <g transform="translate(25, 20)">
+    <!-- Outer Chevron Frame (White for Dark Background) -->
+    <path d="M 50 5 L 12 43 C 8 47 8 53 12 57 L 50 95 C 54 99 60 99 64 95 L 72 87 C 76 83 76 77 72 73 L 44 45 L 68 21 C 72 17 72 11 68 7 L 60 3 C 57 -1 52 -1 50 5 Z" fill="#FFFFFF" />
+    
+    <!-- Inner "F" Block (Deep Navy #0A2540 / Cobalt) -->
+    <path d="M 45 35 L 75 65 L 55 85 L 35 65 Z M 55 45 L 85 15 L 95 25 L 65 55 Z" fill="#2563EB" />
+  </g>
+
+  <!-- Clean Precision SVG Path Isotipo representation -->
+  <g transform="translate(20, 15)">
+    <!-- Outer Corner Chevron -->
+    <path d="M 45 10 L 15 40 L 45 70 L 55 60 L 35 40 L 55 20 Z" fill="#FFFFFF"/>
+    <!-- Inner F Diamond Block -->
+    <path d="M 38 40 L 68 10 L 98 40 L 68 70 L 53 55 L 68 40 L 53 25 L 43 35 Z" fill="#2563EB"/>
+  </g>
+
+  <!-- Exact Fournier Vectorized Emblem Group -->
+  <g transform="translate(15, 10)">
+    <!-- Black Outer Chevron (Rotated) -->
+    <path d="M 42 12 L 14 40 L 50 76 L 62 64 L 38 40 L 54 24 Z" fill="#FFFFFF"/>
+    <!-- Navy F Block (Rotated) -->
+    <path d="M 42 24 L 70 52 L 46 76 L 34 64 L 46 52 L 34 40 L 46 28 Z" fill="#3B82F6"/>
+  </g>
+
+  <!-- Typography Text Group (White Text for Dark Background / Footer / Hero) -->
+  <g transform="translate(115, 0)">
+    <text x="0" y="62" fill="#FFFFFF" font-family="'Playfair Display', 'Bodoni Moda', Georgia, serif" font-weight="800" font-size="40" letter-spacing="4">FOURNIER</text>
+    <text x="2" y="98" fill="#FFFFFF" font-family="'Montserrat', 'Inter', sans-serif" font-weight="600" font-size="18" letter-spacing="9" opacity="0.95">ABOGADOS</text>
+  </g>
+</svg>
