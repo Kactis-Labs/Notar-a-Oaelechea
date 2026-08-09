@@ -1,17 +1,25 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-navy: #1B3A6B;
+  --color-navy-dark: #10264B;
+  --color-navy-light: #2A518B;
+  --color-black: #1B3A6B;
+  
+  --color-gold: #E8A33D; /* Acento Naranja / Dorado */
+  --color-gold-hover: #D4902B;
+  --color-silver: #5B9BD5; /* Celeste Secundario */
+  --color-orange: #E8A33D;
+  
+  --color-cream: #F2F5F9;
+  --color-light-bg: #F2F5F9;
   --color-white: #FFFFFF;
-  --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
-  --color-text-muted: #666666;
+  --color-gray: #E0E7F1;
+  --color-dark-gray: #10264B;
+  --color-text-dark: #1B3A6B;
+  --color-text-muted: #516485;
 
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Montserrat', sans-serif;
+  --font-heading: 'Montserrat', 'Roboto', sans-serif;
+  --font-sans: 'Roboto', 'Inter', sans-serif;
   
   --spacing-section: 6rem;
   --max-width: 1200px;
@@ -32,9 +40,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 800;
   line-height: 1.2;
+  color: var(--color-navy);
 }
 
 a {
@@ -66,22 +75,24 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.75rem;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   border-radius: 4px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .btn-primary {
-  background-color: var(--color-gold);
-  color: #1A1A1A;
+  background-color: #E8A33D;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(232, 163, 61, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-gold-hover);
-  transform: translateY(-1px);
+  background-color: #D4902B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 163, 61, 0.45);
 }
 
 .btn-outline {
@@ -90,17 +101,19 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #E8A33D;
+  transform: translateY(-1px);
 }
 
 .btn-outline-dark {
-  border: 1px solid var(--color-black);
-  color: var(--color-black);
+  border: 1px solid var(--color-navy);
+  color: var(--color-navy);
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--color-black);
-  color: var(--color-gold);
+  background-color: var(--color-navy);
+  color: var(--color-white);
 }
 
 /* Sections */
@@ -108,14 +121,14 @@ button {
   padding: var(--spacing-section) 0;
 }
 
-/* Subtítulos Unboxed */
+/* Subtítulos Unboxed Estrictos (Acento Naranja #E8A33D) */
 .section-label {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.825rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--color-gold);
+  letter-spacing: 0.25em;
+  color: #E8A33D;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -128,12 +141,12 @@ button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
+  background-color: #E8A33D;
+  box-shadow: 0 0 8px rgba(232, 163, 61, 0.7);
 }
 
 .section-label.light {
-  color: #F7F6F4;
+  color: #E8A33D;
 }
 
 /* Page Transition Grid for Crossfade */

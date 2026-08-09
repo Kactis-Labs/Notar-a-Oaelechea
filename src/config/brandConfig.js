@@ -1,29 +1,27 @@
-// Configuración centralizada de branding para la plantilla de propuesta.
-// Al crear una propuesta para un cliente (notaría / estudio jurídico),
-// solo debes actualizar este archivo.
+// Configuración centralizada de branding para la propuesta de Chavez, Prado, Mendoza & Saldaña.
 
 export const brandConfig = {
   // Información General
-  name: "Notaría Olaechea",
-  shortName: "Olaechea",
-  tagline: "Tu Patrimonio, En Regla.",
-  subtitle: "Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.",
-  foundedYear: 1994,
-  statsCount: "+12,000 trámites realizados",
+  name: "Chavez, Prado, Mendoza & Saldaña Abogados Asociados",
+  shortName: "Chavez, Prado & Saldaña",
+  tagline: "Solidez Corporativa, Experiencia Multidisciplinaria & Respaldo Institucional",
+  subtitle: "Firma legal integrada por socios especializados en asesoría corporativa, litigios de alta complejidad, derecho tributario y regulación patrimonial en Trujillo.",
+  foundedYear: 2005,
+  statsCount: "+2,000 defensas y consultorías corporativas",
 
   // Datos de Contacto
   contact: {
-    address: "Av. Javier Prado Este 1234, San Isidro, Lima, Perú",
-    phone: "+51 1 234 5678",
-    phoneRaw: "+5112345678",
-    whatsapp: "+51 987 654 321",
-    whatsappRaw: "51987654321",
-    email: "citas@notariaolaechea.pe",
+    address: "Av. Jesús de Nazareth 420, Urb. San Andrés, Trujillo - La Libertad, Perú",
+    phone: "+51 44 290 800",
+    phoneRaw: "+5144290800",
+    whatsapp: "+51 944 333 222",
+    whatsappRaw: "51944333222",
+    email: "contacto@cpmsabogados.pe",
     hours: {
-      weekdays: "Lunes a Viernes: 8:30 am - 6:00 pm",
+      weekdays: "Lunes a Viernes: 8:30 am - 6:30 pm",
       saturdays: "Sábados: 9:00 am - 1:00 pm"
     },
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15603.541604928509!2d-77.03703909623886!3d-12.096383617349141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866380c85c5%3A0xc487a55ed99690dc!2sSan%20Isidro%2C%20Lima!5e0!3m2!1sen!2spe!4v1716922241680!5m2!1sen!2spe"
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.92!2d-79.033!3d-8.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d7!2sAv.%20Jes%C3%Bas%20de%20Nazareth%20420%2C%20Trujillo!5e0!3m2!1ses!2spe!4v1716922241680!5m2!1ses!2spe"
   },
 
   // Redes Sociales
@@ -33,10 +31,34 @@ export const brandConfig = {
     instagram: "https://instagram.com"
   },
 
-  // Notario Titular
+  // Socios Fundadores / Principales
+  founders: [
+    {
+      name: "Dr. Fernando Chavez",
+      role: "Socio Principal - Área Corporativa",
+      specialty: "Derecho Mercantil, Reestructuraciones & Fusiones"
+    },
+    {
+      name: "Dr. Alejandro Prado",
+      role: "Socio Principal - Litigios & Arbitraje",
+      specialty: "Litigación Civil, Comercial & Defensa Judicial"
+    },
+    {
+      name: "Dra. Patricia Mendoza",
+      role: "Socia Principal - Tributario & Regulaciones",
+      specialty: "Derecho Fiscal, Auditorías SUNAT & Contrataciones"
+    },
+    {
+      name: "Dr. Gabriel Saldaña",
+      role: "Socio Principal - Derecho Laboral & Patrimonial",
+      specialty: "Relaciones Laborales Empresariales & Inmobiliario"
+    }
+  ],
+
+  // Titular principal
   titular: {
-    name: "Carlos Olaechea",
-    role: "Notario Titular",
-    registry: "Notario Público — Registro N° 1234, Colegio de Notarios de Lima"
+    name: "Dres. Chavez, Prado, Mendoza & Saldaña",
+    role: "Socios Principales",
+    registry: "Estudio Jurídico — Colegio de Abogados de La Libertad (CALL)"
   }
 };
