@@ -1,7 +1,7 @@
 # Reglas y Guías Permanentes del Proyecto (Propuestas Web Legal)
 
 1. **Botón Menú Hamburguesa Móvil (Header.css)**:
-   - En vistas móviles (`@media (max-width: 992px)`), el botón `.mobile-menu-btn` DEBE incluir siempre `margin-right: 0.5rem;` y `padding: 0.5rem;`, además de `.header-container { padding: 0 1.5rem; }` para evitar que el icono quede pegado al borde derecho de la pantalla.
+   - En vistas móviles (`@media (max-width: 992px)`), el contenedor `.header-container` debe tener `padding: 0 1.5rem;` y el botón `.mobile-menu-btn` debe llevar `margin-right: 0;` y `padding: 0.5rem;`. Esto posiciona al icono a exactamente 1.5rem del borde derecho sin desbordar hacia afuera.
 
 2. **Integración del Logo en Navbar (`Header.jsx` & `Header.css`)**:
    - En cada propuesta nueva, reemplazar inmediatamente el texto plano de `main` en `Header.jsx` por `<img className="logo-img" src={isScrolledState ? "/logo-dark.svg" : "/logo.svg"} alt={brandConfig.name} />`.
