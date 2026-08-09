@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem', marginBottom: '2rem' }}>
           <div>
-            <img src="/logo.svg" alt={brandConfig.name} style={{ height: '56px', width: 'auto', marginBottom: '0.75rem', display: 'block' }} />
+            <img src="/logo.png" alt={brandConfig.name} style={{ height: '56px', width: 'auto', marginBottom: '0.75rem', display: 'block' }} />
             <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', maxWidth: '380px', margin: 0 }}>
               {brandConfig.subtitle}
             </p>
