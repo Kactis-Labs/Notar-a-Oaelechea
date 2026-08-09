@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 150" fill="none">
-  <!-- Isotipo Emblem Group (Square Frame + Monogram B + Balanza) -->
+  <!-- Isotipo Emblem Group (Square Frame + Monogram B + Balanza - White Version for Dark Header) -->
   <g transform="translate(10, 10)">
     <!-- Outer Square Frame L-Brackets -->
-    <!-- Top-Left Dark Navy Bracket -->
-    <path d="M 5 5 L 60 5 L 60 12 L 12 12 L 12 125 L 60 125 L 60 132 L 5 132 Z" fill="#0F2137" stroke="#FFFFFF" stroke-width="1.5" />
+    <!-- Top-Left White Bracket -->
+    <path d="M 5 5 L 60 5 L 60 12 L 12 12 L 12 125 L 60 125 L 60 132 L 5 132 Z" fill="#FFFFFF" />
     <!-- Top-Right Gold Bracket -->
     <path d="M 70 5 L 125 5 L 125 132 L 70 132 L 70 125 L 118 125 L 118 12 L 70 12 Z" fill="#C48B28" />
 
-    <!-- Inner Monogram B (Dark Navy) -->
+    <!-- Inner Monogram B (White) -->
     <g transform="translate(18, 15)">
       <!-- Main B Stem & Loops -->
-      <path d="M 12 10 L 52 10 C 68 10 78 18 78 30 C 78 40 70 47 58 50 C 74 53 82 62 82 76 C 82 92 68 100 48 100 L 12 100 L 12 88 L 24 88 L 24 22 L 12 22 Z M 24 45 L 48 45 C 58 45 64 40 64 30 C 64 20 58 18 48 18 L 24 18 Z M 24 88 L 46 88 C 58 88 66 82 66 72 C 66 62 58 57 46 57 L 24 57 Z" fill="#0F2137" stroke="#FFFFFF" stroke-width="1" />
+      <path d="M 12 10 L 52 10 C 68 10 78 18 78 30 C 78 40 70 47 58 50 C 74 53 82 62 82 76 C 82 92 68 100 48 100 L 12 100 L 12 88 L 24 88 L 24 22 L 12 22 Z M 24 45 L 48 45 C 58 45 64 40 64 30 C 64 20 58 18 48 18 L 24 18 Z M 24 88 L 46 88 C 58 88 66 82 66 72 C 66 62 58 57 46 57 L 24 57 Z" fill="#FFFFFF" />
       
       <!-- Balanza de la Justicia (Gold) -->
       <g transform="translate(20, 58)">
