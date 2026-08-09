@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 0;
-  background-color: var(--color-black);
+  background-color: #10264B;
 }
 
 .hero {
@@ -40,7 +40,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(27, 58, 107, 0.94) 0%, rgba(27, 58, 107, 0.82) 50%, rgba(27, 58, 107, 0.6) 100%);
+  background: linear-gradient(135deg, rgba(16, 38, 75, 0.96) 0%, rgba(27, 58, 107, 0.92) 55%, rgba(13, 30, 58, 0.88) 100%);
 }
 
 .hero-content {
@@ -61,14 +61,17 @@
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   line-height: 1.15;
+  color: #FFFFFF;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   margin-bottom: 2.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #FFFFFF;
   max-width: 520px;
   line-height: 1.6;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {

@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
-  <!-- Rotated 2x2 Diamonds Mosaic Emblem -->
-  <g transform="translate(15, 5)">
-    <!-- Square 1 (Top-Left: Sky Blue) -->
-    <polygon points="35,10 55,30 35,50 15,30" fill="#28B6EA" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" fill="none">
+  <!-- Isotipo: 2x2 Mosaico de Rombos Rotados (Chavez, Prado, Mendoza & Saldaña) -->
+  <g transform="translate(10, 8)">
+    <!-- Square 1 (Top-Left: Cyan) -->
+    <polygon points="40,12 60,32 40,52 20,32" fill="#28B6EA" />
     
-    <!-- Square 2 (Top-Right: Corporate Blue) -->
-    <polygon points="60,35 80,55 60,75 40,55" fill="#0072CE" />
+    <!-- Square 2 (Top-Right: Blue) -->
+    <polygon points="65,37 85,57 65,77 45,57" fill="#0072CE" />
     
-    <!-- Square 3 (Bottom-Left: Dark Navy) -->
-    <polygon points="35,60 55,80 35,100 15,80" fill="#1B3A6B" />
+    <!-- Square 3 (Bottom-Left: Navy) -->
+    <polygon points="22,48 42,68 22,88 2,68" fill="#1B3A6B" />
     
     <!-- Square 4 (Bottom-Right: Deep Navy) -->
-    <polygon points="60,85 80,105 60,125 40,105" fill="#0D1E3A" />
+    <polygon points="47,73 67,93 47,113 27,93" fill="#0D1E3A" />
   </g>
 
   <!-- Typography Text Group (Dark Navy Text for Scrolled Light Header) -->
-  <g transform="translate(125, 0)">
+  <g transform="translate(105, 0)">
     <text x="0" y="44" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="29" letter-spacing="0.5">CHAVEZ, PRADO,</text>
     <text x="0" y="80" fill="#1B3A6B" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="900" font-size="29" letter-spacing="0.5">MENDOZA &amp; SALDAÑA</text>
     <text x="2" y="110" fill="#E8A33D" font-family="'Montserrat', 'Roboto', sans-serif" font-weight="700" font-size="16" letter-spacing="6">ABOGADOS</text>
