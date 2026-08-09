@@ -2,60 +2,24 @@
   <defs>
     <!-- Metallic Bronze Gradient -->
     <linearGradient id="bronzeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#9A7745" />
-      <stop offset="50%" stop-color="#D4AF74" />
+      <stop offset="0%" stop-color="#8A6A3D" />
+      <stop offset="50%" stop-color="#C9A468" />
       <stop offset="100%" stop-color="#8A6A3D" />
     </linearGradient>
   </defs>
 
-  <!-- Vectorized Logo Emblem for Ocampos y Sifuentes -->
-  <g fill="url(#bronzeGradient)" transform="translate(10, 5)">
-    <!-- Ocampos (Left) Vectorized Serif Italic -->
-    <g transform="translate(15, 25)">
-      <!-- O -->
-      <path d="M 32 45 C 18 45 10 33 10 21 C 10 9 20 0 35 0 C 49 0 57 12 57 24 C 57 36 47 45 32 45 Z M 32 6 C 24 6 19 13 19 22 C 19 32 25 39 34 39 C 42 39 47 32 47 22 C 47 12 41 6 32 6 Z"/>
-      <!-- c -->
-      <path d="M 75 44 C 65 44 59 36 59 26 C 59 16 67 9 76 9 C 83 9 88 13 90 19 L 83 20 C 81 16 78 14 74 14 C 69 14 65 19 65 26 C 65 33 69 39 74 39 C 78 39 82 36 84 31 L 91 33 C 88 40 82 44 75 44 Z"/>
-      <!-- a -->
-      <path d="M 108 44 C 102 44 97 40 97 34 C 97 27 103 24 113 23 L 119 23 L 119 20 C 119 16 115 13 110 13 C 105 13 102 15 101 19 L 95 17 C 97 11 103 8 111 8 C 121 8 126 13 126 22 L 126 36 C 126 40 128 41 130 41 L 130 44 L 122 44 C 121 42 120 39 120 37 C 117 41 113 44 108 44 Z M 110 39 C 115 39 119 35 119 30 L 119 27 L 114 28 C 107 29 104 31 104 35 C 104 38 106 39 110 39 Z"/>
-      <!-- m -->
-      <path d="M 136 44 L 136 10 L 143 10 L 143 16 C 146 11 151 9 156 9 C 161 9 165 11 167 16 C 171 11 176 9 182 9 C 190 9 194 14 194 23 L 194 44 L 187 44 L 187 24 C 187 17 184 14 179 14 C 174 14 170 18 170 25 L 170 44 L 163 44 L 163 24 C 163 17 160 14 155 14 C 150 14 146 18 146 25 L 146 44 L 136 44 Z"/>
-      <!-- p -->
-      <path d="M 201 56 L 201 10 L 208 10 L 208 16 C 211 11 216 9 222 9 C 231 9 237 17 237 27 C 237 37 231 44 221 44 C 216 44 211 42 208 37 L 208 56 L 201 56 Z M 218 39 C 224 39 229 34 229 26 C 229 18 224 14 218 14 C 212 14 207 19 207 26 C 207 34 212 39 218 39 Z"/>
-      <!-- o -->
-      <path d="M 256 44 C 246 44 240 36 240 26 C 240 16 246 9 256 9 C 266 9 272 16 272 26 C 272 36 266 44 256 44 Z M 256 14 C 250 14 246 19 246 26 C 246 33 250 39 256 39 C 262 39 266 33 266 26 C 266 19 262 14 256 14 Z"/>
-      <!-- s -->
-      <path d="M 288 44 C 280 44 275 39 275 32 C 275 24 282 21 289 19 L 293 18 C 297 17 298 15 298 13 C 298 11 295 9 291 9 C 286 9 282 12 281 16 L 274 15 C 276 9 282 4 291 4 C 299 4 305 8 305 15 C 305 22 299 25 291 27 L 287 28 C 284 29 282 31 282 33 C 282 36 286 38 290 38 C 295 38 300 35 301 30 L 308 31 C 306 39 298 44 288 44 Z"/>
-    </g>
-
-    <!-- Central Ornate Ampersand "&" -->
-    <g transform="translate(325, 10)">
-      <path d="M 42 68 C 30 68 20 60 20 48 C 20 38 27 30 36 24 C 31 18 28 12 28 7 C 28 3 31 0 36 0 C 43 0 49 5 49 12 C 49 18 43 24 37 29 C 45 37 53 43 62 48 L 56 55 C 48 50 41 44 34 37 C 29 42 26 47 26 51 C 26 57 32 62 41 62 C 51 62 60 55 64 46 L 70 49 C 64 61 53 68 42 68 Z M 36 6 C 34 6 33 8 33 10 C 33 13 36 17 40 22 C 43 18 45 14 45 10 C 45 7 42 6 36 6 Z" transform="scale(1.25)"/>
-    </g>
-
-    <!-- Sifuentes (Right) Vectorized Serif Italic -->
-    <g transform="translate(425, 25)">
-      <!-- S -->
-      <path d="M 22 45 C 10 45 2 37 2 26 C 2 14 13 10 24 7 L 30 5 C 36 4 38 2 38 0 L 46 0 L 46 16 L 39 16 C 39 9 34 6 27 6 C 18 6 10 11 10 22 C 10 32 18 35 27 38 C 38 41 47 36 47 26 L 54 26 C 54 38 42 45 22 45 Z"/>
-      <!-- i -->
-      <path d="M 60 44 L 60 10 L 67 10 L 67 44 L 60 44 Z M 60 4 L 60 0 L 67 0 L 67 4 L 60 4 Z"/>
-      <!-- f -->
-      <path d="M 78 44 L 78 15 L 72 15 L 72 10 L 78 10 L 78 7 C 78 2 83 0 90 0 L 93 0 L 93 6 L 90 6 C 87 6 85 7 85 10 L 85 10 L 93 10 L 93 15 L 85 15 L 85 44 L 78 44 Z"/>
-      <!-- u -->
-      <path d="M 98 44 L 98 10 L 105 10 L 105 30 C 105 36 108 39 113 39 C 118 39 122 35 122 28 L 122 10 L 129 10 L 129 44 L 122 44 L 122 38 C 119 42 115 44 109 44 C 102 44 98 39 98 31 Z"/>
-      <!-- e -->
-      <path d="M 144 44 C 134 44 128 36 128 26 C 128 16 135 9 145 9 C 154 9 160 15 160 25 L 135 25 C 136 33 140 39 146 39 C 151 39 154 36 156 31 L 162 33 C 159 40 153 44 144 44 Z M 145 14 C 140 14 136 18 135 21 L 153 21 C 153 17 149 14 145 14 Z"/>
-      <!-- n -->
-      <path d="M 167 44 L 167 10 L 174 10 L 174 16 C 177 11 182 9 188 9 C 196 9 200 14 200 23 L 200 44 L 193 44 L 193 24 C 193 17 190 14 184 14 C 179 14 174 18 174 25 L 174 44 L 167 44 Z"/>
-      <!-- t -->
-      <path d="M 208 44 C 203 44 200 40 200 34 L 200 15 L 195 15 L 195 10 L 200 10 L 200 3 L 207 3 L 207 10 L 214 10 L 214 15 L 207 15 L 207 33 C 207 37 209 38 212 38 L 214 38 L 214 44 L 208 44 Z"/>
-      <!-- e -->
-      <path d="M 228 44 C 218 44 212 36 212 26 C 212 16 219 9 229 9 C 238 9 244 15 244 25 L 219 25 C 220 33 224 39 230 39 C 235 39 238 36 240 31 L 246 33 C 243 40 237 44 228 44 Z M 229 14 C 224 14 220 18 219 21 L 237 21 C 237 17 233 14 229 14 Z"/>
-      <!-- s -->
-      <path d="M 256 44 C 248 44 243 39 243 32 C 243 24 250 21 257 19 L 261 18 C 265 17 266 15 266 13 C 266 11 263 9 259 9 C 254 9 250 12 249 16 L 242 15 C 244 9 250 4 259 4 C 267 4 273 8 273 15 C 273 22 267 25 259 27 L 255 28 C 252 29 250 31 250 33 C 250 36 254 38 258 38 C 263 38 268 35 269 30 L 276 31 C 274 39 266 44 256 44 Z"/>
-    </g>
-
-    <!-- ABOGADOS (Bottom Center) -->
-    <text x="340" y="120" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="20" letter-spacing="9">ABOGADOS</text>
+  <!-- Group Centered -->
+  <g transform="translate(10, 0)">
+    <!-- Word 1: Ocampos (Left) -->
+    <text x="15" y="70" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Ocampos</text>
+    
+    <!-- Central Ornate Ampersand "&" (Large & Distinctive) -->
+    <text x="275" y="85" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="108">&amp;</text>
+    
+    <!-- Word 2: Sifuentes (Right) -->
+    <text x="385" y="70" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Sifuentes</text>
+    
+    <!-- Subtitle: ABOGADOS (Bottom Center) -->
+    <text x="340" y="118" text-anchor="middle" fill="url(#bronzeGradient)" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="20" letter-spacing="6">ABOGADOS</text>
   </g>
 </svg>
