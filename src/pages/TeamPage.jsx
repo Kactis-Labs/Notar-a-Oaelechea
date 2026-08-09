@@ -23,7 +23,7 @@ export default function TeamPage() {
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>SOCIOS FUNDADORES</div>
-              <h1 className="hero-title">Tradición Jurídica &<br/>Atención Personalizada.</h1>
+              <h1 className="hero-title">Tradición Jurídica y<br/>Atención Personalizada.</h1>
               <p className="hero-subtitle">
                 Conozca la trayectoria de los doctores Carlos Ocampos y Elena Sifuentes, líderes de nuestra firma boutique en Trujillo.
               </p>

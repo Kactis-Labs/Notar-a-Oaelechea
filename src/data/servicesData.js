@@ -8,7 +8,7 @@ import imgSucesion from '../assets/sucesion.jpg';
 export const servicesData = [
   {
     slug: 'planificacion-patrimonial-sucesiones',
-    title: 'Planificación Patrimonial & Sucesiones',
+    title: 'Planificación Patrimonial y Sucesiones',
     shortDesc: 'Estructuración preventiva para la protección, conservación y transmisión ordenada del patrimonio familiar.',
     img: imgSucesion,
     heroImg: imgSucesion,
@@ -28,7 +28,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-civil-contratacion',
-    title: 'Derecho Civil & Contratación Artesanal',
+    title: 'Derecho Civil y Contratación Artesanal',
     shortDesc: 'Redacción y negociación minuciosa de contratos civiles a medida para transacciones de alto valor.',
     img: imgEscrituras,
     heroImg: imgEscrituras,
@@ -47,7 +47,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-familia-protocolos',
-    title: 'Derecho de Familia & Protocolos',
+    title: 'Derecho de Familia y Protocolos',
     shortDesc: 'Asesoramiento ético y confidencial en regímenes patrimoniales del matrimonio y gobernanza familiar.',
     img: imgLegalizacion,
     heroImg: imgLegalizacion,
@@ -66,7 +66,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-inmobiliario-predial',
-    title: 'Derecho Inmobiliario & Predial',
+    title: 'Derecho Inmobiliario y Predial',
     shortDesc: 'Saneamiento físico-legal de propiedades residenciales y comerciales en la región de La Libertad.',
     img: imgEmpresas,
     heroImg: imgEmpresas,

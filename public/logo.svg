@@ -10,16 +10,16 @@
 
   <!-- Group Centered -->
   <g transform="translate(10, 0)">
-    <!-- Word 1: Ocampos (Left) -->
-    <text x="15" y="70" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Ocampos</text>
+    <!-- Word 1: Ocampos (Left - Elegant Serif Italic) -->
+    <text x="15" y="76" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="58" letter-spacing="0">Ocampos</text>
     
-    <!-- Central Ornate Ampersand "&" (Large & Distinctive) -->
-    <text x="275" y="85" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="108">&amp;</text>
+    <!-- Central Ornate Ampersand "&" -->
+    <text x="278" y="86" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="800" font-size="105">&amp;</text>
     
-    <!-- Word 2: Sifuentes (Right) -->
-    <text x="385" y="70" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="52" letter-spacing="1">Sifuentes</text>
+    <!-- Word 2: Sifuentes (Right - Elegant Serif Italic) -->
+    <text x="382" y="76" fill="url(#bronzeGradient)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="700" font-size="58" letter-spacing="0">Sifuentes</text>
     
     <!-- Subtitle: ABOGADOS (Bottom Center) -->
-    <text x="340" y="118" text-anchor="middle" fill="url(#bronzeGradient)" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="20" letter-spacing="6">ABOGADOS</text>
+    <text x="340" y="118" text-anchor="middle" fill="url(#bronzeGradient)" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="19" letter-spacing="8">ABOGADOS</text>
   </g>
 </svg>

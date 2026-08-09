@@ -1,10 +1,10 @@
-// Configuración centralizada de branding para la propuesta boutique clásica de Ocampos & Sifuentes Abogados.
+// Configuración centralizada de branding para la propuesta boutique clásica de Ocampos y Sifuentes Abogados.
 
 export const brandConfig = {
   // Información General
-  name: "Ocampos & Sifuentes Abogados",
-  shortName: "Ocampos & Sifuentes",
-  tagline: "Tradición Jurídica, Asesoría Personalizada & Excelencia Artesanal",
+  name: "Ocampos y Sifuentes Abogados",
+  shortName: "Ocampos y Sifuentes",
+  tagline: "Tradición Jurídica, Asesoría Personalizada y Excelencia Artesanal",
   subtitle: "Firma legal boutique especializada en derecho patrimonial, sucesiones, contratación civil y consultoría familiar en Trujillo. Protección jurídica con trato cercano e incondicional.",
   foundedYear: 1998,
   statsCount: "Más de 25 años de trayectoria boutique",
@@ -36,18 +36,18 @@ export const brandConfig = {
     {
       name: "Dr. Carlos Ocampos",
       role: "Socio Fundador",
-      specialty: "Derecho Civil Patrimonial, Sucesiones & Negociación"
+      specialty: "Derecho Civil Patrimonial, Sucesiones y Negociación"
     },
     {
       name: "Dra. Elena Sifuentes",
       role: "Socia Fundadora",
-      specialty: "Derecho de Familia, Protocolos Familiares & Inmobiliario"
+      specialty: "Derecho de Familia, Protocolos Familiares e Inmobiliario"
     }
   ],
 
   // Titular principal
   titular: {
-    name: "Dres. Carlos Ocampos & Elena Sifuentes",
+    name: "Dres. Carlos Ocampos y Elena Sifuentes",
     role: "Socios Fundadores",
     registry: "Estudio Jurídico — Colegio de Abogados de La Libertad (CALL)"
   }

@@ -22,7 +22,7 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Tradición Jurídica & Excelencia<br/>en Asesoría Patrimonial</h1>
+            <h1 className="hero-title">Tradición Jurídica y Excelencia<br/>en Asesoría Patrimonial</h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
             </p>

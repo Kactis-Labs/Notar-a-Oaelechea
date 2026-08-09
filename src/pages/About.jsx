@@ -122,7 +122,7 @@ export default function About() {
           <div className="container">
             <div className="team-preview-header">
               <h2 className="team-preview-title">Socios Fundadores.</h2>
-              <p className="team-preview-subtitle">Dres. Carlos Ocampos & Elena Sifuentes</p>
+              <p className="team-preview-subtitle">Dres. Carlos Ocampos y Elena Sifuentes</p>
             </div>
             
             <div className="team-grid">
