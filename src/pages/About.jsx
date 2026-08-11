@@ -39,7 +39,7 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA S.A.C.</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA</div>
             <div className="history-content">
               <p className="history-text">
                 Constituida como Sociedad Anónima Cerrada en febrero de 2022 en el distrito de Huaral, Estudio Jurídico e Inmobiliario ATC & Asociados S.A.C. nació con el compromiso de resolver la alta informalidad dominial e inseguridad jurídica registral en la provincia.

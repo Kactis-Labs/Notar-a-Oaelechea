@@ -7,7 +7,7 @@ export const brandConfig = {
   tagline: "Seguridad Jurídica, Saneamiento Inmobiliario & Asesoría Registral en Huaral",
   subtitle: "Especialistas en saneamiento físico-legal de propiedades, asesoría registral-civil y constitución de personas jurídicas. Protegemos y formalizamos su patrimonio.",
   foundedYear: 2022,
-  statsCount: "Sociedad Anónima Cerrada con amplia trayectoria en saneamiento dominial e inmobiliario",
+  statsCount: "Firma con amplia trayectoria en saneamiento dominial e inmobiliario",
 
   // Datos de Contacto
   contact: {
