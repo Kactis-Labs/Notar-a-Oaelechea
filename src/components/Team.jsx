@@ -7,9 +7,9 @@ export default function Team() {
       <div className="container">
         <div className="team-header">
           <div className="section-label">Nuestro Equipo</div>
-          <h2 className="team-title">Profesionales que conocen cada detalle.</h2>
+          <h2 className="team-title">Abogados comprometidos con brindar asesoría legal confiable.</h2>
           <p className="team-subtitle">
-            Nuestro equipo no solo domina la normativa registral y notarial, sino que entiende la importancia de cada trámite para su patrimonio y tranquilidad.
+            Atendemos casos en diversas ramas del Derecho, priorizando siempre los intereses de nuestros clientes para lograr soluciones eficaces y justas.
           </p>
         </div>
         

@@ -14,19 +14,19 @@ export default function ServicesPage() {
       <section className="services-list-hero">
         <div className="container">
           <div className="services-list-content">
-            <div className="section-label">Nuestros Servicios</div>
-            <h1 className="compact-hero-title">Cada trámite, con el respaldo de 30 años de experiencia.</h1>
+            <div className="section-label">Asesoría Legal Confiable</div>
+            <h1 className="compact-hero-title">Atendemos casos en diversas ramas del Derecho ofreciendo soluciones eficaces y justas.</h1>
             <p className="compact-hero-subtitle">
-              Conozca nuestro catálogo de servicios notariales diseñados para brindar seguridad jurídica a sus actos y contratos.
+              Conozca nuestro catálogo de prácticas legales especializadas en Asesoría Multidisciplinaria, Derecho Civil, Penal y Corporativo.
             </p>
           </div>
           
           <div className="services-hero-images">
             <div className="services-hero-img-box">
-              <img src={img1} alt="Abogados revisando documentos" />
+              <img src={img1} alt="Asesoría legal confiable" />
             </div>
             <div className="services-hero-img-box">
-              <img src={img2} alt="Firma de trámite notarial" />
+              <img src={img2} alt="Soluciones legales eficaces y justas" />
             </div>
           </div>
         </div>
@@ -35,9 +35,9 @@ export default function ServicesPage() {
       <section className="section-padding" style={{ backgroundColor: 'var(--color-cream)' }}>
         <div className="container">
           <div className="services-header" style={{ marginBottom: '4rem', textAlign: 'center' }}>
-            <h2 className="services-title" style={{ fontSize: '2.5rem' }}>Catálogo de Trámites</h2>
+            <h2 className="services-title" style={{ fontSize: '2.5rem' }}>Especialidades Legalmente Confiables</h2>
             <p className="services-subtitle" style={{ margin: '0 auto', maxWidth: '600px' }}>
-              Seleccione el trámite de su interés para conocer en detalle los requisitos, tiempos estimados y el especialista a cargo.
+              Seleccione el área de su interés para conocer nuestros alcances y al abogado especialista a cargo.
             </p>
           </div>
           

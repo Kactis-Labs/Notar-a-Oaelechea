@@ -26,34 +26,38 @@
 
 .logo {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-white);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0;
   transition: color 0.3s ease;
 }
 
-.header.scrolled .logo {
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+.logo-subtitle {
+  font-size: 0.62rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+  margin-top: 3px;
+}
+
+.header.scrolled .logo-title {
   color: var(--color-navy);
-}
-
-.logo::before {
-  content: '';
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--color-white);
-  border-bottom-color: transparent;
-  transform: rotate(-45deg);
-  transition: border-color 0.3s ease;
-}
-
-.header.scrolled .logo::before {
-  border-color: var(--color-navy);
-  border-bottom-color: transparent;
 }
 
 .nav-links {

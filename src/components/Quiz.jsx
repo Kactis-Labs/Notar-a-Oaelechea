@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿En qué rama del Derecho requiere asesoría confiable?',
+    options: ['Asesoría Legal Multidisciplinaria', 'Derecho Civil / Contratos / Propiedad', 'Derecho Penal / Defensa Procesal', 'Derecho Corporativo / Empresarial']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿En qué etapa se encuentra la controversia?',
+    options: ['Consulta preventiva / antes de conflicto', 'Conflicto notificado o por iniciar', 'Proceso en curso ante juzgado / fiscalía']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Cuál es la prioridad para la atención de su caso?',
+    options: ['Evaluación estratégica inmediata', 'En los próximos días', 'Planificación preventiva']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Cuenta con documentación antecedente a la mano?',
+    options: ['Sí, expedientes y contratos completos', 'Tengo documentación parcial', 'Requiero orientación desde cero']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Diagnóstico Legal Personalizado</div>
+          <h2 className="quiz-title">¿Busca una solución eficaz y justa para su caso?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responda 4 preguntas breves y nuestro equipo de abogados evaluará la mejor estrategia jurídica para su asunto.
           </p>
         </div>
         

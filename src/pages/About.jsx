@@ -21,15 +21,14 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src={aboutHero} alt="Sobre Leonardo Uribe & Asociados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Abogados comprometidos<br/>con soluciones eficaces.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Desde {brandConfig.foundedYear}, brindamos asesoría legal confiable en diversas ramas del Derecho, priorizando siempre los intereses de nuestros clientes.
               </p>
             </div>
           </div>
@@ -40,18 +39,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>SOBRE NUESTRA FIRMA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                Fundada por el {brandConfig.titular.name}, nuestra firma se constituyó como un equipo multidisciplinario de abogados orientados a romper con la abogacía distante y compleja.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Somos un equipo de abogados comprometidos con brindar asesoría legal confiable. Atendemos casos en diversas ramas del Derecho, priorizando siempre los intereses de nuestros clientes. Nuestra misión es ofrecer soluciones eficaces y justas."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Entendemos que detrás de cada consulta o litigio hay personas y familias que buscan certidumbre. Por ello, diseñamos estrategias claras, transparentes e integrales para alcanzar desenlaces justos.
               </p>
             </div>
           </div>
@@ -65,14 +64,14 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Ponemos el foco en la eficacia de las soluciones jurídicas y la protección constante del cliente.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Evaluamos cada contingencia desde múltiples ángulos normativos para anticipar respuestas certeras y evitar trámites o litigios innecesarios.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src={aboutPhilosophy} alt="Nuestra filosofía legal" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +79,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">NUESTROS PILARES</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos irrenunciables con nuestros patrocinados.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,31 +88,31 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Prioridad absoluta en el cliente.</h3>
+                    <p className="commitment-desc">Colocamos las metas e intereses reales de nuestros representados por encima de cualquier otro criterio.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Asesoría legal clara y confiable.</h3>
+                    <p className="commitment-desc">Comunicamos los escenarios con honestidad técnica, proponiendo caminos resolutivos eficaces.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Justicia y solvencia procesal.</h3>
+                    <p className="commitment-desc">Defendemos cada causa con la máxima firmeza jurídica y ética profesional indiscutible.</p>
                   </div>
                 </div>
 
               </div>
               
               <div className="commitments-img-wrapper">
-                <img src={aboutCommitment} alt="Nuestro compromiso" className="commitments-img" />
+                <img src={aboutCommitment} alt="Nuestro compromiso legal" className="commitments-img" />
               </div>
             </div>
           </div>
