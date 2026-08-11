@@ -26,11 +26,14 @@ export default function Header() {
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          <img 
-            src="/logo-symbol.png" 
-            alt="Salas Valencia & Abogados" 
-            className="logo-img" 
-          />
+          <svg className="logo-svg" viewBox="0 0 120 120" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="65" r="42" className="logo-svg-stroke" strokeWidth="2.5" fill="none" />
+            <rect x="57" y="10" width="6" height="14" rx="1" className="logo-svg-fill" />
+            <path d="M 38 16 H 82 M 42 16 L 34 28 M 50 16 L 42 28 M 70 16 L 62 28 M 78 16 L 70 28" className="logo-svg-stroke" strokeWidth="2" />
+            <path d="M 30 28 Q 42 34 54 28 Z M 58 28 Q 70 34 82 28 Z" className="logo-svg-fill" />
+            <path d="M 18 45 Q 14 55 20 68 Q 28 80 40 88 M 102 45 Q 106 55 100 68 Q 92 80 80 88" className="logo-svg-stroke" strokeWidth="2.5" fill="none" />
+            <text x="60" y="75" fontFamily="'Playfair Display', serif" fontWeight="700" fontStyle="italic" fontSize="32" className="logo-svg-fill" textAnchor="middle">SV</text>
+          </svg>
           <span className="logo-text">
             <span className="logo-title">Salas Valencia</span>
             <span className="logo-subtitle">ESTUDIO & JURÍDICO ABOGADOS</span>

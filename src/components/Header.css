@@ -32,16 +32,30 @@
   transition: color 0.3s ease;
 }
 
-.logo-img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  border-radius: 50%;
+.logo-svg {
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.logo:hover .logo-img {
+.logo-svg-fill {
+  fill: var(--color-gold);
+  transition: fill 0.3s ease;
+}
+
+.logo-svg-stroke {
+  stroke: var(--color-gold);
+  transition: stroke 0.3s ease;
+}
+
+.header.scrolled .logo-svg-fill {
+  fill: var(--color-navy);
+}
+
+.header.scrolled .logo-svg-stroke {
+  stroke: var(--color-navy);
+}
+
+.logo:hover .logo-svg {
   transform: scale(1.05);
 }
 
