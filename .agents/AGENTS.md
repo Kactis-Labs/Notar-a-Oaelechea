@@ -19,14 +19,17 @@
    - Adaptar las colecciones de datos en `src/config/brandConfig.js`, `src/data/servicesData.js`, `src/data/teamData.js` y `src/data/articlesData.js`.
    - Utilizar imágenes de stock corporativas de alto nivel visual.
 
-4. **Flujo de Trabajo Git Obligatorio:**
+4. **Favicon Obligatorio:**
+   - Actualizar siempre `public/favicon.svg` con el isotipo/símbolo gráfico de la marca del cliente (sin texto) para asegurar máxima nitidez en las pestañas del navegador.
+
+5. **Flujo de Trabajo Git Obligatorio:**
    ```bash
    git checkout main
    git pull origin main
    git checkout -b propuesta-[nombre-cliente]
    ```
 
-5. **Validación & Publicación:**
+6. **Validación & Publicación:**
    - `npm run lint` debe ejecutarse con **0 errores y 0 advertencias**.
    - `npm run build` debe ser 100% exitoso.
    - Incluir en el footer el crédito: `"Diseñado y desarrollado por Kacti Labs"` enlazado a `https://kactilabs.vercel.app/`.
