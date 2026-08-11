@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ctaImage from '../assets/cta-image.jpg';
 import '../pages/ServiceDetail.css'; // Contains the styles for CTA
 
 export default function CTA() {
@@ -11,7 +12,7 @@ export default function CTA() {
           <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
         </div>
         <div className="cta-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" alt="Defensa firme y justa de derechos" />
+          <img src={ctaImage} alt="Defensa firme y justa de derechos" />
         </div>
       </div>
     </section>

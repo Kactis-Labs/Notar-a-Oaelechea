@@ -4,6 +4,9 @@ import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { teamMembers } from '../data/teamData';
 import { brandConfig } from '../config/brandConfig';
+import aboutHero from '../assets/about-hero.png';
+import aboutPhilosophy from '../assets/about-philosophy.png';
+import aboutCommitment from '../assets/about-commitment.png';
 import '../components/Hero.css';
 import '../pages/TeamPage.css'; // For the team card styles
 import './About.css';
@@ -18,7 +21,7 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Sobre Staff Jurídico Harowi" />
+            <img src={aboutHero} alt="Sobre Staff Jurídico Harowi" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
@@ -68,7 +71,7 @@ export default function About() {
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" alt="Nuestra filosofía por la justicia" className="philosophy-img" />
+              <img src={aboutPhilosophy} alt="Nuestra filosofía por la justicia" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -109,7 +112,7 @@ export default function About() {
               </div>
               
               <div className="commitments-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="Nuestro compromiso ético" className="commitments-img" />
+                <img src={aboutCommitment} alt="Nuestro compromiso ético" className="commitments-img" />
               </div>
             </div>
           </div>

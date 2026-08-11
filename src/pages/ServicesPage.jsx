@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
+import img1 from '../assets/services-hero-1.jpg';
+import img2 from '../assets/services-hero-2.jpg';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import '../components/Services.css';
@@ -8,7 +10,8 @@ import './ServicesPage.css';
 
 export default function ServicesPage() {
   return (
-    <div className="services-page">
+    <div className="services-list-page">
+      {/* 1. HERO (Static scroll, 70vh) */}
       <section className="services-list-hero">
         <div className="container">
           <div className="services-list-content">
@@ -21,10 +24,10 @@ export default function ServicesPage() {
           
           <div className="services-hero-images">
             <div className="services-hero-img-box">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop" alt="Defensa de derechos fundamentales" />
+              <img src={img1} alt="Defensa de derechos fundamentales" />
             </div>
             <div className="services-hero-img-box">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop" alt="Patrocinio justo y transparente" />
+              <img src={img2} alt="Patrocinio justo y transparente" />
             </div>
           </div>
         </div>

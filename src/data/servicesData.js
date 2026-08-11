@@ -1,10 +1,15 @@
+import escriturasImg from '../assets/escrituras.jpg';
+import sucesionesImg from '../assets/sucesion.jpg';
+import empresasImg from '../assets/empresas.jpg';
+import vehiculosImg from '../assets/vehiculos.jpg';
+
 export const servicesData = [
   {
     slug: 'defensa-derechos-constitucionales',
     title: 'Defensa de Derechos & Acciones Constitucionales',
     shortDesc: 'Protección incondicional de garantías constitucionales, acciones de amparo, hábeas corpus y defensa de derechos fundamentales.',
-    img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop',
-    heroImg: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop',
+    img: escriturasImg,
+    heroImg: escriturasImg,
     tiempoEstimado: 'Defensa técnica inmediata & prioritaria',
     teamMemberId: 'marco-harowi',
     detailedDesc: [
@@ -13,7 +18,7 @@ export const servicesData = [
       'Analizamos cada causa desde la perspectiva de la igualdad ante la ley, garantizando un patrocinio contundente ante el Poder Judicial y el Tribunal Constitucional.'
     ],
     whoItAppliesTo: 'Personas naturales, colectivos y entidades cuyos derechos constitucionales hayan sido vulnerados o amenazados.',
-    whatProblemItSolves: 'Detiene actos arbitrarios estatales o privados, protege la libertad personal e補 impone el respeto irrestricto a los derechos fundamentales.',
+    whatProblemItSolves: 'Detiene actos arbitrarios estatales o privados, protege la libertad personal e impone el respeto irrestricto a los derechos fundamentales.',
     requirements: [
       'Documentos de identidad de los afectados.',
       'Copia de actos administrativos, resoluciones o conductas vulneratorias.',
@@ -24,8 +29,8 @@ export const servicesData = [
     slug: 'derecho-civil-familia',
     title: 'Derecho Civil, Contratos & Patrocinio Familiar',
     shortDesc: 'Resolución justa de disputas patrimoniales, saneamiento dominial, sucesiones y protección de la familia.',
-    img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600&auto=format&fit=crop',
-    heroImg: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop',
+    img: sucesionesImg,
+    heroImg: sucesionesImg,
     tiempoEstimado: 'Patrocinio comprometido & transparente',
     teamMemberId: 'patricia-aragon',
     detailedDesc: [
@@ -44,8 +49,8 @@ export const servicesData = [
     slug: 'derecho-laboral-justicia',
     title: 'Derecho Laboral & Equidad en el Trabajo',
     shortDesc: 'Defensa contundente de derechos laborales, reposiciones, despidos arbitrarios e indemnizaciones con enfoque de justicia social.',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=600&auto=format&fit=crop',
-    heroImg: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop',
+    img: empresasImg,
+    heroImg: empresasImg,
     tiempoEstimado: 'Atención especializada continua',
     teamMemberId: 'diego-valenzuela',
     detailedDesc: [
@@ -64,8 +69,8 @@ export const servicesData = [
     slug: 'patrocinio-judicial-penal',
     title: 'Patrocinio Judicial & Defensa Procesal',
     shortDesc: 'Representación en litigios civiles y penales con rigurosa tutela del debido proceso y búsqueda implacable de la justicia.',
-    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop',
-    heroImg: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop',
+    img: vehiculosImg,
+    heroImg: vehiculosImg,
     tiempoEstimado: 'Defensa judicial activa 24/7',
     teamMemberId: 'marco-harowi',
     detailedDesc: [
@@ -77,7 +82,7 @@ export const servicesData = [
     whatProblemItSolves: 'Evita sentencias injustas, logra la restitución de derechos agraviados y tutela la libertad con solvencia ética.',
     requirements: [
       'Disposiciones fiscales o cédulas de notificación judicial.',
-      'Documentos y relación circunstanciada del caso.'
+      'Documentos y relación circumstantial del caso.'
     ]
   }
 ];

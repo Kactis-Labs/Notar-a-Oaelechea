@@ -13,7 +13,7 @@ export default function Hero() {
       <section className="hero">
         <motion.div className="hero-bg" style={{ filter, opacity }}>
           <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" 
+            src="/hero-bg.png" 
             alt="Staff Jurídico Harowi" 
           />
           <div className="hero-overlay"></div>

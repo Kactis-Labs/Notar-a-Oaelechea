@@ -2,6 +2,7 @@ import { teamMembers } from '../data/teamData';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
+import equipoHero from '../assets/equipo-hero.png';
 import '../components/Hero.css'; // Reusing full-screen hero styles
 import './TeamPage.css';
 
@@ -16,7 +17,7 @@ export default function TeamPage() {
         <section className="hero">
           <div className="hero-bg">
             <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" 
+              src={equipoHero} 
               alt="Abogados de Staff Jurídico Harowi" 
             />
             <div className="hero-overlay"></div>
