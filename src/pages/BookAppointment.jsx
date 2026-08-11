@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import { brandConfig } from '../config/brandConfig';
-import fachadaImg from '../assets/fachada.jpg';
 import { CheckCircle2 } from 'lucide-react';
 import './BookAppointment.css';
 
@@ -46,10 +45,10 @@ export default function BookAppointment() {
         
         {/* Left Side: Image */}
         <div className="appointment-image-wrapper">
-          <img src={fachadaImg} alt={`Fachada ${brandConfig.name}`} className="appointment-image" />
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt={`Oficinas ${brandConfig.name}`} className="appointment-image" />
           <div className="appointment-image-overlay">
             <h2>{brandConfig.name}</h2>
-            <p>Seguridad jurídica y atención personalizada para sus trámites.</p>
+            <p>Asesoría jurídica especializada y defensa de sus derechos.</p>
           </div>
         </div>
 
@@ -62,7 +61,7 @@ export default function BookAppointment() {
                   Agendar una Cita
                 </h1>
                 <p className="form-subtitle">
-                  Complete el siguiente formulario y un asesor se pondrá en contacto con usted a la brevedad para confirmar su cita.
+                  Complete el siguiente formulario y un asesor legal se pondrá en contacto con usted a la brevedad para confirmar su cita.
                 </p>
 
                 <form className="appointment-form" onSubmit={handleSubmit}>
@@ -106,18 +105,18 @@ export default function BookAppointment() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="tramite">Trámite de interés</label>
+                    <label htmlFor="tramite">Especialidad de interés</label>
                     <select 
                       id="tramite" 
                       name="tramite"
                       value={formData.tramite}
                       onChange={handleChange}
                     >
-                      <option value="">Seleccione un trámite (Opcional)</option>
+                      <option value="">Seleccione una especialidad (Opcional)</option>
                       {servicesData.map(svc => (
                         <option key={svc.slug} value={svc.slug}>{svc.title}</option>
                       ))}
-                      <option value="otro">Otro trámite no listado</option>
+                      <option value="otro">Otra consulta legal</option>
                     </select>
                   </div>
 

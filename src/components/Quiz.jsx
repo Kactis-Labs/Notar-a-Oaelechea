@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿En qué área requiere defensa o asesoría legal?',
+    options: ['Derecho Civil o Contratos', 'Conflicto Laboral / SUNAFIL', 'Registro de Marca / Propiedad Intelectual', 'Asesoría Legal Empresarial']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿Cuál es el estado actual de su caso o consulta?',
+    options: ['Tengo un contrato o documento por revisar', 'Recibí una notificación o inspección', 'Deseo iniciar un registro o trámite', 'Requiero patrocinio litigioso urgente']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Con qué urgencia requiere la atención de su caso?',
+    options: ['Atención inmediata (Urgente)', 'En los próximos días', 'Esta o la próxima semana', 'Consulta preventiva']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Ha contado previamente con asesoría jurídica especializada?',
+    options: ['Sí, cuento con asesores previos', 'Alguna vez para casos puntuales', 'Es mi primera consulta legal']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Diagnóstico Legal Rápido</div>
+          <h2 className="quiz-title">¿Necesitas evaluar la situación de tu caso?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responde 4 preguntas rápidas y te orientaremos sobre la estrategia jurídica conveniente para proteger tus activos. Sin compromiso.
           </p>
         </div>
         

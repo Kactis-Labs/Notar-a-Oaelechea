@@ -26,12 +26,12 @@ export default function ServiceDetail() {
           <div className="compact-hero-overlay"></div>
         </div>
         <div className="container compact-hero-content">
-          <div className="section-label">TRÁMITE</div>
+          <div className="section-label">ESPECIALIDAD LEGAL</div>
           <h1 className="compact-hero-title">{service.title}</h1>
           <p className="compact-hero-subtitle">{service.shortDesc}</p>
           <div className="hero-actions" style={{ marginTop: '2rem' }}>
             <Link to="/agendar-cita" className="btn btn-primary">Agendar consulta</Link>
-            <Link to="/servicios" className="btn btn-outline">Ver otros servicios</Link>
+            <Link to="/servicios" className="btn btn-outline">Ver otras especialidades</Link>
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function ServiceDetail() {
       <section className="service-detail-content section-padding">
         <div className="container service-layout">
           <div className="service-main">
-            <h2>Sobre este trámite</h2>
+            <h2>Sobre esta especialidad</h2>
             {service.detailedDesc.map((p, idx) => (
               <p key={idx} className="service-paragraph">{p}</p>
             ))}
@@ -56,7 +56,7 @@ export default function ServiceDetail() {
             </div>
 
             <div className="service-block requirements-block">
-              <h3>Requisitos</h3>
+              <h3>Requisitos & Documentación</h3>
               <ul className="requirements-list">
                 {service.requirements.map((req, idx) => (
                   <li key={idx}>
@@ -69,15 +69,15 @@ export default function ServiceDetail() {
             
             {service.tiempoEstimado && (
               <div className="service-block time-block">
-                <h3>Tiempo Estimado</h3>
-                <p><strong>{service.tiempoEstimado}</strong> (Sujeto a validación de documentos)</p>
+                <h3>Modalidad de Atención</h3>
+                <p><strong>{service.tiempoEstimado}</strong> (Sujeto a evaluación inicial de antecedentes)</p>
               </div>
             )}
           </div>
 
           <aside className="service-sidebar">
             <div className="sticky-sidebar">
-              <h4 className="sidebar-title">Responsable del trámite</h4>
+              <h4 className="sidebar-title">Líder del Área Legal</h4>
               <div className="team-card sidebar-team-card">
                 <div className="team-img-wrapper">
                   <img src={teamMember.img} alt={teamMember.name} className="team-img" />

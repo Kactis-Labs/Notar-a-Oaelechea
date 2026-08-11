@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { brandConfig } from '../config/brandConfig';
 import './Header.css';
 
 export default function Header() {
@@ -27,7 +26,16 @@ export default function Header() {
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          {brandConfig.name}
+          <svg className="logo-svg" viewBox="0 0 100 110" width="34" height="37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="4" width="48" height="14" fill="#F1A80A" />
+            <rect x="22" y="24" width="16" height="78" fill="#F1A80A" />
+            <polygon points="38,58 78,8 96,8 40,76" fill="#F1A80A" />
+            <polygon points="38,44 96,102 78,102 40,62" fill="#F1A80A" />
+          </svg>
+          <span className="logo-text">
+            <span className="logo-title">KUNAY</span>
+            <span className="logo-subtitle">ESTUDIO JURÍDICO</span>
+          </span>
         </Link>
         
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

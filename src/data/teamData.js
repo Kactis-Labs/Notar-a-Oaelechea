@@ -1,51 +1,47 @@
 export const teamMembers = [
   {
-    id: 'carlos-olaechea',
-    name: 'Carlos Olaechea',
-    role: 'Notario Titular',
-    exp: '30 Años de Experiencia',
+    id: 'fernando-kunay',
+    name: 'Dr. Fernando Kunay',
+    role: 'Socio Fundador & Director Legal',
+    exp: '15+ Años de Experiencia',
     img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
-    bio: 'Abogado por la Pontificia Universidad Católica del Perú, con más de tres décadas dedicadas a brindar seguridad jurídica y fe pública. Su vasta trayectoria garantiza la excelencia y el rigor legal en cada trámite confiado a nuestra notaría.',
-    registry: 'Notario Público — Registro N° 1234, Colegio de Notarios de Lima',
+    bio: 'Abogado graduado con máximos honores en la Universidad Nacional Mayor de San Marcos, con Maestría en Derecho Empresarial y Litigio Estratégico. Ha liderado defensas legales de alta trascendencia patrimonial y asesorado a importantes corporaciones nacionales e internacionales.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 45892',
     recognitions: [
-      'Reconocimiento al Mérito Notarial — Colegio de Notarios de Lima, 2018',
-      'Ponente en el Congreso Notarial Latinoamericano, 2021',
-      'Miembro del Comité de Ética Notarial, 2015-2020'
+      'Reconocimiento a la Excelencia Jurídica — Foro de Abogados de Lima, 2022',
+      'Expositor principal en el Seminario Nacional de Litigación Civil y Corporativa',
+      'Autor de diversas publicaciones especializadas en contratación civil y gobierno corporativo'
     ]
   },
   {
-    id: 'mariana-rios',
-    name: 'Mariana Ríos',
-    role: 'Abogada Senior',
-    exp: '15 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'fernando-vargas',
-    name: 'Fernando Vargas',
-    role: 'Especialista Registral',
+    id: 'patricia-mendoza',
+    name: 'Dra. Patricia Mendoza',
+    role: 'Socia Senior & Líder en Derecho Laboral',
     exp: '12 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop'
+    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    bio: 'Especialista en Derecho del Trabajo y Relaciones Industriales por la Pontificia Universidad Católica del Perú. Amplia trayectoria en la gestión preventiva de inspecciones de SUNAFIL, auditorías laborales y defensa de causas complejas en materia laboral.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 51204',
+    recognitions: [
+      'Miembro de la Sociedad Peruana de Derecho del Trabajo y de la Seguridad Social',
+      'Asesora de alta dirección laboral para grupos empresariales en Lima y provincias'
+    ]
   },
   {
-    id: 'elena-torres',
-    name: 'Elena Torres',
-    role: 'Asesora Corporativa',
+    id: 'rodrigo-alvarez',
+    name: 'Dr. Rodrigo Álvarez',
+    role: 'Especialista en Propiedad Intelectual & Marcas',
+    exp: '10 Años de Experiencia',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
+    bio: 'Abogado especialista en Signos Distintivos, Patentes y Registro Marquetario por la Universidad de Lima. Extensa experiencia registral y litigiosa ante los tribunales de INDECOPI, garantizando el blindaje de la identidad comercial de nuestros clientes.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 58930'
+  },
+  {
+    id: 'camila-valdivia',
+    name: 'Dra. Camila Valdivia',
+    role: 'Asesora Senior en Derecho Civil & Contratos',
     exp: '8 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'luis-mendoza',
-    name: 'Luis Mendoza',
-    role: 'Asesor Legal Junior',
-    exp: '4 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'patricia-castro',
-    name: 'Patricia Castro',
-    role: 'Coordinadora de Atención',
-    exp: '6 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=600&auto=format&fit=crop'
+    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop',
+    bio: 'Especialista en responsabilidad civil contractual, negociaciones complejas y derechos reales. Asesora a familias e inversionistas en operaciones de saneamiento físico-legal y transacciones de alto impacto.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 62118'
   }
 ];

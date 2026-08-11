@@ -2,13 +2,12 @@ import { teamMembers } from '../data/teamData';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
-import equipoHero from '../assets/equipo-hero.png';
 import '../components/Hero.css'; // Reusing full-screen hero styles
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
+  const titular = teamMembers.find(m => m.id === 'fernando-kunay') || teamMembers[0];
+  const restOfTeam = teamMembers.filter(m => m.id !== 'fernando-kunay');
 
   return (
     <div className="team-page">
@@ -17,18 +16,18 @@ export default function TeamPage() {
         <section className="hero">
           <div className="hero-bg">
             <img 
-              src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1920&auto=format&fit=crop" 
+              alt="Equipo legal Kunay Estudio Jurídico" 
             />
             <div className="hero-overlay"></div>
           </div>
           
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <div className="section-label light" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
+              <h1 className="hero-title">Abogados especialistas,<br/>defensa sin fisuras.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Mas de 10 años brindando soluciones legales de alta exigencia a empresas, inversionistas y familias en todo el Perú.
               </p>
             </div>
           </div>

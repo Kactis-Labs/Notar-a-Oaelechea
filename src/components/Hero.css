@@ -40,7 +40,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(26, 26, 26, 0.92) 0%, rgba(26, 26, 26, 0.75) 50%, rgba(26, 26, 26, 0.5) 100%);
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.82) 50%, rgba(15, 23, 42, 0.55) 100%);
+}
+
+.hero-watermark {
+  position: absolute;
+  right: -2%;
+  bottom: -5%;
+  width: 520px;
+  height: 520px;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .hero-watermark {
+    width: 350px;
+    height: 350px;
+    right: -10%;
+    opacity: 0.05;
+  }
 }
 
 .hero-content {
