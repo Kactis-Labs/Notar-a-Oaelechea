@@ -2,13 +2,12 @@ import { teamMembers } from '../data/teamData';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
-import equipoHero from '../assets/equipo-hero.png';
 import '../components/Hero.css'; // Reusing full-screen hero styles
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
+  const titular = teamMembers.find(m => m.id === 'rodrigo-salas') || teamMembers[0];
+  const restOfTeam = teamMembers.filter(m => m.id !== 'rodrigo-salas');
 
   return (
     <div className="team-page">
@@ -17,18 +16,17 @@ export default function TeamPage() {
         <section className="hero">
           <div className="hero-bg">
             <img 
-              src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              src="/hero-bg.png" 
+              alt="Líderes procesales de Salas Valencia & Abogados" 
             />
             <div className="hero-overlay"></div>
           </div>
           
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <h1 className="hero-title">Líderes procesales,<br/>determinación técnica.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Abogados de amplia trayectoria procesal en Arequipa dedicados a la defensa efectiva de cada caso.
               </p>
             </div>
           </div>

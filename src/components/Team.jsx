@@ -6,10 +6,10 @@ export default function Team() {
     <section className="team-section">
       <div className="container">
         <div className="team-header">
-          <div className="section-label">Nuestro Equipo</div>
-          <h2 className="team-title">Profesionales que conocen cada detalle.</h2>
+          <div className="section-label">Nuestros Abogados</div>
+          <h2 className="team-title">Líderes procesales de amplia trayectoria.</h2>
           <p className="team-subtitle">
-            Nuestro equipo no solo domina la normativa registral y notarial, sino que entiende la importancia de cada trámite para su patrimonio y tranquilidad.
+            Un equipo enfocado en la preparación técnica rigurosa y en ganar tu caso en juzgados y tribunales.
           </p>
         </div>
         

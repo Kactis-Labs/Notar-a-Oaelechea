@@ -1,29 +1,27 @@
-// Configuración centralizada de branding para la plantilla de propuesta.
-// Al crear una propuesta para un cliente (notaría / estudio jurídico),
-// solo debes actualizar este archivo.
+// Configuración centralizada de branding para Estudio Jurídico Salas Valencia & Abogados
 
 export const brandConfig = {
   // Información General
-  name: "Notaría Olaechea",
-  shortName: "Olaechea",
-  tagline: "Tu Patrimonio, En Regla.",
-  subtitle: "Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.",
-  foundedYear: 1994,
-  statsCount: "+12,000 trámites realizados",
+  name: "Estudio Jurídico Salas Valencia & Abogados",
+  shortName: "Salas Valencia & Abogados",
+  tagline: "¿Enfrentas un problema legal? No estás solo. Te respaldamos en todo momento.",
+  subtitle: "Firma legal en Arequipa altamente especializada en la defensa estratégica de casos complejos. Nos enfocamos con determinación técnica en ganar tu proceso.",
+  foundedYear: 2008,
+  statsCount: "Trayectoria comprobada y alto índice de victorias procesales en Arequipa",
 
   // Datos de Contacto
   contact: {
-    address: "Av. Javier Prado Este 1234, San Isidro, Lima, Perú",
-    phone: "+51 1 234 5678",
-    phoneRaw: "+5112345678",
+    address: "Calle Santa Marta 214, Oficina 402, Cercado, Arequipa - Perú",
+    phone: "(054) 285-900",
+    phoneRaw: "+5154285900",
     whatsapp: "+51 987 654 321",
     whatsappRaw: "51987654321",
-    email: "citas@notariaolaechea.pe",
+    email: "contacto@salasvalenciabogados.pe",
     hours: {
-      weekdays: "Lunes a Viernes: 8:30 am - 6:00 pm",
+      weekdays: "Lunes a Viernes: 8:30 am - 6:30 pm",
       saturdays: "Sábados: 9:00 am - 1:00 pm"
     },
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15603.541604928509!2d-77.03703909623886!3d-12.096383617349141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866380c85c5%3A0xc487a55ed99690dc!2sSan%20Isidro%2C%20Lima!5e0!3m2!1sen!2spe!4v1716922241680!5m2!1sen!2spe"
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15309.529881180295!2d-71.53982464623886!3d-16.39883861734914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a56a5dc27ef%3A0xc487a55ed99690dc!2sArequipa%2C%20Peru!5e0!3m2!1sen!2spe!4v1716922241680!5m2!1sen!2spe"
   },
 
   // Redes Sociales
@@ -33,10 +31,11 @@ export const brandConfig = {
     instagram: "https://instagram.com"
   },
 
-  // Notario Titular
+  // Socio Fundador / Director
   titular: {
-    name: "Carlos Olaechea",
-    role: "Notario Titular",
-    registry: "Notario Público — Registro N° 1234, Colegio de Notarios de Lima"
+    name: "Dr. Rodrigo Salas Valencia",
+    role: "Socio Director & Líder Procesal",
+    registry: "Estudio Jurídico — Colegio de Abogados de Arequipa (CAA)"
   }
 };
+
