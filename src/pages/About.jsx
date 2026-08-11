@@ -21,15 +21,14 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src={aboutHero} alt="Sobre Gómez & Gómez" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Asesoría jurídica,<br/>orientación & representación.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Desde {brandConfig.foundedYear}, brindamos patrocinio legal de alta especialización en materia Penal y Civil, respaldando a nuestros clientes en cada etapa procesal.
               </p>
             </div>
           </div>
@@ -40,18 +39,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>SOBRE NUESTRO ESTUDIO</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                Fundado por {brandConfig.titular.name}, Estudio Jurídico Gómez & Gómez nació con la convicción de ofrecer un ejercicio del Derecho altamente personalizado, basado en la orientación permanente, el estudio minucioso de cada expediente y la lealtad irrenunciable hacia el patrocinado.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Brindamos asesoría jurídica, orientamos y representamos a nuestros clientes con rigor técnico, ética y determinación en materia Penal y Civil."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                A lo largo de más de una década, nuestra firma ha patrocinado causas complejas ante juzgados, fiscalías y tribunales con una sólida reputación por la calidad de nuestros argumentos y la tutela efectiva de los derechos encomendados.
               </p>
             </div>
           </div>
@@ -65,14 +64,14 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Estructuramos teorías del caso sólidas y estrategias procesales personalizadas para cada uno de nuestros clientes.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Sabemos que la tranquilidad legal depende de contar con un abogado que no solo represente en la audiencia, sino que oriente con claridad antes de tomar cualquier decisión.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src={aboutPhilosophy} alt="Nuestra filosofía procesal" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +79,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">NUESTROS COMPROMISOS</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Principios irrenunciables en nuestra práctica profesional.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,31 +88,31 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Orientación jurídica clara y honesta.</h3>
+                    <p className="commitment-desc">Explicamos sin rodeos ni tecnicismos el diagnóstico real de su asunto penal o civil.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Defensa y representación contundente.</h3>
+                    <p className="commitment-desc">Acudimos a juzgados y despachos fiscales con preparación técnica intransigente frente a cualquier arbitrariedad.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Lealtad y secreto profesional absoluto.</h3>
+                    <p className="commitment-desc">Garantizamos la máxima confidencialidad y el acompañamiento directo de nuestros socios fundadores.</p>
                   </div>
                 </div>
 
               </div>
               
               <div className="commitments-img-wrapper">
-                <img src={aboutCommitment} alt="Nuestro compromiso" className="commitments-img" />
+                <img src={aboutCommitment} alt="Nuestro compromiso procesal" className="commitments-img" />
               </div>
             </div>
           </div>

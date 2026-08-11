@@ -7,12 +7,12 @@ export default function CTA() {
     <section className="service-cta">
       <div className="container cta-layout">
         <div className="cta-content">
-          <h2>No tiene por qué resolverlo solo.</h2>
-          <p>Permita que nuestro equipo de especialistas le asesore para llevar a cabo su trámite notarial con total seguridad, rapidez y transparencia.</p>
+          <h2>Asesoría, Orientación & Representación Jurídica.</h2>
+          <p>En Estudio Jurídico Gómez & Gómez le brindamos el respaldo especializado que su caso penal o civil exige. Agende una consulta con nuestros socios fundadores.</p>
           <Link to="/agendar-cita" className="btn btn-primary">Agendar una cita</Link>
         </div>
         <div className="cta-image-wrapper">
-          <img src={ctaImage} alt="Asesoría notarial" />
+          <img src={ctaImage} alt="Asesoría y representación jurídica penal y civil" />
         </div>
       </div>
     </section>

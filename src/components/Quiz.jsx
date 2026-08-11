@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿En qué materia legal requiere asesoría o representación?',
+    options: ['Derecho Penal / Investigación Fiscal', 'Derecho Civil / Contratos / Daños', 'Derecho de Familia / Herencias', 'Asesoría y Representación Judicial']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿En qué situación se encuentra su caso?',
+    options: ['Notificación fiscal o investigación en curso', 'Conflicto o demanda civil por iniciar', 'Proceso en trámite judicial', 'Consulta preventiva']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Cuál es la urgencia de su atención jurídica?',
+    options: ['Atención penal o procesal inmediata (Urgente)', 'En los próximos días', 'Esta o la próxima semana']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Cuenta con abogado anterior en esta causa?',
+    options: ['Sí, requiero cambio de estrategia legal', 'No, es la primera consulta']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Orientación Penal & Civil</div>
+          <h2 className="quiz-title">¿Requiere representación procesal o asesoría jurídica?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responda 4 preguntas breves y nuestros líderes procesales evaluarán la estrategia para orientar y patrocinar su caso.
           </p>
         </div>
         
