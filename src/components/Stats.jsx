@@ -39,20 +39,20 @@ export default function Stats() {
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="850" suffix="+" /></h3>
+            <p className="stat-label">Predios saneados e inscritos</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <h3 className="stat-number"><AnimatedCounter value="99" suffix="%" /></h3>
+            <p className="stat-label">Éxito en inscripciones SUNARP</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="4" suffix="+" /></h3>
+            <p className="stat-label">Años de solidez S.A.C. en Huaral</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <h3 className="stat-number"><AnimatedCounter value="100" suffix="%" /></h3>
+            <p className="stat-label">Seguridad de su patrimonio</p>
           </div>
         </div>
       </div>

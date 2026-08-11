@@ -7,8 +7,8 @@ import '../components/Hero.css'; // Reusing full-screen hero styles
 import './TeamPage.css';
 
 export default function TeamPage() {
-  const titular = teamMembers.find(m => m.id === 'carlos-olaechea');
-  const restOfTeam = teamMembers.filter(m => m.id !== 'carlos-olaechea');
+  const titular = teamMembers.find(m => m.id === 'alberto-torres') || teamMembers[0];
+  const restOfTeam = teamMembers.filter(m => m.id !== 'alberto-torres');
 
   return (
     <div className="team-page">
@@ -18,17 +18,16 @@ export default function TeamPage() {
           <div className="hero-bg">
             <img 
               src={equipoHero} 
-              alt="Equipo de abogados Notaría Olaechea" 
+              alt="Equipo de ATC & Asociados S.A.C." 
             />
             <div className="hero-overlay"></div>
           </div>
           
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>NUESTRO EQUIPO</div>
-              <h1 className="hero-title">Profesionales que<br/>conocen cada detalle.</h1>
+              <h1 className="hero-title">Especialistas registrales,<br/>experiencia en Huaral.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas peruanas en sus trámites notariales más importantes.
+                Equipo de abogados y verificadores catastrales orientados al saneamiento físico-legal de su patrimonio.
               </p>
             </div>
           </div>

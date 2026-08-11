@@ -21,15 +21,14 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src={aboutHero} alt="Sobre ATC & Asociados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Seguridad inmobiliaria,<br/>garantía en Huaral.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Desde {brandConfig.foundedYear}, acompañamos a propietarios, familias y empresas en el saneamiento físico-legal y formalización de sus activos.
               </p>
             </div>
           </div>
@@ -40,18 +39,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA S.A.C.</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                Constituida como Sociedad Anónima Cerrada en febrero de 2022 en el distrito de Huaral, Estudio Jurídico e Inmobiliario ATC & Asociados S.A.C. nació con el compromiso de resolver la alta informalidad dominial e inseguridad jurídica registral en la provincia.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Un título de propiedad saneado e inscrito en SUNARP no es solo un trámite: es la piedra angular del crecimiento económico y la tranquilidad familiar."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                A lo largo de estos años, nuestra firma ha consolidado un equipo multidisciplinario de abogados especialistas y verificadores catastrales, brindando asesoría registral-civil de alta exigencia técnica.
               </p>
             </div>
           </div>
@@ -65,14 +64,14 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Unimos la rigurosidad legal con la técnica catastral para lograr la inscripción efectiva de su propiedad.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Evaluamos cada título desde sus antecedentes históricos registrales hasta la verificación física en campo, eliminando cualquier riesgo de tacha o duplicidad.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src={aboutPhilosophy} alt="Nuestra filosofía registral" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +79,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">NUESTROS COMPROMISOS</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Garantías irrenunciables para nuestros clientes.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,16 +88,16 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Seguridad jurídica y saneamiento integral.</h3>
+                    <p className="commitment-desc">Garantizamos expedientes libres de contingencias registrales, diseñados para su inscripción definitiva en SUNARP.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Transparencia y costo predecible.</h3>
+                    <p className="commitment-desc">Informamos de manera clara el presupuesto y las etapas del trámite sin costos ocultos ni dilaciones innecesarias.</p>
                   </div>
                 </div>
 

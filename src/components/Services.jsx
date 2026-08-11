@@ -9,10 +9,10 @@ export default function Services() {
     <section className="services-section">
       <div className="container">
         <div className="services-header">
-          <div className="section-label">Nuestros Servicios</div>
-          <h2 className="services-title">Seis trámites. Un mismo respaldo.</h2>
+          <div className="section-label">Especialidades Inmobiliarias & Registrales</div>
+          <h2 className="services-title">Saneamiento de Propiedades & Asesoría Registral</h2>
           <p className="services-subtitle">
-            Cada trámite notarial es distinto. Llevamos tres décadas resolviendo los seis tipos de gestión más solicitados en Lima.
+            Soluciones integrales en saneamiento dominial, contratos civiles y constitución de personas jurídicas en Huaral.
           </p>
         </div>
         
