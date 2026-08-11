@@ -120,20 +120,8 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: var(--color-gold);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
+  display: inline-block;
   margin-bottom: 1.5rem;
-}
-
-.section-label::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-gold);
-  box-shadow: 0 0 10px rgba(241, 168, 10, 0.8);
 }
 
 .section-label.light {

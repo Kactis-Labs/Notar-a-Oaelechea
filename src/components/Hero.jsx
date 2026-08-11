@@ -30,7 +30,6 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <span className="section-label light">Estudio Jurídico Especializado</span>
             <h1 className="hero-title">{brandConfig.tagline.split(',')[0]},<br/>{brandConfig.tagline.split(',')[1] || ''}</h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
