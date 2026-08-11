@@ -3,10 +3,6 @@ import Stats from '../components/Stats';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { teamMembers } from '../data/teamData';
-import { brandConfig } from '../config/brandConfig';
-import aboutHero from '../assets/about-hero.png';
-import aboutPhilosophy from '../assets/about-philosophy.png';
-import aboutCommitment from '../assets/about-commitment.png';
 import '../components/Hero.css';
 import '../pages/TeamPage.css'; // For the team card styles
 import './About.css';
@@ -21,15 +17,14 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Sobre Arce & Asociados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Resultados en el menor tiempo,<br/>priorizando al cliente.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Somos un estudio jurídico moderno orientado a la obtención de soluciones legales efectivas. Conozca a nuestra firma.
               </p>
             </div>
           </div>
@@ -40,18 +35,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>SOBRE NOSOTROS</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                Arce & Asociados es un estudio jurídico moderno, orientado a la obtención de resultados en el más corto plazo posible, priorizando al cliente y sus necesidades en cada etapa del proceso.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Desde la primera reunión hallarás en nosotros la confianza y seguridad necesarias para resolver tu problema legal en el menor tiempo posible."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Sus asociados han sido minuciosamente elegidos, según su especialidad y su capacidad de resolver problemas, poniendo al servicio del cliente toda su experiencia, rigor técnico y conocimiento actualizado.
               </p>
             </div>
           </div>
@@ -65,14 +60,14 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Trabajamos con determinación procesal para brindar respuestas ágiles, transparentes y libres de dilaciones innecesarias.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Comprendemos que el tiempo es un factor crítico para las personas y las empresas. Por ello, diseñamos estrategias eficientes que resuelven contingencias legales con absoluta seguridad.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" alt="Nuestra filosofía" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +75,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">NUESTROS PILARES</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Principios de actuación de nuestros asociados.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,31 +84,31 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Alta capacidad resolutiva.</h3>
+                    <p className="commitment-desc">Asociados elegidos minuciosamente para abordar cada caso con la máxima capacidad técnica y enfoque pragmático.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Prioridad absoluta en el cliente.</h3>
+                    <p className="commitment-desc">Colocamos las necesidades e intereses de nuestros clientes al centro de cada estrategia legal y decisión procesal.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Confianza y seguridad desde el primer día.</h3>
+                    <p className="commitment-desc">Garantizamos absoluta transparencia, comunicación constante y seguridad jurídica desde la primera reunión de trabajo.</p>
                   </div>
                 </div>
 
               </div>
               
               <div className="commitments-img-wrapper">
-                <img src={aboutCommitment} alt="Nuestro compromiso" className="commitments-img" />
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="Nuestro compromiso" className="commitments-img" />
               </div>
             </div>
           </div>

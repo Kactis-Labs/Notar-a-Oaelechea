@@ -1,51 +1,34 @@
 export const teamMembers = [
   {
-    id: 'carlos-olaechea',
-    name: 'Carlos Olaechea',
-    role: 'Notario Titular',
-    exp: '30 Años de Experiencia',
+    id: 'gabriel-arce',
+    name: 'Dr. Gabriel Arce Franco',
+    role: 'Socio Fundador & Director General',
+    exp: '12+ Años de Experiencia',
     img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
-    bio: 'Abogado por la Pontificia Universidad Católica del Perú, con más de tres décadas dedicadas a brindar seguridad jurídica y fe pública. Su vasta trayectoria garantiza la excelencia y el rigor legal en cada trámite confiado a nuestra notaría.',
-    registry: 'Notario Público — Registro N° 1234, Colegio de Notarios de Lima',
+    bio: 'Abogado graduado con honores por la Universidad de Lima, especialista en Derecho Inmobiliario y Estrategia Legal Corporativa. Ha liderado la resolución exitosa de complejos proyectos patrimoniales y saneamientos registrales a nivel nacional.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 49820',
     recognitions: [
-      'Reconocimiento al Mérito Notarial — Colegio de Notarios de Lima, 2018',
-      'Ponente en el Congreso Notarial Latinoamericano, 2021',
-      'Miembro del Comité de Ética Notarial, 2015-2020'
+      'Miembro de la Asociación Peruana de Derecho Inmobiliario',
+      'Asesor legal principal en proyectos de desarrollo patrimonial en Lima y provincias',
+      'Ponente especializado en agilización procesal y saneamiento de predios'
     ]
   },
   {
-    id: 'mariana-rios',
-    name: 'Mariana Ríos',
-    role: 'Abogada Senior',
-    exp: '15 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'
+    id: 'mariana-sanchez',
+    name: 'Dra. Mariana Sánchez',
+    role: 'Socia Senior — Derecho Administrativo',
+    exp: '10 Años de Experiencia',
+    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    bio: 'Especialista en procedimientos administrativos, regulatorio y defensa sancionadora por la Pontificia Universidad Católica del Perú. Destaca por su alta eficacia en la tramitación acelerada de licencias y permisos ante entidades públicas.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 53410'
   },
   {
-    id: 'fernando-vargas',
-    name: 'Fernando Vargas',
-    role: 'Especialista Registral',
-    exp: '12 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'elena-torres',
-    name: 'Elena Torres',
-    role: 'Asesora Corporativa',
+    id: 'diego-espinoza',
+    name: 'Dr. Diego Espinoza',
+    role: 'Especialista en Patrocinio Judicial & Litigios',
     exp: '8 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'luis-mendoza',
-    name: 'Luis Mendoza',
-    role: 'Asesor Legal Junior',
-    exp: '4 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'patricia-castro',
-    name: 'Patricia Castro',
-    role: 'Coordinadora de Atención',
-    exp: '6 Años de Experiencia',
-    img: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=600&auto=format&fit=crop'
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
+    bio: 'Especialista en litigación procesal civil y comercial por la Universidad Nacional Mayor de San Marcos. Reconocido por su determinación procesal y capacidad de resolver controversias en plazos óptimos.',
+    registry: 'Colegio de Abogados de Lima (CAL) — Reg. N° 59802'
   }
 ];

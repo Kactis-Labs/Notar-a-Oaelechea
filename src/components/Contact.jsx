@@ -42,7 +42,7 @@ export default function Contact() {
         <svg viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
           <motion.path 
             d="M-100,100 C150,150 200,350 400,200 C600,50 700,450 900,300 C1100,150 1200,250 1300,100" 
-            stroke="#C9A24B" 
+            stroke="#C4A96D" 
             strokeWidth="4" 
             strokeLinecap="round" 
             variants={drawVariants1}
@@ -51,7 +51,7 @@ export default function Contact() {
           />
           <motion.path 
             d="M-50,400 C150,550 300,150 500,300 C700,450 800,100 1000,200 C1200,300 1250,500 1350,400" 
-            stroke="#C9A24B" 
+            stroke="#C4A96D" 
             strokeWidth="2" 
             strokeLinecap="round" 
             variants={drawVariants2}

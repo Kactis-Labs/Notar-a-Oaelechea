@@ -1,17 +1,18 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-black: #0B2545;
+  --color-navy: #0B2545;
+  --color-gold: #C4A96D;
+  --color-gold-hover: #AC904D;
+  --color-cream: #F7F8FA;
   --color-white: #FFFFFF;
-  --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
-  --color-text-muted: #666666;
+  --color-gray: #E2E8F0;
+  --color-dark-gray: #13355C;
+  --color-text-dark: #0B2545;
+  --color-text-muted: #50657B;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
   
   --spacing-section: 6rem;
   --max-width: 1200px;
@@ -24,16 +25,17 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body), var(--font-sans);
   color: var(--color-black);
   background-color: var(--color-white);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
@@ -66,22 +68,25 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.75rem;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   border-radius: 4px;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+  font-family: var(--font-sans);
 }
 
 .btn-primary {
   background-color: var(--color-gold);
-  color: #1A1A1A;
+  color: #0B2545;
+  box-shadow: 0 4px 14px rgba(196, 169, 109, 0.3);
 }
 
 .btn-primary:hover {
   background-color: var(--color-gold-hover);
   transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(196, 169, 109, 0.45);
 }
 
 .btn-outline {
@@ -90,7 +95,7 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .btn-outline-dark {
@@ -108,32 +113,20 @@ button {
   padding: var(--spacing-section) 0;
 }
 
-/* Subtítulos Unboxed */
+/* Subtítulos Unboxed (Limpios, Sin Puntos/Viñetas) */
 .section-label {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: var(--color-gold);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
+  display: inline-block;
   margin-bottom: 1.5rem;
 }
 
-.section-label::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
-}
-
 .section-label.light {
-  color: #F7F6F4;
+  color: #F7F8FA;
 }
 
 /* Page Transition Grid for Crossfade */

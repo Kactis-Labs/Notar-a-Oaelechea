@@ -5,20 +5,20 @@ import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué necesitas resolver?',
-    options: ['Comprar/vender un inmueble', 'Dejar todo en orden (Herencia)', 'Autorizar a alguien (Poderes)', 'Formalizar mi empresa']
+    question: '¿En qué especialidad legal requiere asesoría o representación?',
+    options: ['Asesoría Legal Inmobiliaria (Predios/Títulos)', 'Asesoría Legal Administrativa (Licencias/Sanciones)', 'Asesoría Legal Judicial (Litigios/Demandas)']
   },
   {
-    question: '¿Tienes los documentos originales a la mano?',
-    options: ['Sí, tengo todo completo', 'Tengo algunos documentos', 'No sé qué documentos necesito', 'Los perdí o necesito copias']
+    question: '¿Cuál es la urgencia de su requerimiento legal?',
+    options: ['Resolución inmediata en el menor tiempo', 'En los próximos días', 'Esta o la próxima semana']
   },
   {
-    question: '¿Qué tan urgente es tu trámite?',
-    options: ['Lo necesito hoy mismo', 'En los próximos días', 'Esta o la próxima semana', 'Solo estoy averiguando']
+    question: '¿Con qué documentación cuenta actualmente?',
+    options: ['Documentos completos y títulos a la mano', 'Parte de la documentación o notificaciones', 'Requiere evaluación desde cero']
   },
   {
-    question: '¿Ya has realizado trámites notariales antes?',
-    options: ['Sí, frecuentemente', 'Alguna vez hace tiempo', 'Es mi primera vez']
+    question: '¿Ha consultado previamente este asunto con otra firma?',
+    options: ['Sí, busco agilizar el proceso con Arce & Asociados', 'No, es mi primera consulta legal']
   }
 ];
 
@@ -61,10 +61,10 @@ export default function Quiz() {
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
-          <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <div className="section-label light">Diagnóstico Legal Rápido</div>
+          <h2 className="quiz-title">¿Busca solucionar su problema legal en el menor tiempo?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responda 4 preguntas breves y le orientaremos de inmediato con la confianza y seguridad que su caso requiere.
           </p>
         </div>
         
