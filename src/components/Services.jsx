@@ -9,10 +9,10 @@ export default function Services() {
     <section className="services-section">
       <div className="container">
         <div className="services-header">
-          <div className="section-label">Nuestros Servicios</div>
-          <h2 className="services-title">Seis trámites. Un mismo respaldo.</h2>
+          <div className="section-label">Especialidades por la Justicia</div>
+          <h2 className="services-title">Defensa de Derechos & Patrocinio Comprometido</h2>
           <p className="services-subtitle">
-            Cada trámite notarial es distinto. Llevamos tres décadas resolviendo los seis tipos de gestión más solicitados en Lima.
+            Un equipo de abogados especializados en derecho que luchan incondicionalmente por la igualdad y la justicia.
           </p>
         </div>
         

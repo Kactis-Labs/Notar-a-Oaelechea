@@ -39,20 +39,20 @@ export default function Stats() {
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="1600" suffix="+" /></h3>
+            <p className="stat-label">Defensas y causas patrocinadas</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <h3 className="stat-number"><AnimatedCounter value="99" suffix="%" /></h3>
+            <p className="stat-label">Rigor ético y debido proceso</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="10" suffix="+" /></h3>
+            <p className="stat-label">Años luchando por la equidad</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <h3 className="stat-number"><AnimatedCounter value="100" suffix="%" /></h3>
+            <p className="stat-label">Compromiso incondicional</p>
           </div>
         </div>
       </div>
