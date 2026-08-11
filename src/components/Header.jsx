@@ -26,11 +26,14 @@ export default function Header() {
     <header className={`header ${scrolled || forceScrolled || menuOpen ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          <svg className="logo-svg" viewBox="0 0 120 120" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="56" className="logo-svg-circle" />
-            <path d="M78 48 C74 44 68 42 62 42 C56 36 50 28 42 24 C36 28 32 34 28 42 C24 50 24 58 26 66 C28 74 34 82 42 86 C50 90 60 90 70 86 C64 80 58 78 54 74 C50 70 48 64 50 58 C52 54 56 52 62 52 C68 52 74 54 80 56 C82 52 82 50 78 48 Z" fill="#FFFFFF" />
-            <path d="M66 48 C68 48 70 49 71 51 C69 52 67 51 66 48 Z" className="logo-svg-detail" />
-            <path d="M76 56 C74 58 71 59 68 58 C72 56 74 55 76 56 Z" className="logo-svg-detail" />
+          <svg className="logo-svg" viewBox="0 0 100 100" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" className="logo-svg-circle" />
+            <path d="M 72,49 C 71,46 66,42 60,41 C 55,35 48,27 40,24 C 34,27 30,33 26,40 C 22,48 22,56 24,64 C 26,72 32,79 40,83 C 47,87 56,87 65,83 C 60,78 55,76 51,72 C 47,68 45,63 47,57 C 49,53 53,51 59,51 C 65,51 70,53 75,55 C 77,52 76,50 72,49 Z" fill="#FFFFFF" />
+            <path d="M 64,48 C 66,48 68,49 69,51 C 67,52 65,51 64,48 Z" className="logo-svg-detail" />
+            <path d="M 73,55 C 71,57 68,58 65,57 C 69,55 71,54 73,55 Z" className="logo-svg-detail" />
+            <path d="M 38,28 C 34,34 33,42 36,48 C 32,46 29,42 30,36 C 32,31 35,28 38,28 Z" fill="#FFFFFF" />
+            <path d="M 32,48 C 29,54 29,62 33,68 C 29,65 26,60 27,53 C 28,48 30,48 32,48 Z" fill="#FFFFFF" />
+            <path d="M 36,68 C 33,74 36,80 42,84 C 36,82 32,77 33,72 C 34,69 35,68 36,68 Z" fill="#FFFFFF" />
           </svg>
           <span className="logo-text">
             <span className="logo-title">Arce & Asociados</span>
