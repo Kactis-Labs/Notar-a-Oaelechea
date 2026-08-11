@@ -4,9 +4,6 @@ import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { teamMembers } from '../data/teamData';
 import { brandConfig } from '../config/brandConfig';
-import aboutHero from '../assets/about-hero.png';
-import aboutPhilosophy from '../assets/about-philosophy.png';
-import aboutCommitment from '../assets/about-commitment.png';
 import '../components/Hero.css';
 import '../pages/TeamPage.css'; // For the team card styles
 import './About.css';
@@ -21,15 +18,14 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre nosotros" />
+            <img src="/hero-bg.png" alt="Sobre Ramírez y Abogados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
-              <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Ayudamos a proteger<br/>lo que más importa.</h1>
+              <h1 className="hero-title">Experiencia, Compromiso &<br/>Resultados Jurídicos.</h1>
               <p className="hero-subtitle">
-                Por más de 30 años, hemos acompañado a familias y empresas en sus decisiones legales más importantes. Así es quiénes somos y por qué hacemos este trabajo.
+                Desde {brandConfig.foundedYear}, defendemos con rigor técnico e integridad los intereses de nuestros clientes. Conozca nuestra trayectoria institucional.
               </p>
             </div>
           </div>
@@ -40,18 +36,18 @@ export default function About() {
         {/* 2. HISTORY SECTION */}
         <section className="history-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
+            <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA TRAYECTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                En {brandConfig.foundedYear}, nuestro socio fundador {brandConfig.titular.name} estableció los cimientos de la firma sobre un principio irrenunciable: brindar un patrocinio legal de alta especialización, caracterizado por la ética procesal y la búsqueda constante de la excelencia.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "Ese caso nos enseñó el principio fundacional de nuestra firma: la abogacía es un ejercicio de máxima responsabilidad donde el análisis técnico riguroso y la ética personal determinan el destino de familias y corporaciones."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Tras más de 25 años de ejercicio ininterrumpido, Ramírez y Abogados se consolida como una firma de referencia institucional en Lima, asesorando a empresas, instituciones y personas naturales en sus asuntos jurídicos de mayor trascendencia.
               </p>
             </div>
           </div>
@@ -65,14 +61,14 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que un trámite notarial no es solo un papel firmado. Es la tranquilidad de saber que algo importante quedó bien resuelto.
+                Creemos que el verdadero prestigio jurídico se construye día a día con resultados tangibles, confidencialidad inquebrantable y lealtad absoluta al cliente.
               </h2>
               <p className="philosophy-subtext">
-                Cada familia y cada negocio son distintos. Hemos pasado tres décadas especializándonos en todas las áreas del derecho notarial para que, sin importar lo complejo de su situación, encuentre aquí una solución clara.
+                Combinamos la tradición académica de la abogacía clásica con una visión moderna de la gestión de riesgos corporativos y la resolución de controversias.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
-              <img src={aboutPhilosophy} alt="Nuestra filosofía" className="philosophy-img" />
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" alt="Nuestra filosofía" className="philosophy-img" />
             </div>
           </div>
         </section>
@@ -80,8 +76,8 @@ export default function About() {
         {/* 4. COMMITMENTS SECTION */}
         <section className="commitments-section section-padding">
           <div className="container">
-            <div className="section-label">LO QUE CREEMOS</div>
-            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Compromisos que asumimos con cada cliente.</h2>
+            <div className="section-label">PILARES INSTITUCIONALES</div>
+            <h2 className="team-grid-title" style={{ marginBottom: '4rem' }}>Principios rectores de nuestro patrocinio legal.</h2>
             
             <div className="commitments-layout">
               <div className="commitments-list">
@@ -89,31 +85,31 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Honestidad antes que falsas esperanzas.</h3>
-                    <p className="commitment-desc">Preferimos decirle una verdad incómoda en la primera reunión, antes que prometerle tiempos o resultados registrales irreales. Usted merece tomar decisiones con información real.</p>
+                    <h3 className="commitment-title">Rigor técnico y preparación exhaustiva.</h3>
+                    <p className="commitment-desc">Estudiamos cada expediente y contingencia hasta el más mínimo detalle normativo y probatorio para garantizar la solidez de la defensa.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Claridad sobre tecnicismos.</h3>
-                    <p className="commitment-desc">El derecho notarial está construido sobre acrónimos y lenguaje legal que puede confundir a cualquiera. Nosotros traducimos. Explicamos cada trámite en lenguaje simple para que entienda qué sucede con su caso.</p>
+                    <h3 className="commitment-title">Confidencialidad e integridad profesional.</h3>
+                    <p className="commitment-desc">Mantenemos el secreto profesional bajo los más altos estándares éticos, resguardando la información sensible de nuestros clientes.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Acompañamiento continuo.</h3>
-                    <p className="commitment-desc">Cuando su escritura está lista, no desaparecemos. Mantenemos sus archivos organizados para el siguiente paso. La relación no termina al firmar; allí es donde comienza su seguridad.</p>
+                    <h3 className="commitment-title">Lealtad y atención personalizada.</h3>
+                    <p className="commitment-desc">Nuestros socios lideran personalmente la estrategia procesal de cada caso, garantizando una relación de confianza directa.</p>
                   </div>
                 </div>
 
               </div>
               
               <div className="commitments-img-wrapper">
-                <img src={aboutCommitment} alt="Nuestro compromiso" className="commitments-img" />
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="Nuestro compromiso" className="commitments-img" />
               </div>
             </div>
           </div>
