@@ -12,9 +12,10 @@ export default function Footer() {
             </p>
           </div>
           
-          <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem' }}>
-            <a href={brandConfig.social.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>LinkedIn</a>
+          <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem', flexWrap: 'wrap' }}>
+            <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>TikTok</a>
             <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Facebook</a>
+            <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Instagram</a>
             <a href="/contacto" style={{ color: '#E2E7EC' }}>Contacto</a>
           </div>
         </div>

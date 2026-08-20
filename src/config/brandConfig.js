@@ -11,24 +11,24 @@ export const brandConfig = {
 
   // Datos de Contacto
   contact: {
-    address: "Av. Larco 850, Urb. California, Trujillo - La Libertad, Perú",
-    phone: "+51 44 285 900",
-    phoneRaw: "+5144285900",
-    whatsapp: "+51 944 888 777",
-    whatsappRaw: "51944888777",
-    email: "contacto@escalanteulloa.pe",
+    address: "Calle Isabel de Bobadilla N° 170, segundo piso, oficina 102 - Trujillo, Perú",
+    phone: "+51 932 985 810",
+    phoneRaw: "+51932985810",
+    whatsapp: "+51 932 985 810",
+    whatsappRaw: "51932985810",
+    email: "ulloaasociadossac@gmail.com",
     hours: {
-      weekdays: "Lunes a Viernes: 8:30 am - 6:30 pm",
-      saturdays: "Sábados: 9:00 am - 1:00 pm"
+      weekdays: "Lunes a Viernes: 8:00 am - 5:00 pm",
+      saturdays: "Sábados: Previa cita"
     },
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.912!2d-79.035!3d-8.125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9!2sAv.%20Larco%20850%2C%20Trujillo!5e0!3m2!1ses!2spe!4v1716922241680!5m2!1ses!2spe"
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.85!2d-79.030!3d-8.115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d806556e4c7%3A0xb2146816d8a3952f!2sIsabel%20de%20Bobadilla%20170%2C%20Trujillo%2013008!5e0!3m2!1ses!2spe!4v1716922241680!5m2!1ses!2spe"
   },
 
   // Redes Sociales
   social: {
-    linkedin: "https://linkedin.com",
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com"
+    tiktok: "https://www.tiktok.com/@escalanteulloa.asociados?_r=1&_t=ZS-992xiu49omn",
+    facebook: "https://www.facebook.com/share/1FATUTZUGh/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/aderulloa?igsh=MXdwZTJvNno1ZW01MA=="
   },
 
   // Socios Fundadores

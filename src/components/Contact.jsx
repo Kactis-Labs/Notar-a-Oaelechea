@@ -85,9 +85,17 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="contact-cta-wrapper">
-            <Link to="/agendar-cita" className="btn btn-primary contact-btn">
-              Completar formulario de contacto
+          <div className="contact-cta-wrapper" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <a 
+              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, deseo realizar una consulta legal en el Estudio Jurídico Escalante, Ulloa & Asociados.")}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary contact-btn"
+            >
+              Contactar por WhatsApp
+            </a>
+            <Link to="/contacto" className="btn btn-outline-dark contact-btn">
+              Ver detalles de contacto
             </Link>
           </div>
 
