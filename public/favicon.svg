@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
   <rect width="120" height="120" rx="20" fill="#1B3A57"/>
-  <!-- Monogram "EU" Interlocked Emblem in Gold/White -->
-  <g transform="translate(60, 20)">
-    <text x="-24" y="55" fill="#B8934F" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="52">E</text>
-    <text x="-4" y="66" fill="#FFFFFF" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="52">U</text>
+  <!-- Monogram "EU" Emblem in Gold/White -->
+  <g transform="translate(60, 15)">
+    <text x="-30" y="50" fill="#B8934F" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="46">E</text>
+    <text x="2" y="60" fill="#FFFFFF" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="46">U</text>
   </g>
-  <line x1="20" y1="98" x2="100" y2="98" stroke="#B8934F" stroke-width="2" opacity="0.8" />
+  <line x1="20" y1="94" x2="100" y2="94" stroke="#B8934F" stroke-width="2" opacity="0.8" />
 </svg>
