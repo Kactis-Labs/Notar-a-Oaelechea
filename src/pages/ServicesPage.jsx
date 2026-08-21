@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
-import img1 from '../assets/services-hero-1.jpg';
-import img2 from '../assets/services-hero-2.jpg';
+import img1 from '../assets/services-hero-1.webp';
+import img2 from '../assets/services-hero-2.webp';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import '../components/Services.css';

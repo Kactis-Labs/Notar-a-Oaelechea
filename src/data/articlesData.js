@@ -1,6 +1,6 @@
-import articleNotario from '../assets/article-notario.png';
-import articleEmpresa from '../assets/article-empresa.png';
-import articleRegistral from '../assets/article-registral.png';
+import articleNotario from '../assets/article-notario.webp';
+import articleEmpresa from '../assets/article-empresa.webp';
+import articleRegistral from '../assets/article-registral.webp';
 
 export const articlesData = [
   {
