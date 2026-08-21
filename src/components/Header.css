@@ -105,7 +105,8 @@
 
 @media (max-width: 992px) {
   .header {
-    padding: 0.65rem 0;
+    padding: 1.15rem 0;
+    transition: padding 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.35s ease;
   }
 
   .header.scrolled {
@@ -113,11 +114,27 @@
   }
 
   .header-container {
-    padding: 0 1.25rem;
+    position: relative;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-link {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo-img {
-    height: 44px;
+    height: 68px;
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
+  }
+
+  .header.scrolled .logo-img {
+    height: 42px;
   }
 
   .desktop-btn-nav {
@@ -128,14 +145,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 1.75rem; /* desplazado ligeramente a la izquierda del borde */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 105;
   }
   
   .nav-links {
     position: fixed;
-    top: 60px; /* height of compact header */
+    top: 58px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 58px);
     background-color: var(--color-white);
     flex-direction: column;
     align-items: center;
