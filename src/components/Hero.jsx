@@ -26,7 +26,14 @@ export default function Hero() {
               {brandConfig.subtitle}
             </p>
             <div className="hero-actions">
-              <Link to="/agendar-cita" className="btn btn-primary">Agendar una consulta</Link>
+              <a 
+                href={brandConfig.contact.whatsappUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary"
+              >
+                Agendar una consulta
+              </a>
               <Link to="/servicios" className="btn btn-outline">Áreas de práctica</Link>
             </div>
           </div>
@@ -34,7 +41,14 @@ export default function Hero() {
           <div className="hero-card">
             <p className="hero-card-meta">Estudio Jurídico &middot; Fundado en {brandConfig.foundedYear}</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
-            <Link to="/agendar-cita" className="hero-card-btn">Solicitar evaluación</Link>
+            <a 
+              href={brandConfig.contact.whatsappUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hero-card-btn"
+            >
+              Solicitar evaluación
+            </a>
           </div>
         </div>
       </section>

@@ -172,9 +172,15 @@ export default function Quiz() {
                     Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
                   </p>
                   
-                  <Link to="/agendar-cita" className="btn btn-primary" style={{ width: '100%', marginBottom: '1rem' }}>
-                    Agendar mi cita ahora
-                  </Link>
+                  <a 
+                    href={`https://wa.me/51932985810?text=${encodeURIComponent(`Hola, mi nombre es ${contactData.name || 'un cliente'}. Realicé el diagnóstico legal en su web y deseo agendar una consulta personalizada.`)}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-primary" 
+                    style={{ width: '100%', marginBottom: '1rem' }}
+                  >
+                    Contactar directamente por WhatsApp
+                  </a>
                   <button 
                     onClick={handleReset} 
                     style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}

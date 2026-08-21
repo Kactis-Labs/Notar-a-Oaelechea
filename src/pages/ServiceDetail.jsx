@@ -30,7 +30,14 @@ export default function ServiceDetail() {
           <h1 className="compact-hero-title">{service.title}</h1>
           <p className="compact-hero-subtitle">{service.shortDesc}</p>
           <div className="hero-actions" style={{ marginTop: '2rem' }}>
-            <Link to="/agendar-cita" className="btn btn-primary">Agendar consulta</Link>
+            <a 
+              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, deseo agendar una consulta sobre el área de " + service.title + " con el estudio Escalante, Ulloa & Asociados.")}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+            >
+              Agendar consulta
+            </a>
             <Link to="/servicios" className="btn btn-outline">Ver otros servicios</Link>
           </div>
         </div>

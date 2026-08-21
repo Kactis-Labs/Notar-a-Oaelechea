@@ -110,6 +110,17 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               title={`Ubicación de ${brandConfig.name}`}
             ></iframe>
+            <div style={{ marginTop: '0.75rem', textAlign: 'center' }}>
+              <a 
+                href={brandConfig.contact.mapsUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-outline-dark"
+                style={{ fontSize: '0.8rem', padding: '0.5rem 1rem' }}
+              >
+                📍 Abrir en Google Maps
+              </a>
+            </div>
           </div>
         </div>
       </div>

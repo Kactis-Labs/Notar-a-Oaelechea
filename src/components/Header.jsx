@@ -47,14 +47,24 @@ export default function Header() {
           <Link to="/equipo">Equipo</Link>
           <Link to="/recursos">Recursos</Link>
           <Link to="/contacto">Contacto</Link>
-          <Link to="/agendar-cita" className="btn btn-outline-dark mobile-btn-nav">
+          <a 
+            href={brandConfig.contact.whatsappUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-outline-dark mobile-btn-nav"
+          >
             Agendar Cita
-          </Link>
+          </a>
         </nav>
         
-        <Link to="/agendar-cita" className="btn btn-outline-dark desktop-btn-nav">
+        <a 
+          href={brandConfig.contact.whatsappUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn btn-outline-dark desktop-btn-nav"
+        >
           Agendar Cita
-        </Link>
+        </a>
       </div>
     </header>
   );

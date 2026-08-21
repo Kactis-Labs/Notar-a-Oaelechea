@@ -16,6 +16,8 @@ export const brandConfig = {
     phoneRaw: "+51932985810",
     whatsapp: "+51 932 985 810",
     whatsappRaw: "51932985810",
+    whatsappUrl: "https://wa.me/51932985810?text=Hola%2C%20deseo%20agendar%20una%20consulta%20legal%20con%20el%20estudio%20Escalante%2C%20Ulloa%20%26%20Asociados.",
+    mapsUrl: "https://maps.app.goo.gl/YwSV4JE3tmTdh2YW7",
     email: "ulloaasociadossac@gmail.com",
     hours: {
       weekdays: "Lunes a Viernes: 8:00 am - 5:00 pm",
