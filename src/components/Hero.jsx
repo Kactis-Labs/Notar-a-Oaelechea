@@ -7,7 +7,7 @@ import heroBg2 from '../assets/equipo-grupal.webp';
 import './Hero.css';
 
 const bgImages = [
-  { src: heroBg1, alt: 'Escalante, Ulloa y Asociados - Estudio Jurídico en Trujillo' },
+  { src: heroBg1, alt: 'Dr. Ader Ulloa - Estudio Jurídico' },
   { src: heroBg2, alt: 'Equipo de Abogados Escalante, Ulloa y Asociados' }
 ];
 
@@ -45,9 +45,12 @@ export default function Hero() {
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Rigor Jurídico, Solidez Corporativa<br/>y Compromiso en Trujillo</h1>
+            <h1 className="hero-title">
+              ¿Tienes un problema legal?<br/>
+              No lo enfrentes solo.
+            </h1>
             <p className="hero-subtitle">
-              {brandConfig.subtitle}
+              Defensa jurídica estratégica para casos que realmente importan. Detrás de cada expediente hay una vida que merece ser defendida.
             </p>
             <div className="hero-actions">
               <a 
@@ -56,14 +59,16 @@ export default function Hero() {
                 rel="noopener noreferrer" 
                 className="btn btn-primary"
               >
-                Agendar una consulta
+                Consultar mi caso
               </a>
-              <Link to="/servicios" className="btn btn-outline">Áreas de práctica</Link>
+              <Link to="/servicios" className="btn btn-outline">
+                Áreas de práctica
+              </Link>
             </div>
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Estudio Jurídico &middot; Fundado en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">Sede Trujillo &middot; Atención a Nivel Nacional</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
             <a 
               href={brandConfig.contact.whatsappUrl} 
@@ -71,7 +76,7 @@ export default function Hero() {
               rel="noopener noreferrer" 
               className="hero-card-btn"
             >
-              Solicitar evaluación
+              Solicitar asesoría
             </a>
           </div>
         </div>
@@ -79,4 +84,3 @@ export default function Hero() {
     </div>
   );
 }
-

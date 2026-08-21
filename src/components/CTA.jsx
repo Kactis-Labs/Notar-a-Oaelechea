@@ -1,25 +1,35 @@
 import { brandConfig } from '../config/brandConfig';
 import ctaImage from '../assets/cta-banner.webp';
-import '../pages/ServiceDetail.css'; // Contains the styles for CTA
+import './CTA.css';
 
 export default function CTA() {
   return (
-    <section className="service-cta">
-      <div className="container cta-layout">
-        <div className="cta-content">
-          <h2>Respaldo procesal y estrategia legal de primer nivel.</h2>
-          <p>Confíe su patrimonio, libertad e intereses corporativos al patrocinio técnico del Dr. Jorge Escalante, Dr. Ader Ulloa y nuestro equipo legal.</p>
+    <section className="national-cta-section" id="cobertura-nacional">
+      <div className="container national-cta-layout">
+        <div className="national-cta-content">
+          <div className="section-label light" style={{ color: 'var(--color-gold)', marginBottom: '0.75rem' }}>
+            ATENCIÓN NACIONAL
+          </div>
+          <h2 className="national-cta-title">Defensa jurídica y patrocinio procesal en todo el Perú.</h2>
+          <p className="national-cta-desc">
+            Atención presencial en nuestra sede en Trujillo y patrocinio procesal en todas las cortes del país (presencial y virtual). La distancia geográfica nunca debe ser un obstáculo para contar con una defensa técnica de primer nivel.
+          </p>
           <a 
             href={brandConfig.contact.whatsappUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary"
           >
-            Agendar una consulta
+            Cuéntanos tu caso
           </a>
         </div>
-        <div className="cta-image-wrapper">
-          <img src={ctaImage} alt="Defensa legal estratégica - Escalante, Ulloa y Asociados" />
+        
+        <div className="national-cta-img-wrapper">
+          <img 
+            src={ctaImage} 
+            alt="Atención legal a nivel nacional - Escalante, Ulloa y Asociados" 
+            className="national-cta-img" 
+          />
         </div>
       </div>
     </section>

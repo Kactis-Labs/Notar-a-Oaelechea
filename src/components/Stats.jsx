@@ -35,7 +35,7 @@ export default function Stats() {
       </div>
       
       <div className="container stats-container">
-        <div className="section-label">Indicadores Institucionales</div>
+        <div className="section-label">Indicadores de nuestra firma</div>
         
         <div className="stats-grid">
           <div className="stat-item">

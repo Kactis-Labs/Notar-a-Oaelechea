@@ -37,7 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section" ref={ref}>
+    <section className="contact-section" ref={ref} id="contacto">
       <div className="contact-bg-svg">
         <svg viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
           <motion.path 
@@ -63,9 +63,9 @@ export default function Contact() {
 
       <div className="container contact-container">
         <div className="contact-content">
-          <h2 className="contact-title">Estamos para atenderlo</h2>
+          <h2 className="contact-title">Cuéntanos qué ocurrió.</h2>
           <p className="contact-subtitle">
-            Programe una cita para asegurar una atención preferencial y sin demoras en nuestras oficinas.
+            Explícanos brevemente tu situación. Nuestro equipo te indicará cómo podemos ayudarte y, cuando corresponda, coordinaremos una asesoría.
           </p>
           
           <div className="contact-info">
@@ -87,7 +87,7 @@ export default function Contact() {
           
           <div className="contact-cta-wrapper" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a 
-              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, deseo realizar una consulta legal en el Estudio Jurídico Escalante, Ulloa y Asociados.")}`} 
+              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, encontré su estudio a través de su página web y quisiera contarles mi caso.")}`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary contact-btn"

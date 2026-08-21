@@ -1,0 +1,220 @@
+.real-cases-section {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-white);
+  padding: var(--spacing-section) 0;
+}
+
+.cases-header-block {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.cases-main-title {
+  font-size: 3.5rem;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.cases-main-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.cases-vertical-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.case-vertical-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.case-vertical-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Marco vertical 9:16 exacto */
+.case-vertical-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.15rem;
+  background-color: #000000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.case-thumbnail-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+/* En escritorio: centrado compensando el margen de Drive */
+@media (min-width: 769px) {
+  .case-drive-iframe {
+    position: absolute;
+    top: 0;
+    left: -13.5%;
+    width: 127%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+}
+
+/* En móvil: encuadre natural 100% para que los controles táctiles de Drive no se distorsionen */
+@media (max-width: 768px) {
+  .case-drive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+}
+
+.case-vertical-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.case-vertical-card:hover .case-vertical-img {
+  transform: scale(1.04);
+}
+
+.case-play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(16, 33, 51, 0.75) 0%, rgba(16, 33, 51, 0.15) 50%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.case-vertical-card:hover .case-play-overlay {
+  background: rgba(16, 33, 51, 0.25);
+}
+
+.case-play-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(184, 147, 79, 0.45);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.case-vertical-card:hover .case-play-btn {
+  transform: scale(1.12);
+  background-color: var(--color-gold-hover);
+}
+
+.play-icon-triangle {
+  color: #FFFFFF;
+  margin-left: 3px;
+}
+
+.case-duration-badge {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.case-vertical-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.case-card-category {
+  font-size: 0.82rem;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  line-height: 1.35;
+}
+
+.case-card-result {
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .cases-vertical-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cases-header-block {
+    margin-bottom: 1.75rem;
+  }
+  .cases-main-title {
+    font-size: 1.85rem;
+  }
+  .cases-main-subtitle {
+    font-size: 0.88rem;
+  }
+  .cases-vertical-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .case-vertical-video-wrapper {
+    aspect-ratio: 9/16;
+    max-height: 480px;
+    max-width: 300px;
+    margin: 0 auto 1.15rem auto;
+  }
+  .case-card-title {
+    font-size: 1.15rem;
+  }
+  .case-card-category {
+    font-size: 0.8rem;
+  }
+  .case-card-result {
+    font-size: 0.78rem;
+  }
+  .case-play-btn {
+    width: 48px;
+    height: 48px;
+  }
+}

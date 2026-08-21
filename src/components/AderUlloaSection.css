@@ -1,0 +1,153 @@
+.ader-section {
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 2;
+  padding: var(--spacing-section) 0;
+  overflow: hidden;
+}
+
+.ader-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ader-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ader-name {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  color: var(--color-navy);
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+}
+
+.ader-role {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+}
+
+.ader-bio {
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  line-height: 1.7;
+}
+
+.ader-registry {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--color-navy);
+  background-color: var(--color-cream);
+  padding: 0.85rem 1.25rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--color-gold);
+  width: fit-content;
+}
+
+.ader-recognitions {
+  margin-top: 0.5rem;
+}
+
+.recognitions-title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.ader-recognitions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ader-recognitions li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.ader-image-wrapper {
+  position: relative;
+  border-radius: 8px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.ader-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.ader-image-deco {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  bottom: 15px;
+  left: 15px;
+  border: 2px solid var(--color-gold);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .ader-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .ader-name {
+    font-size: 2.2rem;
+  }
+
+  .ader-image {
+    height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ader-name {
+    font-size: 1.7rem;
+  }
+  .ader-role {
+    font-size: 0.85rem;
+  }
+  .ader-bio {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  .ader-registry {
+    padding: 0.65rem 0.95rem;
+    font-size: 0.82rem;
+  }
+  .ader-image-wrapper {
+    max-width: 280px;
+  }
+  .ader-image {
+    height: 320px;
+  }
+  .ader-image-deco {
+    display: none;
+  }
+}
