@@ -59,15 +59,30 @@
   background-color: #000000;
 }
 
-/* Reproductor nativo limpio y adaptativo sin interfaces gigantes de Drive */
-.case-native-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #000000;
-  border-radius: 12px;
-  display: block;
-  outline: none;
+/* En escritorio: centrado compensando el margen de Drive */
+@media (min-width: 769px) {
+  .case-drive-iframe {
+    position: absolute;
+    top: 0;
+    left: -13.5%;
+    width: 127%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+}
+
+/* En móvil: ampliación de viewport lógico para que Drive NO active los botones gigantes de pantalla estrecha */
+@media (max-width: 768px) {
+  .case-drive-iframe {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 140%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
 }
 
 .case-vertical-img {

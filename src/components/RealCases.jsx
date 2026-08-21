@@ -9,6 +9,7 @@ const realCaseVideos = [
     title: 'Revocatoria de Condena de 22 Años',
     category: 'Apelación Penal Compleja &middot; Sala Superior',
     result: 'Revocatoria de Sentencia en Segunda Instancia',
+    driveEmbedUrl: 'https://drive.google.com/file/d/1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV/preview',
     tag: 'Apelación Penal',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
@@ -19,6 +20,7 @@ const realCaseVideos = [
     title: 'Defensa de Inocencia: Dori Cruz',
     category: 'Acusación por Constancia de Posesión',
     result: 'Admisión de Prueba Clave y Tutela Efectiva',
+    driveEmbedUrl: 'https://drive.google.com/file/d/1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw/preview',
     tag: 'Testimonio Real',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'
@@ -29,6 +31,7 @@ const realCaseVideos = [
     title: 'Omisión a la Asistencia Familiar',
     category: 'Defensa Técnica en Delitos de OAF',
     result: 'Acreditación de Realidad Económica',
+    driveEmbedUrl: 'https://drive.google.com/file/d/1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV/preview',
     tag: 'Defensa Probatoria',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80'
@@ -39,6 +42,7 @@ const realCaseVideos = [
     title: 'Protección de Terreno y Despojo',
     category: 'Defensa de Posesión y Propiedad Inmobiliaria',
     result: 'Freno Inmediato de Despojo Ilegal',
+    driveEmbedUrl: 'https://drive.google.com/file/d/1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz/preview',
     tag: 'Defensa en Campo',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80'
@@ -99,15 +103,13 @@ export default function RealCases() {
               
               <div className="case-vertical-video-wrapper">
                 {playingId === caseItem.id ? (
-                  <video 
-                    src={`https://drive.google.com/uc?export=download&id=${caseItem.driveId}`}
-                    controls
-                    autoPlay
-                    playsInline
-                    className="case-native-video"
-                  >
-                    Tu navegador no soporta reproducción directa de video.
-                  </video>
+                  <iframe 
+                    src={`${caseItem.driveEmbedUrl}`}
+                    title={caseItem.title}
+                    className="case-drive-iframe"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
                 ) : (
                   <CaseThumbnail 
                     caseItem={caseItem} 
