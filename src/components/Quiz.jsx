@@ -64,10 +64,26 @@ export default function Quiz() {
   };
 
   const getWhatsAppMessage = () => {
-    const area = answers[0] || 'Asesoría Legal';
-    const estado = answers[1] || 'Consulta general';
-    const urgencia = answers[2] || 'Próximos días';
-    return `Hola, realicé el cuestionario en su web. Requiero asesoría en: ${area}. Estado actual: ${estado}. Prioridad: ${urgencia}. Deseo coordinar una consulta con los socios principales.`;
+    // 1. Limpiar nombre del área jurídica (quitar texto entre paréntesis)
+    let area = answers[0] ? answers[0].split('(')[0].trim() : 'Derecho General';
+    
+    // 2. Formatear estado del caso
+    let estado = answers[1] || 'Tengo una consulta legal';
+    if (!estado.endsWith('.')) {
+      estado += '.';
+    }
+
+    // 3. Formatear urgencia / prioridad de manera natural
+    let urgencia = 'Deseo coordinar una consulta';
+    if (answers[2]?.includes('Urgente') || answers[2]?.includes('inmediata')) {
+      urgencia = 'Lo necesito con atención urgente.';
+    } else if (answers[2]?.includes('próximos días') || answers[2]?.includes('Próximos días')) {
+      urgencia = 'Lo necesito para los próximos días.';
+    } else if (answers[2]) {
+      urgencia = 'Es para una planificación estratégica.';
+    }
+
+    return `Hola, requiero asesoría en ${area}. ${estado} ${urgencia} Deseo coordinar una consulta con los socios principales.`;
   };
 
   return (
