@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { teamMembers } from '../data/teamData';
 import './Team.css';
 
@@ -24,6 +25,12 @@ export default function Team() {
               <p className="team-exp">{member.exp}</p>
             </div>
           ))}
+        </div>
+
+        <div className="team-footer-action">
+          <Link to="/equipo" className="btn btn-outline-dark team-cta-btn">
+            Conocer al equipo completo
+          </Link>
         </div>
       </div>
     </section>

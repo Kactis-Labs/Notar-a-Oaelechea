@@ -1,26 +1,29 @@
+import { Link } from 'react-router-dom';
 import { brandConfig } from '../config/brandConfig';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#1B3A57', color: '#E2E7EC', padding: '3.5rem 0 2.5rem', borderTop: '1px solid rgba(184, 147, 79, 0.25)' }}>
-      <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
-          <div>
-            <img src="/logo.svg" alt={brandConfig.name} style={{ height: '58px', marginBottom: '0.75rem' }} />
-            <p style={{ fontSize: '0.88rem', color: '#C9CDD3', maxWidth: '420px', lineHeight: 1.5 }}>
+    <footer className="site-footer">
+      <div className="container">
+        
+        <div className="footer-top">
+          <div className="footer-brand-col">
+            <img src="/logo.svg" alt={brandConfig.name} className="footer-logo" />
+            <p className="footer-address">
               {brandConfig.contact.address}
             </p>
           </div>
           
-          <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>TikTok</a>
-            <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Facebook</a>
-            <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Instagram</a>
-            <a href="/contacto" style={{ color: '#E2E7EC' }}>Contacto</a>
-          </div>
+          <nav className="footer-nav-links">
+            <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+            <Link to="/contacto">Contacto</Link>
+          </nav>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontSize: '0.85rem', color: '#C9CDD3' }}>
+        <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} {brandConfig.name}. Todos los derechos reservados.</p>
           <p>
             Diseñado y desarrollado por{' '}
@@ -34,6 +37,7 @@ export default function Footer() {
             </a>
           </p>
         </div>
+
       </div>
     </footer>
   );

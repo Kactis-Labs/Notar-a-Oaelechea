@@ -94,7 +94,7 @@ export default function Contact() {
             >
               Contactar por WhatsApp
             </a>
-            <Link to="/contacto" className="btn btn-outline-dark contact-btn">
+            <Link to="/contacto" className="btn btn-outline contact-btn">
               Ver detalles de contacto
             </Link>
           </div>
