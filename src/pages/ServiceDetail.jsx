@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import { teamMembers } from '../data/teamData';
+import { brandConfig } from '../config/brandConfig';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import '../pages/ServicesPage.css'; // For compact-hero
