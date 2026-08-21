@@ -4,10 +4,10 @@ export const brandConfig = {
   // Información General
   name: "Escalante, Ulloa & Asociados - Estudio Jurídico",
   shortName: "Escalante & Ulloa",
-  tagline: "Rigor Jurídico, Solidez Corporativa & Compromiso en Trujillo",
-  subtitle: "Especialistas en defensa legal estratégica y consultoría corporativa. Protegemos el patrimonio y los intereses de nuestros clientes con máxima solvencia e integridad.",
-  foundedYear: 2008,
-  statsCount: "+1,500 defensas y consultorías corporativas",
+  tagline: "Rigor Jurídico, Solidez Procesal & Cobertura Nacional",
+  subtitle: "Sede central en Trujillo y patrocinio legal estratégico a nivel nacional. Protegemos el patrimonio y la libertad de nuestros clientes con atención directa de nuestros socios principales.",
+  foundedYear: 2022,
+  statsCount: "+2,500 patrocinios y resoluciones favorables",
 
   // Datos de Contacto
   contact: {
@@ -34,20 +34,25 @@ export const brandConfig = {
   // Socios Fundadores
   founders: [
     {
-      name: "Dr. Carlos Escalante",
-      role: "Socio Principal",
-      specialty: "Derecho Corporativo, Arbitraje y Contratación Mercantil"
+      name: "Dr. Jorge Escalante Céspedes",
+      role: "Socio Principal y Fundador",
+      specialty: "Derecho Civil, Contratos y Controversias Patrimoniales"
     },
     {
-      name: "Dr. Miguel Ulloa",
-      role: "Socio Principal",
-      specialty: "Litigación Penal de la Empresa y Derecho Progresivo Civil"
+      name: "Dr. Ader Ulloa Velásquez",
+      role: "Socio Fundador",
+      specialty: "Litigación Penal Estratégica & Procesos de Alta Complejidad"
+    },
+    {
+      name: "Dr. Víctor Gonzales Collazos",
+      role: "Asociado Senior",
+      specialty: "Derecho Laboral & Seguridad Social"
     }
   ],
 
   // Titular principal (para compatibilidad de vistas)
   titular: {
-    name: "Dr. Carlos Escalante & Dr. Miguel Ulloa",
+    name: "Dr. Jorge Escalante Céspedes & Dr. Ader Ulloa Velásquez",
     role: "Socios Principales",
     registry: "Estudio Jurídico — Colegio de Abogados de La Libertad (CALL)"
   }

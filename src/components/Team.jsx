@@ -9,7 +9,7 @@ export default function Team() {
           <div className="section-label">Nuestro Equipo</div>
           <h2 className="team-title">Solvencia profesional e integridad.</h2>
           <p className="team-subtitle">
-            Liderados por los socios Dr. Carlos Escalante y Dr. Miguel Ulloa, nuestro estudio reúne a litigantes y consultores con amplia trayectoria en la región.
+            Liderados por los doctores Jorge Escalante, Ader Ulloa y Víctor Gonzales, nuestra firma reúne amplia solvencia técnica procesal y consultoría estratégica.
           </p>
         </div>
         

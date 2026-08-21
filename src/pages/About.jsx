@@ -26,9 +26,9 @@ export default function About() {
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Solidez Jurídica,<br/>Integridad & Compromiso.</h1>
+              <h1 className="hero-title">Solidez Jurídica,<br/>Integridad & Cobertura Nacional.</h1>
               <p className="hero-subtitle">
-                Desde 2008, Escalante, Ulloa & Asociados brinda patrocinio técnico legal y consultoría corporativa de la más alta solvencia en Trujillo y el norte del Perú.
+                Desde 2022, Escalante, Ulloa & Asociados brinda patrocinio legal estratégico y consultoría de alta solvencia, con sede central en Trujillo y atención de casos a nivel nacional.
               </p>
             </div>
           </div>
@@ -42,15 +42,15 @@ export default function About() {
             <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA FIRMA</div>
             <div className="history-content">
               <p className="history-text">
-                Fundado en {brandConfig.foundedYear} en Trujillo por el <strong>Dr. Carlos Escalante</strong> y el <strong>Dr. Miguel Ulloa</strong>, nuestro estudio nació con el propósito de ofrecer a corporaciones, empresas familiares y personas naturales una defensa legal de impecable rigor técnico y estrategia preventiva.
+                Fundado en 2022 en Trujillo por el <strong>Dr. Jorge Escalante Céspedes</strong> y el <strong>Dr. Ader Ulloa Velásquez</strong>, nuestro estudio nació con el propósito de brindar una defensa legal rigurosa, donde cada patrocinio es asumido y dirigido directamente por sus socios fundadores.
               </p>
               
               <blockquote className="history-quote">
-                "El ejercicio de la abogacía exige solvencia técnica absoluta, ética inquebrantable y un compromiso leal con la defensa del patrimonio de nuestros representados."
+                "El ejercicio del derecho exige solvencia técnica absoluta, confidencialidad y la conducción directa y personalizada de los socios principales en cada causa."
               </blockquote>
               
               <p className="history-text">
-                A lo largo de cerca de dos décadas, hemos consolidado una práctica distinguida en litigación compleja, arbitrajes comerciales, derecho societario y compliance penal corporativo en la región La Libertad.
+                Con sede en Trujillo y representación en todo el país, consolidamos una práctica distinguida en derecho civil, penal y laboral, respaldada por décadas de trayectoria combinada y miles de resoluciones favorables.
               </p>
             </div>
           </div>
@@ -64,10 +64,10 @@ export default function About() {
             <div className="philosophy-text-container">
               <div className="section-label">NUESTRA FILOSOFÍA</div>
               <h2 className="philosophy-quote">
-                Creemos que la solidez legal es la piedra angular para el éxito corporativo y la tranquilidad patrimonial.
+                Patrocinio directo, riguroso y personalizado por nuestros socios principales.
               </h2>
               <p className="philosophy-subtext">
-                Combinamos una rigurosa formación dogmática con una visión práctica del derecho de empresa, asegurando que cada patrocino reciba atención personalizada y estratégica por parte de nuestros socios principales.
+                Garantizamos que cada caso sea asumido y conducido directamente por nuestros socios fundadores, sin delegaciones a terceros, asegurando confidencialidad estricta y una estrategia procesal diseñada a la medida.
               </p>
             </div>
             <div className="philosophy-img-wrapper">
@@ -88,24 +88,24 @@ export default function About() {
                 <div className="commitment-item">
                   <div className="commitment-number">1</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Rigor Técnico y Preparación Meticulosa.</h3>
-                    <p className="commitment-desc">Analizamos cada expediente y contrato hasta en su más mínimo detalle procesal o dogmático para garantizar la mejor estrategia probatoria.</p>
+                    <h3 className="commitment-title">Atención Directa de Socios.</h3>
+                    <p className="commitment-desc">Conducción personal y estratégica de cada proceso por abogados de máxima jerarquía procesal.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">2</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Solvencia Ética e Integridad.</h3>
-                    <p className="commitment-desc">La transparencia absoluta en la relación abogado-cliente es nuestro compromiso irrenunciable. Informamos la viabilidad objetiva de cada caso.</p>
+                    <h3 className="commitment-title">Rigor Técnico y Probatorio.</h3>
+                    <p className="commitment-desc">Análisis exhaustivo y preparación meticulosa orientada a la obtención de resultados y resoluciones favorables.</p>
                   </div>
                 </div>
 
                 <div className="commitment-item">
                   <div className="commitment-number">3</div>
                   <div className="commitment-content">
-                    <h3 className="commitment-title">Lealtad y Protección del Cliente.</h3>
-                    <p className="commitment-desc">Defendemos los derechos patrimoniales y personales con firmeza, confidencialidad y lealtad irrestricta.</p>
+                    <h3 className="commitment-title">Ética, Reserva y Lealtad.</h3>
+                    <p className="commitment-desc">Confidencialidad irrestricta y transparencia absoluta en la relación abogado-patrocinado.</p>
                   </div>
                 </div>
 
@@ -123,7 +123,7 @@ export default function About() {
           <div className="container">
             <div className="team-preview-header">
               <h2 className="team-preview-title">Liderado por Socios Principales.</h2>
-              <p className="team-preview-subtitle">Dr. Carlos Escalante & Dr. Miguel Ulloa</p>
+              <p className="team-preview-subtitle">Dr. Jorge Escalante, Dr. Ader Ulloa y Dr. Víctor Gonzales</p>
             </div>
             
             <div className="team-grid">

@@ -8,7 +8,7 @@ export default function CTA() {
       <div className="container cta-layout">
         <div className="cta-content">
           <h2>Respaldo procesal y estrategia legal de primer nivel.</h2>
-          <p>Confíe su patrimonio e intereses corporativos al patrocinio técnico del Dr. Carlos Escalante, Dr. Miguel Ulloa y nuestro equipo legal.</p>
+          <p>Confíe su patrimonio, libertad e intereses corporativos al patrocinio técnico del Dr. Jorge Escalante, Dr. Ader Ulloa y nuestro equipo legal.</p>
           <Link to="/agendar-cita" className="btn btn-primary">Agendar una consulta</Link>
         </div>
         <div className="cta-image-wrapper">

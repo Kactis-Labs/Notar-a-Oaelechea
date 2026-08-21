@@ -39,20 +39,20 @@ export default function Stats() {
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="1500" suffix="+" /></h3>
-            <p className="stat-label">Defensas & consultorías exitosas</p>
+            <h3 className="stat-number"><AnimatedCounter value="37" suffix="+" /></h3>
+            <p className="stat-label">Años de experiencia civil (Dr. Escalante)</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="99" suffix="%" /></h3>
-            <p className="stat-label">Efectividad procesal e integridad</p>
+            <h3 className="stat-number"><AnimatedCounter value="2500" suffix="+" /></h3>
+            <p className="stat-label">Causas y resoluciones penales favorables</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="2008" /></h3>
-            <p className="stat-label">Año de fundación en Trujillo</p>
+            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
+            <p className="stat-label">Años de especialización laboral (Dr. Gonzales)</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="18" suffix="+" /></h3>
-            <p className="stat-label">Años de solidez institucional</p>
+            <h3 className="stat-number" style={{ fontSize: '2.5rem' }}>Nacional</h3>
+            <p className="stat-label">Sede en Trujillo y cobertura en todo el Perú</p>
           </div>
         </div>
       </div>

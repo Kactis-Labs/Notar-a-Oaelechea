@@ -7,24 +7,66 @@ import imgSucesion from '../assets/sucesion.jpg';
 
 export const servicesData = [
   {
-    slug: 'defensa-judicial-arbitral',
-    title: 'Defensa Judicial y Arbitral',
-    shortDesc: 'Representación frontal de alta especialización en procesos judiciales y fueros arbitrales de alta complejidad.',
+    slug: 'derecho-civil-patrimonial',
+    title: 'Derecho Civil Patrimonial & Bienes',
+    shortDesc: 'Protección integral del patrimonio familiar y empresarial, saneamiento físico-legal, contratos y controversias civiles.',
+    img: imgSucesion,
+    heroImg: imgSucesion,
+    tiempoEstimado: 'Evaluación técnica en 24-48h',
+    teamMemberId: 'jorge-escalante',
+    detailedDesc: [
+      'Especialistas en la estructuración de contratos de gran envergadura, saneamiento de predios, derechos reales y regulación de la propiedad.',
+      'Brindamos asesoría en planificación patrimonial, solución de controversias contractuales y protección de activos ante riesgos de ejecución.',
+      'Verificación registral ante SUNARP para transferencias y adquisiciones de inmuebles residenciales y comerciales.'
+    ],
+    whoItAppliesTo: 'Familias, empresas, inversionistas y particulares que buscan blindar y consolidar sus propiedades o resolver controversias civiles.',
+    whatProblemItSolves: 'Elimina vicios registrales, previene incumplimientos contractuales y resguarda el patrimonio con máxima solvencia.',
+    requirements: [
+      'Documento de Identidad (DNI / Carné de Extranjería).',
+      'Copia literal, título de propiedad o partida registral del predio (si aplica).',
+      'Contratos, minutas o documentos materia de consulta.'
+    ]
+  },
+  {
+    slug: 'penal-empresa-compliance',
+    title: 'Derecho Penal & Litigación Estratégica',
+    shortDesc: 'Patrocinio técnico y defensa estratégica en investigaciones fiscales, procesos penales de alta complejidad y delitos económicos.',
+    img: imgVehiculos,
+    heroImg: imgVehiculos,
+    tiempoEstimado: 'Atención de urgencia y patrocinio inmediato',
+    teamMemberId: 'ader-ulloa',
+    detailedDesc: [
+      'Patrocinamos a directivos, funcionarios y personas naturales frente a denuncias e investigaciones fiscales por delitos económicos, patrimoniales o regulatorios.',
+      'Diseñamos estrategias de defensa probatoria rigurosas y fundamentadas en la dogmática penal para garantizar el éxito y la tutela de derechos.',
+      'Litigación técnica caracterizada por la solvencia probatoria, reserva profesional absoluta y el respeto estricto del debido proceso.'
+    ],
+    whoItAppliesTo: 'Personas naturales, directivos y empresas frente a investigaciones fiscales, citaciones policiales o procesos judiciales penales.',
+    whatProblemItSolves: 'Protege la libertad individual, garantiza una defensa técnica eficaz y neutraliza contingencias penales de alto impacto.',
+    requirements: [
+      'Documento de Identidad (DNI / Carné de Extranjería).',
+      'Disposición fiscal de apertura, denuncia penal o cédula de notificación judicial.',
+      'Documentos de sustento o descargo vinculados al caso.'
+    ]
+  },
+  {
+    slug: 'derecho-laboral-empleo',
+    title: 'Derecho Laboral & Relaciones de Trabajo',
+    shortDesc: 'Asesoramiento laboral integral para empresas y trabajadores, contrataciones, derechos laborales y litigación judicial laboral.',
     img: imgEscrituras,
     heroImg: imgEscrituras,
-    tiempoEstimado: 'Estrategia procesal inmediata',
-    teamMemberId: 'carlos-escalante',
+    tiempoEstimado: 'Consultoría y patrocinio continuo',
+    teamMemberId: 'victor-gonzales',
     detailedDesc: [
-      'Asumimos el patrocinio técnico de empresas y particulares en disputas comerciales, civiles y contencioso-administrativas en la región norte y Lima.',
-      'Diseñamos estrategias procesales rigurosas enfocadas en la preservación del activo y el éxito en tribunales o centros de arbitraje.',
-      'Nuestra firma destaca por una preparación meticulosa de pruebas, alegatos e impugnaciones procesales de alto impacto.'
+      'Brindamos asesoría estratégica a empresas y empleadores en la correcta aplicación del régimen laboral y prevención de contingencias.',
+      'Patrocinamos a trabajadores y ejecutivos en la defensa de sus derechos laborales, despidos injustificados, beneficios sociales e indemnizaciones.',
+      'Defensa técnica en procesos judiciales laborales y conciliaciones extrajudiciales con más de 30 años de experiencia especializada.'
     ],
-    whoItAppliesTo: 'Empresas, ejecutivos y personas naturales envueltas en litigios civiles, comerciales o arbitrajes complejos.',
-    whatProblemItSolves: 'Resguarda los intereses patrimoniales frente a contingencias judiciales de gran envergadura.',
+    whoItAppliesTo: 'Empresas, empleadores, directivos y trabajadores que requieran respaldo jurídico laboral.',
+    whatProblemItSolves: 'Previene contingencias laborales onerosas y asegura la defensa efectiva de los derechos en el ámbito del trabajo.',
     requirements: [
-      'Antecedentes procesales y notificaciones.',
-      'Contratos u órdenes de compra materia de disputa.',
-      'Poder de representación legal otorgado a la firma.'
+      'Documento de Identidad (DNI / Carné de Extranjería).',
+      'Contrato de trabajo, boletas de pago o liquidación de beneficios sociales.',
+      'Notificaciones, cartas de preaviso o demanda laboral (si aplica).'
     ]
   },
   {
@@ -34,7 +76,7 @@ export const servicesData = [
     img: imgEmpresas,
     heroImg: imgEmpresas,
     tiempoEstimado: 'Consultoría permanente',
-    teamMemberId: 'carlos-escalante',
+    teamMemberId: 'jorge-escalante',
     detailedDesc: [
       'Acompañamos a grupos empresariales en la toma de decisiones estratégicas, reorganizaciones societarias y acuerdos inter-socios.',
       'Elaboramos auditorías preventivas (Due Diligence) para garantizar transacciones comerciales transparentes y libres de vicios.',
@@ -43,48 +85,9 @@ export const servicesData = [
     whoItAppliesTo: 'Empresas familiares, corporaciones regionales y grupos inversores que requieren respaldo societario continuo.',
     whatProblemItSolves: 'Previene fricciones entre accionistas y asegura el cumplimiento irrestricto del régimen de sociedades.',
     requirements: [
-      'Estatuto social y libro de actas actualizado.',
-      'Identificación del órgano de administración (Directorio / Gerencia General).'
-    ]
-  },
-  {
-    slug: 'derecho-civil-patrimonial',
-    title: 'Derecho Civil Patrimonial & Bienes',
-    shortDesc: 'Protección integral del patrimonio familiar y empresarial, saneamiento físico-legal e inversiones inmobiliarias.',
-    img: imgSucesion,
-    heroImg: imgSucesion,
-    tiempoEstimado: 'Evaluación técnica en 48h',
-    teamMemberId: 'miguel-ulloa',
-    detailedDesc: [
-      'Especialistas en la estructuración de contratos de gran envergadura, fideicomisos, saneamiento de predios y regulación de la propiedad.',
-      'Brindamos asesoría en planificación de herencias, protocolos familiares corporativos y protección de activos ante riesgos de ejecución.',
-      'Verificación registral ante SUNARP para compras de inmuebles residenciales y comerciales.'
-    ],
-    whoItAppliesTo: 'Familias, empresarios e inversionistas que buscan blindar y consolidar sus propiedades.',
-    whatProblemItSolves: 'Elimina vicios registrales e inseguridad jurídica en la tenencia de bienes inmuebles.',
-    requirements: [
-      'Copia literal o partida electrónica del predio.',
-      'Documento de identidad de los propietarios o contratantes.'
-    ]
-  },
-  {
-    slug: 'penal-empresa-compliance',
-    title: 'Derecho Penal de la Empresa & Compliance',
-    shortDesc: 'Prevención de contingencias penales corporativas, investigaciones internas e implementación de modelos de prevención.',
-    img: imgVehiculos,
-    heroImg: imgVehiculos,
-    tiempoEstimado: 'Atención de emergencia 24/7',
-    teamMemberId: 'miguel-ulloa',
-    detailedDesc: [
-      'Patrocinamos a directores y funcionarios en denuncias e investigaciones fiscales por delitos económicos, tributarios o ambientales.',
-      'Estructuramos e implementamos Programas de Compliance Penal para eximir a la empresa de responsabilidad jurídica administrativa.',
-      'Litigación técnica caracterizada por la solvencia probatoria y el respeto estricto del debido proceso.'
-    ],
-    whoItAppliesTo: 'Empresas y directivos expuestos a investigaciones por delitos de cuello blanco o regulatorio.',
-    whatProblemItSolves: 'Protege la libertad de las personas y la continuidad operativa y reputacional de la persona jurídica.',
-    requirements: [
-      'Providencia o disposición de apertura de investigación fiscal.',
-      'Documentos de la transacción o cargo imputado.'
+      'Ficha RUC y estatuto social actualizado.',
+      'Documento de identidad de los representantes legales.',
+      'Libro de actas o documentos de la transacción societaria.'
     ]
   },
   {
@@ -94,7 +97,7 @@ export const servicesData = [
     img: imgLegalizacion,
     heroImg: imgLegalizacion,
     tiempoEstimado: 'Asesoría especializada continua',
-    teamMemberId: 'carlos-escalante',
+    teamMemberId: 'jorge-escalante',
     detailedDesc: [
       'Asesoramos a las empresas en la optimización fiscal legal de sus operaciones nacionales e internacionales.',
       'Patrocinamos reclamos y apelaciones ante SUNAT y el Tribunal Fiscal frente a acotaciones de impuestos indebidas.',
@@ -114,16 +117,17 @@ export const servicesData = [
     img: imgTestamentosNuevo,
     heroImg: imgTestamentosNuevo,
     tiempoEstimado: 'Respuesta procesal inmediata',
-    teamMemberId: 'miguel-ulloa',
+    teamMemberId: 'ader-ulloa',
     detailedDesc: [
       'Patrocinamos a empresas proveedoras del Estado en licitaciones públicas, concursos y apelaciones ante el OSCE.',
-      'Defendemos a administrados en procedimientos sancionadores tramitados ante OEFA, INDECOPI, SUNAFIL y municipalidades.',
-      'Asesoramos en la obtención de permisos, concesiones y licencias reguladas de sectores clave en La Libertad.'
+      'Defendemos a administrados en procedimientos sancionadores tramitados ante entidades públicas y municipalidades.',
+      'Asesoramos en la obtención de permisos, concesiones y licencias reguladas en La Libertad y a nivel nacional.'
     ],
     whoItAppliesTo: 'Empresas contratistas del Estado y negocios sujetos a fiscalización por entidades públicas.',
     whatProblemItSolves: 'Garantiza la imparcialidad en adjudicaciones estatales y evita la imposición de sanciones desproporcionadas.',
     requirements: [
-      'Bases del proceso de selección o resolución sancionadora.',
+      'Documento de Identidad o Ficha RUC.',
+      'Bases del proceso de selección o resolución sancionadora notificada.',
       'Expediente administrativo completo.'
     ]
   }
