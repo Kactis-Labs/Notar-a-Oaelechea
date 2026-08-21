@@ -1,17 +1,17 @@
-import imgEmpresas from '../assets/empresas.jpg';
-import imgEscrituras from '../assets/escrituras.jpg';
-import imgLegalizacion from '../assets/legalizacion.jpg';
-import imgVehiculos from '../assets/vehiculos.jpg';
-import imgTestamentosNuevo from '../assets/testamentos.png';
-import imgSucesion from '../assets/sucesion.jpg';
+import imgCivil from '../assets/service-civil.webp';
+import imgPenal from '../assets/service-penal.webp';
+import imgLaboral from '../assets/service-laboral.webp';
+import imgCorporativo from '../assets/service-corporativo.webp';
+import imgTributario from '../assets/service-tributario.webp';
+import imgAdministrativo from '../assets/service-administrativo.webp';
 
 export const servicesData = [
   {
     slug: 'derecho-civil-patrimonial',
     title: 'Derecho Civil Patrimonial y Bienes',
     shortDesc: 'Protección integral del patrimonio familiar y empresarial, saneamiento físico-legal, contratos y controversias civiles.',
-    img: imgSucesion,
-    heroImg: imgSucesion,
+    img: imgCivil,
+    heroImg: imgCivil,
     tiempoEstimado: 'Evaluación técnica en 24-48h',
     teamMemberId: 'jorge-escalante',
     detailedDesc: [
@@ -31,8 +31,8 @@ export const servicesData = [
     slug: 'penal-empresa-compliance',
     title: 'Derecho Penal y Litigación Estratégica',
     shortDesc: 'Patrocinio técnico y defensa estratégica en investigaciones fiscales, procesos penales de alta complejidad y delitos económicos.',
-    img: imgVehiculos,
-    heroImg: imgVehiculos,
+    img: imgPenal,
+    heroImg: imgPenal,
     tiempoEstimado: 'Atención de urgencia y patrocinio inmediato',
     teamMemberId: 'ader-ulloa',
     detailedDesc: [
@@ -52,8 +52,8 @@ export const servicesData = [
     slug: 'derecho-laboral-empleo',
     title: 'Derecho Laboral y Relaciones de Trabajo',
     shortDesc: 'Asesoramiento laboral integral para empresas y trabajadores, contrataciones, derechos laborales y litigación judicial laboral.',
-    img: imgEscrituras,
-    heroImg: imgEscrituras,
+    img: imgLaboral,
+    heroImg: imgLaboral,
     tiempoEstimado: 'Consultoría y patrocinio continuo',
     teamMemberId: 'victor-gonzales',
     detailedDesc: [
@@ -73,8 +73,8 @@ export const servicesData = [
     slug: 'consultoria-corporativa-societaria',
     title: 'Consultoría Corporativa y Societaria',
     shortDesc: 'Asesoramiento integral en estructuración societaria, fusiones, adquisiciones y gobernanza de la empresa.',
-    img: imgEmpresas,
-    heroImg: imgEmpresas,
+    img: imgCorporativo,
+    heroImg: imgCorporativo,
     tiempoEstimado: 'Consultoría permanente',
     teamMemberId: 'jorge-escalante',
     detailedDesc: [
@@ -94,8 +94,8 @@ export const servicesData = [
     slug: 'derecho-tributario-fiscal',
     title: 'Derecho Tributario y Fiscalidad',
     shortDesc: 'Planificación fiscal estratégica, defensa en procedimientos de fiscalización ante SUNAT y reclamos tributarios.',
-    img: imgLegalizacion,
-    heroImg: imgLegalizacion,
+    img: imgTributario,
+    heroImg: imgTributario,
     tiempoEstimado: 'Asesoría especializada continua',
     teamMemberId: 'jorge-escalante',
     detailedDesc: [
@@ -114,8 +114,8 @@ export const servicesData = [
     slug: 'derecho-administrativo-regulacion',
     title: 'Derecho Administrativo y Regulación',
     shortDesc: 'Consultoría en contratación pública, licitaciones con el Estado y procedimientos sancionadores.',
-    img: imgTestamentosNuevo,
-    heroImg: imgTestamentosNuevo,
+    img: imgAdministrativo,
+    heroImg: imgAdministrativo,
     tiempoEstimado: 'Respuesta procesal inmediata',
     teamMemberId: 'ader-ulloa',
     detailedDesc: [
