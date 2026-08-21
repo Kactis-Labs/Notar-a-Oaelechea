@@ -12,7 +12,7 @@ export default function News() {
       <div className="container">
         <div className="news-header">
           <div>
-            <div className="section-label">Recursos & Noticias</div>
+            <div className="section-label">Recursos y Noticias</div>
             <h2 className="news-title">Manténgase Informado.</h2>
           </div>
         </div>

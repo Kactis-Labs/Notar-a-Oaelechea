@@ -87,7 +87,7 @@ export default function Contact() {
           
           <div className="contact-cta-wrapper" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a 
-              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, deseo realizar una consulta legal en el Estudio Jurídico Escalante, Ulloa & Asociados.")}`} 
+              href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent("Hola, deseo realizar una consulta legal en el Estudio Jurídico Escalante, Ulloa y Asociados.")}`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary contact-btn"
@@ -110,17 +110,6 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               title={`Ubicación de ${brandConfig.name}`}
             ></iframe>
-            <div style={{ marginTop: '0.75rem', textAlign: 'center' }}>
-              <a 
-                href={brandConfig.contact.mapsUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-outline-dark"
-                style={{ fontSize: '0.8rem', padding: '0.5rem 1rem' }}
-              >
-                📍 Abrir en Google Maps
-              </a>
-            </div>
           </div>
         </div>
       </div>

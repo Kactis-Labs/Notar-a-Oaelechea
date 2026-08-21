@@ -10,23 +10,12 @@ export default function Footer() {
             <p style={{ fontSize: '0.88rem', color: '#C9CDD3', maxWidth: '420px', lineHeight: 1.5 }}>
               {brandConfig.contact.address}
             </p>
-            <div style={{ marginTop: '0.5rem' }}>
-              <a 
-                href={brandConfig.contact.mapsUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                style={{ color: '#B8934F', fontSize: '0.85rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
-              >
-                📍 Ver en Google Maps
-              </a>
-            </div>
           </div>
           
           <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>TikTok</a>
             <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Facebook</a>
             <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#E2E7EC' }}>Instagram</a>
-            <a href={brandConfig.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#B8934F', fontWeight: 600 }}>WhatsApp</a>
             <a href="/contacto" style={{ color: '#E2E7EC' }}>Contacto</a>
           </div>
         </div>

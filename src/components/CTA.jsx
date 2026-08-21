@@ -19,7 +19,7 @@ export default function CTA() {
           </a>
         </div>
         <div className="cta-image-wrapper">
-          <img src={ctaImage} alt="Defensa legal estratégica - Escalante, Ulloa & Asociados" />
+          <img src={ctaImage} alt="Defensa legal estratégica - Escalante, Ulloa y Asociados" />
         </div>
       </div>
     </section>

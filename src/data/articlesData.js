@@ -15,7 +15,7 @@ export const articlesData = [
     content: `
       <p>En el ámbito civil e inmobiliario regional, el saneamiento físico-legal de propiedades y la redacción rigurosa de contratos son factores determinantes para asegurar la tranquilidad del patrimonio familiar y empresarial.</p>
       
-      <p>En Escalante, Ulloa & Asociados asesoramos a familias e inversionistas en el estudio de títulos, verificación de cargas registrales y solución de controversias con más de 37 años de experiencia especializada.</p>
+      <p>En Escalante, Ulloa y Asociados asesoramos a familias e inversionistas en el estudio de títulos, verificación de cargas registrales y solución de controversias con más de 37 años de experiencia especializada.</p>
       
       <h3>1. Seguridad y Verificación Registral</h3>
       <p>Antes de cualquier adquisición o gravamen, la verificación exhaustiva de partidas electrónicas ante SUNARP previene litigios costosos e inscripciones defectuosas.</p>

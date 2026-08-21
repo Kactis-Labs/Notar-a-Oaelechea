@@ -1,59 +1,73 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { brandConfig } from '../config/brandConfig';
 import './Quiz.css';
 
 const quizQuestions = [
   {
-    question: '¿Qué tipo de materia o asesoría legal requiere consultar?',
-    options: ['Litigio judicial o arbitraje comercial', 'Consultoría corporativa y societaria', 'Derecho civil patrimonial y propiedades', 'Defensa penal de la empresa & compliance']
+    question: '¿Qué tipo de asesoría o patrocinio legal requiere?',
+    options: [
+      'Derecho Civil y Patrimonial (Inmuebles, contratos, litigios civiles)',
+      'Derecho Penal y Litigación Estratégica (Investigaciones fiscales, defensa penal)',
+      'Derecho Laboral y Empresas (Contratos laborales, despidos, SUNAFIL)',
+      'Consultoría Corporativa, Tributaria o Administrativa'
+    ]
   },
   {
-    question: '¿Cuenta con antecedentes o notificaciones procesales activas?',
-    options: ['Sí, cuento con expediente o notificación previa', 'Tengo documentación de sustento parcial', 'No cuento con documentos aún', 'Requiero una auditoría legal preventiva']
+    question: '¿Cuál es el estado actual de su caso o consulta?',
+    options: [
+      'Asesoría preventiva o redacción/revisión de contratos',
+      'Tengo una denuncia, citación fiscal o notificación judicial',
+      'Ya cuento con un proceso judicial o administrativo en trámite',
+      'Requiero respaldo corporativo o consultoría permanente'
+    ]
   },
   {
-    question: '¿En qué jurisdicción requiere la representación legal principal?',
-    options: ['Trujillo / La Libertad', 'Lima Metropolitana', 'Otras regiones del Perú']
-  },
-  {
-    question: '¿Qué prioridad tiene la atención de la materia consultada?',
-    options: ['Atención urgente procesal', 'Próximos días', 'Consultoría permanente']
+    question: '¿Con qué prioridad requiere la conducción de nuestros socios?',
+    options: [
+      'Urgente / Atención procesal inmediata',
+      'En los próximos días',
+      'Planificación estratégica sin urgencia'
+    ]
   }
 ];
 
 export default function Quiz() {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [answers, setAnswers] = useState([]);
   const [isFinished, setIsFinished] = useState(false);
-  const [showContactForm, setShowContactForm] = useState(false);
-  const [contactData, setContactData] = useState({ name: '', phone: '' });
+
+  const handleSelectOption = (idx) => {
+    setSelectedOption(idx);
+  };
 
   const handleNext = () => {
     if (selectedOption === null) return;
     
+    const newAnswers = [...answers, quizQuestions[currentStep].options[selectedOption]];
+    setAnswers(newAnswers);
+
     if (currentStep < quizQuestions.length - 1) {
       setCurrentStep(prev => prev + 1);
       setSelectedOption(null);
     } else {
-      setShowContactForm(true);
-    }
-  };
-
-  const handleSubmitContact = (e) => {
-    e.preventDefault();
-    if (contactData.name && contactData.phone) {
       setIsFinished(true);
-      setShowContactForm(false);
     }
   };
 
   const handleReset = () => {
     setCurrentStep(0);
     setSelectedOption(null);
+    setAnswers([]);
     setIsFinished(false);
-    setShowContactForm(false);
-    setContactData({ name: '', phone: '' });
+  };
+
+  const getWhatsAppMessage = () => {
+    const area = answers[0] || 'Asesoría Legal';
+    const estado = answers[1] || 'Consulta general';
+    const urgencia = answers[2] || 'Próximos días';
+    return `Hola, realicé el cuestionario en su web. Requiero asesoría en: ${area}. Estado actual: ${estado}. Prioridad: ${urgencia}. Deseo coordinar una consulta con los socios principales.`;
   };
 
   return (
@@ -62,9 +76,9 @@ export default function Quiz() {
         
         <div className="quiz-text-col">
           <div className="section-label light">Orientación Rápida</div>
-          <h2 className="quiz-title">¿No sabes qué trámite necesitas?</h2>
+          <h2 className="quiz-title">¿No sabes qué servicio necesitas?</h2>
           <p className="quiz-subtitle">
-            Responde 4 preguntas rápidas y te diremos qué servicio se ajusta a tu caso. Sin compromiso.
+            Responde 3 preguntas rápidas y determinaremos el área jurídica exacta y la estrategia recomendada para tu caso.
           </p>
         </div>
         
@@ -72,9 +86,9 @@ export default function Quiz() {
           <div className="quiz-card">
             
             <AnimatePresence mode="wait">
-              {!isFinished && !showContactForm && (
+              {!isFinished ? (
                 <motion.div 
-                  key="quiz"
+                  key={`step-${currentStep}`}
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
@@ -95,8 +109,9 @@ export default function Quiz() {
                     {quizQuestions[currentStep].options.map((opt, idx) => (
                       <button 
                         key={idx} 
+                        type="button"
                         className={`quiz-option ${selectedOption === idx ? 'selected' : ''}`}
-                        onClick={() => setSelectedOption(idx)}
+                        onClick={() => handleSelectOption(idx)}
                       >
                         {opt}
                       </button>
@@ -105,87 +120,57 @@ export default function Quiz() {
                   
                   <div className="quiz-footer">
                     <button 
+                      type="button"
                       className="btn btn-primary" 
                       style={{ width: '100%', opacity: selectedOption === null ? 0.5 : 1, cursor: selectedOption === null ? 'not-allowed' : 'pointer' }}
                       onClick={handleNext}
                       disabled={selectedOption === null}
                     >
-                      Siguiente
+                      {currentStep === quizQuestions.length - 1 ? 'Ver orientación de mi caso' : 'Siguiente'}
                     </button>
                   </div>
                 </motion.div>
-              )}
-
-              {showContactForm && !isFinished && (
-                <motion.div 
-                  key="contact"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>Casi terminamos</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Déjanos tus datos para mostrarte el resultado y enviarte la información a tu celular.
-                  </p>
-                  
-                  <form onSubmit={handleSubmitContact} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <input 
-                      type="text" 
-                      placeholder="Nombre completo" 
-                      className="quiz-option" 
-                      style={{ padding: '1rem', cursor: 'text' }}
-                      required 
-                      value={contactData.name}
-                      onChange={(e) => setContactData({...contactData, name: e.target.value})}
-                    />
-                    <input 
-                      type="tel" 
-                      placeholder="Número de celular" 
-                      className="quiz-option" 
-                      style={{ padding: '1rem', cursor: 'text' }}
-                      required 
-                      value={contactData.phone}
-                      onChange={(e) => setContactData({...contactData, phone: e.target.value})}
-                    />
-                    <button 
-                      type="submit"
-                      className="btn btn-primary" 
-                      style={{ width: '100%', marginTop: '1rem' }}
-                    >
-                      Ver mi resultado
-                    </button>
-                  </form>
-                </motion.div>
-              )}
-
-              {isFinished && (
+              ) : (
                 <motion.div 
                   key="result"
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4 }}
-                  style={{ textAlign: 'center', padding: '2rem 0' }}
+                  style={{ textAlign: 'center', padding: '1rem 0' }}
                 >
-                  <h3 className="quiz-question" style={{ marginBottom: '1rem' }}>¡Lo tenemos claro, {contactData.name.split(' ')[0]}!</h3>
-                  <p style={{ fontSize: '1.1rem', color: 'var(--color-text-dark)', marginBottom: '2rem' }}>
-                    Por las características de tu caso, necesitarás una asesoría personalizada. Uno de nuestros especialistas se comunicará contigo al {contactData.phone} en breve.
+                  <h3 className="quiz-question" style={{ marginBottom: '1rem', color: 'var(--color-navy)' }}>
+                    Orientación Legal Lista
+                  </h3>
+                  
+                  <p style={{ fontSize: '0.98rem', color: 'var(--color-text-dark)', marginBottom: '1.25rem', lineHeight: 1.55 }}>
+                    De acuerdo con tus respuestas, tu caso en <strong>{answers[0] ? answers[0].split('(')[0].trim() : 'tu materia'}</strong> califica para ser atendido y dirigido directamente por nuestros socios principales.
                   </p>
+
+                  <div style={{ backgroundColor: 'var(--color-cream)', padding: '1rem', borderRadius: '8px', marginBottom: '1.5rem', textAlign: 'left', fontSize: '0.88rem' }}>
+                    <p style={{ margin: '0 0 0.35rem 0', color: 'var(--color-text-muted)' }}>
+                      <strong>Estado:</strong> {answers[1]}
+                    </p>
+                    <p style={{ margin: 0, color: 'var(--color-text-muted)' }}>
+                      <strong>Prioridad:</strong> {answers[2]}
+                    </p>
+                  </div>
                   
                   <a 
-                    href={`https://wa.me/51932985810?text=${encodeURIComponent(`Hola, mi nombre es ${contactData.name || 'un cliente'}. Realicé el diagnóstico legal en su web y deseo agendar una consulta personalizada.`)}`} 
+                    href={`https://wa.me/${brandConfig.contact.whatsappRaw}?text=${encodeURIComponent(getWhatsAppMessage())}`} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-primary" 
-                    style={{ width: '100%', marginBottom: '1rem' }}
+                    style={{ width: '100%', marginBottom: '1rem', padding: '0.9rem 1rem' }}
                   >
-                    Contactar directamente por WhatsApp
+                    Continuar consulta por WhatsApp
                   </a>
+                  
                   <button 
+                    type="button"
                     onClick={handleReset} 
-                    style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.9rem', background: 'none', border: 'none', cursor: 'pointer' }}
+                    style={{ color: 'var(--color-text-muted)', textDecoration: 'underline', fontSize: '0.85rem', background: 'none', border: 'none', cursor: 'pointer' }}
                   >
-                    Volver a empezar
+                    Volver a responder el cuestionario
                   </button>
                 </motion.div>
               )}

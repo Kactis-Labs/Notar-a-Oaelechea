@@ -20,15 +20,15 @@ export default function About() {
       <div className="hero-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <section className="hero">
           <div className="hero-bg">
-            <img src={aboutHero} alt="Sobre Escalante, Ulloa & Asociados" />
+            <img src={aboutHero} alt="Sobre Escalante, Ulloa y Asociados" />
             <div className="hero-overlay"></div>
           </div>
           <div className="container hero-content">
             <div className="hero-text">
               <div className="section-label" style={{ marginBottom: '1rem' }}>SOBRE NOSOTROS</div>
-              <h1 className="hero-title">Solidez Jurídica,<br/>Integridad & Cobertura Nacional.</h1>
+              <h1 className="hero-title">Solidez Jurídica,<br/>Integridad y Cobertura Nacional.</h1>
               <p className="hero-subtitle">
-                Desde 2022, Escalante, Ulloa & Asociados brinda patrocinio legal estratégico y consultoría de alta solvencia, con sede central en Trujillo y atención de casos a nivel nacional.
+                Desde 2022, Escalante, Ulloa y Asociados brinda patrocinio legal estratégico y consultoría de alta solvencia, con sede central en Trujillo y atención de casos a nivel nacional.
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ export const teamMembers = [
     bio: 'Abogado y Socio Principal de la firma. Cuenta con 37 años de sólida experiencia especializada en Derecho Civil, contratos, bienes y solución estratégica de controversias en La Libertad, respaldado por más de 1,500 casos y asesorías exitosas.',
     registry: 'Colegio de Abogados de La Libertad (CALL)',
     recognitions: [
-      'Socio Fundador de Escalante, Ulloa & Asociados',
+      'Socio Fundador de Escalante, Ulloa y Asociados',
       '37 años de ejercicio especializado en Derecho Civil y Patrimonial',
       'Respaldo de más de 1,500 patrocinios y clientes que recomiendan su labor'
     ]
@@ -22,7 +22,7 @@ export const teamMembers = [
     bio: 'Abogado penalista y Socio Fundador del estudio. Lidera el área de Litigación Penal y defensa técnica procesal de la firma, destacando por su solvencia dogmática y rigor probatorio en causas penales de alta complejidad. Cuenta con un sólido registro de más de 2,500 patrocinios y defensas penales resueltas favorablemente, consolidándose como un referente de efectividad, reserva y lealtad técnica en la región.',
     registry: 'Colegio de Abogados de La Libertad (CALL)',
     recognitions: [
-      'Socio Fundador de Escalante, Ulloa & Asociados',
+      'Socio Fundador de Escalante, Ulloa y Asociados',
       'Especialista en defensa técnica penal en investigaciones fiscales y procesos de alta complejidad',
       'Más de 2,500 patrocinios procesales y resoluciones favorables en materia penal'
     ]

@@ -85,16 +85,20 @@
     border-radius: 16px 16px 0 0;
   }
   .stats-grid {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem 1.5rem;
+    gap: 2.25rem 1.25rem;
   }
   .stat-number {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
     margin-bottom: 0.5rem;
   }
   .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: var(--color-text-muted);
   }
   .stat-item::after {
     display: none;

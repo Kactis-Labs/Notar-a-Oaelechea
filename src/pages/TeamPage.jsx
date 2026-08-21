@@ -18,7 +18,7 @@ export default function TeamPage() {
           <div className="hero-bg">
             <img 
               src={equipoHero} 
-              alt="Equipo de abogados Escalante, Ulloa & Asociados" 
+              alt="Equipo de abogados Escalante, Ulloa y Asociados" 
             />
             <div className="hero-overlay"></div>
           </div>
@@ -39,7 +39,7 @@ export default function TeamPage() {
         {/* 2. SECCIÓN DESTACADA DE LOS SOCIOS PRINCIPALES Y ASOCIADOS */}
         <section className="titular-section section-padding">
           <div className="container">
-            <div className="section-label" style={{ marginBottom: '2rem' }}>SOCIOS FUNDADORES &amp; DIRECCIÓN TÉCNICA</div>
+            <div className="section-label" style={{ marginBottom: '2rem' }}>SOCIOS FUNDADORES Y DIRECCIÓN TÉCNICA</div>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
               {founders.map((founder) => (
@@ -78,7 +78,7 @@ export default function TeamPage() {
 
             {associates.length > 0 && (
               <div style={{ marginTop: '5rem' }}>
-                <div className="section-label" style={{ marginBottom: '2rem' }}>CONSULTORES &amp; ASOCIADOS SENIOR</div>
+                <div className="section-label" style={{ marginBottom: '2rem' }}>CONSULTORES Y ASOCIADOS SENIOR</div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
                   {associates.map((assoc) => (
                     <div className="titular-layout" key={assoc.id}>

@@ -1,10 +1,10 @@
-// Configuración centralizada de branding para la propuesta de Escalante, Ulloa & Asociados.
+// Configuración centralizada de branding para la propuesta de Escalante, Ulloa y Asociados.
 
 export const brandConfig = {
   // Información General
-  name: "Escalante, Ulloa & Asociados - Estudio Jurídico",
-  shortName: "Escalante & Ulloa",
-  tagline: "Rigor Jurídico, Solidez Procesal & Cobertura Nacional",
+  name: "Escalante, Ulloa y Asociados - Estudio Jurídico",
+  shortName: "Escalante y Ulloa",
+  tagline: "Rigor Jurídico, Solidez Procesal y Cobertura Nacional",
   subtitle: "Sede central en Trujillo y patrocinio legal estratégico a nivel nacional. Protegemos el patrimonio y la libertad de nuestros clientes con atención directa de nuestros socios principales.",
   foundedYear: 2022,
   statsCount: "+2,500 patrocinios y resoluciones favorables",
@@ -16,7 +16,7 @@ export const brandConfig = {
     phoneRaw: "+51932985810",
     whatsapp: "+51 932 985 810",
     whatsappRaw: "51932985810",
-    whatsappUrl: "https://wa.me/51932985810?text=Hola%2C%20deseo%20agendar%20una%20consulta%20legal%20con%20el%20estudio%20Escalante%2C%20Ulloa%20%26%20Asociados.",
+    whatsappUrl: "https://wa.me/51932985810?text=Hola%2C%20deseo%20agendar%20una%20consulta%20legal%20con%20el%20estudio%20Escalante%2C%20Ulloa%20y%20Asociados.",
     mapsUrl: "https://maps.app.goo.gl/YwSV4JE3tmTdh2YW7",
     email: "ulloaasociadossac@gmail.com",
     hours: {
@@ -43,18 +43,18 @@ export const brandConfig = {
     {
       name: "Dr. Ader Ulloa Velásquez",
       role: "Socio Fundador",
-      specialty: "Litigación Penal Estratégica & Procesos de Alta Complejidad"
+      specialty: "Litigación Penal Estratégica y Procesos de Alta Complejidad"
     },
     {
       name: "Dr. Víctor Gonzales Collazos",
       role: "Asociado Senior",
-      specialty: "Derecho Laboral & Seguridad Social"
+      specialty: "Derecho Laboral y Seguridad Social"
     }
   ],
 
   // Titular principal (para compatibilidad de vistas)
   titular: {
-    name: "Dr. Jorge Escalante Céspedes & Dr. Ader Ulloa Velásquez",
+    name: "Dr. Jorge Escalante Céspedes y Dr. Ader Ulloa Velásquez",
     role: "Socios Principales",
     registry: "Estudio Jurídico — Colegio de Abogados de La Libertad (CALL)"
   }

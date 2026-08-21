@@ -14,14 +14,14 @@ export default function Hero() {
         <motion.div className="hero-bg" style={{ filter, opacity }}>
           <img 
             src="/hero-bg.png" 
-            alt="Escalante, Ulloa & Asociados - Estudio Jurídico" 
+            alt="Escalante, Ulloa y Asociados - Estudio Jurídico" 
           />
           <div className="hero-overlay"></div>
         </motion.div>
         
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Rigor Jurídico, Solidez Corporativa<br/>& Compromiso en Trujillo</h1>
+            <h1 className="hero-title">Rigor Jurídico, Solidez Corporativa<br/>y Compromiso en Trujillo</h1>
             <p className="hero-subtitle">
               {brandConfig.subtitle}
             </p>

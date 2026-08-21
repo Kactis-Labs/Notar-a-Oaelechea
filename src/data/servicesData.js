@@ -8,7 +8,7 @@ import imgSucesion from '../assets/sucesion.jpg';
 export const servicesData = [
   {
     slug: 'derecho-civil-patrimonial',
-    title: 'Derecho Civil Patrimonial & Bienes',
+    title: 'Derecho Civil Patrimonial y Bienes',
     shortDesc: 'Protección integral del patrimonio familiar y empresarial, saneamiento físico-legal, contratos y controversias civiles.',
     img: imgSucesion,
     heroImg: imgSucesion,
@@ -29,7 +29,7 @@ export const servicesData = [
   },
   {
     slug: 'penal-empresa-compliance',
-    title: 'Derecho Penal & Litigación Estratégica',
+    title: 'Derecho Penal y Litigación Estratégica',
     shortDesc: 'Patrocinio técnico y defensa estratégica en investigaciones fiscales, procesos penales de alta complejidad y delitos económicos.',
     img: imgVehiculos,
     heroImg: imgVehiculos,
@@ -50,7 +50,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-laboral-empleo',
-    title: 'Derecho Laboral & Relaciones de Trabajo',
+    title: 'Derecho Laboral y Relaciones de Trabajo',
     shortDesc: 'Asesoramiento laboral integral para empresas y trabajadores, contrataciones, derechos laborales y litigación judicial laboral.',
     img: imgEscrituras,
     heroImg: imgEscrituras,
@@ -71,7 +71,7 @@ export const servicesData = [
   },
   {
     slug: 'consultoria-corporativa-societaria',
-    title: 'Consultoría Corporativa & Societaria',
+    title: 'Consultoría Corporativa y Societaria',
     shortDesc: 'Asesoramiento integral en estructuración societaria, fusiones, adquisiciones y gobernanza de la empresa.',
     img: imgEmpresas,
     heroImg: imgEmpresas,
@@ -92,7 +92,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-tributario-fiscal',
-    title: 'Derecho Tributario & Fiscalidad',
+    title: 'Derecho Tributario y Fiscalidad',
     shortDesc: 'Planificación fiscal estratégica, defensa en procedimientos de fiscalización ante SUNAT y reclamos tributarios.',
     img: imgLegalizacion,
     heroImg: imgLegalizacion,
@@ -112,7 +112,7 @@ export const servicesData = [
   },
   {
     slug: 'derecho-administrativo-regulacion',
-    title: 'Derecho Administrativo & Regulación',
+    title: 'Derecho Administrativo y Regulación',
     shortDesc: 'Consultoría en contratación pública, licitaciones con el Estado y procedimientos sancionadores.',
     img: imgTestamentosNuevo,
     heroImg: imgTestamentosNuevo,
