@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <rect width="120" height="120" rx="20" fill="#1B3A57"/>
-  <!-- Monogram "EU" Emblem in Gold/White -->
-  <g transform="translate(60, 15)">
-    <text x="-30" y="50" fill="#B8934F" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="46">E</text>
-    <text x="2" y="60" fill="#FFFFFF" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="46">U</text>
-  </g>
-  <line x1="20" y1="94" x2="100" y2="94" stroke="#B8934F" stroke-width="2" opacity="0.8" />
+  <rect width="120" height="120" rx="26" fill="#1B3A57"/>
+  <!-- Monograma EU centrado con letras blancas -->
+  <text 
+    x="60" 
+    y="62" 
+    fill="#FFFFFF" 
+    font-family="'Playfair Display', Georgia, 'Times New Roman', serif" 
+    font-weight="800" 
+    font-size="54" 
+    letter-spacing="-1.5"
+    text-anchor="middle" 
+    dominant-baseline="central"
+  >EU</text>
 </svg>
