@@ -1,12 +1,43 @@
 .quiz-section {
   position: relative;
   z-index: 2;
-  background-color: var(--color-black);
+  background-color: var(--color-navy);
   padding: var(--spacing-section) 0;
   color: var(--color-white);
+  overflow: hidden;
+}
+
+.quiz-bg-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.quiz-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  opacity: 0.45;
+}
+
+.quiz-bg-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(27, 58, 87, 0.2) 0%, rgba(27, 58, 87, 0.75) 50%, var(--color-navy) 95%, var(--color-navy) 100%),
+              linear-gradient(to top, var(--color-navy) 0%, transparent 15%, transparent 85%, var(--color-navy) 100%);
 }
 
 .quiz-container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;

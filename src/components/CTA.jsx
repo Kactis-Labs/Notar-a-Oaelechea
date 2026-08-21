@@ -1,5 +1,5 @@
 import { brandConfig } from '../config/brandConfig';
-import ctaImage from '../assets/cta-image.jpg';
+import ctaImage from '../assets/cta-banner.webp';
 import '../pages/ServiceDetail.css'; // Contains the styles for CTA
 
 export default function CTA() {

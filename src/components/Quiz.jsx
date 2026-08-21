@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { brandConfig } from '../config/brandConfig';
+import quizBg from '../assets/quiz-bg.webp';
 import './Quiz.css';
 
 const quizQuestions = [
@@ -88,6 +90,11 @@ export default function Quiz() {
 
   return (
     <section className="quiz-section">
+      <div className="quiz-bg-image-wrapper">
+        <img src={quizBg} alt="Orientación Jurídica" className="quiz-bg-img" />
+        <div className="quiz-bg-gradient-overlay"></div>
+      </div>
+
       <div className="container quiz-container">
         
         <div className="quiz-text-col">
