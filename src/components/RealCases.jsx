@@ -4,26 +4,44 @@ import './RealCases.css';
 
 const realCaseVideos = [
   {
-    id: 'caso-revocatoria-22-anos',
-    driveId: '1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV',
-    title: 'Revocatoria de Condena de 22 Años',
-    category: 'Apelación Penal Compleja &middot; Sala Superior',
-    result: 'Revocatoria de Sentencia en Segunda Instancia',
-    driveEmbedUrl: 'https://drive.google.com/file/d/1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV/preview',
-    tag: 'Apelación Penal',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV&sz=w1000',
-    fallbackThumbnail: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
-  },
-  {
     id: 'caso-dori-cruz-posesion',
     driveId: '1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw',
     title: 'Defensa de Inocencia: Dori Cruz',
     category: 'Acusación por Constancia de Posesión',
     result: 'Admisión de Prueba Clave y Tutela Efectiva',
-    driveEmbedUrl: 'https://drive.google.com/file/d/1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw/preview',
     tag: 'Testimonio Real',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'caso-sr-antonio-tercer-juicio',
+    driveId: '1t8SJ7J_mCess1Q9eTyhLRot1BtUIy0K9',
+    title: 'Absolución y Archivo: Caso Sr. Antonio',
+    category: 'Tercer Juicio Oral &middot; Corte Superior',
+    result: 'Demostración de Inocencia y Archivo Definitivo',
+    tag: 'Juicio Oral',
+    driveThumbnail: 'https://drive.google.com/thumbnail?id=1t8SJ7J_mCess1Q9eTyhLRot1BtUIy0K9&sz=w1000',
+    fallbackThumbnail: 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'caso-prescripcion-invalidez',
+    driveId: '1V5iRu-FcSMNwubgjkpzeJo3l5EFvoWEj',
+    title: 'Prescripción e Invalidez de Condena',
+    category: 'Impugnación de Sentencia &middot; Sala Superior',
+    result: 'Invalidez de Condena por Prescripción Penal',
+    tag: 'Estrategia Procesal',
+    driveThumbnail: 'https://drive.google.com/thumbnail?id=1V5iRu-FcSMNwubgjkpzeJo3l5EFvoWEj&sz=w1000',
+    fallbackThumbnail: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'caso-revocatoria-22-anos',
+    driveId: '1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV',
+    title: 'Revocatoria de Condena de 22 Años',
+    category: 'Apelación Penal Compleja &middot; Sala Superior',
+    result: 'Revocatoria de Sentencia en Segunda Instancia',
+    tag: 'Apelación Penal',
+    driveThumbnail: 'https://drive.google.com/thumbnail?id=1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV&sz=w1000',
+    fallbackThumbnail: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'caso-omision-familiar',
@@ -31,7 +49,6 @@ const realCaseVideos = [
     title: 'Omisión a la Asistencia Familiar',
     category: 'Defensa Técnica en Delitos de OAF',
     result: 'Acreditación de Realidad Económica',
-    driveEmbedUrl: 'https://drive.google.com/file/d/1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV/preview',
     tag: 'Defensa Probatoria',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80'
@@ -42,7 +59,6 @@ const realCaseVideos = [
     title: 'Protección de Terreno y Despojo',
     category: 'Defensa de Posesión y Propiedad Inmobiliaria',
     result: 'Freno Inmediato de Despojo Ilegal',
-    driveEmbedUrl: 'https://drive.google.com/file/d/1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz/preview',
     tag: 'Defensa en Campo',
     driveThumbnail: 'https://drive.google.com/thumbnail?id=1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz&sz=w1000',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80'
@@ -104,10 +120,10 @@ export default function RealCases() {
               <div className="case-vertical-video-wrapper">
                 {playingId === caseItem.id ? (
                   <iframe 
-                    src={`${caseItem.driveEmbedUrl}`}
+                    src={`https://drive.google.com/file/d/${caseItem.driveId}/preview?autoplay=1`}
                     title={caseItem.title}
                     className="case-drive-iframe"
-                    allow="autoplay; encrypted-media"
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 ) : (

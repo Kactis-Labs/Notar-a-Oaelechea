@@ -6,9 +6,9 @@ import './CommunitySection.css';
 const socialChannels = [
   {
     name: 'TikTok',
-    handle: '@aderulloa.abogado',
+    handle: '@escalanteulloa.asociados',
     desc: 'Análisis de audiencias en vivo, derechos del detenido y orientación penal directa.',
-    url: 'https://tiktok.com',
+    url: brandConfig.social.tiktok,
     iconSvg: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.88 2.89 2.89 0 0 1-2.88-2.88 2.89 2.89 0 0 1 2.88-2.88c.36 0 .7.07 1.01.2V9.45a6.33 6.33 0 0 0-1.01-.08A6.34 6.34 0 0 0 3.15 15.7 6.34 6.34 0 0 0 9.49 22a6.34 6.34 0 0 0 6.34-6.33V9.17a8.16 8.16 0 0 0 4.86 1.6V7.32a4.85 4.85 0 0 1-1.1-.63z"/>
@@ -18,9 +18,9 @@ const socialChannels = [
   },
   {
     name: 'Instagram',
-    handle: '@estudio_ulloaasociados',
+    handle: '@aderulloa',
     desc: 'Criterios de la Corte Suprema, jurisprudencia procesal y actualidad jurídica.',
-    url: 'https://instagram.com',
+    url: brandConfig.social.instagram,
     iconSvg: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
