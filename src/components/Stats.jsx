@@ -51,8 +51,8 @@ export default function Stats() {
             <p className="stat-label">Años de especialización laboral (Dr. Gonzales)</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number" style={{ fontSize: '2.5rem' }}>Nacional</h3>
-            <p className="stat-label">Sede en Trujillo y cobertura en todo el Perú</p>
+            <h3 className="stat-number"><AnimatedCounter value="10" suffix="+" /></h3>
+            <p className="stat-label">Regiones del Perú con cobertura en consultoría</p>
           </div>
         </div>
       </div>
