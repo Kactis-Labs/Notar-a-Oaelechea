@@ -201,4 +201,16 @@
   .testimonial-author-case {
     font-size: 0.72rem;
   }
+  .testimonial-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+    padding-top: 0.75rem;
+  }
+  .testimonial-result-tag {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+    white-space: normal;
+    word-break: break-word;
+  }
 }

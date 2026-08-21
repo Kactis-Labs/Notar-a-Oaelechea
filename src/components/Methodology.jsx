@@ -4,27 +4,27 @@ import './Methodology.css';
 const methodSteps = [
   {
     num: '1',
-    label: '01. Escuchamos.',
+    label: 'Escuchamos.',
     desc: 'Entendemos qué ocurrió, los hechos reales y el contexto humano antes de revisar el expediente.'
   },
   {
     num: '2',
-    label: '02. Estudiamos.',
+    label: 'Estudiamos.',
     desc: 'Análisis dogmático minucioso de cada foja de la carpeta fiscal o judicial, pericias y elementos probatorios.'
   },
   {
     num: '3',
-    label: '03. Identificamos.',
+    label: 'Identificamos.',
     desc: 'Detectamos vulneraciones al debido proceso, atipicidades jurídicas y fallas probatorias de la contraparte.'
   },
   {
     num: '4',
-    label: '04. Diseñamos.',
+    label: 'Diseñamos.',
     desc: 'Trazamos la teoría del caso y la estrategia técnica procesal antes de asistir a cualquier audiencia.'
   },
   {
     num: '5',
-    label: '05. Defendemos.',
+    label: 'Defendemos.',
     desc: 'Litigamos con firmeza técnica, argumentación jurídica sólida y lealtad irrestricta a la causa.'
   }
 ];
