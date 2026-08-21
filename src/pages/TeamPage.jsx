@@ -2,7 +2,7 @@ import { teamMembers } from '../data/teamData';
 import CTA from '../components/CTA';
 import Contact from '../components/Contact';
 import { Award, CheckCircle } from 'lucide-react';
-import equipoHero from '../assets/equipo-hero.png';
+import equipoHero from '../assets/equipo-grupal.webp';
 import '../components/Hero.css';
 import './TeamPage.css';
 
