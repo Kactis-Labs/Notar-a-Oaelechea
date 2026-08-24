@@ -10,7 +10,7 @@ const realCaseVideos = [
     category: 'Acusación por Constancia de Posesión',
     result: 'Admisión de Prueba Clave y Tutela Efectiva',
     tag: 'Testimonio Real',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1rKv4Uh6dYdPQmq-OcIyRCbef2u_B5IVw=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -20,7 +20,7 @@ const realCaseVideos = [
     category: 'Tercer Juicio Oral &middot; Corte Superior',
     result: 'Demostración de Inocencia y Archivo Definitivo',
     tag: 'Juicio Oral',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1t8SJ7J_mCess1Q9eTyhLRot1BtUIy0K9&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1t8SJ7J_mCess1Q9eTyhLRot1BtUIy0K9=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -30,7 +30,7 @@ const realCaseVideos = [
     category: 'Impugnación de Sentencia &middot; Sala Superior',
     result: 'Invalidez de Condena por Prescripción Penal',
     tag: 'Estrategia Procesal',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1V5iRu-FcSMNwubgjkpzeJo3l5EFvoWEj&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1V5iRu-FcSMNwubgjkpzeJo3l5EFvoWEj=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -40,7 +40,7 @@ const realCaseVideos = [
     category: 'Apelación Penal Compleja &middot; Sala Superior',
     result: 'Revocatoria de Sentencia en Segunda Instancia',
     tag: 'Apelación Penal',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1Pnl0WkjSyULuzQX_mQypSMLWFud_OZvV=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -50,7 +50,7 @@ const realCaseVideos = [
     category: 'Defensa Técnica en Delitos de OAF',
     result: 'Acreditación de Realidad Económica',
     tag: 'Defensa Probatoria',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1Fd_5w5XR6fYbuPtzrQUvGeoxyDpkQfSV=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -60,7 +60,7 @@ const realCaseVideos = [
     category: 'Defensa de Posesión y Propiedad Inmobiliaria',
     result: 'Freno Inmediato de Despojo Ilegal',
     tag: 'Defensa en Campo',
-    driveThumbnail: 'https://drive.google.com/thumbnail?id=1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz&sz=w1000',
+    driveThumbnail: 'https://lh3.googleusercontent.com/d/1myZ4QcyTZ4LOkq98h9-S9kZB4zDRAUdz=w800',
     fallbackThumbnail: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80'
   }
 ];
