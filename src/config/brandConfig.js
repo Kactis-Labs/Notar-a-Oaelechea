@@ -2,8 +2,8 @@
 
 export const brandConfig = {
   // Información General
-  name: "Escalante, Ulloa y Asociados - Estudio Jurídico",
-  shortName: "Escalante y Ulloa",
+  name: "Escalante, Ulloa & Asociados - Estudio Jurídico",
+  shortName: "Escalante & Ulloa",
   tagline: "Rigor Jurídico, Solidez Procesal y Cobertura Nacional",
   subtitle: "Sede central en Trujillo y patrocinio legal estratégico a nivel nacional. Protegemos el patrimonio y la libertad de nuestros clientes con atención directa de nuestros socios principales.",
   foundedYear: 2022,
