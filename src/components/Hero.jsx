@@ -33,11 +33,14 @@ export default function Hero() {
               key={bgIndex}
               src={bgImages[bgIndex].src} 
               alt={bgImages[bgIndex].alt}
+              width="1920"
+              height="1080"
+              fetchPriority="high"
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.6, ease: "easeInOut" }}
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', willChange: 'opacity, transform' }}
             />
           </AnimatePresence>
           <div className="hero-overlay"></div>

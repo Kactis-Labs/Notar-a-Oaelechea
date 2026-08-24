@@ -62,7 +62,10 @@ export default function AderUlloaSection() {
             <img 
               src={imgAderUlloa} 
               alt="Dr. Ader Ulloa Velásquez - Abogado Penalista Fundador" 
-              className="ader-image" 
+              className="ader-image"
+              width="480"
+              height="580"
+              loading="lazy"
             />
             <div className="ader-image-deco"></div>
           </div>

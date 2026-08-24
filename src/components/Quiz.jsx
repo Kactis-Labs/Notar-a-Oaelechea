@@ -91,7 +91,14 @@ export default function Quiz() {
   return (
     <section className="quiz-section">
       <div className="quiz-bg-image-wrapper">
-        <img src={quizBg} alt="Orientación Jurídica" className="quiz-bg-img" />
+        <img 
+          src={quizBg} 
+          alt="Orientación Jurídica" 
+          className="quiz-bg-img"
+          width="1200"
+          height="600"
+          loading="lazy"
+        />
         <div className="quiz-bg-gradient-overlay"></div>
       </div>
 

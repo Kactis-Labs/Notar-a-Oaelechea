@@ -9,16 +9,23 @@ export default function Footer() {
         
         <div className="footer-top">
           <div className="footer-brand-col">
-            <img src="/logo.svg" alt={brandConfig.name} className="footer-logo" />
+            <img 
+              src="/logo.svg" 
+              alt={brandConfig.name} 
+              className="footer-logo"
+              width="200"
+              height="46"
+              loading="lazy"
+            />
             <p className="footer-address">
               {brandConfig.contact.address}
             </p>
           </div>
           
-          <nav className="footer-nav-links">
-            <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer">TikTok</a>
-            <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+          <nav className="footer-nav-links" aria-label="Enlaces de pie de página">
+            <a href={brandConfig.social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="Perfil de TikTok de Escalante Ulloa">TikTok</a>
+            <a href={brandConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Página de Facebook de Escalante Ulloa">Facebook</a>
+            <a href={brandConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Perfil de Instagram de Escalante Ulloa">Instagram</a>
             <Link to="/contacto">Contacto</Link>
           </nav>
         </div>

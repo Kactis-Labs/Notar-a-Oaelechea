@@ -28,15 +28,22 @@ export default function Header() {
   return (
     <header className={`header ${isScrolledState ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo-link">
+        <Link to="/" className="logo-link" aria-label="Ir a la página de inicio">
           <img 
             src={isScrolledState ? "/logo-dark.svg" : "/logo.svg"} 
             alt={brandConfig.name} 
-            className="logo-img" 
+            className="logo-img"
+            width="200"
+            height="46"
           />
         </Link>
         
-        <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        <button 
+          className="mobile-menu-btn" 
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+          aria-expanded={menuOpen}
+        >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 

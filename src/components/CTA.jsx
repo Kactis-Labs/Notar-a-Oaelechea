@@ -28,7 +28,10 @@ export default function CTA() {
           <img 
             src={ctaImage} 
             alt="Atención legal a nivel nacional - Escalante, Ulloa y Asociados" 
-            className="national-cta-img" 
+            className="national-cta-img"
+            width="600"
+            height="400"
+            loading="lazy"
           />
         </div>
       </div>

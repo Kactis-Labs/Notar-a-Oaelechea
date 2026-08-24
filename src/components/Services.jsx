@@ -40,7 +40,10 @@ export default function Services() {
               <img 
                 src={imgPenal} 
                 alt="Defensa Penal Estratégica - Dr. Ader Ulloa" 
-                className="flagship-img" 
+                className="flagship-img"
+                width="540"
+                height="360"
+                loading="lazy"
               />
             </div>
 
@@ -94,7 +97,14 @@ export default function Services() {
               <Link to={`/servicios/${svc.slug}`} key={svc.slug} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="service-card">
                   <div className="service-img-wrapper">
-                    <img src={svc.img} alt={svc.title} className="service-img" />
+                    <img 
+                      src={svc.img} 
+                      alt={svc.title} 
+                      className="service-img" 
+                      width="380"
+                      height="240"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="service-content">
                     <h4 className="service-name">{svc.title}</h4>

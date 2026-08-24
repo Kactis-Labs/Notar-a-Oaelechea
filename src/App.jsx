@@ -1,20 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Lenis from 'lenis';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
-import ServicesPage from './pages/ServicesPage';
-import ServiceDetail from './pages/ServiceDetail';
-import TeamPage from './pages/TeamPage';
-import Resources from './pages/Resources';
-import ResourceDetail from './pages/ResourceDetail';
-import ContactPage from './pages/ContactPage';
-import BookAppointment from './pages/BookAppointment';
-import NotFound from './pages/NotFound';
 import PageTransition from './components/PageTransition';
+
+// Dynamic code splitting for secondary pages
+const About = lazy(() => import('./pages/About'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const TeamPage = lazy(() => import('./pages/TeamPage'));
+const Resources = lazy(() => import('./pages/Resources'));
+const ResourceDetail = lazy(() => import('./pages/ResourceDetail'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const BookAppointment = lazy(() => import('./pages/BookAppointment'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,18 +24,20 @@ function AnimatedRoutes() {
   return (
     <div className="animated-routes-container">
       <AnimatePresence custom={location.pathname}>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-          <Route path="/nosotros" element={<PageTransition><About /></PageTransition>} />
-          <Route path="/servicios" element={<PageTransition><ServicesPage /></PageTransition>} />
-          <Route path="/servicios/:slug" element={<PageTransition><ServiceDetail /></PageTransition>} />
-          <Route path="/equipo" element={<PageTransition><TeamPage /></PageTransition>} />
-          <Route path="/recursos" element={<PageTransition><Resources /></PageTransition>} />
-          <Route path="/recursos/:slug" element={<PageTransition><ResourceDetail /></PageTransition>} />
-          <Route path="/contacto" element={<PageTransition><ContactPage /></PageTransition>} />
-          <Route path="/agendar-cita" element={<PageTransition><BookAppointment /></PageTransition>} />
-          <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
-        </Routes>
+        <Suspense fallback={<div style={{ minHeight: '60vh', background: 'var(--color-cream)' }} />}>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+            <Route path="/nosotros" element={<PageTransition><About /></PageTransition>} />
+            <Route path="/servicios" element={<PageTransition><ServicesPage /></PageTransition>} />
+            <Route path="/servicios/:slug" element={<PageTransition><ServiceDetail /></PageTransition>} />
+            <Route path="/equipo" element={<PageTransition><TeamPage /></PageTransition>} />
+            <Route path="/recursos" element={<PageTransition><Resources /></PageTransition>} />
+            <Route path="/recursos/:slug" element={<PageTransition><ResourceDetail /></PageTransition>} />
+            <Route path="/contacto" element={<PageTransition><ContactPage /></PageTransition>} />
+            <Route path="/agendar-cita" element={<PageTransition><BookAppointment /></PageTransition>} />
+            <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+          </Routes>
+        </Suspense>
       </AnimatePresence>
     </div>
   );

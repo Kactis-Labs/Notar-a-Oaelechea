@@ -77,15 +77,25 @@ function CaseThumbnail({ caseItem, onPlay }) {
   };
 
   return (
-    <div className="case-thumbnail-cover" onClick={onPlay}>
+    <div 
+      className="case-thumbnail-cover" 
+      onClick={onPlay}
+      role="button"
+      tabIndex={0}
+      aria-label={`Reproducir video del caso: ${caseItem.title}`}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onPlay(); }}
+    >
       <img 
         src={imgSrc} 
         alt={caseItem.title} 
         className="case-vertical-img" 
+        width="340"
+        height="480"
+        loading="lazy"
         onError={handleError}
       />
       <div className="case-play-overlay">
-        <div className="case-play-btn">
+        <div className="case-play-btn" aria-hidden="true">
           <Play size={24} className="play-icon-triangle" />
         </div>
         <span className="case-duration-badge">{caseItem.tag}</span>

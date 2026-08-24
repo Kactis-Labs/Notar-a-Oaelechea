@@ -48,7 +48,13 @@ export default function CommunitySection() {
   return (
     <section className="community-section" id="comunidad">
       <div className="community-bg">
-        <img src={communityBg} alt="Comunidad Escalante, Ulloa y Asociados" />
+        <img 
+          src={communityBg} 
+          alt="Comunidad Escalante, Ulloa y Asociados" 
+          width="1200"
+          height="600"
+          loading="lazy"
+        />
         <div className="community-overlay"></div>
       </div>
 
@@ -66,7 +72,7 @@ export default function CommunitySection() {
           {socialChannels.map((channel, idx) => (
             <div className="community-card" key={idx}>
               <div className="community-card-top">
-                <div className="channel-icon-pill">
+                <div className="channel-icon-pill" aria-hidden="true">
                   {channel.iconSvg}
                 </div>
                 <span className="channel-handle">{channel.handle}</span>
@@ -82,9 +88,10 @@ export default function CommunitySection() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="channel-link-btn"
+                aria-label={`${channel.btnText} en ${channel.name}`}
               >
                 <span>{channel.btnText}</span>
-                <ArrowUpRight size={15} />
+                <ArrowUpRight size={15} aria-hidden="true" />
               </a>
             </div>
           ))}
