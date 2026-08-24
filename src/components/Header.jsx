@@ -44,7 +44,8 @@ export default function Header() {
           aria-label={menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          <span className="sr-only">{menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}</span>
+          {menuOpen ? <X size={28} aria-hidden="true" /> : <Menu size={28} aria-hidden="true" />}
         </button>
 
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
