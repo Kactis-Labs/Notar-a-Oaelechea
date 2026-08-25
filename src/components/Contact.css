@@ -76,6 +76,18 @@
   line-height: 1.6;
 }
 
+.contact-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
 .contact-cta-wrapper {
   margin-bottom: 2.5rem;
 }

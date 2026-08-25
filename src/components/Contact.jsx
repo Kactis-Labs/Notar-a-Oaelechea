@@ -81,7 +81,13 @@ export default function Contact() {
             
             <div className="info-block">
               <h4>Contacto</h4>
-              <p>{brandConfig.contact.email}<br/>{brandConfig.contact.phone}</p>
+              <p>
+                <a href={`mailto:${brandConfig.contact.email}`} className="contact-link">{brandConfig.contact.email}</a>
+                <br />
+                <a href={`tel:${brandConfig.contact.phoneRaw}`} className="contact-link">{brandConfig.contact.phone}</a>
+                <br />
+                <a href={`tel:${brandConfig.contact.phoneSecondaryRaw}`} className="contact-link">{brandConfig.contact.phoneSecondary}</a>
+              </p>
             </div>
           </div>
           

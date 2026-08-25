@@ -14,6 +14,12 @@ export const brandConfig = {
     address: "Calle Isabel de Bobadilla N° 170, segundo piso, oficina 102 - Trujillo, Perú",
     phone: "+51 932 985 810",
     phoneRaw: "+51932985810",
+    phoneSecondary: "+51 947 404 022",
+    phoneSecondaryRaw: "+51947404022",
+    phones: [
+      { label: "Principal", number: "+51 932 985 810", raw: "+51932985810" },
+      { label: "Secundario", number: "+51 947 404 022", raw: "+51947404022" }
+    ],
     whatsapp: "+51 932 985 810",
     whatsappRaw: "51932985810",
     whatsappUrl: "https://wa.me/51932985810?text=Hola%2C%20deseo%20agendar%20una%20consulta%20legal%20con%20el%20estudio%20Escalante%2C%20Ulloa%20y%20Asociados.",
