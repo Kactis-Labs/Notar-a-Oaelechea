@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
           
           <div className="hero-card">
-            <p className="hero-card-meta">Notariado &middot; Fundada en {brandConfig.foundedYear}</p>
+            <p className="hero-card-meta">Estudio Jurídico &middot; Fundado en {brandConfig.foundedYear}</p>
             <p className="hero-card-stat">{brandConfig.statsCount}</p>
             <Link to="/agendar-cita" className="hero-card-btn">Agendar cita</Link>
           </div>

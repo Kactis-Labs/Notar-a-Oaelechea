@@ -1,14 +1,15 @@
 :root {
-  --color-black: #1A1A1A;
-  --color-navy: #1A1A1A;
-  --color-gold: #F0A81E;
-  --color-gold-hover: #D99415;
-  --color-cream: #F7F6F4;
+  --color-black: #06261A;
+  --color-navy: #083D29;
+  --color-forest: #083D29;
+  --color-gold: #F5C518;
+  --color-gold-hover: #D9A80B;
+  --color-cream: #F6F8F6;
   --color-white: #FFFFFF;
-  --color-gray: #E5E5E5;
-  --color-dark-gray: #2B2B2B;
-  --color-text-dark: #2B2B2B;
-  --color-text-muted: #666666;
+  --color-gray: #E2E8E4;
+  --color-dark-gray: #1C2B24;
+  --color-text-dark: #1C2B24;
+  --color-text-muted: #566B60;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Montserrat', sans-serif;
@@ -123,13 +124,7 @@ button {
 }
 
 .section-label::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-gold);
-  box-shadow: 0 0 8px rgba(240, 168, 30, 0.6);
+  display: none !important;
 }
 
 .section-label.light {

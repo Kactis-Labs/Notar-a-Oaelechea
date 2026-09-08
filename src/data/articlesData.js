@@ -3,163 +3,126 @@ import articleSucesion from '../assets/article-sucesion.png';
 import articleTestamento from '../assets/article-testamento.png';
 import articleEmpresa from '../assets/article-empresa.png';
 import articleRegistral from '../assets/article-registral.png';
-import articlePoderes from '../assets/article-poderes.png';
 
 export const articlesData = [
   {
     id: 1,
-    slug: 'elegir-notario-correcto',
-    title: 'Cómo elegir el notario correcto para su trámite',
-    description: 'El notario que elija definirá el desenlace de su proceso. Aquí le explicamos qué factores debe considerar para tomar una decisión segura.',
-    date: '14 MAY, 2026',
-    authorId: 'carlos-olaechea',
-    category: 'Consejos Legales',
+    slug: 'prescripcion-adquisitiva-dominio-inmuebles',
+    title: 'Prescripción Adquisitiva de Dominio: Cómo sanear su propiedad inmueble',
+    description: 'Guía legal sobre los requisitos y etapas procesales para formalizar la titularidad de un inmueble tras posesión pacífica, continua y pública.',
+    date: '28 AGO, 2026',
+    authorId: 'carlos-quispe',
+    category: 'Derecho Civil',
     image: articleNotario,
     content: `
-      <p>La elección de un notario público es una de las decisiones legales más consecuentes que tomará en su vida. Ya sea que esté comprando su primera vivienda, constituyendo la empresa de sus sueños o planificando la sucesión de su patrimonio, el notario que elija moldeará el resultado.</p>
+      <p>En el Perú, miles de familias y empresas ocupan inmuebles de buena fe sin contar con título de propiedad inscrito en los Registros Públicos (SUNARP). La prescripción adquisitiva de dominio (usucapión) es el mecanismo legal idóneo para convertir una posesión de hecho en un derecho de propiedad pleno y oponible a terceros.</p>
       
-      <p>Muchos ciudadanos cometen el error de elegir una notaría basándose únicamente en la cercanía geográfica o en la tarifa más baja. Sin embargo, en el derecho notarial, lo barato puede resultar extremadamente costoso si un documento es observado o rechazado por los Registros Públicos debido a errores de forma o fondo.</p>
+      <p>Existen dos vías principales para tramitar la prescripción adquisitiva: la vía notarial (exclusiva para predios urbanos con posesión pacífica y sin litigio) y la vía judicial (aplicable a predios rústicos, urbanos o cuando median controversias con titulares registrales).</p>
       
-      <h3>1. Experiencia y Especialización</h3>
-      <p>No todos los trámites son iguales. Mientras que la legalización de una firma es un acto sencillo, la escisión de una sociedad anónima requiere de un nivel de expertise corporativo profundo. Busque una notaría que cuente con especialistas dedicados al área específica de su necesidad.</p>
+      <h3>Requisitos Fundamentales</h3>
+      <ul>
+        <li><strong>Posesión continua:</strong> Sin interrupciones durante al menos 10 años (o 5 años si media justo título y buena fe).</li>
+        <li><strong>Posesión pacífica:</strong> Libre de violencia física o procesos judiciales reivindicatorios en trámite.</li>
+        <li><strong>Posesión pública:</strong> Ejercida a vista y paciencia de la comunidad, actuando como verdadero propietario.</li>
+        <li><strong>Pruebas documentales:</strong> Recibos de pago de tributos municipales (Impuesto Predial y Arbitrios), servicios básicos a nombre del solicitante, contratos privados o testimoniales.</li>
+      </ul>
       
-      <h3>2. Transparencia en la Información</h3>
-      <p>Un buen notario no solo firma documentos; asesora. Si en su primera consulta siente que le están ocultando información, le hablan con excesivos tecnicismos sin molestarse en explicar, o le prometen tiempos irreales para un trámite registral complejo, es una señal de alerta.</p>
-      
-      <h3>3. Organización y Seguimiento</h3>
-      <p>El trabajo notarial moderno requiere tecnología y procesos claros. ¿La notaría cuenta con un sistema para informarle sobre el estado de su trámite? ¿Tienen un archivo diligente? Estos detalles marcan la diferencia entre un trámite fluido y uno lleno de frustraciones.</p>
-      
-      <p>En la Notaría Olaechea, nos enorgullecemos de cumplir con estos tres pilares desde hace más de 30 años, asegurando que cada cliente tome decisiones informadas y seguras.</p>
+      <p>En Quispe Villanueva & Abogados estructuramos su expediente probatorio con rigor técnico para garantizar una sentencia estimatoria o declaración notarial inimpugnable.</p>
     `
   },
   {
     id: 2,
-    slug: 'documentos-sucesion-intestada',
-    title: '¿Qué documentos necesita para una sucesión intestada?',
-    description: 'Una guía clara sobre los requisitos indispensables para iniciar este trámite cuando un familiar fallece sin dejar testamento.',
-    date: '12 MAY, 2026',
-    authorId: 'mariana-rios',
-    category: 'Familia y Sucesiones',
-    image: articleSucesion,
+    slug: 'cobranza-ejecutiva-facturas-titulos-valores',
+    title: 'Recuperación judicial de deudas: El poder del proceso ejecutivo',
+    description: 'Estrategias procesales de alta efectividad para ejecutar pagarés, facturas negociables y letras de cambio con medidas de embargo preventivo.',
+    date: '22 AGO, 2026',
+    authorId: 'elena-villanueva',
+    category: 'Derecho Comercial',
+    image: articleEmpresa,
     content: `
-      <p>Enfrentar el fallecimiento de un ser querido es un proceso emocionalmente devastador. Cuando, además, la persona fallece sin haber otorgado un testamento, los familiares deben realizar una sucesión intestada para poder heredar legalmente el patrimonio.</p>
+      <p>La morosidad comercial es una de las contingencias más perjudiciales para la liquidez de una empresa. Cuando la vía extrajudicial fracasa, el proceso judicial único de ejecución constituye la vía más rápida y contundente para exigir el cumplimiento de obligaciones dinerarias.</p>
       
-      <p>Afortunadamente, el trámite notarial de sucesión intestada en Perú es un proceso estandarizado que, con la documentación correcta, puede resolverse de manera ágil. Aquí detallamos lo que necesita reunir:</p>
+      <p>A diferencia de un proceso de conocimiento o abreviado que puede prolongarse durante años, el proceso ejecutivo parte de un título con mérito ejecutivo que contiene una obligación cierta, expresa y exigible.</p>
       
-      <h3>Requisitos Indispensables</h3>
+      <h3>Medidas Cautelares de Alto Impacto</h3>
+      <p>Para asegurar el cobro efectivo antes de que el deudor disipe sus activos, nuestro estudio solicita de forma célere:</p>
       <ul>
-        <li><strong>Partida de defunción:</strong> El documento oficial emitido por RENIEC que certifica el fallecimiento.</li>
-        <li><strong>Partidas de nacimiento:</strong> De todos los presuntos herederos (hijos) para acreditar el entroncamiento.</li>
-        <li><strong>Partida de matrimonio:</strong> Si el fallecido era casado, para reconocer los derechos del cónyuge supérstite.</li>
-        <li><strong>Certificado Negativo de Sucesión Intestada:</strong> Emitido por SUNARP, prueba que no hay otro trámite igual en curso.</li>
-        <li><strong>Certificado Negativo de Testamento:</strong> Emitido por SUNARP, prueba que la persona efectivamente no dejó un testamento inscrito.</li>
+        <li><strong>Embargo en forma de retención:</strong> Sobre cuentas bancarias del deudor en el sistema financiero.</li>
+        <li><strong>Embargo en forma de inscripción:</strong> Sobre bienes inmuebles y vehículos registrados a nombre del deudor.</li>
+        <li><strong>Embargo en forma de intervención en recaudación:</strong> En los locales comerciales o sedes de la empresa deudora.</li>
       </ul>
       
-      <p>Es importante recordar que todos los documentos deben estar actualizados y no presentar borrones ni enmendaduras. Si los nombres en las partidas presentan discrepancias ortográficas (por ejemplo, "Elisabeth" en lugar de "Elizabeth"), deberá realizarse previamente un trámite de rectificación de partida.</p>
-      
-      <p>Nuestro equipo en el área de familia puede guiarlo paso a paso para recopilar esta información y evitar observaciones que retrasen la inscripción de su derecho.</p>
+      <p>Nuestra división corporativa le brinda asesoramiento para auditar sus contratos y pagarés desde su origen, garantizando que cumplan con todos los requisitos formales de la Ley de Títulos Valores N° 27287.</p>
     `
   },
   {
     id: 3,
-    slug: 'errores-redactar-testamento',
-    title: '5 errores comunes al redactar un testamento',
-    description: 'Evite estos fallos legales frecuentes que podrían invalidar su última voluntad y generar disputas familiares.',
-    date: '08 MAY, 2026',
-    authorId: 'carlos-olaechea',
-    category: 'Familia y Sucesiones',
-    image: articleTestamento,
+    slug: 'descargos-procedimiento-administrativo-sancionador',
+    title: 'Cómo actuar frente a una sanción de SUNAT, INDECOPI o Municipalidades',
+    description: 'Pautas procesales obligatorias para presentar descargos eficaces, apelar multas desproporcionadas y frenar ejecuciones coactivas.',
+    date: '15 AGO, 2026',
+    authorId: 'elena-villanueva',
+    category: 'Derecho Administrativo',
+    image: articleRegistral,
     content: `
-      <p>Otorgar un testamento es un acto de amor y responsabilidad hacia nuestra familia. Garantiza que nuestro patrimonio se distribuya según nuestros deseos y previene amargos conflictos legales entre nuestros seres queridos. Sin embargo, un testamento mal estructurado puede ser peor que no tener ninguno.</p>
+      <p>El Procedimiento Administrativo Sancionador (PAS) faculta a los órganos estatales a imponer severas multas, clausuras y suspensiones. No obstante, las autoridades suelen incurrir en vicios de nulidad por afectación del principio de tipicidad, proporcionalidad o debido procedimiento.</p>
       
-      <h3>1. Desconocer la legítima</h3>
-      <p>En el Perú, la ley protege a los "herederos forzosos" (hijos, padres, cónyuge). Usted no puede disponer libremente del 100% de su patrimonio si tiene herederos forzosos. Generalmente, solo puede disponer libremente de un tercio de sus bienes. Ignorar esto causará que el testamento sea impugnado.</p>
+      <p>Frente a la notificación de una imputación de cargos, el administrado cuenta con un plazo legal estricto para formular sus descargos. Una respuesta improvisada puede sellar el destino del proceso administrativo.</p>
       
-      <h3>2. No actualizar el testamento</h3>
-      <p>La vida cambia: nacen nuevos hijos, ocurren divorcios, se compran o venden propiedades. Un testamento redactado hace 20 años probablemente ya no refleje su realidad actual ni su patrimonio presente.</p>
+      <h3>Estrategia de Defensa Técnica</h3>
+      <ol>
+        <li><strong>Verificación de caducidad y prescripción:</strong> Constatar si la entidad inició el procedimiento fuera de los plazos legales previstos por la Ley N° 27444.</li>
+        <li><strong>Cuestionamiento probatorio:</strong> Desvirtuar las actas de fiscalización si adolecen de falta de motivación o mediciones irregulares.</li>
+        <li><strong>Recurso de Apelación:</strong> Agotar la vía administrativa con elevación ante el Tribunal Administrativo correspondiente.</li>
+        <li><strong>Demanda Contencioso-Administrativa:</strong> Llevar el caso ante el Poder Judicial para solicitar la nulidad total de la resolución sancionadora.</li>
+      </ol>
       
-      <h3>3. Condiciones imposibles o ilegales</h3>
-      <p>Usted puede condicionar parte de su herencia (del tercio de libre disposición), pero las condiciones no pueden ser contrarias a la ley ni a las buenas costumbres. Por ejemplo, no puede condicionar una herencia a que alguien nunca se case.</p>
-      
-      <h3>4. Falta de claridad en la descripción de los bienes</h3>
-      <p>Dejar "la casa de la playa" a un hijo sin especificar su ubicación exacta o partida registral puede causar confusión si usted adquirió más de una propiedad en la costa con el tiempo.</p>
-      
-      <h3>5. Testigos incompatibles</h3>
-      <p>Un testamento por escritura pública requiere dos testigos. Un error fatal es llevar como testigos a personas que se beneficiarán del testamento o a familiares directos, lo cual está prohibido por ley e invalidará el acto.</p>
+      <p>En Quispe Villanueva & Abogados defendemos a empresas y personas frente a la arbitrariedad administrativa, cautelando su operatividad comercial.</p>
     `
   },
   {
     id: 4,
-    slug: 'guia-constitucion-empresas',
-    title: 'Guía rápida: Constitución de empresas en Perú',
-    description: 'Todo lo que un emprendedor necesita saber para formalizar su negocio y proteger su patrimonio personal.',
-    date: '02 MAY, 2026',
-    authorId: 'fernando-vargas',
-    category: 'Corporativo',
-    image: articleEmpresa,
+    slug: 'ventajas-arbitraje-comercial-frente-poder-judicial',
+    title: '¿Por qué pactar un convenio arbitral en sus contratos comerciales?',
+    description: 'Análisis de las ventajas competitivas del arbitraje: celeridad, especialización de los árbitros, confidencialidad y laudos de carácter vinculante.',
+    date: '08 AGO, 2026',
+    authorId: 'carlos-quispe',
+    category: 'Derecho Arbitral',
+    image: articleSucesion,
     content: `
-      <p>Formalizar una empresa es el primer gran paso hacia el éxito comercial. No solo le permite acceder a créditos bancarios y contratar con el Estado, sino que protege su patrimonio personal ante cualquier eventualidad del negocio.</p>
+      <p>En el tráfico mercantil moderno, el tiempo es un activo financiero crítico. La sobrecarga del sistema judicial ordinario genera que un litigio civil o comercial pueda demorar entre 4 y 7 años en resolverse en doble instancia y casación. Frente a ello, el arbitraje ofrece una solución estratégica indiscutible.</p>
       
-      <h3>El proceso en 4 pasos</h3>
+      <p>El arbitraje es un mecanismo heterocompositivo en el cual las partes, en ejercicio de su autonomía de la voluntad, acuerdan someter sus controversias presentes o futuras a la decisión de un tribunal arbitral imparcial y altamente calificado.</p>
       
-      <p><strong>1. Búsqueda y reserva de nombre:</strong> Antes de redactar cualquier documento, debemos verificar en SUNARP que el nombre que desea para su empresa no esté siendo usado por alguien más. Una vez confirmado, se reserva por 30 días.</p>
+      <h3>Beneficios del Arbitraje</h3>
+      <ul>
+        <li><strong>Celeridad Procesal:</strong> La gran mayoría de procesos arbitrales concluyen con laudo definitivo en plazos de 6 a 12 meses.</li>
+        <li><strong>Especialización:</strong> Los árbitros son profesionales expertos en la materia específica de la controversia (construcción, societario, seguros, etc.).</li>
+        <li><strong>Confidencialidad:</strong> Protege la reputación comercial y los secretos empresariales de las partes en litigio.</li>
+        <li><strong>Fuerza Ejecutiva:</strong> El laudo arbitral tiene valor de cosa juzgada y no puede ser revisado sobre el fondo por jueces ordinarios.</li>
+      </ul>
       
-      <p><strong>2. Elaboración del Acto Constitutivo (Minuta):</strong> Este es el "acta de nacimiento" de su empresa. Aquí se define quiénes son los socios, qué tipo de sociedad formarán (SAC, SRL, EIRL, etc.), a qué se dedicará la empresa y cuál será el capital social.</p>
-      
-      <p><strong>3. Abono de capital y bienes:</strong> Los socios deben abrir una cuenta bancaria a nombre de la empresa en formación y depositar el capital dinerario, o presentar un informe valorizado si aportarán bienes (computadoras, muebles, vehículos).</p>
-      
-      <p><strong>4. Elevación a Escritura Pública:</strong> Es aquí donde interviene la notaría. Revisamos la minuta, verificamos el depósito de capital y tomamos la firma biométrica de todos los socios. Una vez firmado, nosotros nos encargamos de enviarlo electrónicamente a Registros Públicos.</p>
-      
-      <p>En el área corporativa de nuestra notaría, ofrecemos un servicio integral que simplifica todos estos pasos para que usted solo se preocupe por hacer crecer su negocio.</p>
+      <p>En nuestro estudio redactamos cláusulas arbitrales blindadas y patrocinamos a consorcios y compañías ante centros de arbitraje líderes como la Cámara de Comercio de Lima (CCL) y el Centro de Arbitraje PUCP.</p>
     `
   },
   {
     id: 5,
-    slug: 'tramite-registral-observado',
-    title: '¿Qué hacer si su trámite registral fue observado?',
-    description: 'No entre en pánico. Una observación de SUNARP es común y casi siempre tiene solución si se actúa con rapidez.',
-    date: '28 APR, 2026',
-    authorId: 'mariana-rios',
-    category: 'Registral',
-    image: articleRegistral,
+    slug: 'defensa-penal-delitos-economicos-compliance',
+    title: 'Estrategia en Delitos Económicos y Responsabilidad Penal de la Empresa',
+    description: 'La importancia de una defensa técnica temprana en investigaciones preliminares por presuntos fraudes, estafas y delitos tributarios.',
+    date: '01 AGO, 2026',
+    authorId: 'carlos-quispe',
+    category: 'Derecho Penal',
+    image: articleTestamento,
     content: `
-      <p>Recibir una notificación de que su trámite ha sido "observado" por el Registrador Público puede ser frustrante. Sin embargo, en el mundo del derecho notarial y registral, las observaciones son el pan de cada día.</p>
+      <p>Bajo la vigencia de la Ley N° 30424 y el Código Procesal Penal, tanto los directores, gerentes y accionistas como la propia persona jurídica pueden ser imputados y sancionados con multas millonarias, inhabilitación y clausura de locales por delitos de cohecho, lavado de activos o fraude procesal.</p>
       
-      <p>Una observación simplemente significa que el registrador ha encontrado una omisión, un defecto de forma, o una incongruencia entre el documento presentado y los antecedentes que ya obran en el registro. No significa que su trámite haya sido rechazado permanentemente.</p>
+      <p>La litigación penal corporativa no comienza en el juicio oral; se gana o pierde en las diligencias preliminares ante el Ministerio Público y la Policía Nacional (DIVINCRI / DIRCOCOR).</p>
       
-      <h3>Pasos a seguir:</h3>
+      <h3>Pilares de Nuestra Defensa</h3>
+      <p>Nuestro equipo de penalistas despliega una estrategia basada en la teoría del caso, levantamiento de secreto bancario y tributario con peritajes contables de parte, y objeción de medidas cautelares reales o personales (prisión preventiva y comparecencia con restricciones).</p>
       
-      <p><strong>1. Lea atentamente la esquela de observación:</strong> El registrador está en la obligación de detallar exactamente qué defecto encontró y cuál es la base legal de su observación.</p>
-      
-      <p><strong>2. Acuda a su notario:</strong> La notaría donde realizó la escritura pública es su principal aliada. Muchas veces, la observación puede subsanarse internamente mediante una "Escritura Pública Aclaratoria" que el mismo notario redacta, sin que usted tenga que rehacer todo el trámite.</p>
-      
-      <p><strong>3. Respete los plazos:</strong> Toda observación otorga un plazo específico para ser subsanada (generalmente unos días antes del vencimiento del asiento de presentación). Si deja vencer el plazo, tendrá que pagar los derechos registrales nuevamente y empezar de cero.</p>
-      
-      <p><strong>4. Pago de mayor derecho:</strong> En ocasiones, la observación no es por un error, sino porque el registrador calcula que los derechos registrales pagados fueron insuficientes. En este caso, la solución es simplemente pagar el reintegro.</p>
-    `
-  },
-  {
-    id: 6,
-    slug: 'poderes-notariales-tipos',
-    title: 'Poderes notariales: tipos y cuándo usar cada uno',
-    description: 'Desde una simple carta poder hasta un poder por escritura pública. Conozca qué instrumento necesita realmente.',
-    date: '15 APR, 2026',
-    authorId: 'fernando-vargas',
-    category: 'Trámites Frecuentes',
-    image: articlePoderes,
-    content: `
-      <p>Un poder es un documento legal mediante el cual usted autoriza a otra persona para que actúe en su nombre. Pero no todos los poderes tienen la misma fuerza ni sirven para los mismos fines. Usar el poder equivocado resultará en que la institución rechace a su representante.</p>
-      
-      <h3>Carta Poder Simple</h3>
-      <p>Es un documento privado con la firma legalizada por el notario. Sirve para trámites administrativos sencillos, como recoger documentos, recibir correspondencia o realizar gestiones menores de muy baja cuantía. Su validez suele ser temporal y limitada.</p>
-      
-      <h3>Poder Fuera de Registro</h3>
-      <p>Es un documento redactado por el notario en un papel especial notarial y firmado por usted. No se inscribe en Registros Públicos. Sirve para cobrar cheques, percibir pensiones, o realizar trámites bancarios por montos medianos (hasta media UIT aproximadamente). Tiene una vigencia máxima de un año.</p>
-      
-      <h3>Poder por Escritura Pública</h3>
-      <p>Es el poder más fuerte y formal que existe. Se inscribe en SUNARP y no caduca (salvo que usted lo revoque expresamente o le ponga una fecha de caducidad). Es absolutamente obligatorio para actos de disposición: vender, hipotecar o comprar propiedades, disponer de cuentas bancarias sin límite de monto, o constituir empresas.</p>
-      
-      <p>Recuerde: Un poder otorga un gran control a su representante. Asesórese siempre antes de firmar para limitar las facultades estrictamente a lo necesario y evitar abusos de confianza.</p>
+      <p>Garantizamos un patrocinio técnico sin fisuras para proteger la libertad individual y el prestigio de los altos ejecutivos de la organización.</p>
     `
   }
 ];

@@ -43,15 +43,15 @@ export default function About() {
             <div className="section-label" style={{ textAlign: 'center', marginBottom: '2rem' }}>NUESTRA HISTORIA</div>
             <div className="history-content">
               <p className="history-text">
-                En {brandConfig.foundedYear}, nuestro fundador {brandConfig.titular.name} asesoró a una viuda que llevaba meses intentando sanear la propiedad que le había dejado su esposo. El caso parecía un trámite más de sucesión, pero detrás había una familia a punto de perder su único patrimonio por un error registral del pasado.
+                En {brandConfig.foundedYear}, nuestros socios fundadores {brandConfig.titular.name} asumieron el reto de consolidar un estudio jurídico comprometido con la defensa procesal transparente, la solidez argumentativa y el patrocinio estratégico de alto nivel.
               </p>
               
               <blockquote className="history-quote">
-                "Ese caso nos enseñó algo que nunca hemos olvidado: el derecho notarial no se trata de firmar papeles. Se trata de la vida de las personas, a menudo en sus momentos más vulnerables."
+                "El ejercicio del derecho no se trata de litigios fríos ni de expedientes rutinarios. Se trata de proteger la libertad, la estabilidad empresarial y el patrimonio de las personas en sus momentos más decisivos."
               </blockquote>
               
               <p className="history-text">
-                Hoy nuestra firma ha crecido a más de seis especialistas y decenas de colaboradores, pero nuestro estándar no ha cambiado. Seguimos tratando cada trámite de la misma manera que {brandConfig.titular.name.split(' ')[0]} trató el primero: como el único trámite que importa.
+                Hoy nuestra firma cuenta con especialistas dedicados a las áreas Civil, Comercial, Administrativa, Arbitral y Penal, manteniendo invariable el principio rector de nuestros fundadores: cada caso se defiende con el máximo rigor técnico y devoción profesional.
               </p>
             </div>
           </div>

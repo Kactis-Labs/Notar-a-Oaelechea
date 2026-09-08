@@ -1,146 +1,119 @@
 import imgEscrituras from '../assets/escrituras.jpg';
-import imgTestamentosNuevo from '../assets/testamentos.png';
-import imgVehiculos from '../assets/vehiculos.jpg';
-import imgSucesion from '../assets/sucesion.jpg';
-import imgLegalizacion from '../assets/legalizacion.jpg';
 import imgEmpresas from '../assets/empresas.jpg';
+import imgLegalizacion from '../assets/legalizacion.jpg';
+import imgSucesion from '../assets/sucesion.jpg';
+import imgTestamentosNuevo from '../assets/testamentos.png';
 
 export const servicesData = [
   {
-    slug: 'escrituras-publicas',
-    title: 'Escrituras Públicas',
-    shortDesc: 'Formalización de compraventas, anticipos de legítima y donaciones con total seguridad jurídica.',
+    slug: 'derecho-civil',
+    title: 'Derecho Civil y Patrimonial',
+    shortDesc: 'Asesoría y patrocinio en contratos, derechos reales, prescripción adquisitiva, desalojos, sucesiones y responsabilidad civil.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop',
     heroImg: imgEscrituras,
-    tiempoEstimado: '3-5 días hábiles',
-    teamMemberId: 'carlos-olaechea',
+    tiempoEstimado: 'Evaluación y estrategia en 24-48 horas',
+    teamMemberId: 'carlos-quispe',
     detailedDesc: [
-      'Una Escritura Pública es un instrumento público protocolar redactado por el notario, que contiene uno o más actos jurídicos, brindando la máxima seguridad jurídica, fecha cierta y valor probatorio pleno ante cualquier institución.',
-      'A través de este documento formal, garantizamos que las partes expresen su voluntad de manera libre y consciente, verificando la legalidad del acto y la identidad de los otorgantes. Es el paso fundamental para inscribir derechos en los Registros Públicos (SUNARP).',
-      'Nuestro equipo se encarga de todo el proceso, desde la redacción de la minuta (si no cuenta con una) hasta la emisión de los partes notariales correspondientes.'
+      'El Derecho Civil constituye la columna vertebral de las relaciones patrimoniales y familiares. En Quispe Villanueva & Abogados Asociados brindamos patrocinio riguroso en litigios civiles y negociaciones extrajudiciales complejas.',
+      'Defendemos su patrimonio frente a pretensiones indebidas, formalizamos títulos de propiedad a través de prescripciones adquisitivas de dominio, acciones reivindicatorias y procesos de desalojo con medidas cautelares efectivas.',
+      'Asimismo, estructuramos contratos de compraventa, arrendamiento, hipotecas y garantías con cláusulas blindadas que previenen futuros litigios.'
     ],
-    whoItAppliesTo: 'Personas naturales o jurídicas que deseen formalizar actos como compraventa de inmuebles, donaciones, anticipos de legítima, hipotecas, entre otros.',
-    whatProblemItSolves: 'Evita futuros conflictos legales o nulidades al otorgar validez absoluta e incuestionable a los acuerdos voluntarios, garantizando su posterior inscripción registral.',
+    whoItAppliesTo: 'Personas naturales, familias y propietarios que requieren proteger sus bienes raíces, resolver controversias contractuales o tramitar herencias y divisiones patrimoniales.',
+    whatProblemItSolves: 'Evita la pérdida de inmuebles, desentraba disputas familiares y asegura el cumplimiento de obligaciones contractuales mediante patrocinio judicial estratégico.',
     requirements: [
-      'Documento de Identidad (DNI, CE o Pasaporte) vigente de los otorgantes.',
-      'Minuta autorizada por abogado colegiado.',
-      'En caso de inmuebles: HR (Hoja Resumen), PU (Predio Urbano) y recibo de pago del Impuesto Predial del año en curso.',
-      'Copia literal o partida electrónica del bien (antigüedad no mayor a 30 días).',
-      'Comprobantes de pago (bancarización) e impuesto de alcabala (si aplica).'
+      'Documento Nacional de Identidad (DNI) o Carné de Extranjería de las partes.',
+      'Contratos, minutas o escrituras públicas materia de consulta.',
+      'Partida registral del predio o bien en controversia (Copia Literal SUNARP).',
+      'Cartas notariales o comunicaciones previas cursadas.',
+      'Copia de resoluciones judiciales o acuerdos de conciliación previos (si existieran).'
     ]
   },
   {
-    slug: 'testamentos',
-    title: 'Testamentos',
-    shortDesc: 'Asesoría especializada para dejar su voluntad plasmada y proteger el futuro de su familia.',
-    img: imgTestamentosNuevo,
-    heroImg: imgTestamentosNuevo,
-    tiempoEstimado: '1-2 días hábiles',
-    teamMemberId: 'carlos-olaechea',
-    detailedDesc: [
-      'El testamento por escritura pública es el acto mediante el cual una persona dispone de sus bienes para después de su muerte, de forma ordenada y conforme a ley, ante notario y en presencia de dos testigos.',
-      'La ventaja principal del testamento notarial es su inmediatez y seguridad. A diferencia del testamento ológrafo o cerrado, este no requiere de complejos procesos judiciales de apertura y comprobación post-mortem; tiene validez inmediata tras el fallecimiento.',
-      'Nuestra notaría le brinda asesoría personalizada para asegurar que sus disposiciones respeten las cuotas de legítima correspondientes a sus herederos forzosos, evitando que el testamento sea impugnado en el futuro.'
-    ],
-    whoItAppliesTo: 'Toda persona mayor de edad y en pleno uso de sus facultades que desee planificar la distribución de su patrimonio.',
-    whatProblemItSolves: 'Previene disputas familiares, procesos judiciales largos y costosos (sucesión intestada) y asegura que su patrimonio se asigne según sus deseos, dentro del marco legal.',
-    requirements: [
-      'DNI vigente del testador.',
-      'DNI vigente de 2 testigos (no pueden ser familiares ni herederos o legatarios).',
-      'Certificado Médico de salud mental (obligatorio si el testador es mayor de 70 años).',
-      'Relación detallada de los bienes (opcional, pero recomendada) y de los herederos.'
-    ]
-  },
-  {
-    slug: 'transferencia-vehicular',
-    title: 'Transferencia Vehicular',
-    shortDesc: 'Legalización y formalización rápida y segura para la compra y venta de vehículos.',
-    img: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=600&auto=format&fit=crop',
-    heroImg: imgVehiculos,
-    tiempoEstimado: '1 día hábil',
-    teamMemberId: 'elena-torres',
-    detailedDesc: [
-      'El Acta Notarial de Transferencia Vehicular es el documento legal mediante el cual se formaliza el cambio de propietario de un vehículo automotor usado (autos, motos, camiones, etc.).',
-      'Al realizar este trámite notarial, se verifica en tiempo real la identidad de los contratantes mediante biometría dactilar (RENIEC), así como el estado actual del vehículo en SUNARP, descartando bloqueos, embargos o robos.',
-      'El proceso concluye con el bloqueo registral electrónico a favor del comprador y la presentación de los partes notariales a Registros Públicos, asegurando que la compra sea 100% segura.'
-    ],
-    whoItAppliesTo: 'Compradores y vendedores de vehículos automotores usados que requieran seguridad jurídica y celeridad en el trámite.',
-    whatProblemItSolves: 'Protege al vendedor de responsabilidad civil o penal por infracciones futuras y protege al comprador de estafas, cargas o gravámenes ocultos del vehículo.',
-    requirements: [
-      'DNI vigente de comprador y vendedor (y cónyuges, si aplica).',
-      'Tarjeta de Identificación Vehicular (TIV) original.',
-      'SOAT vigente.',
-      'Comprobante de pago del Impuesto al Patrimonio Vehicular (si el vehículo tiene antigüedad de hasta 3 años).',
-      'Medio de pago bancarizado por el valor del vehículo.'
-    ]
-  },
-  {
-    slug: 'sucesion-intestada',
-    title: 'Sucesión Intestada',
-    shortDesc: 'Declaratoria de herederos rápida y eficiente cuando no existe un testamento previo.',
-    img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600&auto=format&fit=crop',
-    heroImg: imgSucesion,
-    tiempoEstimado: '25-30 días hábiles',
-    teamMemberId: 'fernando-vargas',
-    detailedDesc: [
-      'La Sucesión Intestada o Declaratoria de Herederos es el procedimiento notarial que se realiza cuando una persona fallece sin dejar testamento, o si el testamento otorgado ha sido declarado nulo o caduco.',
-      'El objetivo principal de este trámite es determinar legalmente quiénes son los herederos forzosos (cónyuge, hijos, o padres en su defecto) que tienen derecho a heredar el patrimonio del causante.',
-      'A diferencia del proceso judicial, la vía notarial es significativamente más rápida. Nosotros nos encargamos de todo el procedimiento, incluyendo las anotaciones preventivas en SUNARP y las publicaciones requeridas en el Diario Oficial El Peruano.'
-    ],
-    whoItAppliesTo: 'Familiares directos (cónyuge, hijos, padres, hermanos) de una persona fallecida que no dejó testamento.',
-    whatProblemItSolves: 'Permite el desbloqueo de cuentas bancarias y el traslado formal del dominio de inmuebles y vehículos a nombre de los herederos legítimos.',
-    requirements: [
-      'DNI vigente del solicitante.',
-      'Partida de Defunción del causante.',
-      'Partida de Matrimonio (si aplica).',
-      'Partidas de Nacimiento de todos los presuntos herederos.',
-      'Certificado Negativo de Sucesión Intestada (SUNARP).',
-      'Certificado Negativo de Testamento (SUNARP).'
-    ]
-  },
-  {
-    slug: 'legalizacion-documentos',
-    title: 'Legalización de Documentos',
-    shortDesc: 'Certificación de firmas y reproducciones documentales para dar fe de su autenticidad.',
-    img: 'https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=600&auto=format&fit=crop',
-    heroImg: imgLegalizacion,
-    tiempoEstimado: 'Inmediato (Mismo día)',
-    teamMemberId: 'mariana-rios',
-    detailedDesc: [
-      'La legalización notarial es un acto a través del cual el notario da fe de que la firma o huella digital que aparece en un documento privado pertenece efectivamente a la persona que la ha puesto en su presencia.',
-      'Asimismo, la legalización de copias certifica que la reproducción es idéntica al documento original presentado. Esto aplica para diplomas, certificados, DNI, pasaportes, libros contables, actas societarias, entre otros.',
-      'Contamos con un equipo de atención rápida que verifica la identidad biométrica y procesa sus documentos en cuestión de minutos, garantizando que tengan pleno valor frente a cualquier entidad pública o privada.'
-    ],
-    whoItAppliesTo: 'Personas o empresas que requieran presentar contratos privados, autorizaciones, poderes simples o copias fieles ante instituciones gubernamentales, bancos o terceros.',
-    whatProblemItSolves: 'Otorga presunción legal de veracidad a un documento privado o a una copia, evitando que su contenido o las firmas sean rechazadas por falta de formalidad.',
-    requirements: [
-      'Para legalización de firmas: Presencia física del firmante con DNI vigente.',
-      'Para legalización de copias: Presentación del documento ORIGINAL y de la copia a certificar.',
-      'En caso de libros societarios o contables: El libro anterior (si es a partir del N° 2) y el documento de constitución de la empresa.',
-      'Autorizaciones de viaje para menores: Presencia de uno o ambos padres (según destino) con DNI y partida de nacimiento original del menor.'
-    ]
-  },
-  {
-    slug: 'constitucion-empresas',
-    title: 'Constitución de Empresas',
-    shortDesc: 'Creación de sociedades, EIRL y otras formas societarias para iniciar su negocio con el pie derecho.',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=600&auto=format&fit=crop',
+    slug: 'derecho-comercial',
+    title: 'Derecho Comercial y Corporativo',
+    shortDesc: 'Constitución societaria, gobierno corporativo, contratos mercantiles, títulos valores y cobranza judicial ejecutiva.',
+    img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop',
     heroImg: imgEmpresas,
-    tiempoEstimado: '5-7 días hábiles',
-    teamMemberId: 'elena-torres',
+    tiempoEstimado: 'Atención corporativa continua y célere',
+    teamMemberId: 'elena-villanueva',
     detailedDesc: [
-      'La constitución de una empresa es el acto formal por el cual una o varias personas deciden formar una persona jurídica (E.I.R.L., S.A.C., S.R.L., entre otras) para desarrollar una actividad económica.',
-      'Nuestro servicio integral abarca desde la reserva de nombre, la elaboración del pacto social y los estatutos (minuta), hasta la elevación a Escritura Pública y su posterior inscripción en los Registros Públicos.',
-      'Le brindamos asesoramiento societario para definir qué tipo de sociedad se ajusta mejor a su modelo de negocio, régimen de capital y responsabilidades, garantizando un inicio corporativo sólido y sin contratiempos.'
+      'Asesoramos a empresas nacionales e internacionales en todas las etapas de su ciclo de vida corporativo: desde la constitución de sociedades, aumentos de capital y fusiones, hasta la redacción de estatutos y acuerdos de accionistas.',
+      'Representamos a nuestros clientes corporativos en la recuperación judicial y extrajudicial de deudas mediante procesos ejecutivos de pagarés, letras de cambio y facturas negociables.',
+      'Nuestro enfoque combina rigor procesal y visión comercial para asegurar que cada decisión jurídica maximice la rentabilidad y minimice la exposición a contingencias legales.'
     ],
-    whoItAppliesTo: 'Emprendedores, empresarios, startups y grupos de inversionistas que desean formalizar sus negocios y separar su patrimonio personal del patrimonio del negocio.',
-    whatProblemItSolves: 'Proporciona responsabilidad limitada (el patrimonio personal no se ve afectado por las deudas del negocio), permite acceder a créditos financieros formales y facturar formalmente.',
+    whoItAppliesTo: 'Empresas, PYMEs, directores, inversionistas y emprendedores que requieran blindaje societario y gestión de cobranzas de alto impacto.',
+    whatProblemItSolves: 'Previene conflictos entre socios, reduce pérdidas financieras por cuentas incobrables y asegura el cumplimiento normativo mercantil y registral.',
     requirements: [
-      'DNI vigente de los socios (y cónyuges, si corresponde).',
-      'Reserva de Nombre expedida por SUNARP (podemos tramitarla por usted).',
-      'Descripción detallada del objeto social (actividades del negocio).',
-      'Acreditación del capital social (depósito en cuenta bancaria o declaración jurada de bienes si son aportes no dinerarios).',
-      'Declaración de nombramiento del Gerente General y Directorio (si aplica).'
+      'Ficha RUC y copia literal de la partida registral de la empresa.',
+      'Vigencia de poder del representante legal.',
+      'Títulos valores originales (pagarés, facturas, letras de cambio) debidamente protestados o con cláusula de no protesto.',
+      'Contratos comerciales y estados de cuenta vinculados a la controversia.'
+    ]
+  },
+  {
+    slug: 'derecho-administrativo',
+    title: 'Derecho Administrativo y Regulatorio',
+    shortDesc: 'Defensa técnica ante entidades del Estado (SUNAT, INDECOPI, SUTRAN, Municipalidades) y procesos contencioso-administrativos.',
+    img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop',
+    heroImg: imgLegalizacion,
+    tiempoEstimado: 'Plazos conforme a la Ley del Procedimiento Administrativo General (LPAG)',
+    teamMemberId: 'elena-villanueva',
+    detailedDesc: [
+      'El ejercicio de la función pública debe sujetarse estrictamente al principio de legalidad y al debido procedimiento. Nuestro equipo patrocina a ciudadanos y empresas frente a actos arbitrarios o desproporcionados de la administración pública.',
+      'Formulamos descargos en Procedimientos Administrativos Sancionadores (PAS), interponemos recursos de reconsideración y apelación, y agotamos la vía administrativa con argumentos técnicos de alto peso.',
+      'En sede judicial, interponemos demandas contencioso-administrativas y medidas cautelares para suspender la ejecución de resoluciones administrativas lesivas a sus derechos.'
+    ],
+    whoItAppliesTo: 'Empresas y administrados objeto de fiscalización, sanciones, multas o clausuras por parte de organismos reguladores, ministerios y municipalidades.',
+    whatProblemItSolves: 'Anula sanciones ilegales, evita embargos coactivos indebidos y reestablece licencias o autorizaciones comerciales legítimas.',
+    requirements: [
+      'Resolución de inicio de procedimiento sancionador o notificación de cargo.',
+      'Copia de descargos y pruebas ofrecidas en la etapa previa.',
+      'Resolución administrativa que se impugna o constancia de silencio administrativo.',
+      'Ficha RUC o DNI del administrado recurrente.'
+    ]
+  },
+  {
+    slug: 'derecho-arbitral',
+    title: 'Derecho Arbitral y Controversias',
+    shortDesc: 'Asesoría y patrocinio en arbitrajes comerciales, contrataciones del Estado (OSCE) y solución de litigios complejos.',
+    img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop',
+    heroImg: imgSucesion,
+    tiempoEstimado: 'Estrategia arbitral personalizada y expedita',
+    teamMemberId: 'carlos-quispe',
+    detailedDesc: [
+      'El arbitraje es el mecanismo idóneo y confidencial para la solución rápida y especializada de controversias patrimoniales y comerciales. En Quispe Villanueva & Abogados contamos con vasta experiencia ante los principales centros arbitrales del país (CCL, PUCP, AMCHAM, OSCE).',
+      'Elaboramos demandas arbitrales, contestaciones, reconvenciones y solicitudes de medidas cautelares arbitrales, asegurando la designación estratégica de árbitros idóneos y la debida actuación probatoria.',
+      'Asimismo, patrocinamos recursos de anulación de laudos arbitrales ante las Salas Comerciales del Poder Judicial cuando se han vulnerado garantías del debido proceso arbitral.'
+    ],
+    whoItAppliesTo: 'Contratistas con el Estado, consorcios de infraestructura, empresas comerciales y partes de contratos con convenio arbitral pactado.',
+    whatProblemItSolves: 'Resuelve disputas de alta cuantía con mayor celeridad y especialización que la justicia ordinaria, protegiendo penalidades y valorizaciones de obra.',
+    requirements: [
+      'Contrato original con convenio o cláusula arbitral.',
+      'Comunicaciones, cartas notariales y actas de trato directo previas.',
+      'Documentación técnica o financiera sustentatoria de la controversia.',
+      'Laudo o resoluciones arbitrales previas (en caso de anulación).'
+    ]
+  },
+  {
+    slug: 'derecho-penal',
+    title: 'Derecho Penal y Delitos Económicos',
+    shortDesc: 'Litigación penal estratégica, defensa técnica en investigación preliminar, preparatoria, juicio oral y delitos patrimoniales.',
+    img: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=600&auto=format&fit=crop',
+    heroImg: imgTestamentosNuevo,
+    tiempoEstimado: 'Atención de emergencias penales 24/7',
+    teamMemberId: 'carlos-quispe',
+    detailedDesc: [
+      'La defensa de la libertad y el honor requiere la más alta solvencia técnica y temple procesal. Nuestro estudio ejerce la defensa técnica penal bajo el Código Procesal Penal peruano con una visión proactiva y probatoria contundente.',
+      'Especialistas en Derecho Penal Económico y de la Empresa (Compliance penal, estafas, apropiación ilícita, fraude en la administración de personas jurídicas, delitos tributarios y aduaneros).',
+      'Acompañamos al patrocinado en diligencias fiscales, declaraciones indagatorias, audiencias de prisión preventiva, control de acusación y juzgamiento oral con técnicas avanzadas de interrogatorio y argumentación.'
+    ],
+    whoItAppliesTo: 'Directivos, profesionales y personas naturales investigadas o agraviadas en sede policial, fiscal y judicial por imputaciones de índole penal.',
+    whatProblemItSolves: 'Evita medidas coercitivas restrictivas de la libertad (prisión preventiva, impedimento de salida), logra archivamientos liminares y sobreseimientos justos.',
+    requirements: [
+      'Disposición fiscal de inicio de diligencias preliminares o formalización de investigación.',
+      'Carpeta fiscal o expediente judicial (número y fiscalía/juzgado a cargo).',
+      'Documentos y elementos de convicción de descargo.',
+      'DNI del patrocinado y designación formal de defensa técnica.'
     ]
   }
 ];

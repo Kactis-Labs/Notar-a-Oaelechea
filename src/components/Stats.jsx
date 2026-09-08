@@ -39,20 +39,20 @@ export default function Stats() {
         
         <div className="stats-grid">
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12000" suffix="+" /></h3>
-            <p className="stat-label">Trámites realizados</p>
+            <h3 className="stat-number"><AnimatedCounter value="1800" suffix="+" /></h3>
+            <p className="stat-label">Casos y patrocinios exitosos</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="98" suffix="%" /></h3>
-            <p className="stat-label">Casos sin observaciones</p>
+            <h3 className="stat-number"><AnimatedCounter value="96" suffix="%" /></h3>
+            <p className="stat-label">Efectividad y resoluciones favorables</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="30" suffix="+" /></h3>
-            <p className="stat-label">Años de experiencia</p>
+            <h3 className="stat-number"><AnimatedCounter value="20" suffix="+" /></h3>
+            <p className="stat-label">Años de experiencia procesal</p>
           </div>
           <div className="stat-item">
-            <h3 className="stat-number"><AnimatedCounter value="12" /></h3>
-            <p className="stat-label">Distritos atendidos en La Libertad</p>
+            <h3 className="stat-number"><AnimatedCounter value="5" /></h3>
+            <p className="stat-label">Especialidades jurídicas estratégicas</p>
           </div>
         </div>
       </div>
