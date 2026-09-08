@@ -1,26 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 90" width="460" height="90">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 62" width="430" height="62">
   <defs>
     <style>
-      .hd-brand {
-        font-family: 'Playfair Display', Georgia, serif;
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
+      .qv-wmd-title {
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        font-size: 21px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
         fill: #083D29;
       }
-      .hd-gold {
-        fill: #C9960C;
-      }
-      .hd-sub {
+      .qv-wmd-sub {
         font-family: 'Montserrat', 'Inter', sans-serif;
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 700;
-        letter-spacing: 0.28em;
+        letter-spacing: 0.32em;
         fill: #C9960C;
       }
-      .hd-badge {
+      .qv-wmd-badge {
         font-family: 'Montserrat', 'Inter', sans-serif;
-        font-size: 8.5px;
+        font-size: 8px;
         font-weight: 600;
         letter-spacing: 0.18em;
         fill: #4B6E5D;
@@ -28,44 +25,16 @@
     </style>
   </defs>
 
-  <!-- Emblem Badge Left -->
-  <g transform="translate(5, 5)">
-    <rect x="0" y="0" width="80" height="80" rx="14" fill="#083D29" stroke="#C9960C" stroke-width="1.5" />
-    <g transform="scale(0.355) translate(-1, -1)">
-      
-  <!-- Central Spire & Finial -->
-  <path d="M 112.5 45 L 115 50 L 114 55 L 111 55 L 110 50 Z M 110 55 L 115 55 L 116 66 L 109 66 Z" fill="#1A5C3C" />
-  <rect x="110.5" y="66" width="4" height="106" fill="#1A5C3C" />
-  <circle cx="112.5" cy="100" r="3.5" fill="#1A5C3C" />
-
-  <!-- Horizontal Beam with Ornamental Scrolled Tips -->
-  <path d="M 43 75 C 40 75 38 72 40 69 C 42 66 46 66 48 69 C 50 72 48 74 45 74 C 55 71 80 66 112.5 66 C 145 66 170 71 180 74 C 177 74 175 72 177 69 C 179 66 183 66 185 69 C 187 72 185 75 182 75 C 168 76 142 70 112.5 70 C 83 70 57 76 43 75 Z" fill="#1A5C3C" />
-
-  <!-- Left Scale Pan & Strings -->
-  <line x1="43" y1="75" x2="25" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <line x1="43" y1="75" x2="43" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <line x1="43" y1="75" x2="61" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <path d="M 23 144 C 23 144 26 150 43 150 C 60 150 63 144 63 144 Z" fill="#1A5C3C" />
-
-  <!-- Right Scale Pan & Strings -->
-  <line x1="182" y1="75" x2="164" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <line x1="182" y1="75" x2="182" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <line x1="182" y1="75" x2="200" y2="144" stroke="#1A5C3C" stroke-width="1.2" />
-  <path d="M 162 144 C 162 144 165 150 182 150 C 199 150 202 144 202 144 Z" fill="#1A5C3C" />
-
-  <!-- Pedestal Base -->
-  <path d="M 104 168 C 104 168 95 174 80 178 L 145 178 C 130 174 121 168 121 168 Z" fill="#1A5C3C" />
-  <rect x="65" y="179" width="95" height="4" rx="1.5" fill="#1A5C3C" />
-
-      <path d="M 100 72 L 104 72 L 105 73 L 109 73 L 110 74 L 112 74 L 113 75 L 116 76 L 120 80 L 120 81 L 123 86 L 123 89 L 124 90 L 124 95 L 125 96 L 125 100 L 126 101 L 126 103 L 127 104 L 127 107 L 128 108 L 129 111 L 131 113 L 132 113 L 133 112 L 133 111 L 135 108 L 135 106 L 136 105 L 136 103 L 137 102 L 137 99 L 138 98 L 138 72 L 145 72 L 145 95 L 144 96 L 144 100 L 143 101 L 143 104 L 142 105 L 141 110 L 140 111 L 137 118 L 135 120 L 135 122 L 133 124 L 132 127 L 130 125 L 129 122 L 127 120 L 126 117 L 124 115 L 124 114 L 121 109 L 121 107 L 120 106 L 120 104 L 119 103 L 119 101 L 118 100 L 118 96 L 117 95 L 117 91 L 116 90 L 116 88 L 115 87 L 115 86 L 112 82 L 111 82 L 107 79 L 97 79 L 91 84 L 91 85 L 89 88 L 89 90 L 88 91 L 88 106 L 89 107 L 89 110 L 90 111 L 91 114 L 96 119 L 97 119 L 98 120 L 100 120 L 101 121 L 109 121 L 110 120 L 104 113 L 104 111 L 111 111 L 111 112 L 116 118 L 121 116 L 121 117 L 122 118 L 122 120 L 120 122 L 120 123 L 126 129 L 118 129 L 115 126 L 112 126 L 111 127 L 99 127 L 98 126 L 93 125 L 91 123 L 90 123 L 88 121 L 88 120 L 87 119 L 86 119 L 83 115 L 83 114 L 82 113 L 82 110 L 81 109 L 81 106 L 80 105 L 80 92 L 81 91 L 81 87 L 82 86 L 82 84 L 83 83 L 83 82 L 86 79 L 86 78 L 87 78 L 88 77 L 88 76 L 89 76 L 92 74 L 94 74 L 95 73 L 99 73 Z" fill="#F5C518" fill-rule="evenodd" />
-    </g>
+  <!-- Pure Standalone Symbol (NO BOX / NO RECTANGLE!) -->
+  <g transform="translate(2, 3) scale(0.96)">
+    <path d="M 20.00 0.00 L 24.00 0.00 L 25.00 1.00 L 29.00 1.00 L 30.00 2.00 L 32.00 2.00 L 33.00 3.00 L 36.00 4.00 L 40.00 8.00 L 40.00 9.00 L 43.00 14.00 L 43.00 17.00 L 44.00 18.00 L 44.00 23.00 L 45.00 24.00 L 45.00 28.00 L 46.00 29.00 L 46.00 31.00 L 47.00 32.00 L 47.00 35.00 L 48.00 36.00 L 49.00 39.00 L 51.00 41.00 L 52.00 41.00 L 53.00 40.00 L 53.00 39.00 L 55.00 36.00 L 55.00 34.00 L 56.00 33.00 L 56.00 31.00 L 57.00 30.00 L 57.00 27.00 L 58.00 26.00 L 58.00 0.00 L 65.00 0.00 L 65.00 23.00 L 64.00 24.00 L 64.00 28.00 L 63.00 29.00 L 63.00 32.00 L 62.00 33.00 L 61.00 38.00 L 60.00 39.00 L 57.00 46.00 L 55.00 48.00 L 55.00 50.00 L 53.00 52.00 L 52.00 55.00 L 50.00 53.00 L 49.00 50.00 L 47.00 48.00 L 46.00 45.00 L 44.00 43.00 L 44.00 42.00 L 41.00 37.00 L 41.00 35.00 L 40.00 34.00 L 40.00 32.00 L 39.00 31.00 L 39.00 29.00 L 38.00 28.00 L 38.00 24.00 L 37.00 23.00 L 37.00 19.00 L 36.00 18.00 L 36.00 16.00 L 35.00 15.00 L 35.00 14.00 L 32.00 10.00 L 31.00 10.00 L 27.00 7.00 L 17.00 7.00 L 11.00 12.00 L 11.00 13.00 L 9.00 16.00 L 9.00 18.00 L 8.00 19.00 L 8.00 34.00 L 9.00 35.00 L 9.00 38.00 L 10.00 39.00 L 11.00 42.00 L 16.00 47.00 L 17.00 47.00 L 18.00 48.00 L 20.00 48.00 L 21.00 49.00 L 29.00 49.00 L 30.00 48.00 L 24.00 41.00 L 24.00 39.00 L 31.00 39.00 L 31.00 40.00 L 36.00 46.00 L 41.00 44.00 L 41.00 45.00 L 42.00 46.00 L 42.00 48.00 L 40.00 50.00 L 40.00 51.00 L 46.00 57.00 L 38.00 57.00 L 35.00 54.00 L 32.00 54.00 L 31.00 55.00 L 19.00 55.00 L 18.00 54.00 L 13.00 53.00 L 11.00 51.00 L 10.00 51.00 L 8.00 49.00 L 8.00 48.00 L 7.00 47.00 L 6.00 47.00 L 3.00 43.00 L 3.00 42.00 L 2.00 41.00 L 2.00 38.00 L 1.00 37.00 L 1.00 34.00 L 0.00 33.00 L 0.00 20.00 L 1.00 19.00 L 1.00 15.00 L 2.00 14.00 L 2.00 12.00 L 3.00 11.00 L 3.00 10.00 L 6.00 7.00 L 6.00 6.00 L 7.00 6.00 L 8.00 5.00 L 8.00 4.00 L 9.00 4.00 L 12.00 2.00 L 14.00 2.00 L 15.00 1.00 L 19.00 1.00 Z" fill="#C9960C" fill-rule="evenodd" />
   </g>
 
-  <!-- Divider Line -->
-  <line x1="102" y1="18" x2="102" y2="72" stroke="rgba(201, 150, 12, 0.4)" stroke-width="1" />
+  <!-- Subtle Elegant Vertical Divider -->
+  <line x1="78" y1="8" x2="78" y2="54" stroke="rgba(201, 150, 12, 0.4)" stroke-width="1.2" />
 
-  <!-- Typography Right -->
-  <text x="118" y="36" class="hd-brand">QUISPE VILLANUEVA</text>
-  <text x="118" y="54" class="hd-sub">&amp; ABOGADOS ASOCIADOS</text>
-  <text x="118" y="70" class="hd-badge">ESTUDIO JURÍDICO ESPECIALIZADO</text>
+  <!-- Wordmark -->
+  <text x="94" y="24" class="qv-wmd-title">QUISPE VILLANUEVA</text>
+  <text x="94" y="40" class="qv-wmd-sub">ABOGADOS ASOCIADOS</text>
+  <text x="94" y="53" class="qv-wmd-badge">ESTUDIO JURÍDICO ESPECIALIZADO</text>
 </svg>
